@@ -1,0 +1,8 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Icon from '../components/Icon.astro';
+---
+<BaseLayout title="Page not found" description="This page isn't on the workbench. Find projects and writing at After Bedtime Labs." noindex>
+  <div class="container not-found"><p class="eyebrow">404 / A loose end</p><h1 class="page-heading">This page isn’t<br />on the workbench.</h1><p class="page-intro">The link may have moved, or the page may not exist yet. There’s still plenty to explore.</p><div class="back-links"><a href="/" class="text-link">Back home <Icon name="arrow-right" size={18} /></a><a href="/projects/" class="text-link">Explore the projects <Icon name="arrow-up-right" size={16} /></a></div></div>
+</BaseLayout>
+<style>.not-found { padding-block: 100px 60px; } .back-links { display: flex; flex-wrap: wrap; gap: 35px; margin-top: 35px; } @media(max-width:760px) { .not-found { padding-block: 65px 35px; } }</style>

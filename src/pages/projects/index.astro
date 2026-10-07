@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+import { projects } from '../../data/projects';
+---
+
+<BaseLayout title="Projects" description="Software, AI tooling, indie games, and small experiments by Isaac at After Bedtime Labs.">
+  <div class="container projects-page">
+    <header class="project-header">
+      <p class="eyebrow">On the workbench</p>
+      <h1 class="page-heading">Projects & experiments.</h1>
+      <p class="page-intro">Tools to make the work a little easier. Games to explore an idea. A few things built simply to see what happens.</p>
+    </header>
+    <div class="project-list">
+      {projects.map((project) => <ProjectCard project={project} />)}
+    </div>
+    <p class="project-note">These are experiments, with room to learn and change direction. Writing about the work will live in <a class="text-link" href="/writing/">the notebook <span aria-hidden="true">↗</span></a>.</p>
+  </div>
+</BaseLayout>
+
+<style>
+  .projects-page { padding-top: 65px; padding-bottom: 5rem; }
+  .project-list { margin-top: 3rem; }
+  .project-note { margin: 0; padding-top: 2rem; border-top: 1px solid var(--border); font-size: 0.9rem; line-height: 1.8; color: var(--muted); max-width: 72ch; }
+  @media (max-width: 760px) { .projects-page { padding-top: 44px; } }
+</style>

@@ -1,0 +1,67 @@
+---
+import SEO, { type Props } from '../components/SEO.astro';
+import Icon from '../components/Icon.astro';
+import ThemeToggle from '../components/ThemeToggle.astro';
+import { site } from '../config/site';
+import '../styles/global.css';
+const pathname = Astro.url.pathname;
+const navigation = [{ name: 'Home', href: '/' }, { name: 'Writing', href: '/writing/' }, { name: 'Projects', href: '/projects/' }, { name: 'About', href: '/about/' }];
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="color-scheme" content="light dark" />
+    <script is:inline>
+      (() => {
+        let mode = 'system';
+        try {
+          const saved = localStorage.getItem('abl-theme');
+          if (saved === 'light' || saved === 'dark') mode = saved;
+        } catch {}
+        document.documentElement.dataset.theme = mode === 'system'
+          ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : mode;
+        document.documentElement.dataset.themeMode = mode;
+      })();
+    </script>
+    <SEO {...Astro.props} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" sizes="64x64" />
+    <link rel="alternate" type="application/rss+xml" title={`${site.name} RSS`} href="/rss.xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/" aria-label="After Bedtime Labs home">
+          <span class="brand-mark"><Icon name="lamp" size={23} /></span>
+          <span>After Bedtime<span class="brand-labs"> Labs</span><span class="brand-period">.</span></span>
+        </a>
+        <div class="header-controls">
+          <nav aria-label="Main navigation">
+            {navigation.map(({ name, href }) => <a href={href} aria-current={(href === '/' ? pathname === '/' : pathname.startsWith(href)) ? 'page' : undefined}>{name}</a>)}
+          </nav>
+          <ThemeToggle />
+        </div>
+      </div>
+    </header>
+    <main id="main" tabindex="-1"><slot /></main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div><a class="footer-brand" href="/">After Bedtime Labs<span class="brand-period">.</span></a><p>Made in the hours in between.</p></div>
+        <div class="footer-right">
+          <nav class="social-links" aria-label="Find After Bedtime Labs">
+            <a href={site.github}>GitHub <Icon name="arrow-up-right" size={13} /></a>
+            <a href={site.x}>X <Icon name="arrow-up-right" size={13} /></a>
+            {site.linkedin && <a href={site.linkedin}>LinkedIn <Icon name="arrow-up-right" size={13} /></a>}
+            <a href="/rss.xml">RSS <Icon name="rss" size={13} /></a>
+          </nav>
+          <span class="copyright">© {new Date().getUTCFullYear()} Isaac</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

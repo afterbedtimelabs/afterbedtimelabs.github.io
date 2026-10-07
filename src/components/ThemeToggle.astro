@@ -1,0 +1,54 @@
+---
+import Icon from './Icon.astro';
+---
+<button class="theme-toggle" type="button" id="theme-toggle" hidden aria-label="Theme: system. Switch to light theme." title="Theme: system">
+  <span data-theme-icon="system"><Icon name="monitor" size={18} /></span>
+  <span data-theme-icon="light" hidden><Icon name="sun" size={18} /></span>
+  <span data-theme-icon="dark" hidden><Icon name="moon" size={18} /></span>
+  <span class="sr-only" id="theme-label">Theme: system</span>
+</button>
+<script>
+  const button = document.querySelector<HTMLButtonElement>('#theme-toggle');
+  const modes = ['system', 'light', 'dark'] as const;
+  type Mode = typeof modes[number];
+  const preference = window.matchMedia('(prefers-color-scheme: dark)');
+  let mode: Mode = 'system';
+  try {
+    const saved = localStorage.getItem('abl-theme');
+    if (saved === 'light' || saved === 'dark') mode = saved;
+  } catch { /* The system preference still works when storage is unavailable. */ }
+  function applyTheme() {
+    document.documentElement.dataset.theme = mode === 'system' ? (preference.matches ? 'dark' : 'light') : mode;
+    document.documentElement.dataset.themeMode = mode;
+    const next = modes[(modes.indexOf(mode) + 1) % modes.length];
+    button?.setAttribute('aria-label', `Theme: ${mode}. Switch to ${next} theme.`);
+    button?.setAttribute('title', `Theme: ${mode} (click for ${next})`);
+    document.querySelectorAll<HTMLElement>('[data-theme-icon]').forEach((icon) => { icon.hidden = icon.dataset.themeIcon !== mode; });
+    const label = document.querySelector('#theme-label');
+    if (label) label.textContent = `Theme: ${mode}`;
+  }
+  if (button) {
+    button.hidden = false;
+    applyTheme();
+    button.addEventListener('click', () => {
+      mode = modes[(modes.indexOf(mode) + 1) % modes.length];
+      try {
+        if (mode === 'system') localStorage.removeItem('abl-theme');
+        else localStorage.setItem('abl-theme', mode);
+      } catch { /* Keep the theme usable without persistent storage. */ }
+      applyTheme();
+    });
+    preference.addEventListener('change', () => { if (mode === 'system') applyTheme(); });
+    window.addEventListener('storage', (event) => {
+      if (event.key !== 'abl-theme') return;
+      mode = event.newValue === 'light' || event.newValue === 'dark' ? event.newValue : 'system';
+      applyTheme();
+    });
+  }
+</script>
+<style>
+  .theme-toggle { display: grid; place-items: center; width: 38px; height: 38px; padding: 0; background: transparent; border: 1px solid var(--border); color: var(--muted); border-radius: 50%; cursor: pointer; }
+  .theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
+  .theme-toggle span { line-height: 0; }
+  .theme-toggle [hidden], .theme-toggle[hidden] { display: none; }
+</style>

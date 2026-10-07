@@ -1,0 +1,121 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { articleHref, formatDate, getWriting, readingTime } from '../../lib/writing';
+
+const writing = await getWriting();
+const published = writing.filter((entry) => !entry.data.draft);
+const drafts = writing.filter((entry) => entry.data.draft);
+---
+
+<BaseLayout
+  title="Writing"
+  description="Field notes by Isaac on software, AI agents, local models, developer tools, and game experiments."
+>
+  <div class="container writing-page">
+    <header class="writing-heading">
+      <p class="eyebrow">The notebook</p>
+      <h1 class="page-heading">Writing.</h1>
+      <p class="page-intro">Notes from the workbench. What I’m building, what I’m trying, and what I learn along the way.</p>
+      <a class="text-link feed-link" href="/rss.xml">Subscribe via RSS <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <section aria-labelledby="published-writing">
+      <div class="writing-section-heading">
+        <h2 id="published-writing" class="section-heading">Field notes</h2>
+        <span class="entry-count">{published.length} published</span>
+      </div>
+      {published.length > 0 ? (
+        <ul class="article-list" role="list">
+          {published.map((entry) => (
+            <li class="article-row">
+              <div class="article-date">
+                <time datetime={entry.data.publishDate.toISOString()}>{formatDate(entry.data.publishDate)}</time>
+                <span>{readingTime(entry.body)}</span>
+              </div>
+              <div class="article-summary">
+                <h3><a href={articleHref(entry)}>{entry.data.title}</a></h3>
+                <p>{entry.data.description}</p>
+                {entry.data.tags.length > 0 && <ul class="article-tags" role="list" aria-label="Topics">
+                  {entry.data.tags.map((tag) => <li class="tag">{tag}</li>)}
+                </ul>}
+              </div>
+              <span class="article-arrow" aria-hidden="true">↗</span>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <div class="empty-state writing-empty">
+          <span class="notebook-mark" aria-hidden="true">01 /</span>
+          <div>
+            <h3>The first page is still in progress.</h3>
+            <p>No articles published yet. This will be a place for useful notes from real projects, including the parts that don’t go to plan.</p>
+            <a class="text-link" href="/projects/">Explore the projects <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      )}
+    </section>
+
+    {drafts.length > 0 && <section class="draft-section" aria-labelledby="draft-writing">
+      <div class="writing-section-heading">
+        <h2 id="draft-writing" class="section-heading">On the drafting table</h2>
+        <span class="tag">Local preview</span>
+      </div>
+      <p class="draft-explanation">These unfinished notes are visible in the development server. They are excluded from the production site and RSS feed.</p>
+      <ul class="article-list" role="list">
+        {drafts.map((entry) => <li class="article-row">
+          <div class="article-date"><span>Unpublished draft</span><span>{readingTime(entry.body)}</span></div>
+          <div class="article-summary">
+            <h3><a href={articleHref(entry)}>{entry.data.title}</a></h3>
+            <p>{entry.data.description}</p>
+            <ul class="article-tags" role="list" aria-label="Topics">
+              {entry.data.tags.map((tag) => <li class="tag">{tag}</li>)}
+            </ul>
+          </div>
+          <span class="article-arrow" aria-hidden="true">↗</span>
+        </li>)}
+      </ul>
+    </section>}
+
+    <aside class="writing-note" aria-label="About these notes">
+      <p>Less a publishing schedule, more a lab notebook.</p>
+      <span>Software · AI · Games · Experiments</span>
+    </aside>
+  </div>
+</BaseLayout>
+
+<style>
+  .writing-page { padding-block: 4.5rem 5rem; }
+  .writing-heading { margin-bottom: 4rem; max-width: 46rem; }
+  .feed-link { display: inline-flex; align-items: center; gap: .5rem; margin-top: 1.4rem; font-size: .9rem; }
+  .writing-section-heading { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 1.25rem; }
+  .entry-count { font-size: .78rem; color: var(--muted); font-family: var(--font-mono); }
+  .article-list { list-style: none; padding: 0; margin: 0; }
+  .article-row { display: grid; grid-template-columns: 11rem 1fr auto; gap: 1.8rem; padding-block: 1.9rem; border-top: 1px solid var(--border); }
+  .article-row:last-child { border-bottom: 1px solid var(--border); }
+  .article-date { display: flex; flex-direction: column; gap: .45rem; color: var(--muted); font-size: .8rem; padding-top: .2rem; }
+  .article-date > :last-child { font-family: var(--font-mono); font-size: .72rem; }
+  .article-summary h3 { font-size: 1.35rem; line-height: 1.4; margin: 0 0 .5rem; letter-spacing: -.025em; }
+  .article-summary h3 a { color: inherit; text-decoration: none; }
+  .article-summary h3 a:hover { color: var(--accent); }
+  .article-summary p { color: var(--muted); line-height: 1.7; margin: 0; max-width: 42rem; }
+  .article-tags { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem; margin: .85rem 0 0; }
+  .article-arrow { color: var(--muted); padding-top: .2rem; }
+  .writing-empty { display: flex; gap: 2.2rem; align-items: flex-start; padding: 2.5rem; }
+  .notebook-mark { color: var(--accent); font-family: var(--font-mono); font-size: .82rem; padding-top: .3rem; white-space: nowrap; }
+  .writing-empty h3 { font-size: 1.3rem; margin: 0 0 .6rem; letter-spacing: -.025em; }
+  .writing-empty p { margin: 0 0 1rem; max-width: 36rem; }
+  .draft-section { margin-top: 3.5rem; }
+  .draft-explanation { font-size: .85rem; color: var(--muted); max-width: 45rem; margin-bottom: 1.6rem; }
+  .writing-note { display: flex; justify-content: space-between; align-items: center; gap: 1rem; border-top: 1px solid var(--border); margin-top: 4rem; padding-top: 1.5rem; color: var(--muted); font-size: .82rem; }
+  .writing-note p { margin: 0; }
+  .writing-note span { font-family: var(--font-mono); font-size: .69rem; }
+  @media (max-width: 650px) {
+    .writing-page { padding-block: 3rem 3.5rem; }
+    .writing-heading { margin-bottom: 3rem; }
+    .article-row { grid-template-columns: 1fr auto; gap: .65rem 1rem; }
+    .article-date { grid-column: 1 / -1; flex-direction: row; gap: 1rem; }
+    .article-summary h3 { font-size: 1.2rem; }
+    .writing-empty { gap: 1rem; padding: 1.5rem; }
+    .writing-note { align-items: flex-start; flex-direction: column; }
+  }
+</style>

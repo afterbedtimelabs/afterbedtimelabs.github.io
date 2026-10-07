@@ -1,0 +1,96 @@
+---
+import ProjectArtwork from './ProjectArtwork.astro';
+import { getProjectPath, type Project } from '../data/projects';
+
+interface Props {
+  project: Project;
+  compact?: boolean;
+}
+
+const { project, compact = false } = Astro.props;
+const Heading = compact ? 'h3' : 'h2';
+---
+
+<article class:list={['project-card', { compact }]}>
+  <a class="project-visual" href={getProjectPath(project)} tabindex="-1" aria-hidden="true">
+    <ProjectArtwork artwork={project.artwork} />
+  </a>
+  <div class="project-copy">
+    <p class="project-category">{project.category}</p>
+    <Heading><a href={getProjectPath(project)}>{project.name}<span aria-hidden="true">↗</span></a></Heading>
+    <p class="project-summary">{project.summary}</p>
+    <ul class="project-tags" aria-label="Project topics">
+      {project.tags.map((tag) => <li class="tag">{tag}</li>)}
+    </ul>
+  </div>
+</article>
+
+<style>
+  .project-card {
+    display: grid;
+    grid-template-columns: minmax(220px, 0.95fr) minmax(0, 1.5fr);
+    gap: 2.5rem;
+    padding: 2.3rem 0;
+    border-top: 1px solid var(--border);
+    align-items: center;
+  }
+
+  .project-visual {
+    display: block;
+    height: 220px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 7px;
+  }
+
+  .project-category {
+    margin: 0 0 0.65rem;
+    font-family: var(--font-mono, ui-monospace, monospace);
+    font-size: 0.7rem;
+    letter-spacing: 0.075em;
+    color: var(--muted);
+    text-transform: uppercase;
+  }
+
+  :is(h2, h3) {
+    margin: 0;
+    font-size: 1.65rem;
+    letter-spacing: -0.045em;
+    line-height: 1.3;
+  }
+
+  :is(h2, h3) a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  :is(h2, h3) a:hover { color: var(--accent); }
+  :is(h2, h3) span { color: var(--muted); font-size: 1.2rem; font-weight: 400; }
+  .project-summary { margin: 0.9rem 0 1.3rem; max-width: 48ch; color: var(--muted); line-height: 1.75; font-size: 0.94rem; }
+  .project-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0; padding: 0; list-style: none; }
+
+  .compact {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
+    padding: 0;
+    border-top: 0;
+  }
+
+  .compact .project-visual { height: 220px; }
+  .compact h3 { font-size: 1.35rem; }
+  .compact .project-summary { margin-top: 0.7rem; font-size: 0.9rem; }
+
+  @media (max-width: 650px) {
+    .project-card { grid-template-columns: 1fr; gap: 1.5rem; padding: 1.9rem 0; }
+    .project-visual { height: 190px; }
+    .compact { padding: 0; }
+    .compact .project-visual { height: 190px; }
+    :is(h2, h3) { font-size: 1.45rem; }
+  }
+</style>
