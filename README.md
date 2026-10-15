@@ -2,7 +2,7 @@
 
 Isaac's personal workshop for software, AI, games, and experiments built outside the day job. The site pairs a small project portfolio with technical writing about what works, what fails, and what is learned along the way.
 
-The eventual production domain is [afterbedtimelabs.dev](https://afterbedtimelabs.dev). The repository is the organization Pages site, `afterbedtimelabs/afterbedtimelabs.github.io`, so it uses the root URL `/` with no repository-name prefix.
+The initial public origin is [afterbedtimelabs.github.io](https://afterbedtimelabs.github.io). The eventual custom domain is `afterbedtimelabs.dev`. The repository is the organization Pages site, `afterbedtimelabs/afterbedtimelabs.github.io`, so it uses the root URL `/` with no repository-name prefix.
 
 ## Stack
 
@@ -112,7 +112,7 @@ Update `src/config/site.ts` for the public name, description, GitHub/X links, op
 
 The shared SEO component supplies titles, descriptions, canonical URLs, OpenGraph, and X metadata. The default social card is a local 1200 × 630 PNG, with its editable vector source in `public/social-card.svg`. Replace it with a custom PNG or JPEG and update `socialImage` and `imageAlt` in the site config. Articles can use their own hero image. `npm run brand-assets` regenerates the PNG and lamp favicons from the repository's vector branding, using Astro's existing Sharp dependency.
 
-Astro's `site` defaults to `https://afterbedtimelabs.dev`. A `SITE_URL` environment variable overrides the public origin for a build, keeping canonical URLs, social URLs, sitemaps, RSS, and robots consistent. It must be an absolute HTTP(S) origin without a path, query, or fragment.
+Astro's `site` defaults to `https://afterbedtimelabs.github.io`. A `SITE_URL` environment variable overrides the public origin for a build, keeping canonical URLs, social URLs, sitemaps, RSS, and robots consistent. It must be an absolute HTTP(S) origin without a path, query, or fragment. The verifier and shared SEO fallback use the same initial hostname.
 
 For an initial build at the Pages hostname, use:
 
@@ -131,6 +131,8 @@ Remove-Item Env:SITE_URL
 The verifier must use the same `SITE_URL` as the build. A local dev or preview server still runs on localhost; `SITE_URL` describes the published origin.
 
 ## GitHub Pages deployment
+
+Read [the launch review and approval checklist](docs/launch-review.md) before the first deployment. It records the Navi policy confirmations, private-contact publication blocker, validation results, and Google OAuth setup steps. `/navi/` is the app information page and `/navi/privacy/` is its public privacy policy. These are static pages; they do not initiate OAuth or connect to the local Navi application.
 
 No push or deployment is needed for local review. After Isaac approves the local result:
 

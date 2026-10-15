@@ -87,6 +87,7 @@
   .footer-brand { font-size: 14px; font-weight: 600; text-decoration: none; }
   .footer-inner p { font-size: 12px; color: var(--muted); margin-top: 6px; }
   .footer-right { text-align: right; }
+  .product-links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px 20px; margin-bottom: 14px; font-size: 12px; }
   .social-links { display: flex; align-items: center; gap: 23px; }
   .social-links a { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; text-decoration: none; }
   .copyright { display: block; font-size: 11px; color: var(--muted); margin-top: 9px; }
@@ -130,6 +131,7 @@
   @media (max-width: 420px) {
     .footer-inner { flex-direction: column; }
     .footer-right { text-align: left; }
+    .product-links { justify-content: flex-start; }
     .social-links { justify-content: flex-start; }
     .reading-container { width: calc(100% - 40px); }
   }
