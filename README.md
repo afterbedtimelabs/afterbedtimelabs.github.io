@@ -132,7 +132,7 @@ The verifier must use the same `SITE_URL` as the build. A local dev or preview s
 
 ## GitHub Pages deployment
 
-Read [the launch review and approval checklist](docs/launch-review.md) before the first deployment. It records the Navi policy confirmations, private-contact publication blocker, validation results, and Google OAuth setup steps. `/navi/` is the app information page and `/navi/privacy/` is its public privacy policy. These are static pages; they do not initiate OAuth or connect to the local Navi application.
+Read [the launch review and approval checklist](docs/launch-review.md) before the first deployment. It records the verified privacy contact, implementation review, remaining operating commitments, validation results, and Google OAuth setup steps. `/navi/` is the app information page and `/navi/privacy/` is its public privacy policy. These are static pages; they do not initiate OAuth or connect to the local Navi application. The approved public privacy contact is `privacy@afterbedtimelabs.dev`; GitHub Issues remains the general public support channel.
 
 No push or deployment is needed for local review. After Isaac approves the local result:
 

@@ -1,6 +1,6 @@
 # First launch review — October 15, 2026
 
-Status: prepared for owner review. Do not merge or dispatch deployment until the owner approves. No DNS, Pages custom-domain setting, Google OAuth setting, or Navi service changes are part of this work.
+Status: ready for final owner review, subject to the operating sign-off below. Do not merge or dispatch deployment until the owner approves. No DNS, Pages custom-domain setting, Google OAuth setting, or Navi service changes are part of this work.
 
 ## Review findings and changes
 
@@ -12,22 +12,37 @@ Status: prepared for owner review. Do not merge or dispatch deployment until the
 - Kept the existing workflow unchanged: only `workflow_dispatch` can deploy. Pushing this branch or merging the PR does not run that deployment workflow.
 - The site has no backend, user account system, analytics, Gmail sign-in, or connection to a home network service. The theme toggle stores only a browser preference. GitHub Pages serves static files.
 
-## Policy basis and owner confirmations
+## Final policy and implementation review
 
 The policy was derived from a read-only review of the requested private repository's OAuth implementation, Gmail reader, financial monitor security/setup documentation, vendor-discovery documentation, and owner financial-query documentation. Only public-facing behavior is summarized here. Do not copy private source, deployment configuration, credentials, account information, logs, or database contents into this repository or its issues.
 
-Before publication, the owner must confirm:
+The official privacy contact is **privacy@afterbedtimelabs.dev**, approved by the owner on October 15, 2026. The owner reports that Cloudflare Email Routing forwards it to a dedicated studio Gmail account and that a test message was delivered successfully. Both Navi pages now link to this address. No test email was sent during this website review, and no destination Gmail address is published. GitHub Issues remains approved for general public support/feedback with warnings against posting private information. The temporary contact warnings have been removed.
 
-1. **Publication blocker — private contact:** provide a dedicated public support/privacy email for private data inquiries. Replace the explicit prepublication notice in both Navi pages with that address. Do not use a personal address without explicit authorization. GitHub Issues is approved for general public support/feedback only, with the private-data warning kept visible. Issues are enabled; confirm they will be monitored. Google Branding also needs a real monitored support email and developer contact email; a GitHub issue URL does not fill those fields.
-2. **Actual deployment:** confirm the running version matches the described single `gmail.readonly` permission, local processing, optional Discord features, and absence of cloud mail analysis. This source review did not access a live mailbox, inspect private runtime settings, or exercise production services.
-3. **Retention and storage:** confirm actual retention configuration (documented default 730 days; range 90–1,825), persistent vendor decisions, operator file/disk/backup protection, and deletion instructions. The database is not encrypted by Navi, and pruning is not secure erasure.
-4. **Discord:** optional generic alerts and owner-requested selected financial text/voice responses are disclosed at the owner's request. Confirm enabled features and the in-app consent/disclosures match these transfers. Private/ephemeral delivery still involves Discord processing.
-5. **Policy commitments:** approve the Limited Use commitment, no sale/advertising/credit or lending use, no general-purpose model training, restricted human access, and consent before new data use. These are operating commitments as well as descriptions of code. No Google verification, compliance certification, or absolute security guarantee is claimed.
-6. **Identity and date:** approve Isaac/After Bedtime Labs as the public developer identity and update the policy date if substantive changes occur before launch. Review final support wording together with OAuth Branding. The existing X profile is preserved but could not be independently verified by the external web fetcher; confirm it remains the intended public profile.
+The current private implementation was rechecked read-only against a pinned default-branch source snapshot. These previous technical confirmations are supported by the implementation:
+
+| Policy statement | Implementation evidence and limits |
+| --- | --- |
+| Exactly one Gmail read-only scope | OAuth requests and saved/new grant validation accept only `gmail.readonly`. Gmail access uses fixed message-list/message GET requests; no Gmail mutation or attachment-download operation exists in this integration. |
+| Message data is processed locally | The MIME parser reads bounded sender/subject and message text, skips attachments, strips active HTML, and does not follow links/images. Optional extraction and vendor naming use a verified loopback local model; remote/cloud aliases are rejected without a cloud fallback. |
+| Structured storage rather than raw mail history | Database inserts use normalized financial fields and vendor evidence. Raw subjects, full addresses, bodies, model prompts/responses and OAuth tokens are excluded from that schema. Raw-message references are released after processing, without a secure-memory-erasure claim. |
+| Credential and database protection | Saved Windows tokens use current-user DPAPI; non-Windows plaintext tokens require explicit opt-in and restrictive permissions. SQLite is not application-encrypted. Disk, backup and local-host security remain operator responsibilities. |
+| Retention defaults and exceptions | Configuration defaults to 730 days with a 90–1,825-day range. After successful polls, history pruning uses local retention timestamps and row caps. Vendor candidates/approval/ignore decisions and scan state are outside history pruning; complete removal requires deleting local data and backups separately. Revoking Google access does not delete retained copies. |
+| Optional Discord transfers | The alert formatter sends fixed summaries/source/opaque identifiers and omits metadata. Owner-authorized financial commands are ephemeral. Financial replies are deterministic formatted observations; query results are not fed back to the local model or general conversation memory. Voice access requires the restricted owner-and-bot audience and is rechecked during the turn. The public policy now names reply fields rather than every field available in the internal query projection. |
+| Limited Use and no model training | Reviewed Gmail paths perform feature-specific retrieval, local inference and disclosed optional responses, with no advertising, sale, lending/credit scoring or training operation. Broader business practices, future changes and permitted human access remain operating commitments for the owner to approve. |
+
+No unresolved website code/content blocker was found in this review. Final owner approval still covers these operating matters, which source code alone cannot establish:
+
+1. The deployed Navi version/settings and trusted local model service match the described behavior; local permissions, disk/swap/backups and dashboard access are protected. No live mailbox, secret configuration, host ACLs, backup contents or production services were accessed or changed for this review.
+2. Any enabled Discord features have appropriate user-facing consent/disclosures, and the privacy inbox and public support issues will be monitored. Optional Discord coverage was explicitly approved by the owner; this review does not certify the running Discord permissions.
+3. Adopt the policy's Limited Use, no sale/advertising/credit or lending use, no general-purpose model training, restricted human access, and consent-before-new-use commitments. Approve the public developer identity and October 15, 2026 policy date. No Google verification, certification or absolute security guarantee is claimed.
+
+The existing X profile is preserved; external verification was unavailable during the initial review. Confirming that optional social profile is an editorial follow-up, not a Navi contact or policy implementation blocker. Google support/developer contact fields and any restricted-scope verification remain separate OAuth launch tasks; they are not changed by publishing this website.
 
 ## Local validation
 
 `npm run validate` passed: Astro/TypeScript reported 0 errors, 0 warnings, and 0 hints; the static build and output verifier passed for all 11 HTML pages and 1 excluded draft. The verifier covers required routes, unique metadata, canonical/social URLs, internal links and fragments, local assets, sitemap, RSS, robots, excluded drafts, and Navi permission/policy discoverability. `git diff --check` passed.
+
+The full suite was rerun successfully after the verified-contact update and final policy wording review. Both generated Navi pages contain the visible approved address and matching `mailto:privacy@afterbedtimelabs.dev` link, retain the general GitHub Issues link and private-data warnings, and omit the temporary contact notices. Only the approved email address appears on those pages. Final source/output review found no personal destination inbox, credentials, private source, runtime data or workstation paths. This follow-up changes text and links only; the earlier responsive/theme review remains applicable.
 
 Build and output verification also passed with `SITE_URL=https://afterbedtimelabs.dev`; the final local output was then restored to the initial GitHub Pages origin. This tests metadata generation only and does not change DNS or deployment settings.
 
@@ -39,7 +54,7 @@ On this Windows host, dependency installation and validation require execution o
 
 ## First GitHub Pages deployment — only after approval
 
-1. Resolve the policy confirmations and private-contact blocker, rerun `npm run validate`, review the PR, and merge the approved changes into `main`.
+1. Approve the reviewed policy and operating commitments, confirm validation still passes, and merge the approved PR into `main`.
 2. Open this repository's **Settings → Pages → Build and deployment** and select **GitHub Actions** as Source. Leave **Custom domain** empty for this first launch. Do not add a CNAME or change DNS.
 3. Open **Actions → Deploy to GitHub Pages → Run workflow**. Select branch **main** and set `site_url` to exactly `https://afterbedtimelabs.github.io`. Run only after the owner explicitly approves publishing.
 4. Wait for both build and deploy jobs to succeed and approve the `github-pages` environment if it has required reviewers. The workflow installs the lockfile, checks, builds, verifies, uploads only `dist/`, and deploys that static artifact.
@@ -53,7 +68,7 @@ Expected public URLs after deployment:
 
 ## Later custom domain and Google OAuth Branding
 
-1. When ready, verify ownership of `afterbedtimelabs.dev` in GitHub to prevent domain takeover. Add it under **Settings → Pages → Custom domain** before directing DNS to Pages. Follow [GitHub's current domain instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site) for apex A/AAAA or ALIAS/ANAME records; copy current values from that guide instead of guessing DNS records. Remove conflicting records and confirm GitHub's DNS check. Enable Enforce HTTPS when the certificate is available.
+1. When ready, verify ownership of `afterbedtimelabs.dev` in GitHub to prevent domain takeover. Add it under **Settings → Pages → Custom domain** before directing DNS to Pages. Follow [GitHub's current domain instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site) for apex A/AAAA or ALIAS/ANAME records; copy current values from that guide instead of guessing DNS records. Change only the website-related records and preserve the existing Cloudflare Email Routing MX and mail-related TXT records. Confirm GitHub's DNS check and enable Enforce HTTPS when the certificate is available.
 2. Re-run the manual workflow with `site_url` set to `https://afterbedtimelabs.dev`. Check redirects from the Pages hostname, HTTPS, canonical/social metadata, sitemap, RSS, and robots. With Actions publishing, the Pages custom-domain setting controls hosting; a CNAME file alone does not configure it.
 3. In the existing Google Cloud project, open **Google Auth Platform → Branding**. Set the app name to **Navi Gmail Monitor** (and ensure the actual consent app name agrees), the real monitored user-support email, and developer contact details. Use the deployed app homepage `/navi/` and policy `/navi/privacy/` on the same hostname. Prefer the app-specific homepage over the studio root because it directly explains the Gmail feature. Add terms only if real reviewed terms exist.
 4. For the custom-domain phase use `https://afterbedtimelabs.dev/navi/` and `https://afterbedtimelabs.dev/navi/privacy/`, add `afterbedtimelabs.dev` to Authorized domains, and verify ownership through Google Search Console with an account associated with the Cloud project. For the initial Pages URLs, determine the registrable authorized-domain value Google accepts for that GitHub Pages hostname and complete its ownership requirements; do not assume owning a repository automatically satisfies Google domain verification. If Google will not accept the Pages host, complete the custom-domain phase first.

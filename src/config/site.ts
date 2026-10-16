@@ -5,6 +5,7 @@ export const site = {
   url: 'https://afterbedtimelabs.github.io',
   github: 'https://github.com/afterbedtimelabs',
   support: 'https://github.com/afterbedtimelabs/afterbedtimelabs.github.io/issues',
+  privacyEmail: 'privacy@afterbedtimelabs.dev',
   x: 'https://x.com/AfterBedtimeDev',
   xHandle: '@AfterBedtimeDev',
   // Supply the public profile URL here when one is available.
