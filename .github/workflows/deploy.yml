@@ -19,6 +19,8 @@ concurrency:
 
 jobs:
   build:
+    # Fail closed for non-main branches and tags, even on manual dispatch.
+    if: ${{ github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
@@ -53,6 +55,7 @@ jobs:
 
   deploy:
     needs: build
+    if: ${{ github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:

@@ -138,12 +138,29 @@ No push or deployment is needed for local review. After Isaac approves the local
 
 1. Commit and push the reviewed site and `package-lock.json` to the repository's default branch, or merge the reviewed changes there.
 2. In the GitHub repository, open **Settings → Pages** and select **GitHub Actions** as the source.
-3. Open **Actions → Deploy to GitHub Pages → Run workflow** on the reviewed branch.
+3. Open **Actions → Deploy to GitHub Pages → Run workflow** on **main**, after the reviewed changes have been merged there.
 4. Leave `site_url` as `https://afterbedtimelabs.github.io` until the custom domain is ready. Once it is ready, supply `https://afterbedtimelabs.dev`.
 
 The workflow installs with `npm ci`, runs Astro checks, builds and verifies `dist/`, uploads the Pages artifact, and then deploys it using the `github-pages` environment. Action versions are pinned to release commit hashes. Build permissions are read-only; Pages and OIDC write permissions are limited to the deploy job. You can configure required reviewers on the GitHub environment for an additional review gate.
 
-The workflow has only `workflow_dispatch`; it will not publish on a push. If automatic deployment is wanted later, add a `push` trigger for the chosen production branch and replace `${{ inputs.site_url }}` with a repository variable or another default that also works for push events.
+The workflow has only `workflow_dispatch`; it will not publish on a push. Both build and deploy jobs require a manual dispatch on exactly `refs/heads/main`. Selecting another branch or a tag skips both jobs. Build permissions remain `contents: read` and `pages: read`; only the deploy job receives `pages: write` and `id-token: write`.
+
+The branch guard restricts the source ref; it does not establish that a human approved a commit. The owner should manually review main-branch protection/rulesets and the `github-pages` environment's required reviewers and deployment branch policy (main only). Organization or environment administration settings are not modified by this repository change.
+
+## Private commit email for future commits
+
+In GitHub **Settings → Emails**, enable **Keep my email addresses private** and copy the exact GitHub-provided `noreply` address. Use the displayed address rather than guessing its numeric ID or username. GitHub can also block command-line pushes that expose a private email when that option is enabled.
+
+From this repository, configure future local commits with the copied value:
+
+```sh
+git config --local user.email "YOUR_EXACT_GITHUB_NOREPLY_ADDRESS"
+git config --local --get user.email
+```
+
+Replace the placeholder with the full address copied from GitHub before running the command. To apply it as the default for all local repositories, use `--global` instead of `--local`; a repository-local setting takes precedence. GitHub's email privacy setting for web commits does not automatically update local Git configuration on your computers.
+
+This affects newly created commits only. Existing public commits retain their recorded author/committer information. Do not amend/rebase published commits, rewrite history, or force-push to change earlier email metadata as part of this setup. See [GitHub's commit email guide](https://docs.github.com/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address).
 
 ## Custom domain
 

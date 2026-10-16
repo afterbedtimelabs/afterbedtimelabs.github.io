@@ -9,7 +9,7 @@ Status: ready for final owner review, subject to the operating sign-off below. D
 - Existing project source/demo links are omitted where no verified public destination is available. No placeholder buttons were added.
 - Added `/navi/` and `/navi/privacy/` using the existing static routing, SEO, typography, theme, and accessible site shell. Added a compact homepage introduction and persistent footer links.
 - Changed the default public origin to `https://afterbedtimelabs.github.io` across Astro, SEO fallback, and the verifier. `SITE_URL` still supports the later custom-domain build.
-- Kept the existing workflow unchanged: only `workflow_dispatch` can deploy. Pushing this branch or merging the PR does not run that deployment workflow.
+- Kept deployment manual: only `workflow_dispatch` can run the workflow, and both jobs now require exactly `refs/heads/main`. Other branches and tags are skipped. Pushing this branch or merging the PR does not run that deployment workflow.
 - The site has no backend, user account system, analytics, Gmail sign-in, or connection to a home network service. The theme toggle stores only a browser preference. GitHub Pages serves static files.
 
 ## Final policy and implementation review
@@ -48,9 +48,11 @@ Build and output verification also passed with `SITE_URL=https://afterbedtimelab
 
 Production-preview review covered Home, Projects, About, Writing, Navi, and the privacy policy at desktop and mobile sizes, with both themes. Home and both Navi routes had no horizontal overflow at 320, 768, 1024, and 1440 CSS pixels; 390-pixel phone views were also inspected. Policy section links worked with keyboard activation, and Skip to content moved focus to the main landmark. The browser reported no console errors. Home, Navi, policy, About, Projects, Writing, robots, RSS, and sitemap returned HTTP 200 without cookies or authorization headers. GitHub's repository API confirms public support issues are enabled.
 
-Public source/output review found no copied private repository source, credentials, personal email addresses, runtime data, or internal workstation paths. This was a focused source/content review and pattern scan, not a certification or a live production-security audit. The existing workflow's manual trigger, Node 24 setup, static artifact path, and deployment permission boundaries were reviewed; no Actions deployment was dispatched or exercised.
+Public source/output review found no copied private repository source, credentials, personal email addresses, runtime data, or internal workstation paths. This was a focused source/content review and pattern scan, not a certification or a live production-security audit. The workflow's manual trigger, main-only job guards, Node 24 setup, static artifact path, and deployment permission boundaries were reviewed; no Actions deployment was dispatched or exercised. Build permissions remain read-only; Pages/OIDC write permissions are confined to the deploy job. Main-branch protection/rulesets and environment reviewers/deployment branch restrictions remain for manual owner review. See the README for GitHub noreply email setup for future commits without rewriting published history.
 
 On this Windows host, dependency installation and validation require execution outside the filesystem/process sandbox. Restricted execution produced an Astro dependency `require is not defined` error; unrestricted execution succeeded without a dependency or source workaround. `npm ci` reported zero vulnerabilities.
+
+Final security follow-up: the targeted lockfile update changes only Vite from 8.3.2 to 8.3.4, within Astro's existing compatible range. `package.json`, Astro 7.3.5, and all other locked packages are unchanged. A clean `npm ci` installed Vite 8.3.4; a fresh full `npm audit --json` reported zero advisories at every severity. `npm run validate` passed (0 Astro errors/warnings/hints, 11 verified HTML pages, 1 excluded draft). The workflow YAML was parsed locally and both job conditions checked against manual main, feature-branch, tag, push and PR contexts; only manual main passed. Permissions were checked unchanged and minimal. `git diff --check` passed; only the lockfile, workflow and launch/commit-email documentation changed. These are local checks; no Actions run or deployment was started.
 
 ## First GitHub Pages deployment — only after approval
 
