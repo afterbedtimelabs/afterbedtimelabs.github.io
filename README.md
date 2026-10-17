@@ -2,7 +2,7 @@
 
 Isaac's personal workshop for software, AI, games, and experiments built outside the day job. The site pairs a small project portfolio with technical writing about what works, what fails, and what is learned along the way.
 
-The initial public origin is [afterbedtimelabs.github.io](https://afterbedtimelabs.github.io). The eventual custom domain is `afterbedtimelabs.dev`. The repository is the organization Pages site, `afterbedtimelabs/afterbedtimelabs.github.io`, so it uses the root URL `/` with no repository-name prefix.
+The public site is [afterbedtimelabs.dev](https://afterbedtimelabs.dev). It is hosted by the organization Pages repository, `afterbedtimelabs/afterbedtimelabs.github.io`, at `/` with no repository-name prefix. See the [current deployment audit and next steps](docs/portfolio-refresh.md) for the October 17 refresh and HTTPS-enforcement follow-up.
 
 ## Stack
 
@@ -40,7 +40,7 @@ npm run validate
 npm run preview -- --background --host 127.0.0.1 --port 4322
 ```
 
-Open [localhost:4322](http://localhost:4322) to review the production output, including the real empty writing state while the only article is still a draft. Manage the preview with `npm run preview -- status`, `npm run preview -- logs`, and `npm run preview -- stop`.
+Open [localhost:4322](http://localhost:4322) to review the production output, including the introductory article and topic archives. Manage the preview with `npm run preview -- status`, `npm run preview -- logs`, and `npm run preview -- stop`.
 
 | Command | Purpose |
 | --- | --- |
@@ -96,13 +96,13 @@ Optional frontmatter:
 
 Markdown supports headings, syntax-highlighted code, blockquotes, tables, and lists. Use an HTML `<figure>` with an `<img alt="…">` and `<figcaption>` for an inline image with a caption. MDX is available when an article needs an imported Astro component. Keep article components static unless interaction has a clear purpose.
 
-The single sample, `managing-ai-agents-in-powershell.md`, is intentionally short, unfinished, and marked as a draft. Replace its notes with Isaac's real experience before publishing it.
+The introductory article is `welcome-to-after-bedtime-labs.md`. The separate `managing-ai-agents-in-powershell.md` outline remains an unpublished draft. Replace its notes with Isaac's real experience before publishing it. Published tags automatically create topic archives; draft-only tags do not get production routes.
 
 ## Add or update a project
 
 Edit `src/data/projects.ts`. Each entry includes a stable `slug`, `name`, `category`, `summary`, `description` paragraphs, `areas`, `tags`, `artwork`, and `featured`. Copy an existing entry to preserve the typed shape. The details route `/projects/{slug}/` is generated automatically; `featured: true` also includes the project on Home.
 
-The available artwork treatments are `control`, `chiba`, `deck`, and `local`. They are lightweight abstract illustrations, not screenshots or claims about a project's finished appearance. New projects can reuse a treatment or extend the shared project artwork component.
+The available artwork treatments are `control`, `chiba`, `deck`, and `local`. They are lightweight abstract illustrations, not screenshots. Projects can instead supply an `image` with `src`, `alt`, `caption`, `width`, and `height`; see [asset provenance](docs/project-assets.md). Optional `status`, `availability`, and `next` fields explain current progress. `activeProjects` sets the display order; existing archived entries retain their detail routes.
 
 `repositoryURL` and `websiteURL` are optional. Add them only when the real public destination is known. Unknown URLs are omitted from the interface; there are no placeholder buttons.
 
@@ -112,9 +112,9 @@ Update `src/config/site.ts` for the public name, description, GitHub/X links, op
 
 The shared SEO component supplies titles, descriptions, canonical URLs, OpenGraph, and X metadata. The default social card is a local 1200 × 630 PNG, with its editable vector source in `public/social-card.svg`. Replace it with a custom PNG or JPEG and update `socialImage` and `imageAlt` in the site config. Articles can use their own hero image. `npm run brand-assets` regenerates the PNG and lamp favicons from the repository's vector branding, using Astro's existing Sharp dependency.
 
-Astro's `site` defaults to `https://afterbedtimelabs.github.io`. A `SITE_URL` environment variable overrides the public origin for a build, keeping canonical URLs, social URLs, sitemaps, RSS, and robots consistent. It must be an absolute HTTP(S) origin without a path, query, or fragment. The verifier and shared SEO fallback use the same initial hostname.
+Astro's `site` defaults to `https://afterbedtimelabs.dev`. A `SITE_URL` environment variable overrides the public origin for a build, keeping canonical URLs, social URLs, sitemaps, RSS, and robots consistent. It must be an absolute HTTP(S) origin without a path, query, or fragment. The verifier and shared SEO fallback use the same custom domain.
 
-For an initial build at the Pages hostname, use:
+To deliberately verify an alternate build at the Pages hostname, use:
 
 ```sh
 # macOS/Linux
@@ -132,18 +132,18 @@ The verifier must use the same `SITE_URL` as the build. A local dev or preview s
 
 ## GitHub Pages deployment
 
-Read [the launch review and approval checklist](docs/launch-review.md) before the first deployment. It records the verified privacy contact, implementation review, remaining operating commitments, validation results, and Google OAuth setup steps. `/navi/` is the app information page and `/navi/privacy/` is its public privacy policy. These are static pages; they do not initiate OAuth or connect to the local Navi application. The approved public privacy contact is `privacy@afterbedtimelabs.dev`; GitHub Issues remains the general public support channel.
+Read [the current deployment notes](docs/portfolio-refresh.md). The [historical launch review](docs/launch-review.md) records the Navi policy review and initial launch; its initial-hostname guidance is superseded by the current domain configuration. `/navi/` is the app information page and `/navi/privacy/` is its public privacy policy. These are static pages; they do not initiate OAuth or connect to the local Navi application. The approved public privacy contact is `privacy@afterbedtimelabs.dev`; GitHub Issues remains the general public support channel.
 
 No push or deployment is needed for local review. After Isaac approves the local result:
 
 1. Commit and push the reviewed site and `package-lock.json` to the repository's default branch, or merge the reviewed changes there.
 2. In the GitHub repository, open **Settings → Pages** and select **GitHub Actions** as the source.
 3. Open **Actions → Deploy to GitHub Pages → Run workflow** on **main**, after the reviewed changes have been merged there.
-4. Leave `site_url` as `https://afterbedtimelabs.github.io` until the custom domain is ready. Once it is ready, supply `https://afterbedtimelabs.dev`.
+4. Leave `site_url` as `https://afterbedtimelabs.dev`, the live custom domain.
 
 The workflow installs with `npm ci`, runs Astro checks, builds and verifies `dist/`, uploads the Pages artifact, and then deploys it using the `github-pages` environment. Action versions are pinned to release commit hashes. Build permissions are read-only; Pages and OIDC write permissions are limited to the deploy job. You can configure required reviewers on the GitHub environment for an additional review gate.
 
-The workflow has only `workflow_dispatch`; it will not publish on a push. Both build and deploy jobs require a manual dispatch on exactly `refs/heads/main`. Selecting another branch or a tag skips both jobs. Build permissions remain `contents: read` and `pages: read`; only the deploy job receives `pages: write` and `id-token: write`.
+The deployment workflow has only `workflow_dispatch`; it will not publish on a push. Both build and deploy jobs require a manual dispatch on exactly `refs/heads/main`. Selecting another branch or a tag skips both jobs. Build permissions remain `contents: read` and `pages: read`; only the deploy job receives `pages: write` and `id-token: write`. The separate `Validate website` workflow checks pull requests and pushes to main with read-only permissions and retains a `website-preview` build artifact for seven days; it never deploys.
 
 The branch guard restricts the source ref; it does not establish that a human approved a commit. The owner should manually review main-branch protection/rulesets and the `github-pages` environment's required reviewers and deployment branch policy (main only). Organization or environment administration settings are not modified by this repository change.
 
@@ -164,9 +164,9 @@ This affects newly created commits only. Existing public commits retain their re
 
 ## Custom domain
 
-DNS readiness has not been assumed. No Cloudflare settings are managed by this repository, and there is no active `public/CNAME` file.
+The apex domain and `www` resolve to GitHub Pages and HTTPS serves the site, verified October 17, 2026. No Cloudflare settings are managed by this repository, and there is no `public/CNAME` file. GitHub Actions hosting uses the custom domain in repository Pages settings; a CNAME file is not required.
 
-When ready, follow [GitHub's custom-domain guide](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site), verify ownership, and set `afterbedtimelabs.dev` under **Settings → Pages → Custom domain** before configuring the provider's DNS. Confirm GitHub's DNS and HTTPS checks before relying on the custom domain, then run the deployment workflow with the production origin. GitHub Actions deployment uses the Pages setting for the custom domain. If a `public/CNAME` record is wanted for repository portability, add a single line `afterbedtimelabs.dev` only after DNS is ready; that file alone does not configure DNS or the Actions-hosted domain.
+Confirm ownership verification and **Enforce HTTPS** in Pages settings. The current HTTP responses show enforcement still needs attention; see [the audit](docs/portfolio-refresh.md). Do not replace working DNS or email-routing records to deploy this content update. For later domain changes, follow [GitHub's custom-domain guide](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site).
 
 Further references: [Astro's Pages deployment guide](https://docs.astro.build/en/guides/deploy/github/), [GitHub's Pages workflow guide](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages), and [Astro's CLI reference](https://docs.astro.build/en/reference/cli-reference/).
 

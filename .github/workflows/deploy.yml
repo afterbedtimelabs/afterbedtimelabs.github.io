@@ -1,13 +1,13 @@
 name: Deploy to GitHub Pages
 
-# Deployment stays manual until the local result has been reviewed and approved.
+# Publishing stays a deliberate, main-only manual action after PR review.
 on:
   workflow_dispatch:
     inputs:
       site_url:
-        description: 'Public origin (use the Pages hostname until the custom domain is ready)'
+        description: 'Public origin (the live custom domain is afterbedtimelabs.dev)'
         required: true
-        default: 'https://afterbedtimelabs.github.io'
+        default: 'https://afterbedtimelabs.dev'
         type: string
 
 permissions:

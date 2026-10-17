@@ -1,10 +1,11 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { articleHref, formatDate, getWriting, readingTime } from '../../lib/writing';
+import { articleHref, formatDate, getTopics, getWriting, readingTime, topicHref } from '../../lib/writing';
 
 const writing = await getWriting();
 const published = writing.filter((entry) => !entry.data.draft);
 const drafts = writing.filter((entry) => entry.data.draft);
+const topics = await getTopics();
 ---
 
 <BaseLayout
@@ -14,10 +15,12 @@ const drafts = writing.filter((entry) => entry.data.draft);
   <div class="container writing-page">
     <header class="writing-heading">
       <p class="eyebrow">The notebook</p>
-      <h1 class="page-heading">Writing.</h1>
+      <h1 class="page-heading">Notes from the lab.</h1>
       <p class="page-intro">Notes from the workbench. What I’m building, what I’m trying, and what I learn along the way.</p>
       <a class="text-link feed-link" href="/rss.xml">Subscribe via RSS <span aria-hidden="true">↗</span></a>
     </header>
+
+    {topics.length > 0 && <nav class="topic-navigation" aria-label="Browse writing by topic"><span class="eyebrow">Browse by topic</span><ul role="list">{topics.map((topic) => <li><a class="tag" href={topicHref(topic)}>{topic}</a></li>)}</ul></nav>}
 
     <section aria-labelledby="published-writing">
       <div class="writing-section-heading">
@@ -36,7 +39,7 @@ const drafts = writing.filter((entry) => entry.data.draft);
                 <h3><a href={articleHref(entry)}>{entry.data.title}</a></h3>
                 <p>{entry.data.description}</p>
                 {entry.data.tags.length > 0 && <ul class="article-tags" role="list" aria-label="Topics">
-                  {entry.data.tags.map((tag) => <li class="tag">{tag}</li>)}
+                  {entry.data.tags.map((tag) => <li><a class="tag" href={topicHref(tag)}>{tag}</a></li>)}
                 </ul>}
               </div>
               <span class="article-arrow" aria-hidden="true">↗</span>
@@ -86,6 +89,10 @@ const drafts = writing.filter((entry) => entry.data.draft);
 <style>
   .writing-page { padding-block: 4.5rem 5rem; }
   .writing-heading { margin-bottom: 4rem; max-width: 46rem; }
+  .topic-navigation { display: flex; align-items: center; flex-wrap: wrap; gap: 16px 24px; border-top: 1px solid var(--border); padding-top: 24px; margin-bottom: 36px; }
+  .topic-navigation ul { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 0; }
+  .topic-navigation a { padding: 10px 14px; }
+  .article-tags a { padding-block: 5px; }
   .feed-link { display: inline-flex; align-items: center; gap: .5rem; margin-top: 1.4rem; font-size: .9rem; }
   .writing-section-heading { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 1.25rem; }
   .entry-count { font-size: .78rem; color: var(--muted); font-family: var(--font-mono); }
