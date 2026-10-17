@@ -1,0 +1,25 @@
+---
+import BaseLayout from './BaseLayout.astro';
+interface Props { title: string; description: string; privacy?: boolean; }
+const { title, description, privacy = false } = Astro.props;
+---
+<BaseLayout title={title} description={description}>
+  <article class="reading-container navi-page">
+    <nav class="navi-navigation" aria-label="Navi navigation">
+      <a href="/">After Bedtime Labs</a><span aria-hidden="true">/</span><a href="/navi/" aria-current={!privacy ? 'page' : undefined}>Navi</a>
+      {privacy && <><span aria-hidden="true">/</span><span>Privacy</span></>}
+    </nav>
+    <header class="navi-header"><p class="eyebrow">{privacy ? 'Your data, explained' : 'From the workbench'}</p><h1 class="page-heading">{title}</h1><slot name="intro" /></header>
+    <div class="prose"><slot /></div>
+  </article>
+</BaseLayout>
+<style>
+  .navi-page { padding-top: 44px; }
+  .navi-navigation { display: flex; flex-wrap: wrap; gap: 9px; color: var(--muted); font-size: 12px; }
+  .navi-header { margin-block: 42px 38px; padding-bottom: 32px; border-bottom: 1px solid var(--border); }
+  .page-heading { font-size: clamp(36px, 5.8vw, 60px); overflow-wrap: anywhere; }
+  .prose :global(code) { overflow-wrap: anywhere; }
+  .prose :global(.policy-navigation) { padding: 22px 25px; background: var(--surface); border: 1px solid var(--border); border-radius: 4px; font-size: 15px; }
+  .prose :global(.policy-navigation ul) { margin-bottom: 0; }
+  @media (max-width: 760px) { .navi-page { padding-top: 28px; } .navi-header { margin-top: 30px; } }
+</style>

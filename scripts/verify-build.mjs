@@ -4,7 +4,7 @@ import { resolve, relative } from 'node:path';
 // Inspect the deployable output, so broken links and leaked drafts fail locally
 // and in the Pages workflow. No browser or extra dependency is required.
 const root = resolve('dist');
-const origin = new URL(process.env.SITE_URL || 'https://afterbedtimelabs.dev').origin;
+const origin = new URL(process.env.SITE_URL || 'https://afterbedtimelabs.github.io').origin;
 const errors = [];
 const assert = (condition, message) => { if (!condition) errors.push(message); };
 const decode = (value) => value.replace(/&(#x[\da-f]+|#\d+|amp|quot|apos|lt|gt);/gi, (_, entity) => {
@@ -66,11 +66,20 @@ function checkLocalURL(raw, from, label, checkFragment = true) {
   }
 }
 
-for (const required of ['index.html', 'writing/index.html', 'projects/index.html', 'about/index.html', '404.html']) {
+for (const required of ['index.html', 'writing/index.html', 'projects/index.html', 'about/index.html', 'navi/index.html', 'navi/privacy/index.html', '404.html']) {
   assert(files.has(required), `Missing required page: ${required}`);
 }
 
 const titles = new Set();
+for (const file of ['index.html', 'navi/index.html']) {
+  const links = documents.get(file)?.tags.filter((tag) => tag.name === 'a').map((tag) => tag.attrs.href) || [];
+  assert(links.includes('/navi/privacy/'), `${file}: missing discoverable Navi privacy policy link`);
+}
+for (const file of ['navi/index.html', 'navi/privacy/index.html']) {
+  const doc = documents.get(file);
+  assert(doc?.source.includes('https://www.googleapis.com/auth/gmail.readonly'), `${file}: missing exact Gmail permission disclosure`);
+  assert(!doc?.tags.some((tag) => tag.name === 'meta' && tag.attrs.name === 'robots' && /noindex/.test(tag.attrs.content)), `${file}: OAuth information page must be indexable`);
+}
 for (const [file, doc] of documents) {
   const meta = (name) => doc.tags.find((tag) => tag.name === 'meta' && (tag.attrs.name === name || tag.attrs.property === name))?.attrs.content;
   const title = decode(doc.source.match(/<title\b[^>]*>([\s\S]*?)<\/title>/i)?.[1] || '').trim();

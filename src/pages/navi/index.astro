@@ -1,0 +1,21 @@
+---
+import NaviLayout from '../../layouts/NaviLayout.astro';
+import { site } from '../../config/site';
+---
+<NaviLayout title="Navi Gmail Monitor" description="A local Gmail companion from After Bedtime Labs for organizing financial email, with read-only access and optional private Discord features.">
+  <p slot="intro" class="page-intro">A quieter way to keep track of financial email. Read-only Gmail access, local analysis, and useful observations from the messages you already receive.</p>
+  <p>Navi Gmail Monitor is a locally operated software project by Isaac at After Bedtime Labs. It looks for bills, statements, payment notices, subscriptions, and renewals in an authorized Gmail account, then organizes financial observations for the owner in Navi’s local dashboard, Mission Control.</p>
+  <p><a href="/navi/privacy/">Read the Navi Gmail Monitor privacy policy</a> before connecting an account.</p>
+  <h2>What it helps with</h2>
+  <ul><li>Review recent financial messages, explicit due dates, payment notices, and subscriptions.</li><li>Review and approve suggested vendor names, and see observations from retained history.</li><li>Notice supported amount changes and approaching due dates.</li><li>Optionally receive generic private Discord alerts or ask for selected financial observations through owner-only Discord text and restricted voice features.</li></ul>
+  <p>These are observations from email and can be incomplete or mistaken. Navi does not verify account balances, reconcile payments, or make payments. Check the original message and provider account before acting.</p>
+  <h2>Permission with a clear purpose</h2>
+  <p>Navi requests only <code>https://www.googleapis.com/auth/gmail.readonly</code>. This permission can read email throughout the authorized mailbox; Navi uses searches and candidate filtering to focus on financial messages. Message bodies are needed to identify financial details, so metadata-only permission is insufficient.</p>
+  <p>Navi cannot send, edit, archive, delete, label, or mark email as read. It does not download attachments or follow links and remote images in messages. You authorize access directly with Google and can revoke it at any time.</p>
+  <h2>Local processing, optional connections</h2>
+  <p>Message analysis runs on the operator’s computer, with an optional local model and no cloud model fallback. Navi retains structured financial history locally rather than raw message bodies. If you enable Discord features, Discord processes the alerts or selected text/audio responses described in the <a href="/navi/privacy/#sharing">sharing section of the privacy policy</a>.</p>
+  <h2>Availability and support</h2>
+  <p>This page introduces the project; it does not offer browser-based Gmail sign-in or a public download. Gmail authorization happens separately in the locally operated application. Reading this website requires no account and does not connect your Gmail account.</p>
+  <p>For general support and feedback, <a href={site.support}>open an issue on the After Bedtime Labs website repository</a>. Issues are public: do not include personal information, email contents, financial information, account identifiers, or credentials.</p>
+  <p>For confidential privacy or data-related inquiries, email <a href={`mailto:${site.privacyEmail}`}>{site.privacyEmail}</a>. Include only the details needed to explain your question; never send passwords, OAuth tokens, or credentials.</p>
+</NaviLayout>

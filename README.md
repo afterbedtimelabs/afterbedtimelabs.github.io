@@ -2,7 +2,7 @@
 
 Isaac's personal workshop for software, AI, games, and experiments built outside the day job. The site pairs a small project portfolio with technical writing about what works, what fails, and what is learned along the way.
 
-The eventual production domain is [afterbedtimelabs.dev](https://afterbedtimelabs.dev). The repository is the organization Pages site, `afterbedtimelabs/afterbedtimelabs.github.io`, so it uses the root URL `/` with no repository-name prefix.
+The initial public origin is [afterbedtimelabs.github.io](https://afterbedtimelabs.github.io). The eventual custom domain is `afterbedtimelabs.dev`. The repository is the organization Pages site, `afterbedtimelabs/afterbedtimelabs.github.io`, so it uses the root URL `/` with no repository-name prefix.
 
 ## Stack
 
@@ -112,7 +112,7 @@ Update `src/config/site.ts` for the public name, description, GitHub/X links, op
 
 The shared SEO component supplies titles, descriptions, canonical URLs, OpenGraph, and X metadata. The default social card is a local 1200 × 630 PNG, with its editable vector source in `public/social-card.svg`. Replace it with a custom PNG or JPEG and update `socialImage` and `imageAlt` in the site config. Articles can use their own hero image. `npm run brand-assets` regenerates the PNG and lamp favicons from the repository's vector branding, using Astro's existing Sharp dependency.
 
-Astro's `site` defaults to `https://afterbedtimelabs.dev`. A `SITE_URL` environment variable overrides the public origin for a build, keeping canonical URLs, social URLs, sitemaps, RSS, and robots consistent. It must be an absolute HTTP(S) origin without a path, query, or fragment.
+Astro's `site` defaults to `https://afterbedtimelabs.github.io`. A `SITE_URL` environment variable overrides the public origin for a build, keeping canonical URLs, social URLs, sitemaps, RSS, and robots consistent. It must be an absolute HTTP(S) origin without a path, query, or fragment. The verifier and shared SEO fallback use the same initial hostname.
 
 For an initial build at the Pages hostname, use:
 
@@ -132,16 +132,35 @@ The verifier must use the same `SITE_URL` as the build. A local dev or preview s
 
 ## GitHub Pages deployment
 
+Read [the launch review and approval checklist](docs/launch-review.md) before the first deployment. It records the verified privacy contact, implementation review, remaining operating commitments, validation results, and Google OAuth setup steps. `/navi/` is the app information page and `/navi/privacy/` is its public privacy policy. These are static pages; they do not initiate OAuth or connect to the local Navi application. The approved public privacy contact is `privacy@afterbedtimelabs.dev`; GitHub Issues remains the general public support channel.
+
 No push or deployment is needed for local review. After Isaac approves the local result:
 
 1. Commit and push the reviewed site and `package-lock.json` to the repository's default branch, or merge the reviewed changes there.
 2. In the GitHub repository, open **Settings → Pages** and select **GitHub Actions** as the source.
-3. Open **Actions → Deploy to GitHub Pages → Run workflow** on the reviewed branch.
+3. Open **Actions → Deploy to GitHub Pages → Run workflow** on **main**, after the reviewed changes have been merged there.
 4. Leave `site_url` as `https://afterbedtimelabs.github.io` until the custom domain is ready. Once it is ready, supply `https://afterbedtimelabs.dev`.
 
 The workflow installs with `npm ci`, runs Astro checks, builds and verifies `dist/`, uploads the Pages artifact, and then deploys it using the `github-pages` environment. Action versions are pinned to release commit hashes. Build permissions are read-only; Pages and OIDC write permissions are limited to the deploy job. You can configure required reviewers on the GitHub environment for an additional review gate.
 
-The workflow has only `workflow_dispatch`; it will not publish on a push. If automatic deployment is wanted later, add a `push` trigger for the chosen production branch and replace `${{ inputs.site_url }}` with a repository variable or another default that also works for push events.
+The workflow has only `workflow_dispatch`; it will not publish on a push. Both build and deploy jobs require a manual dispatch on exactly `refs/heads/main`. Selecting another branch or a tag skips both jobs. Build permissions remain `contents: read` and `pages: read`; only the deploy job receives `pages: write` and `id-token: write`.
+
+The branch guard restricts the source ref; it does not establish that a human approved a commit. The owner should manually review main-branch protection/rulesets and the `github-pages` environment's required reviewers and deployment branch policy (main only). Organization or environment administration settings are not modified by this repository change.
+
+## Private commit email for future commits
+
+In GitHub **Settings → Emails**, enable **Keep my email addresses private** and copy the exact GitHub-provided `noreply` address. Use the displayed address rather than guessing its numeric ID or username. GitHub can also block command-line pushes that expose a private email when that option is enabled.
+
+From this repository, configure future local commits with the copied value:
+
+```sh
+git config --local user.email "YOUR_EXACT_GITHUB_NOREPLY_ADDRESS"
+git config --local --get user.email
+```
+
+Replace the placeholder with the full address copied from GitHub before running the command. To apply it as the default for all local repositories, use `--global` instead of `--local`; a repository-local setting takes precedence. GitHub's email privacy setting for web commits does not automatically update local Git configuration on your computers.
+
+This affects newly created commits only. Existing public commits retain their recorded author/committer information. Do not amend/rebase published commits, rewrite history, or force-push to change earlier email metadata as part of this setup. See [GitHub's commit email guide](https://docs.github.com/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address).
 
 ## Custom domain
 
