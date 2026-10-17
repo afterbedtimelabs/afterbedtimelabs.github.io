@@ -27,6 +27,14 @@ There is no observed DNS or certificate blocker to deploying this refresh. Remai
 
 Image provenance is recorded in [project-assets.md](project-assets.md).
 
+## Verification status
+
+- Clean `npm ci`: 285 packages installed, zero reported vulnerabilities.
+- Astro/TypeScript diagnostics: 29 files, zero errors, warnings, or hints. This Windows sandbox required a local-only Vite `resolve.preserveSymlinks` setting to avoid network-drive probing; that setting is outside the repository and does not change the production configuration.
+- Direct Astro/TypeScript syntax compilation: 25 source files passed. Workflow parsing confirmed read-only PR checks, the custom-domain default, and both main-only manual deployment guards. Screenshot dimensions and absence of EXIF/XMP metadata were checked. `git diff --check` passed.
+- Production build and output verification are **not yet confirmed**: the sandbox blocked the compiler subprocess with `spawn EPERM`. Consequently, responsive browser, keyboard, and rendered-page checks remain to be completed on the production build. Source checks are not a substitute for these checks.
+- Run `npm run validate` in a normal development terminal or in the new PR workflow, then review the static preview at 320, 390, 768, and 1440 pixels in both themes before deployment. Verify skip navigation, article contents links, topic archives, and the theme toggle.
+
 ## Deploy after review
 
 1. Review the PR preview, public wording, and introductory article. Merge the PR when ready.
