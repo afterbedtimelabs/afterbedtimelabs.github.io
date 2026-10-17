@@ -1,0 +1,32 @@
+---
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { articleHref, formatDate, getPublishedWriting, getTopics, readingTime, topicSlug } from '../../../lib/writing';
+export const getStaticPaths = (async () => (await getTopics()).map((topic) => ({
+  params: { topic: topicSlug(topic) }, props: { topic },
+}))) satisfies GetStaticPaths;
+interface Props { topic: string; }
+const { topic } = Astro.props;
+const entries = (await getPublishedWriting()).filter((entry) => entry.data.tags.includes(topic));
+---
+<BaseLayout title={`${topic} — Writing`} description={`Notes on ${topic.toLowerCase()} from After Bedtime Labs. Explore the projects, experiments, and decisions behind the work.`}>
+  <div class="reading-container topic-page">
+    <a class="text-link" href="/writing/"><span aria-hidden="true">←</span> All writing</a>
+    <header><p class="eyebrow">From the notebook</p><h1 class="page-heading">{topic}.</h1><p class="page-intro">{entries.length} {entries.length === 1 ? 'note' : 'notes'} from the workbench.</p></header>
+    <ul role="list">
+      {entries.map((entry) => <li><p class="meta"><time datetime={entry.data.publishDate.toISOString()}>{formatDate(entry.data.publishDate)}</time> · {readingTime(entry.body)}</p><h2><a href={articleHref(entry)}>{entry.data.title}</a></h2><p>{entry.data.description}</p></li>)}
+    </ul>
+    <a class="text-link" href="/rss.xml">Follow new notes via RSS <span aria-hidden="true">↗</span></a>
+  </div>
+</BaseLayout>
+<style>
+  .topic-page { padding-block: 48px 64px; }
+  header { margin-block: 42px; }
+  ul { padding: 0; list-style: none; margin: 0 0 32px; }
+  li { border-block: 1px solid var(--border); padding-block: 28px; }
+  li + li { border-top: 0; }
+  .meta { font-size: 12px; color: var(--muted); margin-bottom: 14px; }
+  h2 { font-size: 26px; margin-bottom: 12px; }
+  h2 a { text-decoration: none; }
+  li > p:last-child { color: var(--muted); }
+</style>

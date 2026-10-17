@@ -22,6 +22,18 @@ export function articleHref(entry: WritingEntry): string {
   return `/writing/${entry.id.split('/').map(encodeURIComponent).join('/')}/`;
 }
 
+export function topicSlug(topic: string): string {
+  return topic.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+}
+
+export function topicHref(topic: string): string {
+  return `/writing/topics/${topicSlug(topic)}/`;
+}
+
+export async function getTopics(): Promise<string[]> {
+  return [...new Set((await getPublishedWriting()).flatMap((entry) => entry.data.tags))].sort();
+}
+
 export function formatDate(date: Date): string {
   return new Intl.DateTimeFormat('en-US', {
     year: 'numeric',

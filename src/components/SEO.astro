@@ -17,10 +17,29 @@ const pageTitle = title ? `${title} · ${site.name}` : `${site.name} — Softwar
 const baseURL = Astro.site ?? new URL(site.url);
 const canonical = canonicalURL ?? new URL(Astro.url.pathname, baseURL).href;
 const socialImage = image ? new URL(image, baseURL).href : undefined;
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': type === 'article' ? 'BlogPosting' : (Astro.url.pathname === '/' ? 'WebSite' : 'WebPage'),
+  name: pageTitle,
+  description,
+  url: canonical,
+  ...(type === 'article' ? {
+    headline: title,
+    datePublished: publishDate?.toISOString(),
+    dateModified: (updatedDate ?? publishDate)?.toISOString(),
+    author: { '@type': 'Person', name: site.author, url: new URL('/about/', baseURL).href },
+    publisher: { '@type': 'Organization', name: site.name, url: baseURL.href },
+    mainEntityOfPage: canonical,
+    image: socialImage,
+  } : {}),
+};
 ---
 <title>{pageTitle}</title>
 <meta name="description" content={description} />
 <meta name="author" content={site.author} />
+<meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#161c1a" media="(prefers-color-scheme: dark)" />
+<script type="application/ld+json" is:inline set:html={JSON.stringify(structuredData).replace(/</g, '\\u003c')} />
 <link rel="canonical" href={canonical} />
 {noindex && <meta name="robots" content="noindex, nofollow" />}
 <meta property="og:site_name" content={site.name} />

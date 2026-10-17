@@ -2,7 +2,7 @@ export const site = {
   name: 'After Bedtime Labs',
   author: 'Isaac',
   description: 'Software, AI, games, and experiments by Isaac. A personal workshop for things built after the day job and bedtime.',
-  url: 'https://afterbedtimelabs.github.io',
+  url: 'https://afterbedtimelabs.dev',
   github: 'https://github.com/afterbedtimelabs',
   support: 'https://github.com/afterbedtimelabs/afterbedtimelabs.github.io/issues',
   privacyEmail: 'privacy@afterbedtimelabs.dev',

@@ -1,7 +1,7 @@
 ---
 import type { GetStaticPaths } from 'astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import ProjectArtwork from '../../components/ProjectArtwork.astro';
+import ProjectMedia from '../../components/ProjectMedia.astro';
 import { projects, type Project } from '../../data/projects';
 
 export const getStaticPaths = (() => projects.map((project) => ({
@@ -16,23 +16,25 @@ interface Props {
 const { project } = Astro.props;
 ---
 
-<BaseLayout title={project.name} description={project.summary}>
+<BaseLayout title={project.name} description={project.summary} image={project.image?.src} imageAlt={project.image?.alt}>
   <div class="container project-page">
     <a class="back-link" href="/projects/"><span aria-hidden="true">←</span> All projects</a>
     <header class="project-header">
       <p class="eyebrow">{project.category}</p>
       <h1 class="page-heading">{project.name}</h1>
       <p class="page-intro">{project.summary}</p>
+      {project.status && <p class="project-state"><span class="tag">{project.status}</span> {project.availability}</p>}
     </header>
-    <div class="project-hero"><ProjectArtwork artwork={project.artwork} /></div>
+    <figure class="project-figure"><div class="project-hero"><ProjectMedia project={project} eager /></div><figcaption>{project.image?.caption ?? 'An abstract illustration from the lab’s original artwork.'}</figcaption></figure>
     <div class="project-detail">
       <section class="project-description" aria-labelledby="about-project">
-        <h2 id="about-project">About this experiment</h2>
+        <h2 id="about-project">Inside the project</h2>
         {project.description.map((paragraph) => <p>{paragraph}</p>)}
         {(project.repositoryURL || project.websiteURL) && (
           <div class="project-links">
             {project.repositoryURL && <a class="text-link" href={project.repositoryURL}>View source <span aria-hidden="true">↗</span></a>}
-            {project.websiteURL && <a class="text-link" href={project.websiteURL}>Visit project <span aria-hidden="true">↗</span></a>}
+            {project.websiteURL && <a class="text-link" href={project.websiteURL}>{project.slug === 'riku' ? 'Navi Gmail Monitor information' : 'Visit project'} <span aria-hidden="true">↗</span></a>}
+            {project.slug === 'riku' && <a class="text-link" href="/navi/privacy/">Gmail Monitor privacy policy <span aria-hidden="true">↗</span></a>}
           </div>
         )}
       </section>
@@ -41,6 +43,7 @@ const { project } = Astro.props;
         <ul class="areas-list">{project.areas.map((area) => <li>{area}</li>)}</ul>
         <h2 class="topic-heading">Project topics</h2>
         <ul class="project-tags">{project.tags.map((tag) => <li class="tag">{tag}</li>)}</ul>
+        {project.next && <div class="next-step"><h2>On the workbench</h2><p>{project.next}</p></div>}
       </aside>
     </div>
     <div class="project-footer">
@@ -55,7 +58,12 @@ const { project } = Astro.props;
   .back-link { display: inline-flex; align-items: center; gap: 0.6rem; margin-top: 3.5rem; color: var(--muted); text-decoration: none; font-size: 0.84rem; }
   .back-link:hover { color: var(--text); }
   .project-header { padding-top: 2.75rem; }
-  .project-hero { margin: 2.75rem 0 3.5rem; height: 300px; border: 1px solid var(--border); border-radius: 7px; overflow: hidden; }
+  .project-state { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; font-size: 12px; color: var(--muted); margin-top: 24px; }
+  .project-figure { margin: 2.75rem 0 3.5rem; }
+  .project-hero { aspect-ratio: 16 / 9; max-height: 630px; border: 1px solid var(--border); border-radius: 7px; overflow: hidden; }
+  figcaption { color: var(--muted); font-size: 12px; margin-top: 12px; }
+  .next-step { margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--border); }
+  .next-step p { color: var(--muted); font-size: 14px; }
   .project-detail { display: grid; grid-template-columns: minmax(0, 2fr) minmax(210px, 1fr); gap: 4rem; }
   h2 { margin: 0 0 1.25rem; font-size: 1.25rem; letter-spacing: -0.035em; }
   .project-description p { color: var(--muted); line-height: 1.85; margin: 0 0 1.2rem; }
@@ -71,7 +79,7 @@ const { project } = Astro.props;
   @media (max-width: 700px) {
     .back-link { margin-top: 2rem; }
     .project-header { padding-top: 2rem; }
-    .project-hero { height: 210px; margin: 2rem 0 2.5rem; }
+    .project-figure { margin: 2rem 0 2.5rem; }
     .project-detail { grid-template-columns: 1fr; gap: 2rem; }
     .project-sidebar { border-left: 0; border-top: 1px solid var(--border); padding: 1.75rem 0 0; }
   }

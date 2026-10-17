@@ -1,0 +1,22 @@
+---
+import ProjectArtwork from './ProjectArtwork.astro';
+import type { Project } from '../data/projects';
+interface Props { project: Project; eager?: boolean; decorative?: boolean; }
+const { project, eager = false, decorative = false } = Astro.props;
+---
+{project.image ? (
+  <img src={project.image.src} alt={decorative ? '' : project.image.alt}
+    width={project.image.width} height={project.image.height}
+    loading={eager ? 'eager' : 'lazy'} decoding="async" />
+) : (
+  <div class="illustration">
+    <ProjectArtwork artwork={project.artwork} />
+    {project.slug === 'riku' && <span class="art-label">Riku / companion study <span aria-hidden="true">✳</span></span>}
+  </div>
+)}
+<style>
+  img { width: 100%; height: 100%; object-fit: contain; background: #101512; }
+  .illustration { height: 100%; position: relative; }
+  .art-label { position: absolute; left: 22px; right: 22px; bottom: 16px; display: flex; justify-content: space-between; color: #b2cdcb; font: 10px var(--font-mono); text-transform: uppercase; letter-spacing: .12em; }
+  :global([data-theme='light']) .art-label { color: #466562; }
+</style>

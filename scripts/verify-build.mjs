@@ -4,7 +4,7 @@ import { resolve, relative } from 'node:path';
 // Inspect the deployable output, so broken links and leaked drafts fail locally
 // and in the Pages workflow. No browser or extra dependency is required.
 const root = resolve('dist');
-const origin = new URL(process.env.SITE_URL || 'https://afterbedtimelabs.github.io').origin;
+const origin = new URL(process.env.SITE_URL || 'https://afterbedtimelabs.dev').origin;
 const errors = [];
 const assert = (condition, message) => { if (!condition) errors.push(message); };
 const decode = (value) => value.replace(/&(#x[\da-f]+|#\d+|amp|quot|apos|lt|gt);/gi, (_, entity) => {
@@ -66,7 +66,7 @@ function checkLocalURL(raw, from, label, checkFragment = true) {
   }
 }
 
-for (const required of ['index.html', 'writing/index.html', 'projects/index.html', 'about/index.html', 'navi/index.html', 'navi/privacy/index.html', '404.html']) {
+for (const required of ['index.html', 'writing/index.html', 'projects/index.html', 'projects/riku/index.html', 'projects/dungeon-deckbuilder/index.html', 'projects/midnight-chiba/index.html', 'writing/welcome-to-after-bedtime-labs/index.html', 'writing/topics/studio-notes/index.html', 'about/index.html', 'navi/index.html', 'navi/privacy/index.html', '404.html']) {
   assert(files.has(required), `Missing required page: ${required}`);
 }
 
@@ -92,6 +92,14 @@ for (const [file, doc] of documents) {
   assert(Boolean(doc.tags.find((tag) => tag.name === 'html')?.attrs.lang), `${file}: missing document language`);
   assert(doc.tags.filter((tag) => tag.name === 'h1').length === 1, `${file}: expected one h1`);
   assert(doc.tags.filter((tag) => tag.name === 'main').length === 1, `${file}: expected one main landmark`);
+  const schemaSource = doc.source.match(/<script\b[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/i)?.[1];
+  try {
+    const schema = JSON.parse(schemaSource || 'null');
+    assert(schema?.['@context'] === 'https://schema.org', `${file}: missing structured metadata`);
+    if (meta('og:type') === 'article') {
+      assert(schema?.['@type'] === 'BlogPosting' && schema.datePublished && schema.author?.name, `${file}: incomplete article metadata`);
+    }
+  } catch { errors.push(`${file}: invalid structured metadata JSON`); }
   const canonical = doc.tags.find((tag) => tag.name === 'link' && tag.attrs.rel === 'canonical')?.attrs.href;
   let canonicalURL;
   try { canonicalURL = new URL(canonical); } catch { errors.push(`${file}: missing or invalid absolute canonical`); }
@@ -114,6 +122,7 @@ for (const [file, doc] of documents) {
   for (const tag of doc.tags) {
     if (tag.name === 'img') assert('alt' in tag.attrs, `${file}: image lacks alt text`);
     if ('href' in tag.attrs) {
+      assert(!/github\.com\/isaacwldr\/(?:bot-monitor|bot-monitot|dungeon-deckbuilder|midnight-chiba)(?:\/|$)/.test(tag.attrs.href), `${file}: link to a private project repository`);
       assert(!(tag.name === 'a' && tag.attrs.href === '#'), `${file}: placeholder link`);
       // An explicit external article canonical is allowed.
       if (tag.attrs.rel !== 'canonical') checkLocalURL(tag.attrs.href, doc.path, `${file} ${tag.name} href`);
@@ -153,6 +162,7 @@ for (const [file, doc] of documents) {
 assert(files.has('rss.xml'), 'Missing RSS feed');
 const rss = files.has('rss.xml') ? await readFile(resolve(root, 'rss.xml'), 'utf8') : '';
 assert(/<channel>/.test(rss), 'RSS feed lacks a channel');
+assert(rss.includes(`${origin}/writing/welcome-to-after-bedtime-labs/`), 'Introductory article is missing from RSS');
 for (const match of rss.matchAll(/<link>(.*?)<\/link>/g)) {
   const url = decode(match[1]);
   assert(url.startsWith(`${origin}/`), 'RSS link has an incorrect public origin');

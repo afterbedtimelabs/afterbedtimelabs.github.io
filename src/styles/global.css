@@ -45,13 +45,13 @@
       color-scheme: dark;
     }
   }
-  html { scroll-padding-top: 110px; }
+  html { scroll-padding-top: 145px; }
   body { background: var(--bg); color: var(--text); font-family: var(--font-sans); font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
   a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 4px; }
   a:hover { color: var(--accent); }
   :focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; border-radius: 2px; }
   ::selection { background: var(--accent); color: var(--bg); }
-  h1, h2, h3 { font-weight: 600; line-height: 1.2; letter-spacing: -.035em; }
+  h1, h2, h3 { font-weight: 600; line-height: 1.2; letter-spacing: -.035em; overflow-wrap: break-word; }
   p { text-wrap: pretty; }
   main { min-height: 60vh; }
   main:focus { outline: none; }
@@ -79,7 +79,7 @@
   .brand-period { color: var(--accent); }
   .header-controls { display: flex; align-items: center; gap: 32px; }
   .header-controls nav { display: flex; align-items: center; gap: 28px; }
-  .header-controls nav a { position: relative; color: var(--muted); font-size: 13px; font-weight: 500; text-decoration: none; padding-block: 10px; }
+  .header-controls nav a { position: relative; color: var(--muted); font-size: 13px; font-weight: 500; text-decoration: none; padding-block: 12px; min-height: 44px; display: inline-flex; align-items: center; }
   .header-controls nav a:hover, .header-controls nav a[aria-current] { color: var(--text); }
   .header-controls nav a[aria-current]::after { content: ''; position: absolute; left: 0; bottom: 1px; width: 100%; height: 2px; background: var(--accent); }
   .site-footer { margin-top: 100px; border-top: 1px solid var(--border); }
@@ -122,13 +122,15 @@
     .header-controls { width: 100%; justify-content: space-between; gap: 20px; }
     .header-controls nav { gap: 25px; }
     .header-controls nav a { font-size: 12px; }
-    .header-controls .theme-toggle { width: 30px; height: 30px; }
+    .header-controls .theme-toggle { width: 44px; height: 44px; flex-shrink: 0; }
     .page-intro { font-size: 17px; }
     .footer-inner { align-items: flex-start; }
     .social-links { gap: 16px; flex-wrap: wrap; justify-content: flex-end; }
     .prose { font-size: 17px; }
   }
   @media (max-width: 420px) {
+    .header-controls nav { gap: 18px; }
+    .header-controls { gap: 12px; }
     .footer-inner { flex-direction: column; }
     .footer-right { text-align: left; }
     .product-links { justify-content: flex-start; }
