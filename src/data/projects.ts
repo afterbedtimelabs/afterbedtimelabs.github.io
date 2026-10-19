@@ -13,6 +13,7 @@ export interface Project {
   status?: string;
   availability?: string;
   image?: { src: string; alt: string; caption: string; width: number; height: number };
+  introduction?: string;
   next?: string;
   archived?: boolean;
   repositoryURL?: string;
@@ -23,11 +24,11 @@ export interface Project {
 export const projects: Project[] = [
   {
     slug: 'riku',
-    name: 'Riku',
+    name: 'Navi / Waypoint',
     category: 'Local AI · Desktop companion',
-    summary: 'A little company for the workbench. A desktop companion exploring local conversation, memory, and useful everyday tools.',
+    summary: 'A little company at the computer, and a helping hand in Minecraft. Two personal AI companion experiments, still taking shape.',
     description: [
-      'Riku is the public-facing name for the companion developed as Navi. The project brings together a desktop character, text conversation, optional local voice, and tools that help make a personal workspace easier to understand.',
+      'Navi is the desktop companion previously introduced here as Riku. It brings together a desktop character, text conversation, optional local voice, and remembered preferences. Waypoint is a separate Minecraft companion with implemented following, gathering, and crafting controllers.',
       'The interesting work is in the details: a remembered preference, a useful response, an expression that fits the moment, and controls that make it clear what the companion can access. The character and its behavior are still evolving.',
       'The existing Navi Gmail Monitor is a specific, optional email feature with its own public information and privacy policy. Those pages keep the Navi name so existing app and privacy links continue to make sense.',
     ],
@@ -35,7 +36,8 @@ export const projects: Project[] = [
     tags: ['Local AI', 'Companions', 'Python'],
     artwork: 'local',
     featured: true,
-    status: 'In development',
+    status: 'Work in progress',
+    introduction: '/writing/meet-navi-waypoint/',
     availability: 'Private prototype · no public download yet',
     next: 'Refining the companion’s character, responsiveness, and everyday usefulness.',
     websiteURL: '/navi/',
@@ -69,9 +71,10 @@ export const projects: Project[] = [
     tags: ['Godot', 'Games', 'Atmosphere'],
     artwork: 'chiba',
     featured: true,
-    status: 'Playable prototype',
+    status: 'Work in progress · playable prototype',
+    introduction: '/writing/meet-midnight-chiba/',
     availability: 'In development · no public download yet',
-    image: { src: '/images/projects/midnight-chiba.png', alt: 'A lit convenience store and blue vending machine beside a dark rural road in Midnight Chiba.', caption: 'In-engine capture · the convenience store in the V8.2 prototype.', width: 1280, height: 720 },
+    image: { src: '/images/projects/showcase/chiba-store.webp', alt: 'A lit convenience store and blue vending machine beside a dark rural road in Midnight Chiba.', caption: 'In-engine capture · the convenience store, captured with the existing camera-review script.', width: 1280, height: 720 },
     next: 'Tuning the contrast between safe-feeling landmarks and the uneasy spaces between them.',
   },
   {
@@ -88,10 +91,31 @@ export const projects: Project[] = [
     tags: ['Godot', 'Games', 'Deckbuilding'],
     artwork: 'deck',
     featured: true,
-    status: 'Playtesting',
+    status: 'Work in progress · playtesting',
+    introduction: '/writing/meet-dungeon-deckbuilder/',
     availability: 'Browser demo in testing · public link to follow',
-    image: { src: '/images/projects/dungeon-deckbuilder.png', alt: 'Dungeon Deckbuilder’s Mage faces a Raider, with equipment, enemy intent, and five elemental cards visible.', caption: 'Gameplay capture · Mage combat from the presentation V3 pass.', width: 1280, height: 720 },
+    image: { src: '/images/projects/showcase/deck-mage.webp', alt: 'Dungeon Deckbuilder’s Mage faces a Raider, with equipment, enemy intent, and five elemental cards visible.', caption: 'In-game capture · the Mage’s opening hand, captured with the existing UI test routine.', width: 1280, height: 720 },
     next: 'Making combat choices, equipment upgrades, and class identities easier to read.',
+  },
+  {
+    slug: 'nightstock',
+    name: 'NightStock',
+    category: 'Game experiment',
+    summary: 'One tiny kei truck, eight loose boxes, and plenty of opportunities to regret a sharp turn.',
+    description: [
+      'NightStock is a physics-driven kei truck prototype. Drive a load of loose cardboard boxes around straights, bumps, hills, and turns, and see what stays in the back.',
+      'Switch between chase and cab cameras, open the tailgate, or climb out to pick boxes up again. The cargo moves independently of the truck, so braking and cornering matter.',
+      'The current version is an early physics playground with simple test-course scenery. Handling and cargo recovery are the experiment; a finished delivery game is still a possibility to explore.',
+    ],
+    areas: ['Truck handling', 'Loose cargo physics', 'Driving and on-foot recovery'],
+    tags: ['Godot', 'Games', 'Physics'],
+    artwork: 'chiba',
+    featured: true,
+    status: 'Work in progress · physics playground',
+    availability: 'Private prototype · no public download yet',
+    introduction: '/writing/meet-nightstock/',
+    image: { src: '/images/projects/showcase/nightstock-loaded.webp', alt: 'A white kei truck carries cardboard boxes beside the NightStock test course.', caption: 'In-engine capture · the loaded truck in the existing scripted camera review. Standard prototype HUD shown.', width: 1280, height: 720 },
+    next: 'Exploring the feel of driving with loose cargo and recovering a spilled load.',
   },
   {
     slug: 'local-ai-utilities',
@@ -110,8 +134,8 @@ export const projects: Project[] = [
   },
 ];
 
-// Keep old detail URLs available, while the public workbench focuses on these three.
-export const activeProjects = ['riku', 'dungeon-deckbuilder', 'midnight-chiba'].map((slug) => projects.find((project) => project.slug === slug)!);
+// Preserve existing detail URLs, including /projects/riku/ for the companion.
+export const activeProjects = ['midnight-chiba', 'dungeon-deckbuilder', 'nightstock', 'riku'].map((slug) => projects.find((project) => project.slug === slug)!);
 export const featuredProjects = activeProjects.filter((project) => project.featured);
 
 export function getProjectPath(project: Pick<Project, 'slug'>): string {

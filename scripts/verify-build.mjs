@@ -71,6 +71,25 @@ for (const required of ['index.html', 'writing/index.html', 'projects/index.html
 }
 
 const titles = new Set();
+// Keep the showcase's articles, captioned captures and card destinations intact.
+for (const slug of ['midnight-chiba', 'dungeon-deckbuilder', 'nightstock', 'navi-waypoint']) {
+  const file = `writing/meet-${slug}/index.html`;
+  const article = documents.get(file);
+  assert(Boolean(article), `Missing showcase introduction: ${file}`);
+  assert(article?.source.includes('Work in progress'), `${file}: missing development status`);
+  if (slug !== 'navi-waypoint') {
+    const captures = article?.tags.filter((tag) => tag.name === 'img' && tag.attrs.src?.startsWith('/images/projects/showcase/')) ?? [];
+    assert(captures.length === 3, `${file}: expected three genuine project captures`);
+    assert(captures.every(({ attrs }) => attrs.alt?.trim() && attrs.width === '1280' && attrs.height === '720' && attrs.srcset), `${file}: capture must have alt text, dimensions, and responsive sources`);
+    assert((article?.markup.match(/<figcaption\b/g) ?? []).length === 3, `${file}: expected three screenshot captions`);
+  } else {
+    assert(article?.source.includes('Screenshots pending'), `${file}: missing companion capture limitation`);
+  }
+  for (const indexFile of ['index.html', 'projects/index.html']) {
+    assert(documents.get(indexFile)?.tags.some((tag) => tag.name === 'a' && tag.attrs.href === `/writing/meet-${slug}/`), `${indexFile}: missing ${slug} introduction link`);
+  }
+}
+assert(files.has('projects/nightstock/index.html'), 'Missing NightStock project page');
 for (const file of ['index.html', 'navi/index.html']) {
   const links = documents.get(file)?.tags.filter((tag) => tag.name === 'a').map((tag) => tag.attrs.href) || [];
   assert(links.includes('/navi/privacy/'), `${file}: missing discoverable Navi privacy policy link`);

@@ -24,10 +24,12 @@ const Heading = compact ? 'h3' : 'h2';
     <ul class="project-tags" aria-label="Project topics">
       {project.tags.map((tag) => <li class="tag">{tag}</li>)}
     </ul>
+    {project.introduction && <a class="text-link introduction-link" href={project.introduction}>Meet {project.name} <span aria-hidden="true">→</span></a>}
   </div>
 </article>
 
 <style>
+  .introduction-link { display: inline-block; margin-top: 1rem; font-size: .88rem; }
   .project-card {
     display: grid;
     grid-template-columns: minmax(220px, 0.95fr) minmax(0, 1.5fr);

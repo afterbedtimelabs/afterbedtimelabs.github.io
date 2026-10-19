@@ -3,15 +3,18 @@ import ProjectArtwork from './ProjectArtwork.astro';
 import type { Project } from '../data/projects';
 interface Props { project: Project; eager?: boolean; decorative?: boolean; }
 const { project, eager = false, decorative = false } = Astro.props;
+const responsive = project.image?.src.startsWith('/images/projects/showcase/');
 ---
 {project.image ? (
   <img src={project.image.src} alt={decorative ? '' : project.image.alt}
+    srcset={responsive ? `${project.image.src.replace('.webp', '-640.webp')} 640w, ${project.image.src} 1280w` : undefined}
+    sizes={responsive ? (eager ? '(max-width: 1160px) calc(100vw - 40px), 1120px' : '(max-width: 650px) calc(100vw - 40px), (max-width: 1000px) 50vw, 640px') : undefined}
     width={project.image.width} height={project.image.height}
     loading={eager ? 'eager' : 'lazy'} decoding="async" />
 ) : (
   <div class="illustration">
     <ProjectArtwork artwork={project.artwork} />
-    {project.slug === 'riku' && <span class="art-label">Riku / companion study <span aria-hidden="true">✳</span></span>}
+    {project.slug === 'riku' && <span class="art-label">Companion illustration · not a screenshot <span aria-hidden="true">✳</span></span>}
   </div>
 )}
 <style>
