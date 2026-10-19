@@ -7,7 +7,7 @@ const responsive = project.image?.src.startsWith('/images/projects/showcase/');
 ---
 {project.image ? (
   <img src={project.image.src} alt={decorative ? '' : project.image.alt}
-    srcset={responsive ? `${project.image.src.replace('.webp', '-640.webp')} 640w, ${project.image.src} 1280w` : undefined}
+    srcset={responsive ? `${project.image.src.replace('.webp', '-640.webp')} 640w, ${project.image.src} ${project.image.width}w` : undefined}
     sizes={responsive ? (eager ? '(max-width: 1160px) calc(100vw - 40px), 1120px' : '(max-width: 650px) calc(100vw - 40px), (max-width: 1000px) 50vw, 640px') : undefined}
     width={project.image.width} height={project.image.height}
     loading={eager ? 'eager' : 'lazy'} decoding="async" />

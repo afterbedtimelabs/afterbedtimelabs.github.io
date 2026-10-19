@@ -133,5 +133,65 @@
         "bytes": 20076
       }
     ]
+  },
+  {
+    "name": "mission-overview",
+    "captureType": "Real Mission Control UI, isolated in-memory sample data",
+    "sourceSHA256": "bb1dcf393a53ae76ed48eab575e87d535cb9c25ce5e9958b529dee2398dc0557",
+    "originalBytes": 57031,
+    "sourceDimensions": [
+      1265,
+      712
+    ],
+    "outputs": [
+      {
+        "file": "mission-overview.webp",
+        "bytes": 42660
+      },
+      {
+        "file": "mission-overview-640.webp",
+        "bytes": 16030
+      }
+    ]
+  },
+  {
+    "name": "mission-activity",
+    "captureType": "Real Mission Control UI, isolated in-memory sample data",
+    "sourceSHA256": "8ccabb8e72c2ca10e01ca6189f82a800e1eb8f419bead2dd3e43d6ebb0fa3c5b",
+    "originalBytes": 59897,
+    "sourceDimensions": [
+      1265,
+      712
+    ],
+    "outputs": [
+      {
+        "file": "mission-activity.webp",
+        "bytes": 44274
+      },
+      {
+        "file": "mission-activity-640.webp",
+        "bytes": 16388
+      }
+    ]
+  },
+  {
+    "name": "mission-output",
+    "captureType": "Real Mission Control UI, isolated in-memory sample data",
+    "sourceSHA256": "a6bab3a546c62e606b802fbaed243e12747912e2b50e319da9da6fb668da183f",
+    "originalBytes": 55516,
+    "sourceDimensions": [
+      1265,
+      712
+    ],
+    "outputs": [
+      {
+        "file": "mission-output.webp",
+        "bytes": 40032
+      },
+      {
+        "file": "mission-output-640.webp",
+        "bytes": 14388
+      }
+    ]
   }
 ]

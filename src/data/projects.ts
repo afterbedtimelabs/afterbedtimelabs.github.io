@@ -24,20 +24,20 @@ export interface Project {
 export const projects: Project[] = [
   {
     slug: 'riku',
-    name: 'Navi / Waypoint',
+    name: 'Riku',
     category: 'Local AI · Desktop companion',
-    summary: 'A little company at the computer, and a helping hand in Minecraft. Two personal AI companion experiments, still taking shape.',
+    summary: 'A little company at the computer. A desktop AI companion with conversation, memory, and a personality still taking shape.',
     description: [
-      'Navi is the desktop companion previously introduced here as Riku. It brings together a desktop character, text conversation, optional local voice, and remembered preferences. Waypoint is a separate Minecraft companion with implemented following, gathering, and crafting controllers.',
+      'Riku is my desktop AI companion, bringing together a desktop character, text conversation, optional local voice, and remembered preferences. The aim is a companion that feels comfortable keeping you company while you work or tinker.',
       'The interesting work is in the details: a remembered preference, a useful response, an expression that fits the moment, and controls that make it clear what the companion can access. The character and its behavior are still evolving.',
-      'The existing Navi Gmail Monitor is a specific, optional email feature with its own public information and privacy policy. Those pages keep the Navi name so existing app and privacy links continue to make sense.',
+      'Navi remains the internal name in parts of the software, including the optional Gmail Monitor and its information and privacy pages. Riku is the desktop companion’s public name; Waypoint is a separate Minecraft project.',
     ],
     areas: ['Desktop presence and expression', 'Local conversation and voice', 'Memory and useful tools'],
     tags: ['Local AI', 'Companions', 'Python'],
     artwork: 'local',
     featured: true,
     status: 'Work in progress',
-    introduction: '/writing/meet-navi-waypoint/',
+    introduction: '/writing/meet-riku/',
     availability: 'Private prototype · no public download yet',
     next: 'Refining the companion’s character, responsiveness, and everyday usefulness.',
     websiteURL: '/navi/',
@@ -45,17 +45,22 @@ export const projects: Project[] = [
   {
     slug: 'mission-control',
     name: 'Mission Control',
-    category: 'AI & developer tooling',
-    summary: 'Exploring a clearer way to work with local services, AI agents, and the tools around them.',
+    category: 'Personal AI · Operations dashboard',
+    summary: 'A little mission control for my growing collection of AI experiments. See what’s running, what just happened, and what needs attention.',
     description: [
-      'Mission Control is a developer-tooling experiment around local services, AI agents, models, and the workflows that connect them.',
-      'Its area of interest includes events, logs, and alerts: the information needed to understand what a collection of local tools is doing. This project page is a starting point for documenting those experiments and their lessons.',
+      'Mission Control grew out of monitoring my Discord bot. As the experiments multiplied, it became a local dashboard for keeping track of the services and AI tools around them.',
+      'The service fleet shows what is running, how long it has been up, and how much CPU and memory it uses. A shared activity feed brings together starts, stops, warnings, and recoveries, with recent output available in the service inspector.',
+      'The dashboard and Discord host share a service manager, so registered tools have one set of start, stop, and restart controls. Separate monitors feed it hardware health and activity. It is a working personal dashboard that is still growing alongside the projects it watches.',
     ],
     areas: ['Local services and models', 'AI agent workflows', 'Events, logs, and alerts'],
     tags: ['AI agents', 'Local tools', 'Automation'],
     artwork: 'control',
-    featured: false,
-    archived: true,
+    featured: true,
+    status: 'Work in progress · working dashboard',
+    availability: 'Personal workspace · isolated demo shown',
+    introduction: '/writing/meet-mission-control/',
+    image: { src: '/images/projects/showcase/mission-overview.webp', alt: 'Mission Control’s dashboard showing service totals and provider status in an isolated demo with sample data.', caption: 'Genuine application capture · isolated demo, all values are sample data. Navi is the host’s internal name.', width: 1265, height: 712 },
+    next: 'Making a growing collection of experiments easier to understand at a glance.',
   },
   {
     slug: 'midnight-chiba',
@@ -135,7 +140,7 @@ export const projects: Project[] = [
 ];
 
 // Preserve existing detail URLs, including /projects/riku/ for the companion.
-export const activeProjects = ['midnight-chiba', 'dungeon-deckbuilder', 'nightstock', 'riku'].map((slug) => projects.find((project) => project.slug === slug)!);
+export const activeProjects = ['mission-control', 'midnight-chiba', 'dungeon-deckbuilder', 'nightstock', 'riku'].map((slug) => projects.find((project) => project.slug === slug)!);
 export const featuredProjects = activeProjects.filter((project) => project.featured);
 
 export function getProjectPath(project: Pick<Project, 'slug'>): string {

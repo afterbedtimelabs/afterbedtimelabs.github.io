@@ -30,7 +30,7 @@ const { project } = Astro.props;
       <section class="project-description" aria-labelledby="about-project">
         <h2 id="about-project">Inside the project</h2>
         {project.description.map((paragraph) => <p>{paragraph}</p>)}
-        {project.introduction && <p><a class="text-link" href={project.introduction}>Read the introduction {project.image ? 'and see the screenshots' : 'and capture notes'} <span aria-hidden="true">→</span></a></p>}
+        {project.introduction && <p><a class="text-link" href={project.introduction}>Read the introduction {project.image ? 'and see the screenshots' : ''} <span aria-hidden="true">→</span></a></p>}
         {(project.repositoryURL || project.websiteURL) && (
           <div class="project-links">
             {project.repositoryURL && <a class="text-link" href={project.repositoryURL}>View source <span aria-hidden="true">↗</span></a>}

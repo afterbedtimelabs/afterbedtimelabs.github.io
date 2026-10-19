@@ -14,7 +14,7 @@ const recentWriting = (await getPublishedWriting()).slice(0, 3);
       <div class="hero-copy">
         <p class="eyebrow"><span class="small-rule"></span> An after-hours workshop by Isaac</p>
         <h1 id="hero-title">Built after<br /><em>bedtime.</em></h1>
-        <p class="hero-description">A quiet road after dark. A dungeon full of decisions. A tiny truck with a wobbly load. A little AI company. Small experiments from the hours in between.</p>
+        <p class="hero-description">A command center for AI experiments. Games with quiet roads, tricky choices, and wobbly cargo. A little desktop company. Here’s what I’ve been building after bedtime.</p>
         <div class="hero-actions"><a class="hero-link" href="#projects-title">Explore the work <Icon name="arrow-right" size={18} /></a><a class="hero-secondary" href="/writing/welcome-to-after-bedtime-labs/">Meet the lab <span aria-hidden="true">↗</span></a></div>
       </div>
       <div class="hero-art"><Workbench /></div>
@@ -22,7 +22,7 @@ const recentWriting = (await getPublishedWriting()).slice(0, 3);
     </section>
     <section class="home-section" aria-labelledby="projects-title">
       <div class="section-top"><div><p class="eyebrow"><span class="section-number">01 /</span> Selected projects</p><h2 class="section-heading" id="projects-title">On the workbench</h2></div><a class="text-link" href="/projects/">All projects <Icon name="arrow-up-right" size={16} /></a></div>
-      <div class="featured-projects">{featuredProjects.map(project => <ProjectCard project={project} compact />)}</div>
+      <div class="featured-projects">{featuredProjects.map(project => <ProjectCard project={project} compact spotlight={project.slug === 'mission-control'} />)}</div>
       <aside class="navi-note" aria-label="Project information"><p>These are working prototypes. Explore each project for its current state and what’s next.</p><a href="/navi/privacy/">Navi Gmail Monitor privacy <span aria-hidden="true">↗</span></a></aside>
     </section>
     <section class="home-section writing-section" aria-labelledby="writing-title">

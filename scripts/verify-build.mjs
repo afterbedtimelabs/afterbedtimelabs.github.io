@@ -36,6 +36,7 @@ const paths = await filesIn(root).catch(() => {
 });
 const files = new Set(paths.map((path) => relative(root, path).replaceAll('\\', '/')));
 const documents = new Map();
+const redirects = new Map([['writing/meet-navi-waypoint/index.html', '/writing/meet-riku/']]);
 for (const file of files) {
   if (!file.endsWith('.html')) continue;
   const source = await readFile(resolve(root, file), 'utf8');
@@ -72,24 +73,30 @@ for (const required of ['index.html', 'writing/index.html', 'projects/index.html
 
 const titles = new Set();
 // Keep the showcase's articles, captioned captures and card destinations intact.
-for (const slug of ['midnight-chiba', 'dungeon-deckbuilder', 'nightstock', 'navi-waypoint']) {
+for (const slug of ['mission-control', 'midnight-chiba', 'dungeon-deckbuilder', 'nightstock', 'riku']) {
   const file = `writing/meet-${slug}/index.html`;
   const article = documents.get(file);
   assert(Boolean(article), `Missing showcase introduction: ${file}`);
   assert(article?.source.includes('Work in progress'), `${file}: missing development status`);
-  if (slug !== 'navi-waypoint') {
+  if (slug !== 'riku') {
     const captures = article?.tags.filter((tag) => tag.name === 'img' && tag.attrs.src?.startsWith('/images/projects/showcase/')) ?? [];
     assert(captures.length === 3, `${file}: expected three genuine project captures`);
-    assert(captures.every(({ attrs }) => attrs.alt?.trim() && attrs.width === '1280' && attrs.height === '720' && attrs.srcset), `${file}: capture must have alt text, dimensions, and responsive sources`);
+    const [width, height] = slug === 'mission-control' ? ['1265', '712'] : ['1280', '720'];
+    assert(captures.every(({ attrs }) => attrs.alt?.trim() && attrs.width === width && attrs.height === height && attrs.srcset), `${file}: capture must have alt text, dimensions, and responsive sources`);
     assert((article?.markup.match(/<figcaption\b/g) ?? []).length === 3, `${file}: expected three screenshot captions`);
+    if (slug === 'mission-control') assert(article?.source.includes('sample data throughout'), `${file}: missing isolated demo disclosure`);
   } else {
-    assert(article?.source.includes('Screenshots pending'), `${file}: missing companion capture limitation`);
+    assert(article?.source.includes('Character screenshots will come later'), `${file}: missing character artwork status`);
   }
   for (const indexFile of ['index.html', 'projects/index.html']) {
     assert(documents.get(indexFile)?.tags.some((tag) => tag.name === 'a' && tag.attrs.href === `/writing/meet-${slug}/`), `${indexFile}: missing ${slug} introduction link`);
   }
 }
 assert(files.has('projects/nightstock/index.html'), 'Missing NightStock project page');
+assert(files.has('projects/mission-control/index.html'), 'Missing Mission Control project page');
+assert(files.has('writing/meet-navi-waypoint/index.html'), 'Missing legacy companion redirect');
+const homeProjects = documents.get('index.html')?.tags.filter((tag) => tag.name === 'a' && tag.attrs.class?.includes('introduction-link')).map((tag) => tag.attrs.href);
+assert(JSON.stringify(homeProjects) === JSON.stringify(['mission-control', 'midnight-chiba', 'dungeon-deckbuilder', 'nightstock', 'riku'].map((slug) => `/writing/meet-${slug}/`)), 'Homepage project order changed');
 for (const file of ['index.html', 'navi/index.html']) {
   const links = documents.get(file)?.tags.filter((tag) => tag.name === 'a').map((tag) => tag.attrs.href) || [];
   assert(links.includes('/navi/privacy/'), `${file}: missing discoverable Navi privacy policy link`);
@@ -100,6 +107,14 @@ for (const file of ['navi/index.html', 'navi/privacy/index.html']) {
   assert(!doc?.tags.some((tag) => tag.name === 'meta' && tag.attrs.name === 'robots' && /noindex/.test(tag.attrs.content)), `${file}: OAuth information page must be indexable`);
 }
 for (const [file, doc] of documents) {
+  if (redirects.has(file)) {
+    const target = redirects.get(file);
+    const refresh = doc.tags.find((tag) => tag.name === 'meta' && tag.attrs['http-equiv']?.toLowerCase() === 'refresh')?.attrs.content;
+    assert(refresh === `0;url=${target}`, `${file}: incorrect legacy redirect`);
+    assert(doc.tags.some((tag) => tag.name === 'a' && tag.attrs.href === target), `${file}: missing accessible redirect fallback`);
+    checkLocalURL(target, doc.path, `${file} redirect target`);
+    continue;
+  }
   const meta = (name) => doc.tags.find((tag) => tag.name === 'meta' && (tag.attrs.name === name || tag.attrs.property === name))?.attrs.content;
   const title = decode(doc.source.match(/<title\b[^>]*>([\s\S]*?)<\/title>/i)?.[1] || '').trim();
   assert(Boolean(title), `${file}: missing page title`);
@@ -175,7 +190,8 @@ for (const file of sitemapFiles) {
   }
 }
 for (const [file, doc] of documents) {
-  if (file !== '404.html') assert(sitemapURLs.has(new URL(doc.path, origin).href), `${file}: page is absent from sitemap`);
+  if (redirects.has(file)) assert(!sitemapURLs.has(new URL(doc.path, origin).href), `${file}: legacy redirect should not be indexed`);
+  else if (file !== '404.html') assert(sitemapURLs.has(new URL(doc.path, origin).href), `${file}: page is absent from sitemap`);
 }
 
 assert(files.has('rss.xml'), 'Missing RSS feed');
