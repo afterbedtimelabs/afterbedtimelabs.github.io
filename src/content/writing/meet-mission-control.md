@@ -12,7 +12,7 @@ Mission Control started as a way to keep an eye on my Discord bot. As that proje
 
 The dashboard brings those answers together. Service cards show uptime and resource use. An activity timeline follows starts, stops, and recoveries, while alerts flag problems and the output viewer helps explain what a service is doing. There are start, stop, and restart buttons for registered services, too.
 
-Behind the scenes, the dashboard and Discord host share the same service manager. Hardware monitors and other components contribute observations to a shared event stream. Building those connections is the fun part: getting separate little projects to tell one understandable story.
+Behind the scenes, the dashboard and Discord host share the same service manager. Built-in host-health monitoring and other components feed a shared event stream. That monitoring is distinct from PC Guardian, which isn’t integrated here. Building those connections is the fun part: getting separate little projects to tell one understandable story.
 
 **Work in progress:** this is a working personal dashboard, still growing alongside the experiments it watches.
 

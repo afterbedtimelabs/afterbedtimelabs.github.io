@@ -61,7 +61,7 @@ The browser produced 1265 × 712 JPEGs (approximately 16:9). WebP copies preserv
 
 ## Owner review before merge
 
-Review the Mission Control emphasis, casual first-person wording and clearly labeled sample-data captures. The existing dark Chiba images and early NightStock presentation remain intentional. Riku character screenshots are not a merge prerequisite. No merge or deployment is authorized by this PR.
+The owner approved the showcase presentation and requested a final polish pass. Browser capture was unavailable in that session, so the existing three Mission Control screenshots were retained under the owner's explicit fallback. The article now distinguishes built-in host-health monitoring from PC Guardian. All image files, Riku naming, game showcases, layouts and Tinker Panda remain unchanged by this pass. Riku character screenshots are not a merge prerequisite. No merge or deployment is authorized by this PR.
 
 ## Website verification
 
