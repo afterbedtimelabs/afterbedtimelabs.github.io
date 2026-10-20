@@ -1,0 +1,197 @@
+[
+  {
+    "name": "chiba-store",
+    "sourceSHA256": "f9f33cf7b9cc587566bb61f233e422091edc14cb462272f964367723801f1468",
+    "originalBytes": 718224,
+    "outputs": [
+      {
+        "file": "chiba-store.webp",
+        "bytes": 31832
+      },
+      {
+        "file": "chiba-store-640.webp",
+        "bytes": 11150
+      }
+    ]
+  },
+  {
+    "name": "chiba-shrine",
+    "sourceSHA256": "791b8f1c5dddf7317db3e86d3388c434002444873402c59310a9791bf74e069d",
+    "originalBytes": 555426,
+    "outputs": [
+      {
+        "file": "chiba-shrine.webp",
+        "bytes": 10250
+      },
+      {
+        "file": "chiba-shrine-640.webp",
+        "bytes": 3512
+      }
+    ]
+  },
+  {
+    "name": "chiba-fields",
+    "sourceSHA256": "d59632c7c11a5336cf4253e26068de8b45a52f726538a8dfd03f6a278bb0d84c",
+    "originalBytes": 673137,
+    "outputs": [
+      {
+        "file": "chiba-fields.webp",
+        "bytes": 17390
+      },
+      {
+        "file": "chiba-fields-640.webp",
+        "bytes": 5248
+      }
+    ]
+  },
+  {
+    "name": "deck-mage",
+    "sourceSHA256": "638b08eef7eb597292cb32edab49f15794ea5547cac8411decc0695550a68d4c",
+    "originalBytes": 106336,
+    "outputs": [
+      {
+        "file": "deck-mage.webp",
+        "bytes": 50592
+      },
+      {
+        "file": "deck-mage-640.webp",
+        "bytes": 19996
+      }
+    ]
+  },
+  {
+    "name": "deck-classes",
+    "sourceSHA256": "4c0419df15a8e9704888bbb5ed34b7e4ca6d688d93383ccaa1c0f6f1ad775f06",
+    "originalBytes": 205639,
+    "outputs": [
+      {
+        "file": "deck-classes.webp",
+        "bytes": 83308
+      },
+      {
+        "file": "deck-classes-640.webp",
+        "bytes": 29368
+      }
+    ]
+  },
+  {
+    "name": "deck-summoner",
+    "sourceSHA256": "1fdab833cd7551989006cb6122268ba2649b2e9f6d1f1efdd0260c0b5f86b7db",
+    "originalBytes": 140788,
+    "outputs": [
+      {
+        "file": "deck-summoner.webp",
+        "bytes": 64114
+      },
+      {
+        "file": "deck-summoner-640.webp",
+        "bytes": 24384
+      }
+    ]
+  },
+  {
+    "name": "nightstock-loaded",
+    "sourceSHA256": "1a238b5bf44ebe457ef9a69630dd58a48fbe4069546ff181a3bc18dcbc8ea176",
+    "originalBytes": 148763,
+    "outputs": [
+      {
+        "file": "nightstock-loaded.webp",
+        "bytes": 50250
+      },
+      {
+        "file": "nightstock-loaded-640.webp",
+        "bytes": 20812
+      }
+    ]
+  },
+  {
+    "name": "nightstock-bumps",
+    "sourceSHA256": "7f75eddcd652b6fece21a2fede68c2aff3c3411f2651b30cd3852897fdaeebec",
+    "originalBytes": 131638,
+    "outputs": [
+      {
+        "file": "nightstock-bumps.webp",
+        "bytes": 40434
+      },
+      {
+        "file": "nightstock-bumps-640.webp",
+        "bytes": 17648
+      }
+    ]
+  },
+  {
+    "name": "nightstock-tailgate",
+    "sourceSHA256": "4370a0815a17450d15001d7147f088999aa7cd8ddedb3e0aaac6d6c9ffedf63e",
+    "originalBytes": 131740,
+    "outputs": [
+      {
+        "file": "nightstock-tailgate.webp",
+        "bytes": 46036
+      },
+      {
+        "file": "nightstock-tailgate-640.webp",
+        "bytes": 20076
+      }
+    ]
+  },
+  {
+    "name": "mission-overview",
+    "captureType": "Real Mission Control UI, isolated in-memory sample data",
+    "sourceSHA256": "bb1dcf393a53ae76ed48eab575e87d535cb9c25ce5e9958b529dee2398dc0557",
+    "originalBytes": 57031,
+    "sourceDimensions": [
+      1265,
+      712
+    ],
+    "outputs": [
+      {
+        "file": "mission-overview.webp",
+        "bytes": 42660
+      },
+      {
+        "file": "mission-overview-640.webp",
+        "bytes": 16030
+      }
+    ]
+  },
+  {
+    "name": "mission-activity",
+    "captureType": "Real Mission Control UI, isolated in-memory sample data",
+    "sourceSHA256": "8ccabb8e72c2ca10e01ca6189f82a800e1eb8f419bead2dd3e43d6ebb0fa3c5b",
+    "originalBytes": 59897,
+    "sourceDimensions": [
+      1265,
+      712
+    ],
+    "outputs": [
+      {
+        "file": "mission-activity.webp",
+        "bytes": 44274
+      },
+      {
+        "file": "mission-activity-640.webp",
+        "bytes": 16388
+      }
+    ]
+  },
+  {
+    "name": "mission-output",
+    "captureType": "Real Mission Control UI, isolated in-memory sample data",
+    "sourceSHA256": "a6bab3a546c62e606b802fbaed243e12747912e2b50e319da9da6fb668da183f",
+    "originalBytes": 55516,
+    "sourceDimensions": [
+      1265,
+      712
+    ],
+    "outputs": [
+      {
+        "file": "mission-output.webp",
+        "bytes": 40032
+      },
+      {
+        "file": "mission-output-640.webp",
+        "bytes": 14388
+      }
+    ]
+  }
+]

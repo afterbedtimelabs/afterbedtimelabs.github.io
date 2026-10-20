@@ -14,7 +14,7 @@ const recentWriting = (await getPublishedWriting()).slice(0, 3);
       <div class="hero-copy">
         <p class="eyebrow"><span class="small-rule"></span> An after-hours workshop by Isaac</p>
         <h1 id="hero-title">Built after<br /><em>bedtime.</em></h1>
-        <p class="hero-description">A desktop companion. A dungeon full of decisions. A quiet road after dark. Small experiments, made with care in the hours in between.</p>
+        <p class="hero-description">A command center for AI experiments. Games with quiet roads, tricky choices, and wobbly cargo. A little desktop company. Here’s what I’ve been building after bedtime.</p>
         <div class="hero-actions"><a class="hero-link" href="#projects-title">Explore the work <Icon name="arrow-right" size={18} /></a><a class="hero-secondary" href="/writing/welcome-to-after-bedtime-labs/">Meet the lab <span aria-hidden="true">↗</span></a></div>
       </div>
       <div class="hero-art"><Workbench /></div>
@@ -22,7 +22,7 @@ const recentWriting = (await getPublishedWriting()).slice(0, 3);
     </section>
     <section class="home-section" aria-labelledby="projects-title">
       <div class="section-top"><div><p class="eyebrow"><span class="section-number">01 /</span> Selected projects</p><h2 class="section-heading" id="projects-title">On the workbench</h2></div><a class="text-link" href="/projects/">All projects <Icon name="arrow-up-right" size={16} /></a></div>
-      <div class="featured-projects">{featuredProjects.map(project => <ProjectCard project={project} compact />)}</div>
+      <div class="featured-projects">{featuredProjects.map(project => <ProjectCard project={project} compact spotlight={project.slug === 'mission-control'} />)}</div>
       <aside class="navi-note" aria-label="Project information"><p>These are working prototypes. Explore each project for its current state and what’s next.</p><a href="/navi/privacy/">Navi Gmail Monitor privacy <span aria-hidden="true">↗</span></a></aside>
     </section>
     <section class="home-section writing-section" aria-labelledby="writing-title">
@@ -53,13 +53,6 @@ const recentWriting = (await getPublishedWriting()).slice(0, 3);
   .section-top { display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; margin-bottom: 28px; }
   .section-heading { margin-top: 11px; } .section-number { color: var(--muted); margin-right: 8px; } .section-top > a { margin-bottom: 3px; }
   .featured-projects { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-  .featured-projects :global(.project-card:first-child) { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 36px; align-items: center; padding-bottom: 30px; margin-bottom: 8px; border-bottom: 1px solid var(--border); }
-  .featured-projects :global(.project-card:first-child h3) { font-size: 32px; }
-  .featured-projects :global(.project-card:first-child .project-visual) { min-height: 280px; }
-  @media (max-width: 760px) {
-    .featured-projects :global(.project-card:first-child) { grid-template-columns: 1fr; gap: 22px; }
-    .featured-projects :global(.project-card:first-child .project-visual) { min-height: 0; }
-  }
   .navi-note { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 12px 24px; margin-top: 25px; padding-top: 22px; border-top: 1px solid var(--border); font-size: 14px; color: var(--muted); }
   .navi-note p { max-width: 650px; } .navi-note > a { font-size: 12px; } .navi-note p a { color: var(--text); font-weight: 600; }
   .writing-empty { display: grid; grid-template-columns: 46px 1fr auto; gap: 22px; padding: 31px 0 9px; align-items: start; }

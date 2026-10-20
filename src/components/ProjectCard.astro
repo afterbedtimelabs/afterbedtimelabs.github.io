@@ -5,18 +5,19 @@ import { getProjectPath, type Project } from '../data/projects';
 interface Props {
   project: Project;
   compact?: boolean;
+  spotlight?: boolean;
 }
 
-const { project, compact = false } = Astro.props;
+const { project, compact = false, spotlight = false } = Astro.props;
 const Heading = compact ? 'h3' : 'h2';
 ---
 
-<article class:list={['project-card', { compact }]}>
+<article class:list={['project-card', { compact, spotlight }]}>
   <a class="project-visual" href={getProjectPath(project)} tabindex="-1" aria-hidden="true">
     <ProjectMedia project={project} decorative />
   </a>
   <div class="project-copy">
-    <p class="project-category">{project.category}</p>
+    <p class="project-category">{spotlight ? 'In the spotlight · ' : ''}{project.category}</p>
     {project.status && <p class="project-status"><span aria-hidden="true"></span>{project.status}</p>}
     <Heading><a href={getProjectPath(project)}>{project.name}<span aria-hidden="true">↗</span></a></Heading>
     <p class="project-summary">{project.summary}</p>
@@ -24,10 +25,12 @@ const Heading = compact ? 'h3' : 'h2';
     <ul class="project-tags" aria-label="Project topics">
       {project.tags.map((tag) => <li class="tag">{tag}</li>)}
     </ul>
+    {project.introduction && <a class="text-link introduction-link" href={project.introduction}>Meet {project.name} <span aria-hidden="true">→</span></a>}
   </div>
 </article>
 
 <style>
+  .introduction-link { display: inline-block; margin-top: 1rem; font-size: .88rem; }
   .project-card {
     display: grid;
     grid-template-columns: minmax(220px, 0.95fr) minmax(0, 1.5fr);
@@ -91,9 +94,15 @@ const Heading = compact ? 'h3' : 'h2';
   .compact h3 { font-size: 1.35rem; }
   .compact .project-summary { margin-top: 0.7rem; font-size: 0.9rem; }
 
+  .spotlight { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); align-items: center; gap: 2rem; padding: 1.5rem; border: 1px solid var(--border); border-radius: 9px; background: var(--surface); }
+  .spotlight h3 { font-size: 1.8rem; }
+  .spotlight .project-category { color: var(--accent); }
+  @media (max-width: 900px) { .spotlight { grid-template-columns: 1fr; } }
+
   @media (max-width: 650px) {
     .project-card { grid-template-columns: 1fr; gap: 1.5rem; padding: 1.9rem 0; }
     .compact { padding: 0; }
+    .spotlight { padding: 1rem; }
     :is(h2, h3) { font-size: 1.45rem; }
   }
 </style>

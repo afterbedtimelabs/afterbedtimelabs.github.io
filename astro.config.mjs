@@ -14,6 +14,7 @@ export default defineConfig({
   site: site.href,
   output: 'static',
   trailingSlash: 'always',
+  redirects: { '/writing/meet-navi-waypoint/': '/writing/meet-riku/' },
   integrations: [
     mdx(),
     sitemap({
