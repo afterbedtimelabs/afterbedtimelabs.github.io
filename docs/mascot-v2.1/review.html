@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tinker Panda production review</title><style>
+body{margin:24px;font:16px system-ui;background:#f5efe3;color:#392b2a}
+body.dark{background:#202d2c;color:#fff0cb}main{display:flex;gap:24px;overflow:auto}
+img{image-rendering:pixelated;display:block}article{flex:none}h2{font-size:18px}
+button,select{font:inherit;margin:6px;padding:8px}p{max-width:70ch}
+</style><h1>Tinker Panda 2.1</h1><p>Approved face B. First production animation review.
+Every source frame is 64 x 64. All loops use integer pixel movement.</p>
+<label>Scale <select id="scale"><option value="1">1x / 64px</option><option value="4" selected>4x / 256px</option><option value="8">8x / 512px</option></select></label>
+<button id="theme">Light / dark</button><button id="motion">Pause animations</button><main><article><h2>Idle</h2><img data-name="idle" src="../../public/mascot/tinker-panda-v2.1/previews/idle-4x.gif" width="256" height="256" alt="Tinker Panda idle animation"></article><article><h2>Blink</h2><img data-name="blink" src="../../public/mascot/tinker-panda-v2.1/previews/blink-4x.gif" width="256" height="256" alt="Tinker Panda blink animation"></article><article><h2>Happy</h2><img data-name="happy" src="../../public/mascot/tinker-panda-v2.1/previews/happy-4x.gif" width="256" height="256" alt="Tinker Panda happy animation"></article><article><h2>Tail</h2><img data-name="tail" src="../../public/mascot/tinker-panda-v2.1/previews/tail-4x.gif" width="256" height="256" alt="Tinker Panda tail animation"></article></main><p>Front, side, back, portrait and expression PNGs are in the adjacent production asset folder.</p><script>
+const root='../../public/mascot/tinker-panda-v2.1/';
+let paused=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function refresh(){const s=Number(document.querySelector('#scale').value);document.querySelectorAll('img').forEach(im=>{im.width=im.height=64*s;im.src=root+(paused?'frames/'+im.dataset.name+'-0.png':'previews/'+im.dataset.name+'-'+s+'x.gif')});document.querySelector('#motion').textContent=paused?'Play animations':'Pause animations'}
+document.querySelector('#scale').onchange=refresh;
+document.querySelector('#theme').onclick=()=>document.body.classList.toggle('dark');
+document.querySelector('#motion').onclick=()=>{paused=!paused;refresh()};
+matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',e=>{paused=e.matches;refresh()});refresh();
+</script></html>
