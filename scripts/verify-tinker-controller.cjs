@@ -167,4 +167,3 @@ test('hidden page initialization does not fetch or schedule until visible', asyn
   console.log(`Source: ${sourcePath}`);
   console.log('Method: TypeScript transpileModule + Node vm with deterministic fake DOM/timers/media/image I/O. No dependencies added; no native browser media-emulation claim.');
 })().catch(error => { console.error(error); process.exitCode = 1; });
-
