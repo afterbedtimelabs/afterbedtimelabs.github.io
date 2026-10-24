@@ -1,0 +1,209 @@
+---
+const assetRoot = '/mascot/tinker-panda-v2.1';
+---
+<figure class="tinker" data-tinker data-frame="front" data-sprite="false">
+  <div class="tinker-stage">
+    <div class="tinker-art" data-tinker-art>
+      <img
+        class="tinker-master"
+        src={`${assetRoot}/front.png`}
+        width="192"
+        height="192"
+        alt="Tinker Panda, a smiling pixel-art red panda in a charcoal hoodie with a teal bow."
+        decoding="async"
+      />
+      <span class="tinker-sprite" data-tinker-sprite aria-hidden="true"></span>
+    </div>
+  </div>
+  <figcaption class="tinker-caption">
+    <strong>Meet Tinker Panda.</strong>
+    <span>The lab’s resident tinkerer.</span>
+  </figcaption>
+  <div class="tinker-actions">
+    <div class="tinker-controls" data-tinker-controls hidden>
+      <button type="button" data-tinker-greet>Say hello</button>
+      <button class="motion-toggle" type="button" data-tinker-pause aria-pressed="false" aria-label="Pause Tinker animation">Pause motion</button>
+    </div>
+  </div>
+  <p class="tinker-message" data-tinker-message aria-live="polite" aria-atomic="true">A little curiosity goes a long way.</p>
+</figure>
+
+<script>
+  // Original PR #3 frames and timings. Derived animations await owner review.
+  const assetRoot = '/mascot/tinker-panda-v2.1';
+  const sequences = {
+    idle: [1200, 1200],
+    blink: [2800, 80, 120, 80],
+    happy: [500, 120, 160, 120],
+  } as const;
+  type Action = keyof typeof sequences;
+  const greetings = [
+    'Hello! There’s always room for one more idea.',
+    'The lamp is on. Let’s make something.',
+    'Every good experiment starts with “what if?”',
+  ];
+
+  document.querySelectorAll<HTMLElement>('[data-tinker]').forEach((host) => {
+    const art = host.querySelector<HTMLElement>('[data-tinker-art]')!;
+    const sprite = host.querySelector<HTMLElement>('[data-tinker-sprite]')!;
+    const controls = host.querySelector<HTMLElement>('[data-tinker-controls]')!;
+    const greet = host.querySelector<HTMLButtonElement>('[data-tinker-greet]')!;
+    const pause = host.querySelector<HTMLButtonElement>('[data-tinker-pause]')!;
+    const message = host.querySelector<HTMLElement>('[data-tinker-message]')!;
+    const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+    const atlasCache = new Map<Action, Promise<boolean>>();
+    let paused = false;
+    let visible = false;
+    let generation = 0;
+    let greeting = 0;
+    let idleTurn = 0;
+    let timer: ReturnType<typeof setTimeout> | undefined;
+
+    function clearTimer() {
+      if (timer !== undefined) clearTimeout(timer);
+      timer = undefined;
+    }
+
+    function front() {
+      host.dataset.sprite = 'false';
+      host.dataset.frame = 'front';
+    }
+
+    function stop() {
+      clearTimer();
+      generation++;
+      front();
+    }
+
+    function motionAllowed() {
+      return !paused && !reduced.matches && visible && !document.hidden;
+    }
+
+    function loadAtlas(action: Action) {
+      if (!atlasCache.has(action)) {
+        atlasCache.set(action, new Promise<boolean>((resolve) => {
+          const image = new Image();
+          image.onload = () => resolve(true);
+          image.onerror = () => resolve(false);
+          image.src = `${assetRoot}/atlases/${action}.png`;
+        }));
+      }
+      return atlasCache.get(action)!;
+    }
+
+    function schedule() {
+      clearTimer();
+      if (!motionAllowed()) return;
+      timer = setTimeout(() => {
+        void play(idleTurn++ % 2 === 0 ? 'blink' : 'idle');
+      }, 7500);
+    }
+
+    async function play(action: Action) {
+      stop();
+      if (!motionAllowed()) return;
+      const token = generation;
+      const loaded = await loadAtlas(action);
+      if (token !== generation) return;
+      if (!loaded || !motionAllowed()) {
+        front();
+        schedule();
+        return;
+      }
+      const durations = sequences[action];
+      let index = 0;
+      function next() {
+        if (token !== generation || !motionAllowed()) {
+          if (token === generation) stop();
+          return;
+        }
+        if (index === durations.length) {
+          front();
+          schedule();
+          return;
+        }
+        sprite.style.backgroundImage = `url("${assetRoot}/atlases/${action}.png")`;
+        sprite.style.backgroundSize = `${durations.length * 100}% 100%`;
+        sprite.style.backgroundPosition = `${index / (durations.length - 1) * 100}% 0`;
+        host.dataset.sprite = 'true';
+        host.dataset.frame = `${action}:${index}`;
+        timer = setTimeout(next, durations[index++]);
+      }
+      next();
+    }
+
+    function syncMotion() {
+      pause.textContent = reduced.matches ? 'Reduced motion' : paused ? 'Resume motion' : 'Pause motion';
+      pause.setAttribute('aria-pressed', String(paused || reduced.matches));
+      pause.setAttribute('aria-label', reduced.matches
+        ? 'Tinker animation follows your reduced-motion preference'
+        : paused ? 'Resume Tinker animation' : 'Pause Tinker animation');
+      pause.disabled = reduced.matches;
+      host.dataset.paused = String(paused || reduced.matches);
+      stop();
+      schedule();
+    }
+
+    greet.addEventListener('click', () => {
+      message.textContent = greetings[greeting++ % greetings.length];
+      // Greetings remain available with the approved static front when motion is off.
+      if (motionAllowed()) void play('happy');
+      else stop();
+    });
+    pause.addEventListener('click', () => {
+      paused = !paused;
+      syncMotion();
+    });
+    reduced.addEventListener('change', syncMotion);
+    document.addEventListener('visibilitychange', syncMotion);
+    window.addEventListener('pagehide', stop);
+    window.addEventListener('pageshow', syncMotion);
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(([entry]) => {
+        if (visible === entry.isIntersecting) return;
+        visible = entry.isIntersecting;
+        if (visible) schedule();
+        else stop();
+      }, { threshold: 0.15 }).observe(art);
+    } else {
+      visible = true;
+    }
+    syncMotion();
+    controls.hidden = false;
+    host.dataset.enhanced = 'true';
+  });
+</script>
+
+<style>
+  .tinker { container-type: inline-size; width: 100%; max-width: 384px; margin-inline: auto; text-align: center; }
+  .tinker-stage { position: relative; display: grid; place-items: center; min-height: 224px; overflow: hidden; border: 1px solid var(--border); border-radius: 6px; background: var(--surface); }
+  .tinker-stage::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px); background-size: 24px 24px; opacity: .35; pointer-events: none; }
+  .tinker-art { --sprite-size: 192px; position: relative; width: var(--sprite-size); height: var(--sprite-size); }
+  .tinker-master, .tinker-sprite { width: var(--sprite-size); height: var(--sprite-size); image-rendering: pixelated; image-rendering: crisp-edges; }
+  .tinker-master { max-width: none; }
+  .tinker-sprite { display: none; position: absolute; inset: 0; background-repeat: no-repeat; }
+  [data-sprite='true'] .tinker-master { opacity: 0; }
+  [data-sprite='true'] .tinker-sprite { display: block; }
+  .tinker-caption { padding-top: 15px; }
+  .tinker-caption strong { display: block; font-size: 17px; line-height: 1.4; font-weight: 550; letter-spacing: -.025em; }
+  .tinker-caption > span { display: block; margin-top: 2px; color: var(--muted); font-size: 13px; }
+  .tinker-actions { min-height: 44px; margin-top: 12px; }
+  .tinker-controls { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+  .tinker-controls button { min-height: 44px; padding: 8px 13px; border: 1px solid var(--border); border-radius: 4px; color: var(--text); background: var(--bg); font-size: 12px; cursor: pointer; }
+  .tinker-controls button:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+  .tinker-controls .motion-toggle { color: var(--muted); min-width: 113px; }
+  .tinker-controls button:disabled { cursor: default; }
+  .tinker-message { min-height: 44px; max-width: 300px; margin: 9px auto 0; padding-inline: 5px; color: var(--muted); font-size: 12px; line-height: 1.7; }
+  @container (max-width: 300px) {
+    .tinker-art { --sprite-size: 128px; }
+    .tinker-stage { min-height: 176px; }
+  }
+  @media (max-width: 760px) {
+    .tinker-art { --sprite-size: 128px; }
+    .tinker-stage { min-height: 160px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    [data-sprite='true'] .tinker-master { opacity: 1; }
+    [data-sprite='true'] .tinker-sprite { display: none; }
+  }
+</style>
