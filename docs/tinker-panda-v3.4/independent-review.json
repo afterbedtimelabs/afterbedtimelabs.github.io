@@ -1,0 +1,108 @@
+{
+  "title": "Tinker Panda V3.4 — independent technical and visual review",
+  "reviewedAtUtc": "2026-10-26 01:10:59 UTC",
+  "reviewer": "Independent audit agent /root/v34_audit",
+  "status": "Corrections verified; no remaining objective artwork or code defects found within the reviewed scope.",
+  "scope": [
+    "Approved Expressive Markings front and preservation of historical source pixels.",
+    "Native animation generator, atlas/frame validator, component controller, controller regression tests, and portable preservation checks.",
+    "Regenerated comparison and frame boards, desktop dark screenshot, and final tablet light screenshot."
+  ],
+  "designDecision": "Expressive Markings remains immutable as the default face. No new concepts, playful-eye substitutions, or alternate face recommendation.",
+  "findings": [
+    {
+      "id": "tail-ear-mask",
+      "severity": "Required correction",
+      "finding": "The original rectangular upper-tail mask included seven right-ear outline pixels. Leftward movement overwrote four existing ear pixels and reduced opaque coverage from 5215 to 5211.",
+      "correction": "The generator now uses 27 explicit tail contour rows. The validator independently restricts the changed region and checks 5215 opaque pixels in every frame.",
+      "independentlyVerified": true,
+      "evidence": "Reconstructed both moved tail frames using the final opaque run detected directly from each source row, without using the generator's mask. Every RGBA byte matched the reconstructed one-pixel movement. The right ear remained exact in both frames."
+    },
+    {
+      "id": "happy-change-count",
+      "severity": "Report correction",
+      "finding": "The validator previously incremented changedPixels only for non-happy frames, reporting zero differences for translated happy frames.",
+      "correction": "Coordinate differences are counted independently of the animation-specific validation.",
+      "independentlyVerified": true,
+      "evidence": "Independent counts match the report: happy:1 = 1736, happy:2 = 2662, happy:3 = 1736 changed coordinates. Exact inverse-translation assertions remain intact."
+    },
+    {
+      "id": "portable-preservation",
+      "severity": "Clean-checkout validation blocker",
+      "finding": "Raw preservation hashes captured on Windows differed from LF Git blobs for 22 protected tracked text files. Unmodified Linux checkouts would therefore fail validation.",
+      "correction": "Retained every original raw SHA-256. Added normalizedLfSha256 for 111 known UTF-8 text files only after verifying their current bytes against the original raw snapshot. Intentional homepage/package changes were excluded. The verifier first accepts raw equality, then permits CRLF/LF normalization only for known text with a recorded normalized hash. Binary artwork remains byte-exact.",
+      "independentlyVerified": true,
+      "evidence": "The actual verifier passed with Git blob inputs for 80 protected tracked files: 58 raw matches and 22 text line-ending-only matches. It also handled 106 absent historical exploration files, as expected in a fresh checkout. A subsequent ordinary run restored the local report: 186 raw matches, 0 normalized matches, 0 absent."
+    }
+  ],
+  "pixelChecks": {
+    "canonicalSha256": "b7a25d71ae8b74a0f692462090809843fab594eb58ef38f8c4e6d3bc68f3963e",
+    "frameCount": 18,
+    "opaquePixelsPerFrame": 5215,
+    "nativeCanvas": [
+      96,
+      96
+    ],
+    "pngPayloadBytes": 16400,
+    "tailFrames": "tail-1 and tail-3 equal independently reconstructed source-tail translations; right ear unchanged.",
+    "happyChangedPixels": {
+      "happy:1": 1736,
+      "happy:2": 2662,
+      "happy:3": 1736
+    },
+    "endpoints": "All sequences begin and end at the exact approved front."
+  },
+  "tests": [
+    {
+      "command": "npm run mascot:verify",
+      "result": "PASS: approved front, face-only baseline changes, 18 native frames, 16400 PNG bytes, 186 protected files preserved as raw bytes, 15/15 actual-controller scenarios.",
+      "method": "The asset validator reads committed PNGs and decoded RGBA. Controller scenarios transpile the actual Astro component script and execute it with deterministic DOM, timers, media-query, visibility and image-loading substitutes."
+    },
+    {
+      "command": "PowerShell here-string containing portableValidationProgram, piped to node --input-type=module",
+      "result": "PASS: 80 protected tracked inputs, 58 raw hashes, 22 normalized text hashes, 106 absent historical inputs.",
+      "method": "Controlled input simulation of the actual validator. readFile returned Git HEAD blobs for protected tracked files and ENOENT for prior untracked exploration files. The current V3.4 source assets and built output remained real filesystem inputs. This was not a full fresh-clone install/build."
+    }
+  ],
+  "portableValidationProgram": [
+    "import fs from 'node:fs/promises';",
+    "import { execFileSync } from 'node:child_process';",
+    "const originalRead=fs.readFile.bind(fs);",
+    "const snapshot=JSON.parse(await originalRead('art/tinker-panda-v3.4/sources/preservation-before.json','utf8'));",
+    "const excluded=new Set(['package.json','src/pages/index.astro']);",
+    "const tracked=new Map();",
+    "const historical=new Set();",
+    "for(const entry of snapshot.files){",
+    "  if(excluded.has(entry.path))continue;",
+    "  if(entry.path.startsWith('art/'))historical.add(entry.path);",
+    "  else tracked.set(entry.path,execFileSync('git',['show','HEAD:'+entry.path],{maxBuffer:100e6}));",
+    "}",
+    "fs.readFile=async function(path,options){",
+    "  if(historical.has(path)){const error=new Error('Historical artwork absent in simulated fresh checkout');error.code='ENOENT';throw error;}",
+    "  if(tracked.has(path)){const bytes=tracked.get(path);return options==='utf8'?bytes.toString('utf8'):bytes;}",
+    "  return originalRead(path,options);",
+    "};",
+    "await import('./scripts/verify-tinker-panda-v3-4.mjs');"
+  ],
+  "visualReview": {
+    "files": [
+      "docs/tinker-panda-v3.4/comparison-board.png",
+      "docs/tinker-panda-v3.4/animation-frames.png",
+      "docs/tinker-panda-v3.4/screenshots/desktop-dark.jpg",
+      "docs/tinker-panda-v3.4/screenshots/tablet-light.jpg"
+    ],
+    "observations": [
+      "The approved front remains recognizable and warm. Idle, happy, and tail retain the open-eyed default face; blink is a brief eyelid closure without an altered smile.",
+      "The regenerated native frame board preserves the right ear in both tail directions.",
+      "Desktop dark and final tablet light captures show the mascot within the existing brand layout. The final tablet capture shows clear separation between hero copy and the mascot panel, with no visible text or character clipping."
+    ],
+    "tabletMeasurement": "The lead agent reported verifying a 24px gap at 820px and 768px viewports. This independent review visually inspected the final tablet capture but did not repeat that browser measurement."
+  },
+  "limitations": [
+    "Independent review did not drive the browser. Genuine website capture, console, navigation and responsive checks belong to the lead agent's browser QA record.",
+    "Controller tests simulate reduced-motion media changes; they do not establish native OS preference behavior across all browsers.",
+    "Portable preservation validation used actual Git blobs with substituted read inputs, not a separate clean checkout and dependency installation.",
+    "No Safari, Firefox or physical-device behavior is claimed by this review. Subjective placement and animation preference remain owner review items."
+  ],
+  "finalConclusion": "All three independent findings are corrected and verified. The reviewed implementation is suitable for owner review, with the approved face preserved and no remaining objective defects found in the reviewed artwork, controller or validation code."
+}

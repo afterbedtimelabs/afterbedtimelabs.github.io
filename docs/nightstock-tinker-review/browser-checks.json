@@ -1,0 +1,166 @@
+{
+  "pages": [
+    {
+      "allImagesLoaded": true,
+      "overflow": false,
+      "scrollY": 0,
+      "theme": "light",
+      "url": "http://127.0.0.1:4326/",
+      "width": 1440
+    },
+    {
+      "allImagesLoaded": true,
+      "overflow": false,
+      "scrollY": 0,
+      "theme": "dark",
+      "url": "http://127.0.0.1:4326/",
+      "width": 1440
+    },
+    {
+      "allImagesLoaded": true,
+      "overflow": false,
+      "scrollY": 0,
+      "theme": "dark",
+      "url": "http://127.0.0.1:4326/projects/nightstock/",
+      "width": 1440
+    },
+    {
+      "allImagesLoaded": true,
+      "overflow": false,
+      "scrollY": 0,
+      "theme": "light",
+      "url": "http://127.0.0.1:4326/projects/nightstock/",
+      "width": 1440
+    },
+    {
+      "allImagesLoaded": true,
+      "overflow": false,
+      "scrollY": 0,
+      "theme": "light",
+      "url": "http://127.0.0.1:4326/writing/meet-nightstock/",
+      "width": 1440
+    },
+    {
+      "allImagesLoaded": true,
+      "overflow": false,
+      "scrollY": 0,
+      "theme": "dark",
+      "url": "http://127.0.0.1:4326/writing/meet-nightstock/",
+      "width": 1440
+    },
+    {
+      "allImagesLoaded": true,
+      "overflow": false,
+      "scrollY": 0,
+      "theme": "dark",
+      "url": "http://127.0.0.1:4326/writing/meet-nightstock/",
+      "width": 390
+    },
+    {
+      "allImagesLoaded": true,
+      "overflow": false,
+      "scrollY": 0,
+      "theme": "light",
+      "url": "http://127.0.0.1:4326/writing/meet-nightstock/",
+      "width": 390
+    },
+    {
+      "allImagesLoaded": true,
+      "overflow": false,
+      "scrollY": 0,
+      "theme": "light",
+      "url": "http://127.0.0.1:4326/projects/nightstock/",
+      "width": 390
+    },
+    {
+      "allImagesLoaded": true,
+      "overflow": false,
+      "scrollY": 0,
+      "theme": "dark",
+      "url": "http://127.0.0.1:4326/projects/nightstock/",
+      "width": 390
+    },
+    {
+      "allImagesLoaded": true,
+      "overflow": false,
+      "scrollY": 0,
+      "theme": "dark",
+      "url": "http://127.0.0.1:4326/",
+      "width": 390
+    },
+    {
+      "allImagesLoaded": true,
+      "overflow": false,
+      "scrollY": 0,
+      "theme": "light",
+      "url": "http://127.0.0.1:4326/",
+      "width": 390
+    },
+    {
+      "allImagesLoaded": true,
+      "overflow": false,
+      "scrollY": 0,
+      "theme": "light",
+      "url": "http://127.0.0.1:4326/writing/meet-nightstock/?review=final",
+      "width": 390
+    },
+    {
+      "allImagesLoaded": true,
+      "overflow": false,
+      "scrollY": 0,
+      "theme": "dark",
+      "url": "http://127.0.0.1:4326/writing/meet-nightstock/?review=final",
+      "width": 390
+    },
+    {
+      "allImagesLoaded": true,
+      "overflow": false,
+      "scrollY": 0,
+      "theme": "dark",
+      "url": "http://127.0.0.1:4326/writing/meet-nightstock/?review=final",
+      "width": 1440
+    },
+    {
+      "allImagesLoaded": true,
+      "overflow": false,
+      "scrollY": 0,
+      "theme": "light",
+      "url": "http://127.0.0.1:4326/writing/meet-nightstock/?review=final",
+      "width": 1440
+    },
+    {
+      "allImagesLoaded": true,
+      "overflow": false,
+      "scrollY": 0,
+      "theme": "light",
+      "url": "http://127.0.0.1:4326/projects/nightstock/?review=final",
+      "width": 1440
+    },
+    {
+      "allImagesLoaded": true,
+      "overflow": false,
+      "scrollY": 0,
+      "theme": "dark",
+      "url": "http://127.0.0.1:4326/projects/nightstock/?review=final",
+      "width": 1440
+    },
+    {
+      "allImagesLoaded": true,
+      "overflow": false,
+      "scrollY": 0,
+      "theme": "dark",
+      "url": "http://127.0.0.1:4326/projects/nightstock/?review=final",
+      "width": 390
+    },
+    {
+      "allImagesLoaded": true,
+      "overflow": false,
+      "scrollY": 0,
+      "theme": "light",
+      "url": "http://127.0.0.1:4326/projects/nightstock/?review=final",
+      "width": 390
+    }
+  ],
+  "console": [],
+  "nativeReducedMotion": "No media emulation capability exposed; controller scenarios simulate media queries."
+}

@@ -1,0 +1,90 @@
+[
+	{
+		"camera": "[X: (0.400296, -0.000103, 0.916386), Y: (0.127603, 0.990264, -0.055628), Z: (-0.907458, 0.139201, 0.396412), O: (339.2072, 179.9643, -381.1497)]",
+		"height": 1080,
+		"id": "road-cab",
+		"method": "Staged truck position, production camera and unchanged rendering; not a continuous drive.",
+		"station_m": 560.0,
+		"width": 1920
+	},
+	{
+		"camera": "[X: (0.400281, 0.0, 0.916393), Y: (0.413874, 0.892203, -0.18078), Z: (-0.817609, 0.451634, 0.357132), O: (333.3652, 182.953, -379.067)]",
+		"height": 1080,
+		"id": "road-chase",
+		"method": "Staged truck position, production camera and unchanged rendering; not a continuous drive.",
+		"station_m": 560.0,
+		"width": 1920
+	},
+	{
+		"camera": "[X: (1.0, 0.0, 0.0), Y: (-0.0, 0.997965, -0.063757), Z: (-0.0, 0.063757, 0.997965), O: (298.63, 58.63087, -885.5955)]",
+		"height": 1080,
+		"id": "bridge-cab",
+		"method": "Staged truck position, production camera and unchanged rendering; not a continuous drive.",
+		"station_m": 1845.0,
+		"width": 1920
+	},
+	{
+		"camera": "[X: (1.0, 0.0, -0.000008), Y: (-0.000004, 0.889165, -0.457586), Z: (0.000008, 0.457586, 0.889165), O: (298.2001, 61.73523, -878.1473)]",
+		"height": 1080,
+		"id": "bridge-chase",
+		"method": "Staged truck position, production camera and unchanged rendering; not a continuous drive.",
+		"station_m": 1845.0,
+		"width": 1920
+	},
+	{
+		"camera": "[X: (0.244464, 0.000015, 0.969658), Y: (0.052864, 0.998513, -0.013344), Z: (-0.968216, 0.054522, 0.2441), O: (558.3702, 30.56155, -1244.49)]",
+		"height": 1080,
+		"id": "forest-cab",
+		"method": "Staged truck position, production camera and unchanged rendering; not a continuous drive.",
+		"station_m": 2500.0,
+		"width": 1920
+	},
+	{
+		"camera": "[X: (0.244578, 0.0, 0.96963), Y: (0.444576, 0.888694, -0.112139), Z: (-0.861704, 0.458501, 0.217355), O: (550.8898, 33.66652, -1243.047)]",
+		"height": 1080,
+		"id": "forest-chase",
+		"method": "Staged truck position, production camera and unchanged rendering; not a continuous drive.",
+		"station_m": 2500.0,
+		"width": 1920
+	},
+	{
+		"camera": "[X: (0.967321, 0.000003, 0.253555), Y: (0.012938, 0.998697, -0.04937), Z: (-0.253225, 0.051037, 0.96606), O: (751.1221, 24.47913, -1569.641)]",
+		"height": 1080,
+		"id": "tunnel-cab",
+		"method": "Staged truck position, production camera and unchanged rendering; not a continuous drive.",
+		"station_m": 2900.0,
+		"width": 1920
+	},
+	{
+		"camera": "[X: (0.967321, 0.0, 0.253556), Y: (0.116347, 0.888508, -0.443866), Z: (-0.225286, 0.458862, 0.859472), O: (748.7623, 27.58343, -1562.334)]",
+		"height": 1080,
+		"id": "tunnel-chase",
+		"method": "Staged truck position, production camera and unchanged rendering; not a continuous drive.",
+		"station_m": 2900.0,
+		"width": 1920
+	},
+	{
+		"camera": "[X: (-0.834193, 0.000001, -0.551473), Y: (-0.029228, 0.998594, 0.044214), Z: (0.550698, 0.053001, -0.83302), O: (368.502, 9.013072, -1728.311)]",
+		"height": 1080,
+		"id": "countryside-cab",
+		"method": "Staged truck position, production camera and unchanged rendering; not a continuous drive.",
+		"station_m": 3570.0,
+		"width": 1920
+	},
+	{
+		"camera": "[X: (-0.834187, 0.0, -0.551481), Y: (-0.252945, 0.88861, 0.382612), Z: (0.490052, 0.458664, -0.741267), O: (373.0701, 12.11781, -1734.441)]",
+		"height": 1080,
+		"id": "countryside-chase",
+		"method": "Staged truck position, production camera and unchanged rendering; not a continuous drive.",
+		"station_m": 3570.0,
+		"width": 1920
+	},
+	{
+		"camera": "[X: (0.872114, 0.0, 0.489303), Y: (0.038267, 0.996937, -0.068205), Z: (-0.487805, 0.078206, 0.869443), O: (17.79862, 10.0, -1535.171)]",
+		"height": 1080,
+		"id": "yorumichi-exterior",
+		"method": "Staged truck position, production camera and unchanged rendering; not a continuous drive.",
+		"station_m": -1.0,
+		"width": 1920
+	}
+]

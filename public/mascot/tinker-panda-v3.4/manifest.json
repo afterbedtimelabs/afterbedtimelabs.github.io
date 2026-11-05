@@ -1,0 +1,312 @@
+{
+  "version": "3.4",
+  "design": "V3.3 Expressive Markings",
+  "nativeSize": 96,
+  "frontSha256": "b7a25d71ae8b74a0f692462090809843fab594eb58ef38f8c4e6d3bc68f3963e",
+  "approval": "Owner-approved default front; V3.4 adds implementation and restrained animation, no new face concept.",
+  "sources": "art/tinker-panda-v3.4/sources",
+  "eyeRows": [
+    [
+      36,
+      22,
+      27,
+      44,
+      48
+    ],
+    [
+      37,
+      21,
+      28,
+      43,
+      49
+    ],
+    [
+      38,
+      20,
+      28,
+      42,
+      50
+    ],
+    [
+      39,
+      20,
+      29,
+      41,
+      50
+    ],
+    [
+      40,
+      19,
+      29,
+      40,
+      50
+    ],
+    [
+      41,
+      19,
+      29,
+      40,
+      50
+    ],
+    [
+      42,
+      19,
+      29,
+      40,
+      50
+    ],
+    [
+      43,
+      19,
+      29,
+      40,
+      50
+    ],
+    [
+      44,
+      19,
+      29,
+      40,
+      50
+    ],
+    [
+      45,
+      19,
+      29,
+      40,
+      50
+    ],
+    [
+      46,
+      20,
+      29,
+      41,
+      50
+    ],
+    [
+      47,
+      20,
+      28,
+      42,
+      49
+    ],
+    [
+      48,
+      22,
+      27,
+      43,
+      48
+    ]
+  ],
+  "tailRows": [
+    [
+      25,
+      73,
+      78
+    ],
+    [
+      26,
+      73,
+      78
+    ],
+    [
+      27,
+      70,
+      80
+    ],
+    [
+      28,
+      67,
+      83
+    ],
+    [
+      29,
+      67,
+      83
+    ],
+    [
+      30,
+      66,
+      84
+    ],
+    [
+      31,
+      65,
+      84
+    ],
+    [
+      32,
+      65,
+      86
+    ],
+    [
+      33,
+      65,
+      86
+    ],
+    [
+      34,
+      64,
+      87
+    ],
+    [
+      35,
+      64,
+      87
+    ],
+    [
+      36,
+      64,
+      88
+    ],
+    [
+      37,
+      64,
+      88
+    ],
+    [
+      38,
+      64,
+      88
+    ],
+    [
+      39,
+      65,
+      89
+    ],
+    [
+      40,
+      65,
+      89
+    ],
+    [
+      41,
+      66,
+      89
+    ],
+    [
+      42,
+      67,
+      89
+    ],
+    [
+      43,
+      67,
+      89
+    ],
+    [
+      44,
+      68,
+      89
+    ],
+    [
+      45,
+      69,
+      90
+    ],
+    [
+      46,
+      69,
+      90
+    ],
+    [
+      47,
+      69,
+      90
+    ],
+    [
+      48,
+      69,
+      90
+    ],
+    [
+      49,
+      70,
+      90
+    ],
+    [
+      50,
+      70,
+      90
+    ],
+    [
+      51,
+      70,
+      90
+    ]
+  ],
+  "sequences": {
+    "idle": {
+      "durations": [
+        1200,
+        1200,
+        1200
+      ],
+      "rule": "Hoodie interior x30..46, y78..85 only; face and silhouette exact.",
+      "atlasSha256": "8096ba9a4e9ad97b29b7c91660bec49ad1a7ae7b746a56d3e3be2b468c468d61",
+      "bytes": 2990,
+      "frameRgbaSha256": [
+        "7468d023b57b3e0017afbdc6d1395dc2c04fd7ca550b2061b7cfcdb326ba2bc2",
+        "e05ad995fb956361a0c2c4850f4739def63e0f631c2faa1c848c620cf9a9808c",
+        "7468d023b57b3e0017afbdc6d1395dc2c04fd7ca550b2061b7cfcdb326ba2bc2"
+      ]
+    },
+    "blink": {
+      "durations": [
+        120,
+        70,
+        90,
+        70,
+        120
+      ],
+      "rule": "Eye apertures only; approved eyebrow/cheek/muzzle markings and alpha unchanged.",
+      "atlasSha256": "31bce4aee9a1c5a310d67cbcab478d1ac5803b88083620ac8623fbb1f68d83c4",
+      "bytes": 3622,
+      "frameRgbaSha256": [
+        "7468d023b57b3e0017afbdc6d1395dc2c04fd7ca550b2061b7cfcdb326ba2bc2",
+        "9343afecbf29f1dfa86d3bf7f4fb4a3d38b3b3fbf88ffeceb352186852b35240",
+        "17f99b618d867eb197d9b671fb5c5ce90a5bcfe32963e35d0eea44e20a551ede",
+        "9343afecbf29f1dfa86d3bf7f4fb4a3d38b3b3fbf88ffeceb352186852b35240",
+        "7468d023b57b3e0017afbdc6d1395dc2c04fd7ca550b2061b7cfcdb326ba2bc2"
+      ]
+    },
+    "happy": {
+      "durations": [
+        200,
+        120,
+        180,
+        120,
+        200
+      ],
+      "rule": "Exact whole-character translation by 0,-1,-2,-1,0 pixels; no expression substitution.",
+      "atlasSha256": "3f58647280618b0f04259fcaaf66f75482b228635e9e526e5d73b28ae5ba6dd8",
+      "bytes": 3777,
+      "frameRgbaSha256": [
+        "7468d023b57b3e0017afbdc6d1395dc2c04fd7ca550b2061b7cfcdb326ba2bc2",
+        "02e03020b218e57e1e64b550e78766c2e061933dff9799cf90c408f9ebcd96cb",
+        "efb4ff19870e5eb41619b86fb175b4f6eb40360ccc85c61626943f44f3d765cc",
+        "02e03020b218e57e1e64b550e78766c2e061933dff9799cf90c408f9ebcd96cb",
+        "7468d023b57b3e0017afbdc6d1395dc2c04fd7ca550b2061b7cfcdb326ba2bc2"
+      ]
+    },
+    "tail": {
+      "durations": [
+        400,
+        220,
+        400,
+        220,
+        400
+      ],
+      "rule": "Explicit free upper tail row mask only, shifts +1 then -1; base anchored; ear/body exact.",
+      "atlasSha256": "cbd69d6f853c4eec70bbb3b595f2808d5851a596ab80f64da12e212cac45d1db",
+      "bytes": 3733,
+      "frameRgbaSha256": [
+        "7468d023b57b3e0017afbdc6d1395dc2c04fd7ca550b2061b7cfcdb326ba2bc2",
+        "995f51f58bf47d74aaf2100f20b6d745c9c26a6243ffd4a9baa55e5fab98020d",
+        "7468d023b57b3e0017afbdc6d1395dc2c04fd7ca550b2061b7cfcdb326ba2bc2",
+        "29b39c014f82691c6633ff11d382bc6efc70d7f025c7bfc5af907c78ef28a4fe",
+        "7468d023b57b3e0017afbdc6d1395dc2c04fd7ca550b2061b7cfcdb326ba2bc2"
+      ]
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "asset": "master/tinker-panda-approved-v3.3-front-96.png",
+  "sha256": "b7a25d71ae8b74a0f692462090809843fab594eb58ef38f8c4e6d3bc68f3963e",
+  "actualOpaqueColorCount": 19,
+  "opaquePixels": 5215,
+  "measurement": "Count of distinct RGB triplets at alpha = 255 in the approved master. Transparent RGB is excluded.",
+  "colorSpace": "sRGB",
+  "colorsByPixelFrequency": [
+    {
+      "hex": "#E47A3E",
+      "opaquePixelCount": 1305
+    },
+    {
+      "hex": "#FFF0CB",
+      "opaquePixelCount": 914
+    },
+    {
+      "hex": "#593C35",
+      "opaquePixelCount": 716
+    },
+    {
+      "hex": "#815236",
+      "opaquePixelCount": 525
+    },
+    {
+      "hex": "#392B2A",
+      "opaquePixelCount": 483
+    },
+    {
+      "hex": "#282D32",
+      "opaquePixelCount": 481
+    },
+    {
+      "hex": "#3C4348",
+      "opaquePixelCount": 224
+    },
+    {
+      "hex": "#79C5B6",
+      "opaquePixelCount": 197
+    },
+    {
+      "hex": "#FFF9EB",
+      "opaquePixelCount": 134
+    },
+    {
+      "hex": "#535D60",
+      "opaquePixelCount": 56
+    },
+    {
+      "hex": "#B64F30",
+      "opaquePixelCount": 52
+    },
+    {
+      "hex": "#367A79",
+      "opaquePixelCount": 35
+    },
+    {
+      "hex": "#E7C69A",
+      "opaquePixelCount": 30
+    },
+    {
+      "hex": "#E5A044",
+      "opaquePixelCount": 22
+    },
+    {
+      "hex": "#E99B77",
+      "opaquePixelCount": 14
+    },
+    {
+      "hex": "#B67C48",
+      "opaquePixelCount": 10
+    },
+    {
+      "hex": "#F5A45A",
+      "opaquePixelCount": 8
+    },
+    {
+      "hex": "#A6B3AC",
+      "opaquePixelCount": 6
+    },
+    {
+      "hex": "#FFD584",
+      "opaquePixelCount": 3
+    }
+  ],
+  "inheritedV32Palette": {
+    "count": 19,
+    "source": "art/tinker-panda-v3.3-face/sources/native-extraction.json",
+    "colors": [
+      "#392B2A",
+      "#B64F30",
+      "#E47A3E",
+      "#F5A45A",
+      "#FFF0CB",
+      "#E7C69A",
+      "#E99B77",
+      "#282D32",
+      "#3C4348",
+      "#535D60",
+      "#367A79",
+      "#79C5B6",
+      "#E5A044",
+      "#FFD584",
+      "#815236",
+      "#B67C48",
+      "#FFF9EB",
+      "#593C35",
+      "#A6B3AC"
+    ]
+  },
+  "notes": "The approved PNG preserves every existing pixel color. All 19 inherited palette colors are present. No palette reduction, recoloring or color correction was applied in this handoff."
+}

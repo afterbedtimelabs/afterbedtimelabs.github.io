@@ -1,0 +1,314 @@
+{
+  "date": "2026-11-05",
+  "source": "709f60031cd72f085ff4ad799aba767c65814c69",
+  "main": "05431e62db6077c302c265a7a7ede0410c0e72d6",
+  "artAndManifestExact": [
+    {
+      "file": "art/tinker-panda-v3.4/frames/blink-0.png",
+      "sha256": "b7a25d71ae8b74a0f692462090809843fab594eb58ef38f8c4e6d3bc68f3963e",
+      "bytes": 2278,
+      "gitBlobExact": true,
+      "normalizedTextOnly": false
+    },
+    {
+      "file": "art/tinker-panda-v3.4/frames/blink-1.png",
+      "sha256": "72ecebe24aef80c231ec1d700d1c4b0fcac9e191354af03fe51766abfd1f335c",
+      "bytes": 2240,
+      "gitBlobExact": true,
+      "normalizedTextOnly": false
+    },
+    {
+      "file": "art/tinker-panda-v3.4/frames/blink-2.png",
+      "sha256": "4ac3955aa5c5331c7704eca8f599530a595e5d3e378cda049cc1aa9daef12ab6",
+      "bytes": 2154,
+      "gitBlobExact": true,
+      "normalizedTextOnly": false
+    },
+    {
+      "file": "art/tinker-panda-v3.4/frames/blink-3.png",
+      "sha256": "72ecebe24aef80c231ec1d700d1c4b0fcac9e191354af03fe51766abfd1f335c",
+      "bytes": 2240,
+      "gitBlobExact": true,
+      "normalizedTextOnly": false
+    },
+    {
+      "file": "art/tinker-panda-v3.4/frames/blink-4.png",
+      "sha256": "b7a25d71ae8b74a0f692462090809843fab594eb58ef38f8c4e6d3bc68f3963e",
+      "bytes": 2278,
+      "gitBlobExact": true,
+      "normalizedTextOnly": false
+    },
+    {
+      "file": "art/tinker-panda-v3.4/frames/happy-0.png",
+      "sha256": "b7a25d71ae8b74a0f692462090809843fab594eb58ef38f8c4e6d3bc68f3963e",
+      "bytes": 2278,
+      "gitBlobExact": true,
+      "normalizedTextOnly": false
+    },
+    {
+      "file": "art/tinker-panda-v3.4/frames/happy-1.png",
+      "sha256": "2b8e7817fe2743c2cde86c0747b9776df14914c3f511a4530155eab3ec12f95e",
+      "bytes": 2278,
+      "gitBlobExact": true,
+      "normalizedTextOnly": false
+    },
+    {
+      "file": "art/tinker-panda-v3.4/frames/happy-2.png",
+      "sha256": "326a8adbaa01e26e67555c4313c54046bb8b18a1531374f41b3c628560819495",
+      "bytes": 2278,
+      "gitBlobExact": true,
+      "normalizedTextOnly": false
+    },
+    {
+      "file": "art/tinker-panda-v3.4/frames/happy-3.png",
+      "sha256": "2b8e7817fe2743c2cde86c0747b9776df14914c3f511a4530155eab3ec12f95e",
+      "bytes": 2278,
+      "gitBlobExact": true,
+      "normalizedTextOnly": false
+    },
+    {
+      "file": "art/tinker-panda-v3.4/frames/happy-4.png",
+      "sha256": "b7a25d71ae8b74a0f692462090809843fab594eb58ef38f8c4e6d3bc68f3963e",
+      "bytes": 2278,
+      "gitBlobExact": true,
+      "normalizedTextOnly": false
+    },
+    {
+      "file": "art/tinker-panda-v3.4/frames/idle-0.png",
+      "sha256": "b7a25d71ae8b74a0f692462090809843fab594eb58ef38f8c4e6d3bc68f3963e",
+      "bytes": 2278,
+      "gitBlobExact": true,
+      "normalizedTextOnly": false
+    },
+    {
+      "file": "art/tinker-panda-v3.4/frames/idle-1.png",
+      "sha256": "08cb55c744143e0b671ff6135679a5db655bfd801c9fd829e3dd93b446855620",
+      "bytes": 2275,
+      "gitBlobExact": true,
+      "normalizedTextOnly": false
+    },
+    {
+      "file": "art/tinker-panda-v3.4/frames/idle-2.png",
+      "sha256": "b7a25d71ae8b74a0f692462090809843fab594eb58ef38f8c4e6d3bc68f3963e",
+      "bytes": 2278,
+      "gitBlobExact": true,
+      "normalizedTextOnly": false
+    },
+    {
+      "file": "art/tinker-panda-v3.4/frames/tail-0.png",
+      "sha256": "b7a25d71ae8b74a0f692462090809843fab594eb58ef38f8c4e6d3bc68f3963e",
+      "bytes": 2278,
+      "gitBlobExact": true,
+      "normalizedTextOnly": false
+    },
+    {
+      "file": "art/tinker-panda-v3.4/frames/tail-1.png",
+      "sha256": "64787ac771e5b363b6bae4d89e300d636e8261b10a4a044a4d733286a173bac5",
+      "bytes": 2280,
+      "gitBlobExact": true,
+      "normalizedTextOnly": false
+    },
+    {
+      "file": "art/tinker-panda-v3.4/frames/tail-2.png",
+      "sha256": "b7a25d71ae8b74a0f692462090809843fab594eb58ef38f8c4e6d3bc68f3963e",
+      "bytes": 2278,
+      "gitBlobExact": true,
+      "normalizedTextOnly": false
+    },
+    {
+      "file": "art/tinker-panda-v3.4/frames/tail-3.png",
+      "sha256": "6b6cd507b90c5171d7ecf9e9678ccff351d02cd24c8f9dc69f2de5d1081e63b1",
+      "bytes": 2279,
+      "gitBlobExact": true,
+      "normalizedTextOnly": false
+    },
+    {
+      "file": "art/tinker-panda-v3.4/frames/tail-4.png",
+      "sha256": "b7a25d71ae8b74a0f692462090809843fab594eb58ef38f8c4e6d3bc68f3963e",
+      "bytes": 2278,
+      "gitBlobExact": true,
+      "normalizedTextOnly": false
+    },
+    {
+      "file": "art/tinker-panda-v3.4/sources/approved-front-96.png",
+      "sha256": "b7a25d71ae8b74a0f692462090809843fab594eb58ef38f8c4e6d3bc68f3963e",
+      "bytes": 2278,
+      "gitBlobExact": true,
+      "normalizedTextOnly": false
+    },
+    {
+      "file": "art/tinker-panda-v3.4/sources/face-mask.json",
+      "sha256": "62183fd2d1713d526fd075cd6e516dd16da7ccc91d54fabab54c831d8d4d0553",
+      "bytes": 1465,
+      "gitBlobExact": false,
+      "normalizedTextOnly": true
+    },
+    {
+      "file": "art/tinker-panda-v3.4/sources/palette.json",
+      "sha256": "297ae86c7b1a2e1ae0c0c28fdbfeafb5fc67db1e107780c7a792a0cd4413741a",
+      "bytes": 2414,
+      "gitBlobExact": false,
+      "normalizedTextOnly": true
+    },
+    {
+      "file": "art/tinker-panda-v3.4/sources/preservation-before.json",
+      "sha256": "acd580b0ace6608e2a7f8bb38a884a22d9307bce4a95656dd3f6e3aaa3ac0a7f",
+      "bytes": 42032,
+      "gitBlobExact": false,
+      "normalizedTextOnly": true
+    },
+    {
+      "file": "art/tinker-panda-v3.4/sources/selected-prompt.json",
+      "sha256": "e4cf3f772c9b6e6b53e9447c328a8ca457eac4c9292268c8cea200fcc46046a8",
+      "bytes": 3254,
+      "gitBlobExact": false,
+      "normalizedTextOnly": true
+    },
+    {
+      "file": "art/tinker-panda-v3.4/sources/v2.1-candidate-b-64.png",
+      "sha256": "a07781439461bc715463a6d830598e8eb93ef47ec508d346307d71915f534ba3",
+      "bytes": 1513,
+      "gitBlobExact": true,
+      "normalizedTextOnly": false
+    },
+    {
+      "file": "art/tinker-panda-v3.4/sources/v3.2-hybrid-96.png",
+      "sha256": "37df93785c3bf4eb8616cbfe84249168446c780e36c8a7bbe08ee7a61517500f",
+      "bytes": 2245,
+      "gitBlobExact": true,
+      "normalizedTextOnly": false
+    },
+    {
+      "file": "art/tinker-panda-v3.4/sources/v3.3-source-notes.json",
+      "sha256": "742ecec1664227985254856019513fcfd5547564051e8a718eae0ab7e1bebbf7",
+      "bytes": 5088,
+      "gitBlobExact": false,
+      "normalizedTextOnly": true
+    },
+    {
+      "file": "public/mascot/tinker-panda-v3.4/atlases/blink.png",
+      "sha256": "31bce4aee9a1c5a310d67cbcab478d1ac5803b88083620ac8623fbb1f68d83c4",
+      "bytes": 3622,
+      "gitBlobExact": true,
+      "normalizedTextOnly": false
+    },
+    {
+      "file": "public/mascot/tinker-panda-v3.4/atlases/happy.png",
+      "sha256": "3f58647280618b0f04259fcaaf66f75482b228635e9e526e5d73b28ae5ba6dd8",
+      "bytes": 3777,
+      "gitBlobExact": true,
+      "normalizedTextOnly": false
+    },
+    {
+      "file": "public/mascot/tinker-panda-v3.4/atlases/idle.png",
+      "sha256": "8096ba9a4e9ad97b29b7c91660bec49ad1a7ae7b746a56d3e3be2b468c468d61",
+      "bytes": 2990,
+      "gitBlobExact": true,
+      "normalizedTextOnly": false
+    },
+    {
+      "file": "public/mascot/tinker-panda-v3.4/atlases/tail.png",
+      "sha256": "cbd69d6f853c4eec70bbb3b595f2808d5851a596ab80f64da12e212cac45d1db",
+      "bytes": 3733,
+      "gitBlobExact": true,
+      "normalizedTextOnly": false
+    },
+    {
+      "file": "public/mascot/tinker-panda-v3.4/front.png",
+      "sha256": "b7a25d71ae8b74a0f692462090809843fab594eb58ef38f8c4e6d3bc68f3963e",
+      "bytes": 2278,
+      "gitBlobExact": true,
+      "normalizedTextOnly": false
+    },
+    {
+      "file": "public/mascot/tinker-panda-v3.4/manifest.json",
+      "sha256": "5b52aaecb04e0b989c0d73379ee48de1ea456c3062b06c2e6fd177b0e2638ea6",
+      "bytes": 5415,
+      "gitBlobExact": false,
+      "normalizedTextOnly": true
+    }
+  ],
+  "http": [
+    {
+      "url": "http://localhost:4326/",
+      "passed": false,
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "url": "http://localhost:4326/mascot/tinker-panda-v3.4/atlases/blink.png",
+      "passed": false,
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "url": "http://localhost:4326/mascot/tinker-panda-v3.4/atlases/happy.png",
+      "passed": false,
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "url": "http://localhost:4326/mascot/tinker-panda-v3.4/atlases/idle.png",
+      "passed": false,
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "url": "http://localhost:4326/mascot/tinker-panda-v3.4/atlases/tail.png",
+      "passed": false,
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "url": "http://localhost:4326/mascot/tinker-panda-v3.4/front.png",
+      "passed": false,
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "url": "http://localhost:4326/mascot/tinker-panda-v3.4/manifest.json",
+      "passed": false,
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "url": "http://127.0.0.1:4327/",
+      "passed": false,
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "url": "http://127.0.0.1:4327/mascot/tinker-panda-v3.4/atlases/blink.png",
+      "passed": false,
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "url": "http://127.0.0.1:4327/mascot/tinker-panda-v3.4/atlases/happy.png",
+      "passed": false,
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "url": "http://127.0.0.1:4327/mascot/tinker-panda-v3.4/atlases/idle.png",
+      "passed": false,
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "url": "http://127.0.0.1:4327/mascot/tinker-panda-v3.4/atlases/tail.png",
+      "passed": false,
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "url": "http://127.0.0.1:4327/mascot/tinker-panda-v3.4/front.png",
+      "passed": false,
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "url": "http://127.0.0.1:4327/mascot/tinker-panda-v3.4/manifest.json",
+      "passed": false,
+      "error": "TypeError: fetch failed"
+    }
+  ],
+  "changedFromApproved": [
+    "A\tdocs/release-candidate-2026-11-05/CHANGED-FILES.md",
+    "A\tdocs/release-candidate-2026-11-05/README.md",
+    "A\tdocs/release-candidate-2026-11-05/asset-validation.json",
+    "A\tdocs/release-candidate-2026-11-05/integrity.json",
+    "A\tdocs/release-candidate-2026-11-05/review-coverage.json",
+    "A\tdocs/release-candidate-2026-11-05/validation.txt",
+    "M\tpackage.json",
+    "M\tsrc/components/TinkerPanda.astro"
+  ],
+  "httpBlockerConfirmed": "connect EACCES 127.0.0.1:4327"
+}

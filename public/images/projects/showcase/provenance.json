@@ -193,5 +193,233 @@
         "bytes": 14388
       }
     ]
+  },
+  {
+    "name": "nightstock-v131-road",
+    "sourceBuild": "NightStock V1.3.1 Windows",
+    "buildCommit": "6657236b3b44683e441c8f9bb67af2bf1065fd86",
+    "executableSHA256": "ab1824f85bfd8e0e4128182c000c4003a3e042245b2967848d089b2a04b22424",
+    "packSHA256": "047072e08dd0affedd0bb6e85806c908c8c54479bf4802e0ad7f53967c12c579",
+    "originalCapturePath": "C:\\AI\\afterbedtimelabs.github.io\\.recovery\\nightstock-scenic/bridge-cab.png",
+    "preservedOriginal": "docs/nightstock-tinker-review/gameplay-originals/nightstock-v131-road.png",
+    "sourceSHA256": "5713408126a23cecb6c916d00bddf0e47cee1a61da77a6fb0c0bd0b396e51901",
+    "originalBytes": 562424,
+    "width": 1920,
+    "height": 1080,
+    "context": "Staged bridge viewpoint; mission overlay hidden; production cab and headlights.",
+    "processing": "Resize and WebP compression only.",
+    "outputs": [
+      {
+        "file": "nightstock-v131-road-640.webp",
+        "bytes": 11860,
+        "width": 640,
+        "height": 360,
+        "sha256": "f12770e8de72eb1bf3176c8e1298c347b33ae301dc0fa95842cfffd41bfdcb95"
+      },
+      {
+        "file": "nightstock-v131-road-1280.webp",
+        "bytes": 29148,
+        "width": 1280,
+        "height": 720,
+        "sha256": "dd46b44cf79c67db79f9531f3455963c9fb53a96685d3d1023f427a1f00812d0"
+      },
+      {
+        "file": "nightstock-v131-road.webp",
+        "bytes": 49830,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "15f1c267207573134bfbf11915e1a5b6c2e9ff50db84b96408d4f22a464867a3"
+      }
+    ]
+  },
+  {
+    "name": "nightstock-v131-forest",
+    "sourceBuild": "NightStock V1.3.1 Windows",
+    "buildCommit": "6657236b3b44683e441c8f9bb67af2bf1065fd86",
+    "executableSHA256": "ab1824f85bfd8e0e4128182c000c4003a3e042245b2967848d089b2a04b22424",
+    "packSHA256": "047072e08dd0affedd0bb6e85806c908c8c54479bf4802e0ad7f53967c12c579",
+    "originalCapturePath": "C:\\AI\\afterbedtimelabs.github.io\\.recovery\\nightstock-scenic/forest-cab.png",
+    "preservedOriginal": "docs/nightstock-tinker-review/gameplay-originals/nightstock-v131-forest.png",
+    "sourceSHA256": "d0ae3fc7318b1379a17809597dfb4e0157f2d15f02e040c60c762c072dbd74e4",
+    "originalBytes": 535729,
+    "width": 1920,
+    "height": 1080,
+    "context": "Staged cedar forest viewpoint; mission overlay hidden.",
+    "processing": "Resize and WebP compression only.",
+    "outputs": [
+      {
+        "file": "nightstock-v131-forest-640.webp",
+        "bytes": 8818,
+        "width": 640,
+        "height": 360,
+        "sha256": "b3057d909590c72654617167f79abdd74ee07f748f0689660793f427e725ebbf"
+      },
+      {
+        "file": "nightstock-v131-forest-1280.webp",
+        "bytes": 22836,
+        "width": 1280,
+        "height": 720,
+        "sha256": "4cdb04b44efc34719a33e92a4969e3509d205b0c9032fe88686bb00174a9e698"
+      },
+      {
+        "file": "nightstock-v131-forest.webp",
+        "bytes": 39098,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "80a81618b3501ecd90581c84d941772373288aeeb632c6ba56cc84447e74b491"
+      }
+    ]
+  },
+  {
+    "name": "nightstock-v131-tunnel",
+    "sourceBuild": "NightStock V1.3.1 Windows",
+    "buildCommit": "6657236b3b44683e441c8f9bb67af2bf1065fd86",
+    "executableSHA256": "ab1824f85bfd8e0e4128182c000c4003a3e042245b2967848d089b2a04b22424",
+    "packSHA256": "047072e08dd0affedd0bb6e85806c908c8c54479bf4802e0ad7f53967c12c579",
+    "originalCapturePath": "C:\\AI\\afterbedtimelabs.github.io\\.recovery\\nightstock-scenic/tunnel-cab.png",
+    "preservedOriginal": "docs/nightstock-tinker-review/gameplay-originals/nightstock-v131-tunnel.png",
+    "sourceSHA256": "5795201d12c5caf9848e14a06fe44934dba07f099fa965bf8850ba70a0e81600",
+    "originalBytes": 388568,
+    "width": 1920,
+    "height": 1080,
+    "context": "Staged tunnel viewpoint; mission overlay hidden.",
+    "processing": "Resize and WebP compression only.",
+    "outputs": [
+      {
+        "file": "nightstock-v131-tunnel-640.webp",
+        "bytes": 6558,
+        "width": 640,
+        "height": 360,
+        "sha256": "d979dfd06603f4cba60266fc362387fc0c7a68ca1a4b984c79568a0e2d87fe9c"
+      },
+      {
+        "file": "nightstock-v131-tunnel-1280.webp",
+        "bytes": 15622,
+        "width": 1280,
+        "height": 720,
+        "sha256": "2d7747c22bd726e406317532b4128a0dc7e2eeb2bd05a4e183c2181471ef6297"
+      },
+      {
+        "file": "nightstock-v131-tunnel.webp",
+        "bytes": 25904,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "eee64ae39ac9332bfdff7c31483694ba6a8fa52b746e7db400d0b1d76eadb268"
+      }
+    ]
+  },
+  {
+    "name": "nightstock-v131-store",
+    "sourceBuild": "NightStock V1.3.1 Windows",
+    "buildCommit": "6657236b3b44683e441c8f9bb67af2bf1065fd86",
+    "executableSHA256": "ab1824f85bfd8e0e4128182c000c4003a3e042245b2967848d089b2a04b22424",
+    "packSHA256": "047072e08dd0affedd0bb6e85806c908c8c54479bf4802e0ad7f53967c12c579",
+    "originalCapturePath": "C:\\AI\\afterbedtimelabs.github.io\\.recovery\\nightstock-scenic/yorumichi-exterior.png",
+    "preservedOriginal": "docs/nightstock-tinker-review/gameplay-originals/nightstock-v131-store.png",
+    "sourceSHA256": "21216037f84687a4ac61ac24736e7d1cc92f264d1ba649b655075fba4058f737",
+    "originalBytes": 497721,
+    "width": 1920,
+    "height": 1080,
+    "context": "Staged exterior camera at YORUMICHI; mission overlay hidden.",
+    "processing": "Resize and WebP compression only.",
+    "outputs": [
+      {
+        "file": "nightstock-v131-store-640.webp",
+        "bytes": 8620,
+        "width": 640,
+        "height": 360,
+        "sha256": "0497ece5b4af3467fb294a0408d8b2b021ea99bee9411ad8d1c4e4abb244672d"
+      },
+      {
+        "file": "nightstock-v131-store-1280.webp",
+        "bytes": 23460,
+        "width": 1280,
+        "height": 720,
+        "sha256": "bb70ed87c5fa9e409b498dd4051a59d3f82399e5919945f06f3e80cb9c79788b"
+      },
+      {
+        "file": "nightstock-v131-store.webp",
+        "bytes": 43642,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "8b184cfdeb6a29d33699690013d103b7e6eafb0bc9ccbfaecb12985ea5db751a"
+      }
+    ]
+  },
+  {
+    "name": "nightstock-v131-delivery",
+    "sourceBuild": "NightStock V1.3.1 Windows",
+    "buildCommit": "6657236b3b44683e441c8f9bb67af2bf1065fd86",
+    "executableSHA256": "ab1824f85bfd8e0e4128182c000c4003a3e042245b2967848d089b2a04b22424",
+    "packSHA256": "047072e08dd0affedd0bb6e85806c908c8c54479bf4802e0ad7f53967c12c579",
+    "originalCapturePath": "D:/Night Stock/nightstock-v131/artifacts/v131-package-captures/final-02/screenshots/09-physical-delivery.png",
+    "preservedOriginal": "docs/nightstock-tinker-review/gameplay-originals/nightstock-v131-delivery.png",
+    "sourceSHA256": "cb4949eba87564857a05be8c87e9a1d6d2db0b04f591208990caf54b2abb5b06",
+    "originalBytes": 588209,
+    "width": 1920,
+    "height": 1080,
+    "context": "Existing packaged capture harness; staged arrival, real physical handover.",
+    "processing": "Resize and WebP compression only.",
+    "outputs": [
+      {
+        "file": "nightstock-v131-delivery-640.webp",
+        "bytes": 19318,
+        "width": 640,
+        "height": 360,
+        "sha256": "36c3fd6a2b4d830fcf535b528c728a8b709e8b967590e5a5b11ed58db9363535"
+      },
+      {
+        "file": "nightstock-v131-delivery-1280.webp",
+        "bytes": 46780,
+        "width": 1280,
+        "height": 720,
+        "sha256": "4d18b5bac95f7a6a8bd515ee0f45f6a55181880b8fd64076ea563f77cbdbd086"
+      },
+      {
+        "file": "nightstock-v131-delivery.webp",
+        "bytes": 76800,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "5d08c294823ac254a07089fbb4b10f65dd84d0f37be35e73dff1ca905c1d62bf"
+      }
+    ]
+  },
+  {
+    "name": "nightstock-v131-phone",
+    "sourceBuild": "NightStock V1.3.1 Windows",
+    "buildCommit": "6657236b3b44683e441c8f9bb67af2bf1065fd86",
+    "executableSHA256": "ab1824f85bfd8e0e4128182c000c4003a3e042245b2967848d089b2a04b22424",
+    "packSHA256": "047072e08dd0affedd0bb6e85806c908c8c54479bf4802e0ad7f53967c12c579",
+    "originalCapturePath": "D:/Night Stock/nightstock-v131/artifacts/v131-package-captures/final-02/screenshots/02-dispatch.png",
+    "preservedOriginal": "docs/nightstock-tinker-review/gameplay-originals/nightstock-v131-phone.png",
+    "sourceSHA256": "e38a7f9c2a57a88334fa73404bed2bc08c10ab01180121e3c2fee5d4a48e29e7",
+    "originalBytes": 634572,
+    "width": 1920,
+    "height": 1080,
+    "context": "Existing packaged capture harness; actual dispatch phone at depot.",
+    "processing": "Resize and WebP compression only.",
+    "outputs": [
+      {
+        "file": "nightstock-v131-phone-640.webp",
+        "bytes": 21298,
+        "width": 640,
+        "height": 360,
+        "sha256": "67ed07a7a9166e81a9b19c0bccbb98d41ae0e264db571f193216df678930ec23"
+      },
+      {
+        "file": "nightstock-v131-phone-1280.webp",
+        "bytes": 52808,
+        "width": 1280,
+        "height": 720,
+        "sha256": "712c40156c3864d7be0f5cbcdbc910be907d4ba4937668cf2e7826e8398f2c32"
+      },
+      {
+        "file": "nightstock-v131-phone.webp",
+        "bytes": 86700,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "e5c8fc9fced3e5c62bc4dd0ebb954f3d0af01695b25ab9467da4b1c85d09aaa7"
+      }
+    ]
   }
 ]

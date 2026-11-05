@@ -1,0 +1,360 @@
+{
+  "date": "2026-10-25",
+  "method": "Genuine Chromium in-app-browser UI interactions, DOM measurements and JPEG screenshots; website served from Astro production build at http://localhost:4323; review HTML served locally at http://127.0.0.1:4322.",
+  "presentations": [
+    {
+      "name": "narrow-mobile-light",
+      "brokenImages": [],
+      "copy": {
+        "bottom": 672.375,
+        "height": 508.375,
+        "left": 20,
+        "right": 285,
+        "top": 164,
+        "width": 265,
+        "x": 20,
+        "y": 164
+      },
+      "dpr": 1,
+      "figure": {
+        "bottom": 1089.609375,
+        "height": 395.234375,
+        "left": 20,
+        "right": 285,
+        "top": 694.375,
+        "width": 265,
+        "x": 20,
+        "y": 694.375
+      },
+      "mascot": {
+        "frame": "front",
+        "imageRendering": "crisp-edges",
+        "rect": {
+          "bottom": 902.375,
+          "height": 192,
+          "left": 56.5,
+          "right": 248.5,
+          "top": 710.375,
+          "width": 192,
+          "x": 56.5,
+          "y": 710.375
+        }
+      },
+      "overflow": false,
+      "theme": "light",
+      "viewport": [
+        320,
+        1000
+      ]
+    },
+    {
+      "name": "tablet-light",
+      "brokenImages": [],
+      "copy": {
+        "bottom": 604.53125,
+        "height": 430.53125,
+        "left": 40,
+        "right": 448.90625,
+        "top": 174,
+        "width": 408.90625,
+        "x": 40,
+        "y": 174
+      },
+      "dpr": 1,
+      "figure": {
+        "bottom": 596.875,
+        "height": 395.234375,
+        "left": 472.90625,
+        "right": 764.984375,
+        "top": 201.640625,
+        "width": 292.078125,
+        "x": 472.90625,
+        "y": 201.640625
+      },
+      "mascot": {
+        "frame": "front",
+        "imageRendering": "crisp-edges",
+        "rect": {
+          "bottom": 409.640625,
+          "height": 192,
+          "left": 522.9375,
+          "right": 714.9375,
+          "top": 217.640625,
+          "width": 192,
+          "x": 522.9375,
+          "y": 217.640625
+        }
+      },
+      "overflow": false,
+      "theme": "light",
+      "viewport": [
+        820,
+        1100
+      ]
+    },
+    {
+      "name": "compact-tablet-light",
+      "brokenImages": [],
+      "copy": {
+        "bottom": 604.53125,
+        "height": 430.53125,
+        "left": 40,
+        "right": 418.578125,
+        "top": 174,
+        "width": 378.578125,
+        "x": 40,
+        "y": 174
+      },
+      "dpr": 1,
+      "figure": {
+        "bottom": 596.875,
+        "height": 395.234375,
+        "left": 442.578125,
+        "right": 712.984375,
+        "top": 201.640625,
+        "width": 270.40625,
+        "x": 442.578125,
+        "y": 201.640625
+      },
+      "mascot": {
+        "frame": "front",
+        "imageRendering": "crisp-edges",
+        "rect": {
+          "bottom": 409.640625,
+          "height": 192,
+          "left": 481.78125,
+          "right": 673.78125,
+          "top": 217.640625,
+          "width": 192,
+          "x": 481.78125,
+          "y": 217.640625
+        }
+      },
+      "overflow": false,
+      "theme": "light",
+      "viewport": [
+        768,
+        1024
+      ]
+    },
+    {
+      "name": "desktop-light",
+      "brokenImages": [],
+      "copy": {
+        "bottom": 613.375,
+        "height": 439.375,
+        "left": 152.5,
+        "right": 778.65625,
+        "top": 174,
+        "width": 626.15625,
+        "x": 152.5,
+        "y": 174
+      },
+      "dpr": 1,
+      "figure": {
+        "bottom": 601.296875,
+        "height": 395.234375,
+        "left": 848.578125,
+        "right": 1232.578125,
+        "top": 206.0625,
+        "width": 384,
+        "x": 848.578125,
+        "y": 206.0625
+      },
+      "mascot": {
+        "frame": "front",
+        "imageRendering": "crisp-edges",
+        "rect": {
+          "bottom": 414.0625,
+          "height": 192,
+          "left": 944.578125,
+          "right": 1136.578125,
+          "top": 222.0625,
+          "width": 192,
+          "x": 944.578125,
+          "y": 222.0625
+        }
+      },
+      "overflow": false,
+      "theme": "light",
+      "viewport": [
+        1440,
+        1000
+      ]
+    },
+    {
+      "name": "desktop-dark",
+      "brokenImages": [],
+      "copy": {
+        "bottom": 613.375,
+        "height": 439.375,
+        "left": 152.5,
+        "right": 778.65625,
+        "top": 174,
+        "width": 626.15625,
+        "x": 152.5,
+        "y": 174
+      },
+      "dpr": 1,
+      "figure": {
+        "bottom": 601.296875,
+        "height": 395.234375,
+        "left": 848.578125,
+        "right": 1232.578125,
+        "top": 206.0625,
+        "width": 384,
+        "x": 848.578125,
+        "y": 206.0625
+      },
+      "mascot": {
+        "frame": "front",
+        "imageRendering": "crisp-edges",
+        "rect": {
+          "bottom": 414.0625,
+          "height": 192,
+          "left": 944.578125,
+          "right": 1136.578125,
+          "top": 222.0625,
+          "width": 192,
+          "x": 944.578125,
+          "y": 222.0625
+        }
+      },
+      "overflow": false,
+      "theme": "dark",
+      "viewport": [
+        1440,
+        1000
+      ]
+    },
+    {
+      "name": "mobile-dark",
+      "brokenImages": [],
+      "copy": {
+        "bottom": 584.6875,
+        "height": 420.6875,
+        "left": 20,
+        "right": 355,
+        "top": 164,
+        "width": 335,
+        "x": 20,
+        "y": 164
+      },
+      "dpr": 1,
+      "figure": {
+        "bottom": 1001.921875,
+        "height": 395.234375,
+        "left": 20,
+        "right": 355,
+        "top": 606.6875,
+        "width": 335,
+        "x": 20,
+        "y": 606.6875
+      },
+      "mascot": {
+        "frame": "front",
+        "imageRendering": "crisp-edges",
+        "rect": {
+          "bottom": 814.6875,
+          "height": 192,
+          "left": 91.5,
+          "right": 283.5,
+          "top": 622.6875,
+          "width": 192,
+          "x": 91.5,
+          "y": 622.6875
+        }
+      },
+      "overflow": false,
+      "theme": "dark",
+      "viewport": [
+        390,
+        1100
+      ]
+    },
+    {
+      "name": "mobile-light",
+      "brokenImages": [],
+      "copy": {
+        "bottom": 584.6875,
+        "height": 420.6875,
+        "left": 20,
+        "right": 355,
+        "top": 164,
+        "width": 335,
+        "x": 20,
+        "y": 164
+      },
+      "dpr": 1,
+      "figure": {
+        "bottom": 1001.921875,
+        "height": 395.234375,
+        "left": 20,
+        "right": 355,
+        "top": 606.6875,
+        "width": 335,
+        "x": 20,
+        "y": 606.6875
+      },
+      "mascot": {
+        "frame": "front",
+        "imageRendering": "crisp-edges",
+        "rect": {
+          "bottom": 814.6875,
+          "height": 192,
+          "left": 91.5,
+          "right": 283.5,
+          "top": 622.6875,
+          "width": 192,
+          "x": 91.5,
+          "y": 622.6875
+        }
+      },
+      "overflow": false,
+      "theme": "light",
+      "viewport": [
+        390,
+        1100
+      ]
+    }
+  ],
+  "greetingCheck": {
+    "pausedGreeting": {
+      "frame": "front",
+      "message": "Hello! There’s always room for one more idea."
+    },
+    "activeGreeting": {
+      "frame": "happy:1",
+      "message": "The lamp is on. Let’s make something."
+    },
+    "returnedToFront": true,
+    "figureSizeUnchanged": true,
+    "mascotPositionUnchanged": false,
+    "viewportScrollDelta": 304,
+    "mascotMovedWithDocumentScroll": true,
+    "positionWithinFigureUnchanged": true
+  },
+  "navigationCheck": {
+    "projectsAnchor": "http://localhost:4323/#projects-title",
+    "headingVisible": true,
+    "frameAfterViewportExit": "front",
+    "projectsPage": {
+      "url": "http://localhost:4323/projects/",
+      "heading": "Projects & experiments."
+    }
+  },
+  "consoleErrorsOrWarnings": [],
+  "reviewEvidence": {
+    "tailThreeCycleResult": "Finished 3 tail cycles. Returned to the approved front.",
+    "brokenImages": [],
+    "consoleErrorsOrWarnings": [],
+    "galleryLoadedImages": 51,
+    "galleryBrokenImages": [],
+    "galleryConsoleErrorsOrWarnings": []
+  },
+  "limitations": [
+    "Browser viewport emulation at DPR 1; no physical phone, Safari or Firefox session was available.",
+    "Native OS reduced-motion preference switching and browser JavaScript-disable controls were not exposed. Reduced-motion initialization/change and no-JavaScript fallback are covered by the actual-controller VM tests and static markup/CSS assertions.",
+    "Browser JPEG screenshots are visual evidence; exact pixel fidelity is established by RGBA and PNG hash validation, not JPEG comparison."
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "canonicalSha256": "b7a25d71ae8b74a0f692462090809843fab594eb58ef38f8c4e6d3bc68f3963e",
+  "expectedSha256": "b7a25d71ae8b74a0f692462090809843fab594eb58ef38f8c4e6d3bc68f3963e",
+  "nativePixels": 96,
+  "enlargement": {
+    "factor": 4,
+    "pixels": 384,
+    "method": "nearest-neighbor"
+  },
+  "historicalCanvasSizes": [
+    {
+      "title": "V2.1 Candidate B / prior canonical",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "title": "V3.2 Hybrid 96",
+      "width": 96,
+      "height": 96
+    },
+    {
+      "title": "V3.4 Expressive Markings",
+      "width": 96,
+      "height": 96
+    }
+  ],
+  "frameCount": 18,
+  "outputs": [
+    "comparison-board.png",
+    "animation-frames.png",
+    "review.html"
+  ],
+  "notes": "PNG board sprites are composited directly from source PNGs, with only integer nearest-neighbor enlargement. This record does not assert browser QA."
+}

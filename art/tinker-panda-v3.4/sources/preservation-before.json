@@ -1,0 +1,869 @@
+{
+  "base": "05431e6",
+  "branch": "codex/tinker-panda-v3.4-final",
+  "files": [
+    {
+      "path": "art/tinker-panda-approved-v3.3/board-layout-handoff.json",
+      "sha256": "da8d7523d5105847444ec1a25d3ee06c358bfeac79c9554900f0cc87da8ee1bf",
+      "normalizedLfSha256": "da8d7523d5105847444ec1a25d3ee06c358bfeac79c9554900f0cc87da8ee1bf"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/boards/approved-master-handoff.png",
+      "sha256": "cb7b67494cadd821a5e83d1a60a70355656dc5038c06b7997f8c6108592ac1c1"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/build-handoff.mjs",
+      "sha256": "619b17fa40d1ccb523c65690d02b0990dba0730ff436cfc2f609c6433a93dffb",
+      "normalizedLfSha256": "619b17fa40d1ccb523c65690d02b0990dba0730ff436cfc2f609c6433a93dffb"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/build-review.mjs",
+      "sha256": "cbd7d0deae0e84f30462a2af04e8f405f016877c18b40f73c4ec42dda8b1b205",
+      "normalizedLfSha256": "cbd7d0deae0e84f30462a2af04e8f405f016877c18b40f73c4ec42dda8b1b205"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/build-website-previews.mjs",
+      "sha256": "714c599085f42b25ed9bff6588b97d50fb2faec888a20232a5a24da42b5c940f",
+      "normalizedLfSha256": "714c599085f42b25ed9bff6588b97d50fb2faec888a20232a5a24da42b5c940f"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/master/manifest.json",
+      "sha256": "4ec9f45ec41580b07f4a3553cfb1f1d919986bc792b33845ea9baf2144fc2c78",
+      "normalizedLfSha256": "4ec9f45ec41580b07f4a3553cfb1f1d919986bc792b33845ea9baf2144fc2c78"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/master/palette.json",
+      "sha256": "90363211b9ccc502ebbe1c10cf3ba1350f4c8b72e347f1a6aed481755fe029fe",
+      "normalizedLfSha256": "90363211b9ccc502ebbe1c10cf3ba1350f4c8b72e347f1a6aed481755fe029fe"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/master/tinker-panda-approved-v3.3-front-96.png",
+      "sha256": "b7a25d71ae8b74a0f692462090809843fab594eb58ef38f8c4e6d3bc68f3963e"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/preview-layout.json",
+      "sha256": "0607b395ac40e4addf798f7449605c0f097fab32d404378ba141e4af3e3c2c43",
+      "normalizedLfSha256": "0607b395ac40e4addf798f7449605c0f097fab32d404378ba141e4af3e3c2c43"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/previews/master-dark.png",
+      "sha256": "e2ac41b9fb5822f7f81396f3c336f6e2e64872130984dc791d357d99c4e8d869"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/previews/master-light.png",
+      "sha256": "60e1a69ef13a58e9e23547bd9a43d2abc83586b604ff0abd28b63ddb7ff751d8"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/previews/website-hero-desktop-dark.png",
+      "sha256": "8727d3d6e5f5416b6bb1d1e7eb6737a1e4015a09d4bd5eba650062696b08a3b1"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/previews/website-hero-desktop-light.png",
+      "sha256": "4c4eddcd73ada9212f23712fb06c7fe0f79e8db82f97e143582bef62f9f49e03"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/previews/website-hero-mobile-dark.png",
+      "sha256": "d7526afed583b73a1f2ee9d9db893b84ea2eedbed56e3a11f805cbe31f993bc6"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/previews/website-hero-mobile-light.png",
+      "sha256": "e3e69db246ace12950882f8c5b2c28b79473fb4212920041ad9edb675cf98930"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/previews/website-supporting-desktop-dark.png",
+      "sha256": "9fe620c908ec287f0dafb0f2a9fdeb587aa770a7401947a2a9ec873362b5862b"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/previews/website-supporting-desktop-light.png",
+      "sha256": "4b7e457ac8b90c3846bb2dee938d6a47541eab66d5a1bde3cd7761faf010587f"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/previews/website-supporting-mobile-dark.png",
+      "sha256": "7182c1470bd5ce15bb083340d64ab5a09accbed9b8c09b25ef12ed00eb3ad05d"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/previews/website-supporting-mobile-light.png",
+      "sha256": "056370dbc67587d3ac24210152f4a4a324506df7935370a7f52b0db3d685c85a"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/recommendation.json",
+      "sha256": "4277efed43fafd39de060cc65863c9401c7d81b255671c33be56d9855b5dd1e8",
+      "normalizedLfSha256": "4277efed43fafd39de060cc65863c9401c7d81b255671c33be56d9855b5dd1e8"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/review.html",
+      "sha256": "69818706de371a10f3c26fef25c63e27ff9915f9fbf963963193d4cb51969505",
+      "normalizedLfSha256": "69818706de371a10f3c26fef25c63e27ff9915f9fbf963963193d4cb51969505"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/sources/approval.json",
+      "sha256": "906c68adb891c3dd512e9054b266931b72232e4509a5a69f880a8d85d40d64b3",
+      "normalizedLfSha256": "906c68adb891c3dd512e9054b266931b72232e4509a5a69f880a8d85d40d64b3"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/sources/face-mask.json",
+      "sha256": "f949e2da12a0905b12f2e28dc9ccf6637c79b3d448881ee56b6d0a61daefce86",
+      "normalizedLfSha256": "f949e2da12a0905b12f2e28dc9ccf6637c79b3d448881ee56b6d0a61daefce86"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/sources/preservation-before.json",
+      "sha256": "696bef50fd1ceab83b71e2ab83b88b45f6b1ac1804a001ff3aa9eb0eb5fd2277",
+      "normalizedLfSha256": "277d222c4b64b97880236292eecb548135ea762415480bb9032fac95b3297afe"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/sources/selected-prompt.json",
+      "sha256": "ed1459415659e1f77bc2ee9b0f3ef460a415edfcd24782b46568eea1cc189116",
+      "normalizedLfSha256": "ed1459415659e1f77bc2ee9b0f3ef460a415edfcd24782b46568eea1cc189116"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/sources/site-before.json",
+      "sha256": "8add0bf4e728408d86d2f95cc66a4e80991d346ab1fabf16078048c200b7aa31",
+      "normalizedLfSha256": "c58b16b2ecc15463bfa4e7ebcc91623581ce3971a3fca6ede1dff680b104ff27"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/sources/site-context.json",
+      "sha256": "77f62e289f6782ce951f23a17e7549fe36fd204fc39d0d9f3476d12975ce6b08",
+      "normalizedLfSha256": "77f62e289f6782ce951f23a17e7549fe36fd204fc39d0d9f3476d12975ce6b08"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/sources/source-notes.json",
+      "sha256": "9fe23489f4308fb2b597ec53fcd75d4b4fe6c81d8dc36d15b1fddadb23f04db7",
+      "normalizedLfSha256": "9fe23489f4308fb2b597ec53fcd75d4b4fe6c81d8dc36d15b1fddadb23f04db7"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/sources/website-hero-desktop-dark-ui.svg",
+      "sha256": "60ce5f19e7dfc3161a7f5dde286b2c13e1cb4b544119cdb8ef3f33f430657ef7",
+      "normalizedLfSha256": "60ce5f19e7dfc3161a7f5dde286b2c13e1cb4b544119cdb8ef3f33f430657ef7"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/sources/website-hero-desktop-light-ui.svg",
+      "sha256": "70b9857cd091620c5b07be96920605522657e3696879df641570601dc8b5cccc",
+      "normalizedLfSha256": "70b9857cd091620c5b07be96920605522657e3696879df641570601dc8b5cccc"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/sources/website-hero-mobile-dark-ui.svg",
+      "sha256": "212e7877be23180360eff00b21989189c2d03198a0033a7d1995ce6c94fb30ce",
+      "normalizedLfSha256": "212e7877be23180360eff00b21989189c2d03198a0033a7d1995ce6c94fb30ce"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/sources/website-hero-mobile-light-ui.svg",
+      "sha256": "49fedd9392c9a2557a37f14fe982deee916ff275eba089824aafcfd126920f1f",
+      "normalizedLfSha256": "49fedd9392c9a2557a37f14fe982deee916ff275eba089824aafcfd126920f1f"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/sources/website-supporting-desktop-dark-ui.svg",
+      "sha256": "7a2ce8b7655c6dc71cdd40fdfb28944dc220f558a28e1f6d9bd97c104e69d8f9",
+      "normalizedLfSha256": "7a2ce8b7655c6dc71cdd40fdfb28944dc220f558a28e1f6d9bd97c104e69d8f9"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/sources/website-supporting-desktop-light-ui.svg",
+      "sha256": "858fad8fc8d8001d1e8f0f2e0cfd8c6c7db9f1d7cbccfad5b4291d65544d1588",
+      "normalizedLfSha256": "858fad8fc8d8001d1e8f0f2e0cfd8c6c7db9f1d7cbccfad5b4291d65544d1588"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/sources/website-supporting-mobile-dark-ui.svg",
+      "sha256": "0ff0cb284eba38f6f1bca120c5ab3dcf3ca98a0dd52c3725b548b67f57301e89",
+      "normalizedLfSha256": "0ff0cb284eba38f6f1bca120c5ab3dcf3ca98a0dd52c3725b548b67f57301e89"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/sources/website-supporting-mobile-light-ui.svg",
+      "sha256": "c94efe18bc7848f7d6bf2465bb00a1311695acf9f3cf9b7d623eeaf3ed449c2e",
+      "normalizedLfSha256": "c94efe18bc7848f7d6bf2465bb00a1311695acf9f3cf9b7d623eeaf3ed449c2e"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/verification.json",
+      "sha256": "5433649cf74c6f32eb881e5bd37560b38d94ba2403781ebf161a3d22d63313f3",
+      "normalizedLfSha256": "5433649cf74c6f32eb881e5bd37560b38d94ba2403781ebf161a3d22d63313f3"
+    },
+    {
+      "path": "art/tinker-panda-approved-v3.3/verify.mjs",
+      "sha256": "4346f296b856b2658c82e7f86b51fb6470dfaaa2cade58d5614b7d61d6817f88",
+      "normalizedLfSha256": "4346f296b856b2658c82e7f86b51fb6470dfaaa2cade58d5614b7d61d6817f88"
+    },
+    {
+      "path": "art/tinker-panda-v3-exploration/boards/comparison-4x.png",
+      "sha256": "429a5a20c4cd88f415802a9f4342188ff621ec5d030f71953f4c01ec5c554a1e"
+    },
+    {
+      "path": "art/tinker-panda-v3-exploration/boards/comparison-all-scales.png",
+      "sha256": "b9759dc8fc03c17248ff73d08847ecf583f7e77f7d2c8f1b3f5fd0de5f74c76a"
+    },
+    {
+      "path": "art/tinker-panda-v3-exploration/build-board.mjs",
+      "sha256": "3483f94ffbf82a93d26ef21eaa8c555aa455efc46276e6e835c3108f6b988d81",
+      "normalizedLfSha256": "3483f94ffbf82a93d26ef21eaa8c555aa455efc46276e6e835c3108f6b988d81"
+    },
+    {
+      "path": "art/tinker-panda-v3-exploration/critique.json",
+      "sha256": "6343670df26282b66243ba0d1e001076b414bf45eac255cd561fddc259e373ad",
+      "normalizedLfSha256": "6343670df26282b66243ba0d1e001076b414bf45eac255cd561fddc259e373ad"
+    },
+    {
+      "path": "art/tinker-panda-v3-exploration/prepare-native.mjs",
+      "sha256": "11ba1754813cf976649713198a23a3e0046cdca49e91aa9c8ffcee3681f5456b",
+      "normalizedLfSha256": "11ba1754813cf976649713198a23a3e0046cdca49e91aa9c8ffcee3681f5456b"
+    },
+    {
+      "path": "art/tinker-panda-v3-exploration/review.html",
+      "sha256": "b882d5cee4f50d469bef1436f239dab6f2abf7f42196f8de5ba4be82d006d9d9",
+      "normalizedLfSha256": "b882d5cee4f50d469bef1436f239dab6f2abf7f42196f8de5ba4be82d006d9d9"
+    },
+    {
+      "path": "art/tinker-panda-v3-exploration/sources/01-refined-original-generated.png",
+      "sha256": "8f4c86bddb2e3d0ad2cabb465434ab83aa54fe812361eec2e77d25a655e16ecb"
+    },
+    {
+      "path": "art/tinker-panda-v3-exploration/sources/01-refined-original-revised.png",
+      "sha256": "5a12469893a58f9c4151901d2c58af8ae129c2c4a8f63813a55209c0ee4e6984"
+    },
+    {
+      "path": "art/tinker-panda-v3-exploration/sources/02-playful-inventor-generated.png",
+      "sha256": "b238285142c0777d39060284f2e84238af86a6a2b3f5cd719540c09180293ed6"
+    },
+    {
+      "path": "art/tinker-panda-v3-exploration/sources/02-playful-inventor-revised.png",
+      "sha256": "342cadbd138996f39baf429ddc2845cc5fa72e19d94365594d96ad16b86f8256"
+    },
+    {
+      "path": "art/tinker-panda-v3-exploration/sources/03-iconic-mascot-generated.png",
+      "sha256": "8f6aa67ec3545f9a75f8758788fda6d83443436ab2b0f6b560fac00aef0e7d01"
+    },
+    {
+      "path": "art/tinker-panda-v3-exploration/sources/03-iconic-mascot-revised.png",
+      "sha256": "d42981ded0b1ba97666b2f767a890214e915f67a3e65f2f51476f3d1d1103cb4"
+    },
+    {
+      "path": "art/tinker-panda-v3-exploration/sources/native-extraction.json",
+      "sha256": "7eeff82f519a3d25575dec4f68b1c2d7567886354ac55e7371639efd9bda4b62",
+      "normalizedLfSha256": "7eeff82f519a3d25575dec4f68b1c2d7567886354ac55e7371639efd9bda4b62"
+    },
+    {
+      "path": "art/tinker-panda-v3-exploration/sources/prompts.json",
+      "sha256": "f9305172bf165fe87c8c16a4e5750225c3dccc46a27227289328fda5fe173ee6",
+      "normalizedLfSha256": "f9305172bf165fe87c8c16a4e5750225c3dccc46a27227289328fda5fe173ee6"
+    },
+    {
+      "path": "art/tinker-panda-v3-exploration/sources/revision-prompts.json",
+      "sha256": "3dc7c39a731a85d9cdfd645ad37a8a454be025168b470574cde6f4a714375edd",
+      "normalizedLfSha256": "3dc7c39a731a85d9cdfd645ad37a8a454be025168b470574cde6f4a714375edd"
+    },
+    {
+      "path": "art/tinker-panda-v3-exploration/sources/v2.1-before.json",
+      "sha256": "a08819723a95e6edc23d3555f536a5299c59a2713fe920c0ebbb6783f97097bf",
+      "normalizedLfSha256": "527112efd2c9d5a7e425c34574fd99847f6c9ca999390d20118b3b489d1f791b"
+    },
+    {
+      "path": "art/tinker-panda-v3-exploration/sprites/00-candidate-b.png",
+      "sha256": "a07781439461bc715463a6d830598e8eb93ef47ec508d346307d71915f534ba3"
+    },
+    {
+      "path": "art/tinker-panda-v3-exploration/sprites/01-refined-original.png",
+      "sha256": "c00e5aa88c1eb6849f39d27f8fa84e247988693eb9c0716f8b62fd2c53ea1d4f"
+    },
+    {
+      "path": "art/tinker-panda-v3-exploration/sprites/02-playful-inventor.png",
+      "sha256": "6f467e81c1deaf3fa2641f66e9d7b3035e0f02bc04205024da9cba76b3127ca0"
+    },
+    {
+      "path": "art/tinker-panda-v3-exploration/sprites/03-iconic-mascot.png",
+      "sha256": "56076c744beeb5bef2aa4d9f9cd1cf7d38efb8cee6009e6bb0976ccec4366412"
+    },
+    {
+      "path": "art/tinker-panda-v3-exploration/verification.json",
+      "sha256": "c3a0bdda42d45c4689631efe7f4fac3005702b70a77f700cf5187eadc22afaca",
+      "normalizedLfSha256": "c3a0bdda42d45c4689631efe7f4fac3005702b70a77f700cf5187eadc22afaca"
+    },
+    {
+      "path": "art/tinker-panda-v3.2-hybrid/board-layout.json",
+      "sha256": "e9c0856d513892fca54b008d54ad9e1fe7d04ede6bf46e988204c0acf0fc5612",
+      "normalizedLfSha256": "e9c0856d513892fca54b008d54ad9e1fe7d04ede6bf46e988204c0acf0fc5612"
+    },
+    {
+      "path": "art/tinker-panda-v3.2-hybrid/boards/comparison-all-scales.png",
+      "sha256": "4a423a39228e21c474585917361d2610a980cbeae826ce2734d89f14c79095c5"
+    },
+    {
+      "path": "art/tinker-panda-v3.2-hybrid/boards/comparison-overview.png",
+      "sha256": "3975427107f5d00913b9fe06e628d63f74fee1c07f3e3beb74e3475c725c338a"
+    },
+    {
+      "path": "art/tinker-panda-v3.2-hybrid/build-board.mjs",
+      "sha256": "1042bad5ddf9670c9cc831c5e07eb2973848d544f0499f678bf07c8d13a8bd0b",
+      "normalizedLfSha256": "1042bad5ddf9670c9cc831c5e07eb2973848d544f0499f678bf07c8d13a8bd0b"
+    },
+    {
+      "path": "art/tinker-panda-v3.2-hybrid/critique.json",
+      "sha256": "21dab1b425fb7ecbe56c5a061276a00757cd781cc29a683aa3e4110b32629ef5",
+      "normalizedLfSha256": "21dab1b425fb7ecbe56c5a061276a00757cd781cc29a683aa3e4110b32629ef5"
+    },
+    {
+      "path": "art/tinker-panda-v3.2-hybrid/prepare-native.mjs",
+      "sha256": "6d98da1432b2ff47e27525c552ec671a9a8c7fdde8fdf380d4909cf938e62a88",
+      "normalizedLfSha256": "6d98da1432b2ff47e27525c552ec671a9a8c7fdde8fdf380d4909cf938e62a88"
+    },
+    {
+      "path": "art/tinker-panda-v3.2-hybrid/review.html",
+      "sha256": "f877292631ebe63c0b66cbba2eed72d8c2ebb146b9f5637c773366f7c503686e",
+      "normalizedLfSha256": "f877292631ebe63c0b66cbba2eed72d8c2ebb146b9f5637c773366f7c503686e"
+    },
+    {
+      "path": "art/tinker-panda-v3.2-hybrid/sources/04-hybrid-64-generated.png",
+      "sha256": "6433c28a52714bdd703861edc6b49214c0250aca2b221fe9ba70562a05d63e3d"
+    },
+    {
+      "path": "art/tinker-panda-v3.2-hybrid/sources/04-hybrid-64-revised.png",
+      "sha256": "3174c6aefee3e0cebe197ade8472bf6d14947318112037bcc6726d1600441053"
+    },
+    {
+      "path": "art/tinker-panda-v3.2-hybrid/sources/05-hybrid-96-generated.png",
+      "sha256": "d61d7d44a55b5cccdc584bc12d4f2a1872a82927a526a33ae84442beb0b38148"
+    },
+    {
+      "path": "art/tinker-panda-v3.2-hybrid/sources/05-hybrid-96-revised.png",
+      "sha256": "517df565ee229a5b3ce55447b2038af7e824c4e059e3c3ddd126693b02c99d55"
+    },
+    {
+      "path": "art/tinker-panda-v3.2-hybrid/sources/generation-notes.json",
+      "sha256": "920d3fcbc35bff8e5d58462b2ad4c7957d2a438e13de316b9667749dcdbfa035",
+      "normalizedLfSha256": "920d3fcbc35bff8e5d58462b2ad4c7957d2a438e13de316b9667749dcdbfa035"
+    },
+    {
+      "path": "art/tinker-panda-v3.2-hybrid/sources/native-extraction.json",
+      "sha256": "2d7792de08248fb81bd31f437fe3826999f2c4397429814f1ec16e9f85bddde5",
+      "normalizedLfSha256": "2d7792de08248fb81bd31f437fe3826999f2c4397429814f1ec16e9f85bddde5"
+    },
+    {
+      "path": "art/tinker-panda-v3.2-hybrid/sources/preservation-before.json",
+      "sha256": "fc2066114b1d7828e09ff52ab364df0c9eda56c5f54d8250062a3a47beea1dde",
+      "normalizedLfSha256": "2b377ef05c74dd07f6f9a67ded54ca9ccd391c6a4a2011f394773eebff13fd59"
+    },
+    {
+      "path": "art/tinker-panda-v3.2-hybrid/sources/prompts.json",
+      "sha256": "10983f6e22fcb71d9ab6dbfb1d895291893b73f815bcf9134cd158b15e177b0f",
+      "normalizedLfSha256": "10983f6e22fcb71d9ab6dbfb1d895291893b73f815bcf9134cd158b15e177b0f"
+    },
+    {
+      "path": "art/tinker-panda-v3.2-hybrid/sources/revision-prompts.json",
+      "sha256": "20529223f0a887dc1209ff57882756684015f962a9278bc91831bcbe3b68c2b7",
+      "normalizedLfSha256": "20529223f0a887dc1209ff57882756684015f962a9278bc91831bcbe3b68c2b7"
+    },
+    {
+      "path": "art/tinker-panda-v3.2-hybrid/sprites/00-candidate-b.png",
+      "sha256": "a07781439461bc715463a6d830598e8eb93ef47ec508d346307d71915f534ba3"
+    },
+    {
+      "path": "art/tinker-panda-v3.2-hybrid/sprites/01-refined-original.png",
+      "sha256": "c00e5aa88c1eb6849f39d27f8fa84e247988693eb9c0716f8b62fd2c53ea1d4f"
+    },
+    {
+      "path": "art/tinker-panda-v3.2-hybrid/sprites/03-iconic-mascot.png",
+      "sha256": "56076c744beeb5bef2aa4d9f9cd1cf7d38efb8cee6009e6bb0976ccec4366412"
+    },
+    {
+      "path": "art/tinker-panda-v3.2-hybrid/sprites/04-hybrid-64.png",
+      "sha256": "178578ea4b204e69691d767b1b633d21caf88aa3db614cc533c7b1d5b965f290"
+    },
+    {
+      "path": "art/tinker-panda-v3.2-hybrid/sprites/05-hybrid-96.png",
+      "sha256": "37df93785c3bf4eb8616cbfe84249168446c780e36c8a7bbe08ee7a61517500f"
+    },
+    {
+      "path": "art/tinker-panda-v3.2-hybrid/verification.json",
+      "sha256": "508c05e18cbc4fac887e0bd760f7cf12bb1d6e014779cbc2f6087f9c3647cfff",
+      "normalizedLfSha256": "508c05e18cbc4fac887e0bd760f7cf12bb1d6e014779cbc2f6087f9c3647cfff"
+    },
+    {
+      "path": "art/tinker-panda-v3.2-hybrid/verify.mjs",
+      "sha256": "b466371e6cff0727eca62bf282cc324ddf7705c76b4a38e06352975ea3bfd5a6",
+      "normalizedLfSha256": "b466371e6cff0727eca62bf282cc324ddf7705c76b4a38e06352975ea3bfd5a6"
+    },
+    {
+      "path": "art/tinker-panda-v3.3-face/board-layout.json",
+      "sha256": "321ce76502ef6676f482cf83b9fab129b4c9d291eaeffd8724265b2251837c72",
+      "normalizedLfSha256": "321ce76502ef6676f482cf83b9fab129b4c9d291eaeffd8724265b2251837c72"
+    },
+    {
+      "path": "art/tinker-panda-v3.3-face/boards/comparison-board.png",
+      "sha256": "f0f257c30751a4bf0a84158e35aa34903a842a5f5f45f88a30d7eac88e9e3fd3"
+    },
+    {
+      "path": "art/tinker-panda-v3.3-face/boards/comparison-native.png",
+      "sha256": "564a3ec2329067dd22a4f29c6ff913251364dd4c81e4b736a620ec588619f50a"
+    },
+    {
+      "path": "art/tinker-panda-v3.3-face/build-board.mjs",
+      "sha256": "9c321f5e83382d63a60dbb5be632752b2112badaf990feb44af3711fcf03e32d",
+      "normalizedLfSha256": "9c321f5e83382d63a60dbb5be632752b2112badaf990feb44af3711fcf03e32d"
+    },
+    {
+      "path": "art/tinker-panda-v3.3-face/critique.json",
+      "sha256": "a490a9920a4072a95d543b91b83452ba8b5c62c0ad12328c19262d9607310154",
+      "normalizedLfSha256": "a490a9920a4072a95d543b91b83452ba8b5c62c0ad12328c19262d9607310154"
+    },
+    {
+      "path": "art/tinker-panda-v3.3-face/prepare-native.mjs",
+      "sha256": "ed3cb3d4fcf71ef139b612619fa7f869400fa0c9477b19d48dd453c5a9c6034e",
+      "normalizedLfSha256": "ed3cb3d4fcf71ef139b612619fa7f869400fa0c9477b19d48dd453c5a9c6034e"
+    },
+    {
+      "path": "art/tinker-panda-v3.3-face/review.html",
+      "sha256": "940670e98c41d384abbd024da3390b396f486236ba1a2bceccc838cd51680cca",
+      "normalizedLfSha256": "940670e98c41d384abbd024da3390b396f486236ba1a2bceccc838cd51680cca"
+    },
+    {
+      "path": "art/tinker-panda-v3.3-face/sources/00-native-reference-12x.png",
+      "sha256": "b75b27a3fe01ec3e985a8f0a7702f8a424ea5026cb43f633a9d5ae201a53648f"
+    },
+    {
+      "path": "art/tinker-panda-v3.3-face/sources/01-expressive-markings-generated.png",
+      "sha256": "23e5f50e5b6fbf19c0e448998330b4c8a991f2e4423fdae07bd51fec040949f2"
+    },
+    {
+      "path": "art/tinker-panda-v3.3-face/sources/01-expressive-markings-native-8x.png",
+      "sha256": "4ddfdd572eae969e43c46819ceacc681e39f81d8d4702161cb28de6f364c224a"
+    },
+    {
+      "path": "art/tinker-panda-v3.3-face/sources/02-playful-expression-generated.png",
+      "sha256": "b10c9297886a176df6f5e5bac9eca1e2b454d965da7401061b4c094eabeb4255"
+    },
+    {
+      "path": "art/tinker-panda-v3.3-face/sources/02-playful-expression-native-8x.png",
+      "sha256": "3eaa02443f5350c158af16333e7aef87570bf7ae7dda5b0971eb6cdcfda388fe"
+    },
+    {
+      "path": "art/tinker-panda-v3.3-face/sources/03-combined-personality-generated.png",
+      "sha256": "0c42f799622a2944bacd3ba0fcb7aa7a943d65ccb2b7677f0554563dc42fa247"
+    },
+    {
+      "path": "art/tinker-panda-v3.3-face/sources/face-mask.json",
+      "sha256": "f949e2da12a0905b12f2e28dc9ccf6637c79b3d448881ee56b6d0a61daefce86",
+      "normalizedLfSha256": "f949e2da12a0905b12f2e28dc9ccf6637c79b3d448881ee56b6d0a61daefce86"
+    },
+    {
+      "path": "art/tinker-panda-v3.3-face/sources/generation-notes.json",
+      "sha256": "cf4e52479e667344444dec913e4448838de931e1c3322ad52f70f02db98fac3c",
+      "normalizedLfSha256": "cf4e52479e667344444dec913e4448838de931e1c3322ad52f70f02db98fac3c"
+    },
+    {
+      "path": "art/tinker-panda-v3.3-face/sources/native-extraction.json",
+      "sha256": "49f2c5ea3bb7a9b34f4fa62b9aae4933cba5f19e8ae047d4ac6d90d26ad24883",
+      "normalizedLfSha256": "49f2c5ea3bb7a9b34f4fa62b9aae4933cba5f19e8ae047d4ac6d90d26ad24883"
+    },
+    {
+      "path": "art/tinker-panda-v3.3-face/sources/preservation-before.json",
+      "sha256": "0bd530a4b6f9116d679ba40a8a5e1e085aad7830226e822469a76ef0fd82a3be",
+      "normalizedLfSha256": "d50d3b42e57efc4a2ddb0672be153846ee29a900a848532764e016fd0c6faf98"
+    },
+    {
+      "path": "art/tinker-panda-v3.3-face/sources/prompts.json",
+      "sha256": "c47f0182e210c1a1a00413b38181a253bde5c33c248431f0b916a21cb7c02f4d",
+      "normalizedLfSha256": "c47f0182e210c1a1a00413b38181a253bde5c33c248431f0b916a21cb7c02f4d"
+    },
+    {
+      "path": "art/tinker-panda-v3.3-face/sprites/00-v3.2-hybrid-96.png",
+      "sha256": "37df93785c3bf4eb8616cbfe84249168446c780e36c8a7bbe08ee7a61517500f"
+    },
+    {
+      "path": "art/tinker-panda-v3.3-face/sprites/01-expressive-markings.png",
+      "sha256": "b7a25d71ae8b74a0f692462090809843fab594eb58ef38f8c4e6d3bc68f3963e"
+    },
+    {
+      "path": "art/tinker-panda-v3.3-face/sprites/02-playful-expression.png",
+      "sha256": "1de9a3ff524c0d2323eddbe4af86d99028f054dbd39cb86cbe0cdb84cb2323b5"
+    },
+    {
+      "path": "art/tinker-panda-v3.3-face/sprites/03-combined-personality.png",
+      "sha256": "98380b727fbeec34ccc4b07f2d7ded07a116dd11e1ec55a41a6bda3641313511"
+    },
+    {
+      "path": "art/tinker-panda-v3.3-face/verification.json",
+      "sha256": "2b52792ac05883b0fdd3d9d25e64a1f33429cc2c2d272623599b4f6be4ea440a",
+      "normalizedLfSha256": "2b52792ac05883b0fdd3d9d25e64a1f33429cc2c2d272623599b4f6be4ea440a"
+    },
+    {
+      "path": "art/tinker-panda-v3.3-face/verify.mjs",
+      "sha256": "61a5442a4506aa65e8fb9a193de1efab0cc67ee902282a7ff6d3e54fa4bf1ae7",
+      "normalizedLfSha256": "61a5442a4506aa65e8fb9a193de1efab0cc67ee902282a7ff6d3e54fa4bf1ae7"
+    },
+    {
+      "path": ".github/workflows/deploy.yml",
+      "sha256": "d4e78f2a8723c2454c23c85cbebc0ca2c9a927d4439a4e8f1df4407e157418ac",
+      "normalizedLfSha256": "34b48315f676a873d15964de5f67586613d02376e78968448d366f5a8d24c1da"
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "sha256": "8dde459e0dd8c48feb7a033a4a87ac88ea72547a23d4912a8f9277563373e98a",
+      "normalizedLfSha256": "a93df4950af378eba464cbea688a72c9ca52163d08409e970598e846fb87a876"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "df6354cfee7ebff5b1a34ec5862e075494a8b2715b9074ed0eb532b1c577156a",
+      "normalizedLfSha256": "df6354cfee7ebff5b1a34ec5862e075494a8b2715b9074ed0eb532b1c577156a"
+    },
+    {
+      "path": ".vscode/extensions.json",
+      "sha256": "cc8f4bcdc3c31be539aa67fbdacaaac4c9fcccb55b02048acf02f56e623ef682",
+      "normalizedLfSha256": "cc8f4bcdc3c31be539aa67fbdacaaac4c9fcccb55b02048acf02f56e623ef682"
+    },
+    {
+      "path": ".vscode/launch.json",
+      "sha256": "461accad2f8d7604a8470fb4705b84768bcf24791b0974d49cba0d96c3fea857",
+      "normalizedLfSha256": "461accad2f8d7604a8470fb4705b84768bcf24791b0974d49cba0d96c3fea857"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "258e71559ecd267cdca0f9751feb80e3249b79fd4b67e534247788cfdb4522c4",
+      "normalizedLfSha256": "258e71559ecd267cdca0f9751feb80e3249b79fd4b67e534247788cfdb4522c4"
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256": "258e71559ecd267cdca0f9751feb80e3249b79fd4b67e534247788cfdb4522c4",
+      "normalizedLfSha256": "258e71559ecd267cdca0f9751feb80e3249b79fd4b67e534247788cfdb4522c4"
+    },
+    {
+      "path": "README.md",
+      "sha256": "8d4a7266227ca71b0cbd7881b46e5ad76af0e4de19ad2c0d3bbd7d85e1762fdb",
+      "normalizedLfSha256": "f311cd51bc007c7b87b4a29362984343bbc3d800f3aa4a14a88c6ada9bc43b15"
+    },
+    {
+      "path": "astro.config.mjs",
+      "sha256": "d0886747549ae4d71644fa8c7b0e6cd46cb6235a804fe224aeabc44da976aaa1",
+      "normalizedLfSha256": "72b8438a6ce5a9c6daa13d5e26a2abbab6b075a01014a5cf5255fdd17b28337d"
+    },
+    {
+      "path": "docs/launch-review.md",
+      "sha256": "ed2bf2d7b8597a27df2388c331efe79cb3b67db73337113a3c132e4baf74485b",
+      "normalizedLfSha256": "ed2bf2d7b8597a27df2388c331efe79cb3b67db73337113a3c132e4baf74485b"
+    },
+    {
+      "path": "docs/portfolio-refresh.md",
+      "sha256": "ca2a361247d4bd4918913bc484cd494bbc279460097bbc81d1bd2681275b48ff",
+      "normalizedLfSha256": "fae754a68173573c8f49ef1092ea8ba4a0c310a8cbbad3c58778bb36b2ab34b6"
+    },
+    {
+      "path": "docs/project-assets.md",
+      "sha256": "5235e5acf6cc67e5593364b68ab4b05cd6ed171a8456b060d0aea0a8b15f6919",
+      "normalizedLfSha256": "26884472caec80e193f40ed1b3bc9a6edfe34f08e3501cba841531ce3f352c77"
+    },
+    {
+      "path": "docs/project-showcase-v1.md",
+      "sha256": "a72ef878a0e3d328ed6087248430860b733c73cece176c98044f6a6b49929dda",
+      "normalizedLfSha256": "a72ef878a0e3d328ed6087248430860b733c73cece176c98044f6a6b49929dda"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "974846e7eb6f08073c462c9bd589cf73c4724c030fda04c674674c83fc9e1c90",
+      "normalizedLfSha256": "974846e7eb6f08073c462c9bd589cf73c4724c030fda04c674674c83fc9e1c90"
+    },
+    {
+      "path": "package.json",
+      "sha256": "a88f30d6cebad609f5adc1b84cc174a6daafcd0352bf3c458f64b51c073279db"
+    },
+    {
+      "path": "public/favicon.ico",
+      "sha256": "a4b4bcfac451b1699f1245e783e200ada7a31565658b72406552ad42ac819049"
+    },
+    {
+      "path": "public/favicon.svg",
+      "sha256": "ee853576d7052a4f6c7ba8d6bede6fb71136da1da0b2a5ca7ddf7246481eb37f",
+      "normalizedLfSha256": "ee853576d7052a4f6c7ba8d6bede6fb71136da1da0b2a5ca7ddf7246481eb37f"
+    },
+    {
+      "path": "public/images/projects/dungeon-deckbuilder.png",
+      "sha256": "175ef4fa5aefd0ed710e90d1226e9957571e896c86325d9d544a77f3f4470c05"
+    },
+    {
+      "path": "public/images/projects/midnight-chiba.png",
+      "sha256": "28a750d45b2e803b697e06c1bcc926c04eede352b92d336ac0659d606e71c5e1"
+    },
+    {
+      "path": "public/images/projects/showcase/chiba-fields-640.webp",
+      "sha256": "9a54877a26cfabf08611bb0816626698a1248e72461f7cd00ee1f121ac57c8b8"
+    },
+    {
+      "path": "public/images/projects/showcase/chiba-fields.webp",
+      "sha256": "f2d3ee4ed20d8c048524ab617718872c72ef694eee3b0f2e3a779f0745a438ad"
+    },
+    {
+      "path": "public/images/projects/showcase/chiba-shrine-640.webp",
+      "sha256": "0b17e5a9da75e490f6264987cc5fe8e124cf3c34e51a388a926d460bc73f64e5"
+    },
+    {
+      "path": "public/images/projects/showcase/chiba-shrine.webp",
+      "sha256": "bcc7ae1e74626d1fcfb3b44fff044c03f6c406857234a6427d88779d7e51fe5b"
+    },
+    {
+      "path": "public/images/projects/showcase/chiba-store-640.webp",
+      "sha256": "d9ce3920b1c06d6c61f96b07ecbee79ffc8121fbe45527522e781d1738c69b3b"
+    },
+    {
+      "path": "public/images/projects/showcase/chiba-store.webp",
+      "sha256": "0477c9c5e418134e8bab2462f1f2bad42d64c7681cebede84a4d506c66831910"
+    },
+    {
+      "path": "public/images/projects/showcase/deck-classes-640.webp",
+      "sha256": "7986f2635a32a8a8bc95971277ba8bfc5e079a94e4bf729e312d7982010d1888"
+    },
+    {
+      "path": "public/images/projects/showcase/deck-classes.webp",
+      "sha256": "716ff451e3292a44e00eecce873fd49c52dcaf418090531f5dd763f8b814601c"
+    },
+    {
+      "path": "public/images/projects/showcase/deck-mage-640.webp",
+      "sha256": "88fce429c9ced00b03f6a82aef7088726e4b4971e6c75f52a42727d32c0ba72d"
+    },
+    {
+      "path": "public/images/projects/showcase/deck-mage.webp",
+      "sha256": "f1728c7f8445339f049051c30b00d464e155a40c86e08b9a9eafaeb28b051014"
+    },
+    {
+      "path": "public/images/projects/showcase/deck-summoner-640.webp",
+      "sha256": "cd2eb2919cfa3425245490900862f6038bfb6c2083e14c58696e4c6743b493e9"
+    },
+    {
+      "path": "public/images/projects/showcase/deck-summoner.webp",
+      "sha256": "684fd19f47916115dff67cbd25462dd6bd515819a5a6d79375528ec81cbc09a3"
+    },
+    {
+      "path": "public/images/projects/showcase/mission-activity-640.webp",
+      "sha256": "87ddef30fb19b47ed877259b038f5397a7be18efbe578565c6779855b2abd182"
+    },
+    {
+      "path": "public/images/projects/showcase/mission-activity.webp",
+      "sha256": "c3924044c565d9cc52623899c983fce3ed85d824a10df610167fb46dfe602a02"
+    },
+    {
+      "path": "public/images/projects/showcase/mission-output-640.webp",
+      "sha256": "a0958207b7442749fae8af3b7f618bba59711bb4d5314e06b1432ea4db4f7dd9"
+    },
+    {
+      "path": "public/images/projects/showcase/mission-output.webp",
+      "sha256": "abb3318d2a87092b3d19792e019f6176340b25412124477f2cb5e963534582d3"
+    },
+    {
+      "path": "public/images/projects/showcase/mission-overview-640.webp",
+      "sha256": "ce3328addd204a6db0fb6ca02532c973b25c615ac41f58558e0a4d1fbeabcde4"
+    },
+    {
+      "path": "public/images/projects/showcase/mission-overview.webp",
+      "sha256": "be32db4b6f04883a2c17ddfb29a2b8f56384ed50f6d421f49ce038b7536499fb"
+    },
+    {
+      "path": "public/images/projects/showcase/nightstock-bumps-640.webp",
+      "sha256": "7e9737ea88c3799eddbbca67e03f0e6a498d3af1e383e40da9e0c286326c717d"
+    },
+    {
+      "path": "public/images/projects/showcase/nightstock-bumps.webp",
+      "sha256": "0695ad2f661ff1da6f17402ef34c546bc440fa76dca4c9de24918877a7b68588"
+    },
+    {
+      "path": "public/images/projects/showcase/nightstock-loaded-640.webp",
+      "sha256": "27bfb86c3974791fb889fd105e9c8da1e6c7558001dce12915ca26673a3a0913"
+    },
+    {
+      "path": "public/images/projects/showcase/nightstock-loaded.webp",
+      "sha256": "a0167e3f8f188173b82c6d3cf9f6b9abedfbdb94df94085a53ebf0cf2d205834"
+    },
+    {
+      "path": "public/images/projects/showcase/nightstock-tailgate-640.webp",
+      "sha256": "775097b3841e78a4ee8facb857385e129d7519b4ea5ca71f05f0cc297221d16c"
+    },
+    {
+      "path": "public/images/projects/showcase/nightstock-tailgate.webp",
+      "sha256": "483e09b17f7536b4493a255c4f8f2b417ad65a52a27c98ab016bf14b245685ae"
+    },
+    {
+      "path": "public/images/projects/showcase/provenance.json",
+      "sha256": "a946d3caea120ae2cc54fcc0adf87d53a6431236c1e5957288d3909a867653a5",
+      "normalizedLfSha256": "a946d3caea120ae2cc54fcc0adf87d53a6431236c1e5957288d3909a867653a5"
+    },
+    {
+      "path": "public/social-card.png",
+      "sha256": "45d9bb08d980a80ab530591413da51c6b25f2434a2e72ff8543132267f269299"
+    },
+    {
+      "path": "public/social-card.svg",
+      "sha256": "cd0ebe8db3657e894cfc20bf9b6e29221b01fac72dffff3fcae3672b87f1bf95",
+      "normalizedLfSha256": "cd0ebe8db3657e894cfc20bf9b6e29221b01fac72dffff3fcae3672b87f1bf95"
+    },
+    {
+      "path": "scripts/generate-brand-assets.mjs",
+      "sha256": "3e1bed83e267a7fb764397ff343c7ef1579630a717177ff3af321a6ae7d2abe2",
+      "normalizedLfSha256": "3e1bed83e267a7fb764397ff343c7ef1579630a717177ff3af321a6ae7d2abe2"
+    },
+    {
+      "path": "scripts/verify-build.mjs",
+      "sha256": "11d3ac145134fc8d82efbc288cf4b1763e7cb75270a0fdeb4818a9abe8970976",
+      "normalizedLfSha256": "515e5d19491c839a888820e94f9ebd1a4c1f1035c9008c71936c826613d488f3"
+    },
+    {
+      "path": "src/components/Icon.astro",
+      "sha256": "03cb3e93bfa84271e73ccb103d806486a43e41659a9bcf354df78cb1f87a6d1c",
+      "normalizedLfSha256": "03cb3e93bfa84271e73ccb103d806486a43e41659a9bcf354df78cb1f87a6d1c"
+    },
+    {
+      "path": "src/components/ProjectArtwork.astro",
+      "sha256": "a44c078b735800e109d8d721679f1ca551ca26b2f461ba6572f30e9ff89d4499",
+      "normalizedLfSha256": "a44c078b735800e109d8d721679f1ca551ca26b2f461ba6572f30e9ff89d4499"
+    },
+    {
+      "path": "src/components/ProjectCard.astro",
+      "sha256": "cb709b5ba22d97efc02274e0e8555ccf1382247cdfcde300f44d896921ea47f5",
+      "normalizedLfSha256": "d0540718562b64af09f4d3f4d2589987365791a0559d5f9a383e78e034e278e0"
+    },
+    {
+      "path": "src/components/ProjectMedia.astro",
+      "sha256": "985a7c6bef2897cc827400c2895c137bbeade22b9ed3869647222657e3aa0261",
+      "normalizedLfSha256": "cb9346c52a6928f15b87b0083d043c23281fffc92310723352632a5a10cecc3c"
+    },
+    {
+      "path": "src/components/SEO.astro",
+      "sha256": "4388aa5403b230791ad07b1c429f79b8a39f18793cad8dda8dcbd961986fd950",
+      "normalizedLfSha256": "2b0411ce8f602039e9371e6b407aab2b852087e189f84b674100d117a71d6b53"
+    },
+    {
+      "path": "src/components/ThemeToggle.astro",
+      "sha256": "359dc08cc19fa636dea6f954cb34441e74b35f3a02f2c923c0d7f7f2025a7d78",
+      "normalizedLfSha256": "0328c4310abb0f2a105dcbcf6023189d676dca736189639c07d0e01c4d0429c8"
+    },
+    {
+      "path": "src/components/Workbench.astro",
+      "sha256": "1f6651cd3cb9f18183d1f4e295e7f8cbdcae4ae799bfbc90daface3d2cb641f1",
+      "normalizedLfSha256": "1f6651cd3cb9f18183d1f4e295e7f8cbdcae4ae799bfbc90daface3d2cb641f1"
+    },
+    {
+      "path": "src/config/site.ts",
+      "sha256": "f01cb08a74ab61509f0be87922a59c44eceb3d78065417bdd2f99b3406d64e37",
+      "normalizedLfSha256": "132c36abf89e9f24ab77046c5e60f8dbce60eb239ee445038698efd1e57e6642"
+    },
+    {
+      "path": "src/content.config.ts",
+      "sha256": "5c0aaca73b92ee07cafa3965b95665adce9254e0b2bda07830cff527b8797aaa",
+      "normalizedLfSha256": "5c0aaca73b92ee07cafa3965b95665adce9254e0b2bda07830cff527b8797aaa"
+    },
+    {
+      "path": "src/content/writing/managing-ai-agents-in-powershell.md",
+      "sha256": "549b82b454f9b31f72cad5063223c8d5fd8da262b3a1038516b9422662eced62",
+      "normalizedLfSha256": "549b82b454f9b31f72cad5063223c8d5fd8da262b3a1038516b9422662eced62"
+    },
+    {
+      "path": "src/content/writing/meet-dungeon-deckbuilder.md",
+      "sha256": "12c0653dfdec7b40a9dbc2451dfdbf79fef21ea1c2a776941b54509a9061c826",
+      "normalizedLfSha256": "12c0653dfdec7b40a9dbc2451dfdbf79fef21ea1c2a776941b54509a9061c826"
+    },
+    {
+      "path": "src/content/writing/meet-midnight-chiba.md",
+      "sha256": "3b9d10c004c1dce7c1cc52f6708c888bec11ed2834aa4c1508ff03f2a57ff53c",
+      "normalizedLfSha256": "3b9d10c004c1dce7c1cc52f6708c888bec11ed2834aa4c1508ff03f2a57ff53c"
+    },
+    {
+      "path": "src/content/writing/meet-mission-control.md",
+      "sha256": "a1da490b14305b1ff5ad61970e475fb173d5108bef0a43a714d526f3c1ea1fad",
+      "normalizedLfSha256": "a1da490b14305b1ff5ad61970e475fb173d5108bef0a43a714d526f3c1ea1fad"
+    },
+    {
+      "path": "src/content/writing/meet-nightstock.md",
+      "sha256": "329fd0932dccd47f0dbc989e52b47e07918bf482f1915ec33cced90fdb70a20d",
+      "normalizedLfSha256": "329fd0932dccd47f0dbc989e52b47e07918bf482f1915ec33cced90fdb70a20d"
+    },
+    {
+      "path": "src/content/writing/meet-riku.md",
+      "sha256": "ec46454a1ba5fdafece6840ba0f826dd04bf972e10aac13193061da3bf986c90",
+      "normalizedLfSha256": "ec46454a1ba5fdafece6840ba0f826dd04bf972e10aac13193061da3bf986c90"
+    },
+    {
+      "path": "src/content/writing/welcome-to-after-bedtime-labs.md",
+      "sha256": "1eeba27bf90bdcad886b6c402d5f7474f1c55c4aad37cab520f290a92977ef8f",
+      "normalizedLfSha256": "e6c8df01a8a79c2db5641d2889ba5c6aa13e3fd880c744817ace82f90a756b66"
+    },
+    {
+      "path": "src/data/projects.ts",
+      "sha256": "508dd55d1a77c21994ba8e6c5483a1ac8747bbce0291b24a1417354e38a0ac37",
+      "normalizedLfSha256": "edfaea4de29fec432b306eaf2ecfa5015f22e94967ad4007072a990233aa4cf9"
+    },
+    {
+      "path": "src/layouts/BaseLayout.astro",
+      "sha256": "014ff094ff4e1177bfa263e07717071043dcd359a3fcca82c175f10b4a3f3281",
+      "normalizedLfSha256": "0d83b22c6427176d7c46076cc7ecc8b060e8234742f6316131ff7053c228c640"
+    },
+    {
+      "path": "src/layouts/NaviLayout.astro",
+      "sha256": "85cc9d0ede6bbcdd836e838371d37438a14e5c2b107aeb344b85a6e47941890e",
+      "normalizedLfSha256": "85cc9d0ede6bbcdd836e838371d37438a14e5c2b107aeb344b85a6e47941890e"
+    },
+    {
+      "path": "src/lib/writing.ts",
+      "sha256": "7ef118e28b411a238be609a9cc77be2ba36aeb2e94afe0aeb975d94b24cf04de",
+      "normalizedLfSha256": "5803243895da686b2d8017d2955f27c183c413a1ea5dce6072df2cf637fbb6ee"
+    },
+    {
+      "path": "src/pages/404.astro",
+      "sha256": "40727ccd933526b93e317b3167d29a49d8c7f56a248b18227c9237aa17974e2b",
+      "normalizedLfSha256": "40727ccd933526b93e317b3167d29a49d8c7f56a248b18227c9237aa17974e2b"
+    },
+    {
+      "path": "src/pages/about.astro",
+      "sha256": "e733155ad2c0d544ea260c876deb19be37dccf7a2f1e27e214bdb3422ecbf4ae",
+      "normalizedLfSha256": "e733155ad2c0d544ea260c876deb19be37dccf7a2f1e27e214bdb3422ecbf4ae"
+    },
+    {
+      "path": "src/pages/index.astro",
+      "sha256": "6bafe0ea8831230ba69847326d154a55073c7d7e7681cdaaf2460608d1e36a70"
+    },
+    {
+      "path": "src/pages/navi/index.astro",
+      "sha256": "3ab4a809052ead1d1b182ff9e5129d8b5b61394c5e7f7c57468147d66bb33963",
+      "normalizedLfSha256": "3ab4a809052ead1d1b182ff9e5129d8b5b61394c5e7f7c57468147d66bb33963"
+    },
+    {
+      "path": "src/pages/navi/privacy.astro",
+      "sha256": "6df91afa8c3580bc96423388bbe3d7ce27077db2629444c5e3a5af0e3c26041a",
+      "normalizedLfSha256": "6df91afa8c3580bc96423388bbe3d7ce27077db2629444c5e3a5af0e3c26041a"
+    },
+    {
+      "path": "src/pages/projects/[slug].astro",
+      "sha256": "b5792d8b42f92969088ca837874f28505aa96fc9128cf3720d0f42b24f4f6b21",
+      "normalizedLfSha256": "a3116022ec49c93f9c6d0c7e3bb299758133dffc35eae6428ef8314450bfe379"
+    },
+    {
+      "path": "src/pages/projects/index.astro",
+      "sha256": "be71551ed84b6c79b9bac4b3dc42d04355c268b2df3e2e2fcbd2c3c747c51d76",
+      "normalizedLfSha256": "a18eeb09c8224efbf91b613f23cf278276c8354e3e37ca9f403a8d1f5e00ac8a"
+    },
+    {
+      "path": "src/pages/robots.txt.ts",
+      "sha256": "dc48434bb5ec71232f138b17a945e9f95356533aaa57afce0bb47a0c81ece2c9",
+      "normalizedLfSha256": "dc48434bb5ec71232f138b17a945e9f95356533aaa57afce0bb47a0c81ece2c9"
+    },
+    {
+      "path": "src/pages/rss.xml.ts",
+      "sha256": "7c97eb33524c001bafd546e59214b4c795e15228f96da0d8c27b679479fe8643",
+      "normalizedLfSha256": "7c97eb33524c001bafd546e59214b4c795e15228f96da0d8c27b679479fe8643"
+    },
+    {
+      "path": "src/pages/writing/[...id].astro",
+      "sha256": "14aa60dd67d1a1e70cf2ea27c8cc82ad447b3cb3aa796dce5d72d15c565e55af",
+      "normalizedLfSha256": "a238148368224504ff753ddce9a3e87602c74ed02af542a2cb43129d5363f4d5"
+    },
+    {
+      "path": "src/pages/writing/index.astro",
+      "sha256": "9aca237445a18621e152c8fbb3f9f01c5ab4617fd5c08f680786cac91e905506",
+      "normalizedLfSha256": "14cea13375509cd3de2c373859014dbc2f29cc7152556e81826bd717d0e9a783"
+    },
+    {
+      "path": "src/pages/writing/topics/[topic].astro",
+      "sha256": "5366b81c2b42d450857f5cf7d7fdb6d3c617244f67c0dfa21d0bdd3483ae7380",
+      "normalizedLfSha256": "e3f0781b736e3a4483b55813ea4caf2b1dead6c5fefa5683683187418b974c9a"
+    },
+    {
+      "path": "src/styles/global.css",
+      "sha256": "d774ef81dbd6e883cf02ac945e0b903335039d7f6b2185f90861ce64ae153f4d",
+      "normalizedLfSha256": "bff91218e7880de312e15d4fe5cfcc014b9db712173178b8907ebf99a4f2bd75"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "b5b0a5b04a14cddd7713c5e1c82e86c79c17c2f86b170e26e9b170b3d5e01cd9",
+      "normalizedLfSha256": "b5b0a5b04a14cddd7713c5e1c82e86c79c17c2f86b170e26e9b170b3d5e01cd9"
+    }
+  ]
+}
