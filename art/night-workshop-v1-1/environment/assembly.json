@@ -1,0 +1,183 @@
+{
+  "source": "art/ambient-v1/rainy-workshop-v1.png",
+  "generated": "generated-night-clean.png",
+  "dimensions": [
+    1659,
+    948
+  ],
+  "registration": {
+    "input": [
+      1596,
+      985
+    ],
+    "output": [
+      1659,
+      1010
+    ],
+    "crop": [
+      0,
+      0,
+      1659,
+      948
+    ],
+    "kernel": "nearest"
+  },
+  "glassPanes": [
+    [
+      [
+        819,
+        102
+      ],
+      [
+        983,
+        81
+      ],
+      [
+        983,
+        239
+      ],
+      [
+        819,
+        248
+      ]
+    ],
+    [
+      [
+        1009,
+        77
+      ],
+      [
+        1220,
+        49
+      ],
+      [
+        1221,
+        227
+      ],
+      [
+        1008,
+        239
+      ]
+    ],
+    [
+      [
+        1247,
+        43
+      ],
+      [
+        1495,
+        10
+      ],
+      [
+        1494,
+        218
+      ],
+      [
+        1246,
+        229
+      ]
+    ],
+    [
+      [
+        820,
+        266
+      ],
+      [
+        984,
+        255
+      ],
+      [
+        985,
+        551
+      ],
+      [
+        820,
+        550
+      ]
+    ],
+    [
+      [
+        1009,
+        254
+      ],
+      [
+        1221,
+        242
+      ],
+      [
+        1221,
+        550
+      ],
+      [
+        1009,
+        550
+      ]
+    ],
+    [
+      [
+        1247,
+        244
+      ],
+      [
+        1494,
+        234
+      ],
+      [
+        1494,
+        558
+      ],
+      [
+        1247,
+        551
+      ]
+    ],
+    [
+      [
+        1522,
+        8
+      ],
+      [
+        1566,
+        0
+      ],
+      [
+        1566,
+        96
+      ],
+      [
+        1521,
+        219
+      ]
+    ]
+  ],
+  "foreground": "Connected original warm silhouettes within bounded physical foreground regions; exterior flood fill; original pixels reused outside mask.",
+  "generatedInsetPixels": {
+    "normal": 8,
+    "character": 13
+  },
+  "blendWidthPixels": 5,
+  "boundaryGradeRGB": [
+    0.22,
+    0.25,
+    0.29
+  ],
+  "steamCleanup": {
+    "mask": "steam-removal-mask.svg",
+    "patch": "clean-sill-patch.png",
+    "source": "Registered exterior below row 550; clean original/composited scanlines to either side of plume for wood",
+    "rows": [
+      533,
+      616
+    ],
+    "leftSamplesX": [
+      1338,
+      1342
+    ],
+    "rightSamplesX": [
+      1409,
+      1413
+    ],
+    "featherPixels": 1
+  },
+  "reproduction": "node scripts/assemble-night-environment.mjs"
+}

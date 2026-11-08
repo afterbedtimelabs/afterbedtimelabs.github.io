@@ -1,0 +1,21 @@
+{
+  "description": "Before captures are byte-identical copies of the preserved V1 real-browser review evidence, not newly captured V1.1 screenshots.",
+  "sourceWorktree": "C:\\AI\\afterbedtimelabs.github.io\\.ambient-worktrees\\v1",
+  "sourceCommit": "86ad877aacf63b59a340dd02dd23d32c59cecc62",
+  "sourceReport": "docs/ambient-v1/browser-checks.json",
+  "captureViewport": "1440 x 1000",
+  "captures": [
+    {
+      "source": "..\\v1\\docs\\ambient-v1\\screenshots\\home-1440-dark-viewport.png",
+      "copy": "docs\\night-workshop-v1-1\\screenshots\\before-v1-home-1440-dark-viewport.png",
+      "sha256": "5599413680985d9471a877795d1d06ee0f9cc58430cf3c34908c28587fdf9b74",
+      "byteIdentical": true
+    },
+    {
+      "source": "..\\v1\\docs\\ambient-v1\\screenshots\\ambient-1440-dark.png",
+      "copy": "docs\\night-workshop-v1-1\\screenshots\\before-v1-ambient-1440-dark.png",
+      "sha256": "9ec48b26cad5b247328a92cb1739640b3da8aaa9ff7ceceb82a3c03816878286",
+      "byteIdentical": true
+    }
+  ]
+}

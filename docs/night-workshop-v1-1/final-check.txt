@@ -1,0 +1,12 @@
+
+> afterbedtimelabs.github.io@0.0.1 check
+> astro check
+
+18:49:58 [content] Syncing content
+18:49:58 [content] Synced content
+18:49:58 [types] Generated 704ms
+18:49:58 [check] Getting diagnostics for Astro files in C:\AI\afterbedtimelabs.github.io\.ambient-worktrees\night-workshop-v1-1...
+Result (48 files):
+- 0 errors
+- 0 warnings
+- 0 hints

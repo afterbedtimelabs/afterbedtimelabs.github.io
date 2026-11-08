@@ -1,0 +1,451 @@
+{
+  "started": "2026-11-08T23:46:50.315Z",
+  "url": "http://127.0.0.1:4352",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "method": "Actual headless Edge Page.startScreencast compositor frames, timestamped by CDP; ffmpeg encodes those captured frames at their original timing. No generated scene video and no forced animation poses.",
+  "intendedSeconds": 40,
+  "music": "Off throughout; browser process audio muted.",
+  "interactions": [
+    {
+      "second": 3.046,
+      "action": "click",
+      "selector": ".stay-button"
+    },
+    {
+      "second": 45.59,
+      "action": "click",
+      "selector": ".motion-button"
+    }
+  ],
+  "poses": [
+    {
+      "second": 0.002,
+      "pose": "rest",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 10.206,
+      "pose": "near-lift",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 10.366,
+      "pose": "near-contact",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 10.519,
+      "pose": "near-release",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 10.612,
+      "pose": "far-lift",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 10.76,
+      "pose": "far-contact",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 10.899,
+      "pose": "settle",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 11.039,
+      "pose": "near-lift",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 11.11,
+      "pose": "near-contact",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 11.248,
+      "pose": "near-release",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 11.386,
+      "pose": "far-contact",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 11.525,
+      "pose": "settle",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 11.664,
+      "pose": "rest",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 15.075,
+      "pose": "rest",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": true
+    },
+    {
+      "second": 15.288,
+      "pose": "rest",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 19.18,
+      "pose": "near-lift",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 19.357,
+      "pose": "near-contact",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 19.428,
+      "pose": "near-release",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 19.568,
+      "pose": "far-lift",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 19.708,
+      "pose": "far-contact",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 19.863,
+      "pose": "settle",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 20.02,
+      "pose": "near-lift",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 20.094,
+      "pose": "near-contact",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 20.233,
+      "pose": "near-release",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 20.373,
+      "pose": "far-contact",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 20.443,
+      "pose": "settle",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 20.605,
+      "pose": "rest",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 22.286,
+      "pose": "rest",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": true
+    },
+    {
+      "second": 22.423,
+      "pose": "rest",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 29.625,
+      "pose": "near-lift",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 29.835,
+      "pose": "near-contact",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 29.902,
+      "pose": "near-release",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 30.04,
+      "pose": "far-lift",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 30.181,
+      "pose": "far-contact",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 30.32,
+      "pose": "settle",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 30.46,
+      "pose": "near-lift",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 30.598,
+      "pose": "near-contact",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 30.737,
+      "pose": "near-release",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 30.807,
+      "pose": "far-contact",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 30.947,
+      "pose": "settle",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 31.085,
+      "pose": "rest",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 32.335,
+      "pose": "rest",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": true
+    },
+    {
+      "second": 32.541,
+      "pose": "rest",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 38.323,
+      "pose": "near-lift",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 38.46,
+      "pose": "near-contact",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 38.6,
+      "pose": "near-release",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 38.739,
+      "pose": "far-lift",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 38.88,
+      "pose": "far-contact",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 39.018,
+      "pose": "settle",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 39.155,
+      "pose": "near-lift",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 39.294,
+      "pose": "near-contact",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 39.364,
+      "pose": "near-release",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 39.507,
+      "pose": "far-contact",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 39.645,
+      "pose": "settle",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 39.782,
+      "pose": "rest",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    }
+  ],
+  "errors": [],
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Edg/157.0.4341.42",
+    "revision": "@7b1486be4607d53d9f93841b7c776bc525ca74b7",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+    "jsVersion": "15.7.11.4"
+  },
+  "wallClockSeconds": 40.06,
+  "file": "docs/night-workshop-v1-1/night-workshop-browser-40s.mp4",
+  "capturedFrameCount": 1149,
+  "sourceFrameTimes": {
+    "first": 1794181613.160961,
+    "last": 1794181653.124529
+  },
+  "encoding": {
+    "frameRate": 24,
+    "durationSeconds": 40,
+    "codec": "H.264",
+    "qualityCRF": 18
+  },
+  "hasTypingPoseChanges": true,
+  "scratch": ".astro/night-recording-JRUOC6",
+  "inspectionScreenshots": [
+    {
+      "filename": "typing-rest-for-art-review.png",
+      "pose": "rest",
+      "note": "Paused browser with this exported cel forced for alignment and overlap inspection; excluded from the 40-second timed recording."
+    },
+    {
+      "filename": "typing-near-contact-for-art-review.png",
+      "pose": "near-contact",
+      "note": "Paused browser with this exported cel forced for alignment and overlap inspection; excluded from the 40-second timed recording."
+    },
+    {
+      "filename": "typing-far-contact-for-art-review.png",
+      "pose": "far-contact",
+      "note": "Paused browser with this exported cel forced for alignment and overlap inspection; excluded from the 40-second timed recording."
+    }
+  ],
+  "finished": "2026-11-08T23:47:40.250Z"
+}

@@ -1,0 +1,104 @@
+{
+  "source": "docs/night-workshop-v1-1/night-workshop-browser-40s.mp4",
+  "method": "Frames extracted from the real browser MP4 at observed pose timestamps; original displayed pixel scale; no pose or image modifications beyond cropping and labels.",
+  "crop": {
+    "left": 755,
+    "top": 525,
+    "width": 350,
+    "height": 200
+  },
+  "samples": [
+    {
+      "second": 0.002,
+      "pose": "rest",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 10.206,
+      "pose": "near-lift",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 10.366,
+      "pose": "near-contact",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 10.519,
+      "pose": "near-release",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 10.612,
+      "pose": "far-lift",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 10.76,
+      "pose": "far-contact",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 10.899,
+      "pose": "settle",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 11.039,
+      "pose": "near-lift",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 11.11,
+      "pose": "near-contact",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 11.248,
+      "pose": "near-release",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 11.386,
+      "pose": "far-contact",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 11.525,
+      "pose": "settle",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    },
+    {
+      "second": 11.664,
+      "pose": "rest",
+      "motion": "running",
+      "musicPaused": true,
+      "blink": false
+    }
+  ],
+  "contactSheet": "docs/night-workshop-v1-1/screenshots/recorded-typing-burst-contact-sheet.png"
+}

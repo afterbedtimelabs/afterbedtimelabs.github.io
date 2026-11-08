@@ -1,0 +1,3 @@
+Unapproved source motion study, crop only. Not the actual browser recording.
+Generated from exported PNG poses with timing.json: 6.8-second rest, then one authored typing burst.
+Reproduce with: node scripts/verify-night-typing.mjs --gif

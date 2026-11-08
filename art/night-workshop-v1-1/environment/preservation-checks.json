@@ -1,0 +1,78 @@
+{
+  "fixedRegions": {
+    "face": {
+      "bounds": [
+        935,
+        435,
+        165,
+        105
+      ],
+      "changedPixels": 0
+    },
+    "scarf": {
+      "bounds": [
+        835,
+        570,
+        165,
+        40
+      ],
+      "changedPixels": 0
+    },
+    "torsoAndNearPaw": {
+      "bounds": [
+        921,
+        600,
+        130,
+        110
+      ],
+      "changedPixels": 0
+    },
+    "farPaw": {
+      "bounds": [
+        1064,
+        625,
+        78,
+        48
+      ],
+      "changedPixels": 0
+    },
+    "tail": {
+      "bounds": [
+        672,
+        500,
+        126,
+        235
+      ],
+      "changedPixels": 0
+    },
+    "desk": {
+      "bounds": [
+        700,
+        800,
+        500,
+        90
+      ],
+      "changedPixels": 0
+    },
+    "lampShadeInterior": {
+      "bounds": [
+        1340,
+        382,
+        85,
+        40
+      ],
+      "changedPixels": 0
+    },
+    "keyboard": {
+      "bounds": [
+        973,
+        690,
+        175,
+        45
+      ],
+      "changedPixels": 0
+    }
+  },
+  "changedOutsideMasks": 0,
+  "allPass": true
+}

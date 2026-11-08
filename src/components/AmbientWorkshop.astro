@@ -1,18 +1,19 @@
 ---
 import Icon from './Icon.astro';
-const drops = Array.from({ length: 42 }, (_, i) => ({ x: 800 + ((i * 137) % 735), y: (i * 79) % 620, length: 12 + (i % 4) * 9 }));
+const drops = Array.from({ length: 31 }, (_, i) => ({ x: 816 + ((i * 137) % 688), y: (i * 79) % 620, length: 5 + (i % 4) * 3, duration: 2.1 + (i % 7) * .37, delay: -((i * .73) % 5) }));
 ---
 <section class="ambient-workshop" id="workshop" aria-label="After-hours workshop" data-motion="paused">
   <div class="scene-viewport">
-    <div class="scene-canvas" role="img" aria-label="Tinker Panda in his teal scarf, working at a wooden desk beside a rainy city window. A warm lamp lights a notebook, mug, and small electronics project.">
-      <img class="scene-image" src="/images/ambient/rainy-workshop-v1.webp" alt="" width="1659" height="948" fetchpriority="high" />
+    <div class="scene-canvas" role="img" aria-label="Tinker Panda, the lab’s resident mascot, in his teal scarf at a wooden desk beside a rainy nighttime city window. A warm lamp lights a notebook, mug, and small electronics project.">
+      <img class="scene-image" src="/images/ambient/night-workshop-v1-1.webp" alt="" width="1659" height="948" fetchpriority="high" />
       <svg width="0" height="0" aria-hidden="true"><defs><clipPath id="tinker-eyes" clipPathUnits="objectBoundingBox"><ellipse cx=".588909" cy=".526371" rx=".029536" ry=".045359" /><polygon points=".635322,.485232 .638336,.471519 .644364,.462025 .653406,.462025 .660036,.469409 .664858,.484177 .667872,.504219 .670283,.517932 .669078,.531646 .663050,.542194 .650995,.546414 .644364,.539030 .641953,.529536 .635925,.523207 .634117,.504219" /></clipPath></defs></svg>
       <img class="blink-overlay" src="/images/ambient/rainy-workshop-blink-v1.webp" alt="" width="1659" height="948" aria-hidden="true" />
-      <div class="scene-fallback" hidden><img src="/mascot/tinker-panda-v3.4/front.png" width="192" height="192" alt="Tinker Panda" /><p>The workshop illustration couldn’t load.<br />You’re still welcome to stay awhile.</p></div>
+      <canvas class="typing-overlay" width="300" height="170" data-pose="rest" aria-hidden="true"></canvas>
+      <div class="scene-fallback" hidden><img src="/mascot/tinker-panda-v3.4/front.png" width="192" height="192" alt="Tinker Panda, the lab’s resident mascot" /><p>The workshop illustration couldn’t load.<br />You’re still welcome to stay awhile.</p></div>
       <svg class="scene-weather" viewBox="0 0 1659 948" aria-hidden="true">
-        <defs><mask id="rain-window"><path d="M815 98 L1495 10 L1495 557 L815 550Z" fill="white" /><path d="M820 340 Q950 280 1140 300 L1150 570 L800 590Z" fill="black" /><path d="M1290 385 L1380 280 L1460 340 L1540 463 L1280 470Z" fill="black" /><path d="M1200 550 L1350 505 L1310 610Z" fill="black" /></mask></defs>
-        <g mask="url(#rain-window)"><g class="rain rain-near">{drops.map(({ x, y, length }) => <path d={`M${x} ${y} l-4 ${length}`} />)}</g><g class="rain rain-far">{drops.slice(0, 24).map(({ x, y, length }) => <path d={`M${x + 32} ${y - 80} l-2 ${length / 2}`} />)}</g></g>
-        <g class="steam"><path d="M1365 612 C1335 588 1400 574 1370 548 S1350 516 1380 490" /><path d="M1383 610 C1410 585 1350 573 1383 544" /></g>
+        <defs><mask id="rain-window" maskUnits="userSpaceOnUse" x="0" y="0" width="1659" height="948"><image href="/images/ambient/window-motion-mask-v1-1.png" width="1659" height="948" /></mask></defs>
+        <g mask="url(#rain-window)" class="rain-field">{drops.map(({ x, y, length, duration, delay },i) => <path class={`rain ${i % 3 === 0 ? 'rain-far' : 'rain-near'}`} style={`animation-duration:${duration}s;animation-delay:${delay}s`} d={`M${x} ${y} v${length} h-1 v3`} />)}</g>
+        <g class="steam" shape-rendering="crispEdges"><path d="M1363 615 v-7 h-3 v-9 h3 v-7 h4 v-8 h-3 v-6" /><path d="M1373 614 v-6 h3 v-7 h-2 v-8" /></g>
       </svg>
     </div>
     <div class="scene-shade" aria-hidden="true"></div>
@@ -24,19 +25,18 @@ const drops = Array.from({ length: 42 }, (_, i) => ({ x: 800 + ((i * 137) % 735)
       <p class="hero-note">A little curiosity. A few quiet hours.</p>
     </div>
     <div class="ambient-heading" hidden><a href="/" aria-label="After Bedtime Labs home">After Bedtime Labs<span>.</span></a><p>Nothing to do. Nowhere to rush.</p></div>
-    <div class="scene-caption" aria-hidden="true"><span class="scene-dot"></span> A light on in the small hours</div>
+    <div class="scene-caption"><span class="scene-dot" aria-hidden="true"></span> Meet Tinker Panda, the lab’s resident mascot.</div>
     <button class="return-button" type="button" hidden><span aria-hidden="true">↙</span> Back to portfolio</button>
   </div>
   <div class="ambient-toolbar" hidden>
     <div class="track-info"><span class="record" aria-hidden="true">♪</span><div><strong>Window seat</strong><span>Original lo-fi · 74 BPM</span></div></div>
-    <div class="sound-buttons"><button type="button" data-audio-toggle="music" aria-pressed="false"><span aria-hidden="true">▷</span> Play music</button><button type="button" data-audio-toggle="rain" aria-pressed="false">Rain off</button></div>
-    <details class="sound-mixer"><summary aria-label="Volume and sound settings">Sound <span aria-hidden="true">⌄</span></summary><div class="mixer-panel"><p class="mixer-title">Make yourself comfortable</p><label for="music-volume">Music <output id="music-level" for="music-volume">40%</output></label><input id="music-volume" type="range" min="0" max="100" value="40" /><label for="rain-volume">Rain <output id="rain-level" for="rain-volume">18%</output></label><input id="rain-volume" type="range" min="0" max="100" value="18" /><button type="button" class="mute-button" aria-pressed="false">Mute all sound</button><p>Sound only starts when you choose it.</p></div></details>
+    <div class="sound-buttons"><button type="button" data-audio-toggle="music" aria-pressed="false"><span aria-hidden="true">▷</span> Play music</button></div>
+    <details class="sound-mixer"><summary aria-label="Music volume settings">Volume <span aria-hidden="true">⌄</span></summary><div class="mixer-panel"><p class="mixer-title">Make yourself comfortable</p><label for="music-volume">Music <output id="music-level" for="music-volume">40%</output></label><input id="music-volume" type="range" min="0" max="100" value="40" /><button type="button" class="mute-button" aria-pressed="false">Mute music</button><p>Music only starts when you choose it.</p></div></details>
     <div class="view-buttons"><button type="button" class="motion-button" aria-pressed="false">Pause motion</button><button type="button" class="stay-button" aria-expanded="false" aria-controls="workshop">Stay awhile <span aria-hidden="true">↗</span></button></div>
     <p class="audio-status" role="status" aria-live="polite">Sound is off. Make yourself at home.</p>
   </div>
   <noscript><p class="no-script">A quiet moment, just as it is. Sound and ambient controls need JavaScript.</p></noscript>
   <audio data-audio="music" preload="none" loop src="/audio/ambient/after-hours.ogg"></audio>
-  <audio data-audio="rain" preload="none" loop src="/audio/ambient/window-rain.ogg"></audio>
 </section>
 <script>
   import { initAmbientWorkshop } from '../scripts/ambient-workshop';
@@ -50,6 +50,7 @@ const drops = Array.from({ length: 42 }, (_, i) => ({ x: 800 + ((i * 137) % 735)
   .blink-overlay { opacity:0; clip-path:url(#tinker-eyes); pointer-events:none; }
   .blink-overlay.eyes-closed { opacity:1; }
   .scene-image { object-fit:cover; }
+  .typing-overlay { position:absolute; left:53.646775%; top:60.654008%; width:18.083183%; height:17.932489%; display:none; pointer-events:none; }
   .scene-weather { pointer-events:none; }
   .scene-fallback { height:100%; display:grid; place-content:center; text-align:center; gap:20px; color:var(--scene-cream); background:radial-gradient(ellipse at 70% 60%,#65442e,#20242c); }
   .scene-fallback img { margin:auto; image-rendering:pixelated; }
@@ -92,13 +93,13 @@ const drops = Array.from({ length: 42 }, (_, i) => ({ x: 800 + ((i * 137) % 735)
   .mute-button { width:100%; margin-top:2px; }
   .mixer-panel > p:last-child { font-size:10px; color:var(--muted); margin-top:12px; }
   .no-script { padding:16px 24px; font-size:12px; }
-  .rain { stroke:#c6dfec; stroke-width:1.3; opacity:.32; animation:rain-fall 2.6s linear infinite; }
-  .rain-far { opacity:.18; animation-duration:4.3s; animation-delay:-1.7s; }
-  .steam { fill:none; stroke:#f6e3ca; stroke-width:8px; opacity:.15; filter:blur(3px); animation:steam-rise 7s ease-in-out infinite; transform-origin:1370px 610px; }
+  .rain { fill:none; stroke:#8199b2; stroke-width:1.5; opacity:0; animation:rain-fall 2.6s steps(18) infinite; }
+  .rain-far { stroke:#5b708b; stroke-width:1; }
+  .steam { fill:none; stroke:#c9ad95; stroke-width:3px; opacity:.22; animation:steam-rise 6.7s steps(8) infinite; transform-origin:1367px 615px; }
   .steam path:last-child { opacity:.5; }
   [data-motion="paused"] :is(.rain,.steam,.blink-overlay) { animation-play-state:paused; }
-  @keyframes rain-fall { from { transform:translate(0,-70px); } to { transform:translate(-8px,70px); } }
-  @keyframes steam-rise { 0%,100% { transform:translate(0,0); opacity:.08; } 50% { transform:translate(-4px,-14px); opacity:.23; } }
+  @keyframes rain-fall { 0% { transform:translate(0,-52px); opacity:0; } 15%,65% { opacity:.36; } 100% { transform:translate(-3px,60px); opacity:0; } }
+  @keyframes steam-rise { 0%,100% { transform:scaleY(.78); opacity:.12; } 45% { transform:scaleY(1.12); opacity:.28; } 75% { transform:scaleY(1); opacity:.2; } }
   .ambient-heading { position:absolute; top:30px; left:34px; color:var(--scene-cream); z-index:2; }
   .ambient-heading a { font-size:16px; font-weight:600; text-decoration:none; }
   .ambient-heading a span { color:var(--scene-gold); }

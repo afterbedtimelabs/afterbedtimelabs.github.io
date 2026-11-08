@@ -97,7 +97,7 @@ const home=await fs.readFile('src/pages/index.astro','utf8');
 assert.match(home,/<AmbientWorkshop \/>/);assert.doesNotMatch(home,/<Workbench \/>/);
 const workshop=await fs.readFile('src/components/AmbientWorkshop.astro','utf8');
 assert.match(workshop,/\/mascot\/tinker-panda-v3\.4\/front\.png/);
-assert.match(workshop,/rainy-workshop-v1\.webp/);
+assert.match(workshop,/night-workshop-v1-1\.webp/);
 assert.doesNotMatch(component,/tinker-panda-v2\.1|128px|Combined Personality|Playful Expression/);
 assert.match(component,/--sprite-size: 192px/);assert.match(component,/--sprite-size: 96px/);
 assert.match(component,/prefers-reduced-motion: reduce/);
@@ -105,7 +105,10 @@ let preservationChecked=0,preservationAbsent=0,preservationRawMatches=0,preserva
 const before=JSON.parse(await fs.readFile(`${source}/preservation-before.json`,'utf8'));
 // Website showcase refreshes intentionally update these content/provenance files.
 // All mascot sources, frames, atlases and hashes above remain exact.
-const intentional=new Set(['src/pages/index.astro','astro.config.mjs','package.json','src/data/projects.ts','src/content/writing/meet-nightstock.md','public/images/projects/showcase/provenance.json','scripts/verify-build.mjs']);
+// V1.1 also clarifies the fictional mascot's identity in About and the legacy
+// mascot component. These are copy-only exceptions; the component's animation
+// timing, canonical PNGs, pixel masks, palette and all frame hashes stay checked.
+const intentional=new Set(['src/pages/index.astro','src/pages/about.astro','src/components/TinkerPanda.astro','astro.config.mjs','package.json','src/data/projects.ts','src/content/writing/meet-nightstock.md','public/images/projects/showcase/provenance.json','scripts/verify-build.mjs']);
 const knownText=path=>/\.(?:astro|css|html|json|md|mjs|cjs|js|ts|svg|txt|xml|yml|yaml)$/i.test(path)||path==='.gitignore';
 function normalizedLfHash(bytes) {
   const text=bytes.toString('utf8');
@@ -136,7 +139,7 @@ assert.doesNotMatch(built,/tinker-panda-v2\.1|01-expressive|combined-personality
 assert.deepEqual(await fs.readFile('dist/mascot/tinker-panda-v3.4/front.png'),frontBytes);
 for(const name of Object.keys(timing)) assert.deepEqual(await fs.readFile(`dist/mascot/tinker-panda-v3.4/atlases/${name}.png`),await fs.readFile(`${dir}/atlases/${name}.png`));
 const report={passed:true,canonicalSha256:expected,changedFacePixels:changes,unchangedNonFacePixels:96*96-1094,alphaIdenticalToV32:true,opaquePaletteColors:palette.size,animationFrameCount:frameReport.length,pngBytes,preservationChecked,preservationRawMatches,preservationNormalizedMatches,preservationAbsent,frames:frameReport};
-// Preserve historical V3.4 review evidence; record this candidate separately.
-await fs.mkdir('docs/ambient-v1',{recursive:true});
-await fs.writeFile('docs/ambient-v1/canonical-asset-validation.json',JSON.stringify(report,null,2)+'\n');
+// Preserve historical V3.4 and V1 review evidence; record this candidate separately.
+await fs.mkdir('docs/night-workshop-v1-1',{recursive:true});
+await fs.writeFile('docs/night-workshop-v1-1/canonical-asset-validation.json',JSON.stringify(report,null,2)+'\n');
 console.log(`PASS: exact approved front; 191 face-only pixels; 18 native frames; ${pngBytes} PNG bytes; ${preservationChecked} existing files preserved (${preservationRawMatches} raw matches, ${preservationNormalizedMatches} text line-ending-only matches; ${preservationAbsent} historical files absent in this checkout).`);
