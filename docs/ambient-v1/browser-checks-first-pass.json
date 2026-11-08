@@ -1,0 +1,2115 @@
+{
+  "started": "2026-11-08T18:44:08.581Z",
+  "url": "http://127.0.0.1:4351",
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Edg/157.0.4341.42",
+    "revision": "@7b1486be4607d53d9f93841b7c776bc525ca74b7",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+    "jsVersion": "15.7.11.4"
+  },
+  "safety": {
+    "headless": true,
+    "browserAudioMuted": true,
+    "isolatedProfile": true,
+    "sandboxDisabled": false
+  },
+  "assertions": [
+    {
+      "name": "1440 dark normal layout",
+      "pass": true,
+      "evidence": {
+        "width": 1440,
+        "scrollWidth": 1425,
+        "mode": false,
+        "motion": "running",
+        "broken": [],
+        "controls": [
+          {
+            "text": "▷ Play music",
+            "width": 96.78125,
+            "height": 44,
+            "left": 858.3125,
+            "right": 955.09375
+          },
+          {
+            "text": "Rain off",
+            "width": 68.8125,
+            "height": 44,
+            "left": 962.09375,
+            "right": 1030.90625
+          },
+          {
+            "text": "Sound",
+            "width": 83.0625,
+            "height": 44,
+            "left": 1048.90625,
+            "right": 1131.96875
+          },
+          {
+            "text": "Mute all sound",
+            "width": 222,
+            "height": 44,
+            "left": 887.96875,
+            "right": 1109.96875
+          },
+          {
+            "text": "Pause motion",
+            "width": 100.03125,
+            "height": 44,
+            "left": 1149.96875,
+            "right": 1250
+          },
+          {
+            "text": "Stay awhile ↗",
+            "width": 119,
+            "height": 44,
+            "left": 1257,
+            "right": 1376
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "1440 dark no autoplay",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null
+        },
+        "rain": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.18,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null
+        },
+        "status": "Sound is off. Make yourself at home."
+      }
+    },
+    {
+      "name": "1440 dark ambient layout",
+      "pass": true,
+      "evidence": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "mode": true,
+        "motion": "running",
+        "broken": [],
+        "controls": [
+          {
+            "text": "↙ Back to portfolio",
+            "width": 128.203125,
+            "height": 44,
+            "left": 1283.796875,
+            "right": 1412
+          },
+          {
+            "text": "▷ Play music",
+            "width": 96.78125,
+            "height": 44,
+            "left": 1020.3125,
+            "right": 1117.09375
+          },
+          {
+            "text": "Rain off",
+            "width": 68.8125,
+            "height": 44,
+            "left": 1124.09375,
+            "right": 1192.90625
+          },
+          {
+            "text": "Sound",
+            "width": 83.0625,
+            "height": 44,
+            "left": 1210.90625,
+            "right": 1293.96875
+          },
+          {
+            "text": "Mute all sound",
+            "width": 222,
+            "height": 44,
+            "left": 1049.96875,
+            "right": 1271.96875
+          },
+          {
+            "text": "Pause motion",
+            "width": 100.03125,
+            "height": 44,
+            "left": 1311.96875,
+            "right": 1412
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "1440 dark Escape returns focus",
+      "pass": true,
+      "evidence": {
+        "focus": "stay-button",
+        "scrollY": 0
+      }
+    },
+    {
+      "name": "1440 light normal layout",
+      "pass": true,
+      "evidence": {
+        "width": 1440,
+        "scrollWidth": 1425,
+        "mode": false,
+        "motion": "running",
+        "broken": [],
+        "controls": [
+          {
+            "text": "▷ Play music",
+            "width": 96.78125,
+            "height": 44,
+            "left": 858.3125,
+            "right": 955.09375
+          },
+          {
+            "text": "Rain off",
+            "width": 68.8125,
+            "height": 44,
+            "left": 962.09375,
+            "right": 1030.90625
+          },
+          {
+            "text": "Sound",
+            "width": 83.0625,
+            "height": 44,
+            "left": 1048.90625,
+            "right": 1131.96875
+          },
+          {
+            "text": "Mute all sound",
+            "width": 222,
+            "height": 44,
+            "left": 887.96875,
+            "right": 1109.96875
+          },
+          {
+            "text": "Pause motion",
+            "width": 100.03125,
+            "height": 44,
+            "left": 1149.96875,
+            "right": 1250
+          },
+          {
+            "text": "Stay awhile ↗",
+            "width": 119,
+            "height": 44,
+            "left": 1257,
+            "right": 1376
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "1440 light no autoplay",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null
+        },
+        "rain": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.18,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null
+        },
+        "status": "Sound is off. Make yourself at home."
+      }
+    },
+    {
+      "name": "1440 light ambient layout",
+      "pass": true,
+      "evidence": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "mode": true,
+        "motion": "running",
+        "broken": [],
+        "controls": [
+          {
+            "text": "↙ Back to portfolio",
+            "width": 128.203125,
+            "height": 44,
+            "left": 1283.796875,
+            "right": 1412
+          },
+          {
+            "text": "▷ Play music",
+            "width": 96.78125,
+            "height": 44,
+            "left": 1020.3125,
+            "right": 1117.09375
+          },
+          {
+            "text": "Rain off",
+            "width": 68.8125,
+            "height": 44,
+            "left": 1124.09375,
+            "right": 1192.90625
+          },
+          {
+            "text": "Sound",
+            "width": 83.0625,
+            "height": 44,
+            "left": 1210.90625,
+            "right": 1293.96875
+          },
+          {
+            "text": "Mute all sound",
+            "width": 222,
+            "height": 44,
+            "left": 1049.96875,
+            "right": 1271.96875
+          },
+          {
+            "text": "Pause motion",
+            "width": 100.03125,
+            "height": 44,
+            "left": 1311.96875,
+            "right": 1412
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "1440 light Escape returns focus",
+      "pass": true,
+      "evidence": {
+        "focus": "stay-button",
+        "scrollY": 0
+      }
+    },
+    {
+      "name": "390 dark normal layout",
+      "pass": false,
+      "evidence": {
+        "width": 390,
+        "scrollWidth": 390,
+        "mode": false,
+        "motion": "running",
+        "broken": [
+          "/images/projects/showcase/deck-mage.webp",
+          "/images/projects/showcase/nightstock-v131-road.webp"
+        ],
+        "controls": [
+          {
+            "text": "▷ Play music",
+            "width": 158.5,
+            "height": 44,
+            "left": 33,
+            "right": 191.5
+          },
+          {
+            "text": "Rain off",
+            "width": 158.5,
+            "height": 44,
+            "left": 198.5,
+            "right": 357
+          },
+          {
+            "text": "Sound",
+            "width": 74.21875,
+            "height": 44,
+            "left": 282.78125,
+            "right": 357
+          },
+          {
+            "text": "Mute all sound",
+            "width": 222,
+            "height": 44,
+            "left": 113,
+            "right": 335
+          },
+          {
+            "text": "Pause motion",
+            "width": 84.03125,
+            "height": 44,
+            "left": 33,
+            "right": 117.03125
+          },
+          {
+            "text": "Stay awhile ↗",
+            "width": 94.078125,
+            "height": 44,
+            "left": 262.921875,
+            "right": 357
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "390 dark no autoplay",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null
+        },
+        "rain": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.18,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null
+        },
+        "status": "Sound is off. Make yourself at home."
+      }
+    },
+    {
+      "name": "390 dark ambient layout",
+      "pass": true,
+      "evidence": {
+        "width": 390,
+        "scrollWidth": 390,
+        "mode": true,
+        "motion": "running",
+        "broken": [
+          "/images/projects/showcase/deck-mage.webp",
+          "/images/projects/showcase/nightstock-v131-road.webp"
+        ],
+        "controls": [
+          {
+            "text": "↙ Back to portfolio",
+            "width": 113.859375,
+            "height": 44,
+            "left": 260.140625,
+            "right": 374
+          },
+          {
+            "text": "▷ Play music",
+            "width": 100.359375,
+            "height": 44,
+            "left": 16,
+            "right": 116.359375
+          },
+          {
+            "text": "Rain off",
+            "width": 100.375,
+            "height": 44,
+            "left": 123.359375,
+            "right": 223.734375
+          },
+          {
+            "text": "Sound",
+            "width": 74.21875,
+            "height": 44,
+            "left": 299.78125,
+            "right": 374
+          },
+          {
+            "text": "Mute all sound",
+            "width": 222,
+            "height": 44,
+            "left": 130,
+            "right": 352
+          },
+          {
+            "text": "Pause motion",
+            "width": 84.03125,
+            "height": 44,
+            "left": 233.734375,
+            "right": 317.765625
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "390 dark Escape returns focus",
+      "pass": true,
+      "evidence": {
+        "focus": "stay-button",
+        "scrollY": 172
+      }
+    },
+    {
+      "name": "390 light normal layout",
+      "pass": false,
+      "evidence": {
+        "width": 390,
+        "scrollWidth": 390,
+        "mode": false,
+        "motion": "running",
+        "broken": [
+          "/images/projects/showcase/deck-mage.webp",
+          "/images/projects/showcase/nightstock-v131-road.webp"
+        ],
+        "controls": [
+          {
+            "text": "▷ Play music",
+            "width": 158.5,
+            "height": 44,
+            "left": 33,
+            "right": 191.5
+          },
+          {
+            "text": "Rain off",
+            "width": 158.5,
+            "height": 44,
+            "left": 198.5,
+            "right": 357
+          },
+          {
+            "text": "Sound",
+            "width": 74.21875,
+            "height": 44,
+            "left": 282.78125,
+            "right": 357
+          },
+          {
+            "text": "Mute all sound",
+            "width": 222,
+            "height": 44,
+            "left": 113,
+            "right": 335
+          },
+          {
+            "text": "Pause motion",
+            "width": 84.03125,
+            "height": 44,
+            "left": 33,
+            "right": 117.03125
+          },
+          {
+            "text": "Stay awhile ↗",
+            "width": 94.078125,
+            "height": 44,
+            "left": 262.921875,
+            "right": 357
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "390 light no autoplay",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null
+        },
+        "rain": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.18,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null
+        },
+        "status": "Sound is off. Make yourself at home."
+      }
+    },
+    {
+      "name": "390 light ambient layout",
+      "pass": true,
+      "evidence": {
+        "width": 390,
+        "scrollWidth": 390,
+        "mode": true,
+        "motion": "running",
+        "broken": [
+          "/images/projects/showcase/deck-mage.webp",
+          "/images/projects/showcase/nightstock-v131-road.webp"
+        ],
+        "controls": [
+          {
+            "text": "↙ Back to portfolio",
+            "width": 113.859375,
+            "height": 44,
+            "left": 260.140625,
+            "right": 374
+          },
+          {
+            "text": "▷ Play music",
+            "width": 100.359375,
+            "height": 44,
+            "left": 16,
+            "right": 116.359375
+          },
+          {
+            "text": "Rain off",
+            "width": 100.375,
+            "height": 44,
+            "left": 123.359375,
+            "right": 223.734375
+          },
+          {
+            "text": "Sound",
+            "width": 74.21875,
+            "height": 44,
+            "left": 299.78125,
+            "right": 374
+          },
+          {
+            "text": "Mute all sound",
+            "width": 222,
+            "height": 44,
+            "left": 130,
+            "right": 352
+          },
+          {
+            "text": "Pause motion",
+            "width": 84.03125,
+            "height": 44,
+            "left": 233.734375,
+            "right": 317.765625
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "390 light Escape returns focus",
+      "pass": true,
+      "evidence": {
+        "focus": "stay-button",
+        "scrollY": 172
+      }
+    },
+    {
+      "name": "320 dark normal layout",
+      "pass": false,
+      "evidence": {
+        "width": 320,
+        "scrollWidth": 320,
+        "mode": false,
+        "motion": "running",
+        "broken": [
+          "/images/projects/showcase/deck-mage.webp",
+          "/images/projects/showcase/nightstock-v131-road.webp"
+        ],
+        "controls": [
+          {
+            "text": "▷ Play music",
+            "width": 123.5,
+            "height": 44,
+            "left": 33,
+            "right": 156.5
+          },
+          {
+            "text": "Rain off",
+            "width": 123.5,
+            "height": 44,
+            "left": 163.5,
+            "right": 287
+          },
+          {
+            "text": "Sound ⌄",
+            "width": 67.3125,
+            "height": 44,
+            "left": 219.6875,
+            "right": 287
+          },
+          {
+            "text": "Mute all sound",
+            "width": 222,
+            "height": 44,
+            "left": 43,
+            "right": 265
+          },
+          {
+            "text": "Pause motion",
+            "width": 84.03125,
+            "height": 44,
+            "left": 33,
+            "right": 117.03125
+          },
+          {
+            "text": "Stay awhile ↗",
+            "width": 94.078125,
+            "height": 44,
+            "left": 192.921875,
+            "right": 287
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "320 dark no autoplay",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null
+        },
+        "rain": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.18,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null
+        },
+        "status": "Sound is off. Make yourself at home."
+      }
+    },
+    {
+      "name": "320 dark ambient layout",
+      "pass": false,
+      "evidence": {
+        "width": 320,
+        "scrollWidth": 320,
+        "mode": false,
+        "motion": "running",
+        "broken": [
+          "/images/projects/showcase/deck-mage.webp",
+          "/images/projects/showcase/nightstock-v131-road.webp"
+        ],
+        "controls": [
+          {
+            "text": "▷ Play music",
+            "width": 123.5,
+            "height": 44,
+            "left": 33,
+            "right": 156.5
+          },
+          {
+            "text": "Rain off",
+            "width": 123.5,
+            "height": 44,
+            "left": 163.5,
+            "right": 287
+          },
+          {
+            "text": "Sound ⌄",
+            "width": 67.3125,
+            "height": 44,
+            "left": 219.6875,
+            "right": 287
+          },
+          {
+            "text": "Mute all sound",
+            "width": 222,
+            "height": 44,
+            "left": 43,
+            "right": 265
+          },
+          {
+            "text": "Pause motion",
+            "width": 84.03125,
+            "height": 44,
+            "left": 33,
+            "right": 117.03125
+          },
+          {
+            "text": "Stay awhile ↗",
+            "width": 94.078125,
+            "height": 44,
+            "left": 192.921875,
+            "right": 287
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "320 dark Escape returns focus",
+      "pass": false,
+      "evidence": {
+        "focus": "",
+        "scrollY": 288
+      }
+    },
+    {
+      "name": "320 light normal layout",
+      "pass": false,
+      "evidence": {
+        "width": 320,
+        "scrollWidth": 320,
+        "mode": false,
+        "motion": "running",
+        "broken": [
+          "/images/projects/showcase/deck-mage.webp",
+          "/images/projects/showcase/nightstock-v131-road.webp"
+        ],
+        "controls": [
+          {
+            "text": "▷ Play music",
+            "width": 123.5,
+            "height": 44,
+            "left": 33,
+            "right": 156.5
+          },
+          {
+            "text": "Rain off",
+            "width": 123.5,
+            "height": 44,
+            "left": 163.5,
+            "right": 287
+          },
+          {
+            "text": "Sound ⌄",
+            "width": 67.3125,
+            "height": 44,
+            "left": 219.6875,
+            "right": 287
+          },
+          {
+            "text": "Mute all sound",
+            "width": 222,
+            "height": 44,
+            "left": 43,
+            "right": 265
+          },
+          {
+            "text": "Pause motion",
+            "width": 84.03125,
+            "height": 44,
+            "left": 33,
+            "right": 117.03125
+          },
+          {
+            "text": "Stay awhile ↗",
+            "width": 94.078125,
+            "height": 44,
+            "left": 192.921875,
+            "right": 287
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "320 light no autoplay",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null
+        },
+        "rain": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.18,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null
+        },
+        "status": "Sound is off. Make yourself at home."
+      }
+    },
+    {
+      "name": "320 light ambient layout",
+      "pass": false,
+      "evidence": {
+        "width": 320,
+        "scrollWidth": 320,
+        "mode": false,
+        "motion": "running",
+        "broken": [
+          "/images/projects/showcase/deck-mage.webp",
+          "/images/projects/showcase/nightstock-v131-road.webp"
+        ],
+        "controls": [
+          {
+            "text": "▷ Play music",
+            "width": 123.5,
+            "height": 44,
+            "left": 33,
+            "right": 156.5
+          },
+          {
+            "text": "Rain off",
+            "width": 123.5,
+            "height": 44,
+            "left": 163.5,
+            "right": 287
+          },
+          {
+            "text": "Sound ⌄",
+            "width": 67.3125,
+            "height": 44,
+            "left": 219.6875,
+            "right": 287
+          },
+          {
+            "text": "Mute all sound",
+            "width": 222,
+            "height": 44,
+            "left": 43,
+            "right": 265
+          },
+          {
+            "text": "Pause motion",
+            "width": 84.03125,
+            "height": 44,
+            "left": 33,
+            "right": 117.03125
+          },
+          {
+            "text": "Stay awhile ↗",
+            "width": 94.078125,
+            "height": 44,
+            "left": 192.921875,
+            "right": 287
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "320 light Escape returns focus",
+      "pass": false,
+      "evidence": {
+        "focus": "",
+        "scrollY": 288
+      }
+    },
+    {
+      "name": "768 dark normal layout",
+      "pass": true,
+      "evidence": {
+        "width": 768,
+        "scrollWidth": 753,
+        "mode": false,
+        "motion": "running",
+        "broken": [],
+        "controls": [
+          {
+            "text": "▷ Play music",
+            "width": 96.78125,
+            "height": 44,
+            "left": 450.34375,
+            "right": 547.125
+          },
+          {
+            "text": "Rain off",
+            "width": 68.8125,
+            "height": 44,
+            "left": 554.125,
+            "right": 622.9375
+          },
+          {
+            "text": "Sound ⌄",
+            "width": 77.0625,
+            "height": 44,
+            "left": 634.9375,
+            "right": 712
+          },
+          {
+            "text": "Mute all sound",
+            "width": 222,
+            "height": 44,
+            "left": 468,
+            "right": 690
+          },
+          {
+            "text": "Pause motion",
+            "width": 100.03125,
+            "height": 44,
+            "left": 41,
+            "right": 141.03125
+          },
+          {
+            "text": "Stay awhile ↗",
+            "width": 119,
+            "height": 44,
+            "left": 148.03125,
+            "right": 267.03125
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "768 dark no autoplay",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null
+        },
+        "rain": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.18,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null
+        },
+        "status": "Sound is off. Make yourself at home."
+      }
+    },
+    {
+      "name": "768 dark ambient layout",
+      "pass": true,
+      "evidence": {
+        "width": 768,
+        "scrollWidth": 768,
+        "mode": true,
+        "motion": "running",
+        "broken": [],
+        "controls": [
+          {
+            "text": "↙ Back to portfolio",
+            "width": 128.203125,
+            "height": 44,
+            "left": 611.796875,
+            "right": 740
+          },
+          {
+            "text": "▷ Play music",
+            "width": 96.78125,
+            "height": 44,
+            "left": 366.3125,
+            "right": 463.09375
+          },
+          {
+            "text": "Rain off",
+            "width": 68.8125,
+            "height": 44,
+            "left": 470.09375,
+            "right": 538.90625
+          },
+          {
+            "text": "Sound ⌄",
+            "width": 77.0625,
+            "height": 44,
+            "left": 550.90625,
+            "right": 627.96875
+          },
+          {
+            "text": "Mute all sound",
+            "width": 222,
+            "height": 44,
+            "left": 383.96875,
+            "right": 605.96875
+          },
+          {
+            "text": "Pause motion",
+            "width": 100.03125,
+            "height": 44,
+            "left": 639.96875,
+            "right": 740
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "768 dark Escape returns focus",
+      "pass": true,
+      "evidence": {
+        "focus": "stay-button",
+        "scrollY": 0
+      }
+    },
+    {
+      "name": "768 light normal layout",
+      "pass": true,
+      "evidence": {
+        "width": 768,
+        "scrollWidth": 753,
+        "mode": false,
+        "motion": "running",
+        "broken": [],
+        "controls": [
+          {
+            "text": "▷ Play music",
+            "width": 96.78125,
+            "height": 44,
+            "left": 450.34375,
+            "right": 547.125
+          },
+          {
+            "text": "Rain off",
+            "width": 68.8125,
+            "height": 44,
+            "left": 554.125,
+            "right": 622.9375
+          },
+          {
+            "text": "Sound ⌄",
+            "width": 77.0625,
+            "height": 44,
+            "left": 634.9375,
+            "right": 712
+          },
+          {
+            "text": "Mute all sound",
+            "width": 222,
+            "height": 44,
+            "left": 468,
+            "right": 690
+          },
+          {
+            "text": "Pause motion",
+            "width": 100.03125,
+            "height": 44,
+            "left": 41,
+            "right": 141.03125
+          },
+          {
+            "text": "Stay awhile ↗",
+            "width": 119,
+            "height": 44,
+            "left": 148.03125,
+            "right": 267.03125
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "768 light no autoplay",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null
+        },
+        "rain": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.18,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null
+        },
+        "status": "Sound is off. Make yourself at home."
+      }
+    },
+    {
+      "name": "768 light ambient layout",
+      "pass": true,
+      "evidence": {
+        "width": 768,
+        "scrollWidth": 768,
+        "mode": true,
+        "motion": "running",
+        "broken": [],
+        "controls": [
+          {
+            "text": "↙ Back to portfolio",
+            "width": 128.203125,
+            "height": 44,
+            "left": 611.796875,
+            "right": 740
+          },
+          {
+            "text": "▷ Play music",
+            "width": 96.78125,
+            "height": 44,
+            "left": 366.3125,
+            "right": 463.09375
+          },
+          {
+            "text": "Rain off",
+            "width": 68.8125,
+            "height": 44,
+            "left": 470.09375,
+            "right": 538.90625
+          },
+          {
+            "text": "Sound ⌄",
+            "width": 77.0625,
+            "height": 44,
+            "left": 550.90625,
+            "right": 627.96875
+          },
+          {
+            "text": "Mute all sound",
+            "width": 222,
+            "height": 44,
+            "left": 383.96875,
+            "right": 605.96875
+          },
+          {
+            "text": "Pause motion",
+            "width": 100.03125,
+            "height": 44,
+            "left": 639.96875,
+            "right": 740
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "768 light Escape returns focus",
+      "pass": true,
+      "evidence": {
+        "focus": "stay-button",
+        "scrollY": 0
+      }
+    },
+    {
+      "name": "Pause freezes visual animation",
+      "pass": true,
+      "evidence": {
+        "pausedOne": {
+          "motion": "paused",
+          "rain": "matrix(1, 0, 0, 1, -2.03181, -34.4434)",
+          "steam": "matrix(1, 0, 0, 1, -0.289711, -1.01399)"
+        },
+        "pausedTwo": {
+          "motion": "paused",
+          "rain": "matrix(1, 0, 0, 1, -2.03181, -34.4434)",
+          "steam": "matrix(1, 0, 0, 1, -0.289711, -1.01399)"
+        }
+      }
+    },
+    {
+      "name": "Reduced motion disables animation and control",
+      "pass": true,
+      "evidence": {
+        "motion": "paused",
+        "button": "Reduced motion"
+      }
+    },
+    {
+      "name": "Offscreen scene pauses motion",
+      "pass": true,
+      "evidence": {
+        "motion": "paused",
+        "scrollY": 3075
+      }
+    },
+    {
+      "name": "Visible scene resumes motion",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "name": "Keyboard focus visibly styled",
+      "pass": true,
+      "evidence": {
+        "element": "<button type=\"button\" data-audio-toggle=\"music\" aria-pressed=\"false\" data-astro-cid-xo2cqgd4=\"\" aria-busy=\"false\">▷ Play music</button>",
+        "outline": "rgb(138, 87, 15) solid 2px"
+      }
+    },
+    {
+      "name": "Music advances after explicit click; rain stays off",
+      "pass": true,
+      "evidence": {
+        "state": {
+          "music": {
+            "paused": false,
+            "time": 0.177268,
+            "volume": 0.4,
+            "muted": false,
+            "ready": 4,
+            "error": null,
+            "duration": 155.678571
+          },
+          "rain": {
+            "paused": true,
+            "time": 0,
+            "volume": 0.18,
+            "muted": false,
+            "ready": 0,
+            "error": null,
+            "duration": null
+          },
+          "status": "Music playing · Rain off"
+        },
+        "next": {
+          "music": {
+            "paused": false,
+            "time": 1.280375,
+            "volume": 0.4,
+            "muted": false,
+            "ready": 4,
+            "error": null,
+            "duration": 155.678571
+          },
+          "rain": {
+            "paused": true,
+            "time": 0,
+            "volume": 0.18,
+            "muted": false,
+            "ready": 0,
+            "error": null,
+            "duration": null
+          },
+          "status": "Music playing · Rain off"
+        }
+      }
+    },
+    {
+      "name": "Rain independently starts with music continuing",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": false,
+          "time": 2.538357,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 4,
+          "error": null,
+          "duration": 155.678571
+        },
+        "rain": {
+          "paused": false,
+          "time": 1.156782,
+          "volume": 0.18,
+          "muted": false,
+          "ready": 4,
+          "error": null,
+          "duration": 40.002902
+        },
+        "status": "Music playing · Rain on"
+      }
+    },
+    {
+      "name": "Separate volume sliders control separate tracks",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": false,
+          "time": 3.418935,
+          "volume": 0.02,
+          "muted": false,
+          "ready": 4,
+          "error": null,
+          "duration": 155.678571
+        },
+        "rain": {
+          "paused": false,
+          "time": 2.018633,
+          "volume": 0.99,
+          "muted": false,
+          "ready": 4,
+          "error": null,
+          "duration": 40.002902
+        },
+        "status": "Music playing · Rain on"
+      }
+    },
+    {
+      "name": "Mute silences both tracks without stopping playback",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": false,
+          "time": 3.571663,
+          "volume": 0.02,
+          "muted": true,
+          "ready": 4,
+          "error": null,
+          "duration": 155.678571
+        },
+        "rain": {
+          "paused": false,
+          "time": 2.171351,
+          "volume": 0.99,
+          "muted": true,
+          "ready": 4,
+          "error": null,
+          "duration": 40.002902
+        },
+        "status": "All sound muted."
+      }
+    },
+    {
+      "name": "Unmute restores both tracks",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": false,
+          "time": 4.08532,
+          "volume": 0.02,
+          "muted": false,
+          "ready": 4,
+          "error": null,
+          "duration": 155.678571
+        },
+        "rain": {
+          "paused": false,
+          "time": 2.685007,
+          "volume": 0.99,
+          "muted": false,
+          "ready": 4,
+          "error": null,
+          "duration": 40.002902
+        },
+        "status": "Music playing · Rain on"
+      }
+    },
+    {
+      "name": "Escape closes mixer and restores summary focus",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "name": "Music pause independent of rain",
+      "pass": true,
+      "evidence": {
+        "state": {
+          "music": {
+            "paused": true,
+            "time": 4.181153,
+            "volume": 0.02,
+            "muted": false,
+            "ready": 4,
+            "error": null,
+            "duration": 155.678571
+          },
+          "rain": {
+            "paused": false,
+            "time": 2.916419,
+            "volume": 0.99,
+            "muted": false,
+            "ready": 4,
+            "error": null,
+            "duration": 40.002902
+          },
+          "status": "Music paused · Rain on"
+        },
+        "next": {
+          "music": {
+            "paused": true,
+            "time": 4.181153,
+            "volume": 0.02,
+            "muted": false,
+            "ready": 4,
+            "error": null,
+            "duration": 155.678571
+          },
+          "rain": {
+            "paused": false,
+            "time": 3.58242,
+            "volume": 0.99,
+            "muted": false,
+            "ready": 4,
+            "error": null,
+            "duration": 40.002902
+          },
+          "status": "Music paused · Rain on"
+        }
+      }
+    },
+    {
+      "name": "Rain off stops its track",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": true,
+          "time": 4.181153,
+          "volume": 0.02,
+          "muted": false,
+          "ready": 4,
+          "error": null,
+          "duration": 155.678571
+        },
+        "rain": {
+          "paused": true,
+          "time": 3.584345,
+          "volume": 0.99,
+          "muted": false,
+          "ready": 4,
+          "error": null,
+          "duration": 40.002902
+        },
+        "status": "Sound is off. Make yourself at home."
+      }
+    },
+    {
+      "name": "Reload never restores playback",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null
+        },
+        "rain": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.18,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null
+        },
+        "status": "Sound is off. Make yourself at home."
+      }
+    },
+    {
+      "name": "Loading has cancel and clear status",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": false,
+          "time": 0,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null
+        },
+        "rain": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.18,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null
+        },
+        "status": "Loading sound… You can cancel at any time."
+      }
+    },
+    {
+      "name": "Pending playback can be canceled",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null
+        },
+        "rain": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.18,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null
+        },
+        "status": "Sound is off. Make yourself at home."
+      }
+    },
+    {
+      "name": "Missing music produces useful retry error",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 0,
+          "error": 4,
+          "duration": null
+        },
+        "rain": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.18,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null
+        },
+        "status": "Music couldn’t play. Check your connection and press Play music to retry."
+      }
+    },
+    {
+      "name": "Rain remains usable when music fails",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 0,
+          "error": 4,
+          "duration": null
+        },
+        "rain": {
+          "paused": false,
+          "time": 0.558222,
+          "volume": 0.18,
+          "muted": false,
+          "ready": 4,
+          "error": null,
+          "duration": 40.002902
+        },
+        "status": "Music couldn’t play. Check your connection and press Play music to retry."
+      }
+    },
+    {
+      "name": "Music retry recovers after media restored",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": false,
+          "time": 0.535973,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 4,
+          "error": null,
+          "duration": 155.678571
+        },
+        "rain": {
+          "paused": false,
+          "time": 1.580884,
+          "volume": 0.18,
+          "muted": false,
+          "ready": 4,
+          "error": null,
+          "duration": 40.002902
+        },
+        "status": "Music playing · Rain on"
+      }
+    },
+    {
+      "name": "Missing rain produces useful retry error",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null
+        },
+        "rain": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.18,
+          "muted": false,
+          "ready": 0,
+          "error": 4,
+          "duration": null
+        },
+        "status": "Rain couldn’t play. Check your connection and turn Rain on to retry."
+      }
+    },
+    {
+      "name": "Missing scene retains approved mascot and usable content",
+      "pass": true,
+      "evidence": {
+        "width": 390,
+        "scrollWidth": 390,
+        "mode": false,
+        "motion": "running",
+        "broken": [
+          "/images/ambient/rainy-workshop-v1.webp",
+          "/images/projects/showcase/deck-mage.webp",
+          "/images/projects/showcase/nightstock-v131-road.webp"
+        ],
+        "controls": [
+          {
+            "text": "▷ Play music",
+            "width": 158.5,
+            "height": 44,
+            "left": 33,
+            "right": 191.5
+          },
+          {
+            "text": "Rain off",
+            "width": 158.5,
+            "height": 44,
+            "left": 198.5,
+            "right": 357
+          },
+          {
+            "text": "Sound ⌄",
+            "width": 67.3125,
+            "height": 44,
+            "left": 289.6875,
+            "right": 357
+          },
+          {
+            "text": "Mute all sound",
+            "width": 222,
+            "height": 44,
+            "left": 113,
+            "right": 335
+          },
+          {
+            "text": "Pause motion",
+            "width": 84.03125,
+            "height": 44,
+            "left": 33,
+            "right": 117.03125
+          },
+          {
+            "text": "Stay awhile ↗",
+            "width": 94.078125,
+            "height": 44,
+            "left": 262.921875,
+            "right": 357
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "Idle keeps silent tracks paused and DOM stable",
+      "pass": false,
+      "evidence": {
+        "elapsedSeconds": 12,
+        "taskDurationSeconds": 0.027033,
+        "scriptDurationSeconds": 0.0006440000000000005,
+        "layoutDurationSeconds": 0.0007740000000000004,
+        "recalcStyleDurationSeconds": 0.0009349999999999983,
+        "jsHeapBefore": 3250008,
+        "jsHeapAfter": 3250532,
+        "domNodesBefore": 2696,
+        "domNodesAfter": 2697,
+        "audio": {
+          "music": {
+            "paused": true,
+            "time": 0,
+            "volume": 0.4,
+            "muted": false,
+            "ready": 0,
+            "error": null,
+            "duration": null
+          },
+          "rain": {
+            "paused": true,
+            "time": 0,
+            "volume": 0.18,
+            "muted": false,
+            "ready": 0,
+            "error": null,
+            "duration": null
+          },
+          "status": "Sound is off. Make yourself at home."
+        },
+        "scope": "One 12-second headless Edge ambient idle sample, no audio playing; not a device benchmark."
+      }
+    },
+    {
+      "name": "Hidden page pauses motion",
+      "pass": true,
+      "evidence": {
+        "hidden": true,
+        "motion": "paused"
+      }
+    },
+    {
+      "name": "No-JS portfolio and static scene remain complete",
+      "pass": true,
+      "evidence": {
+        "heading": "Built afterbedtime.",
+        "about": true,
+        "scene": 1659,
+        "controlsHidden": true
+      }
+    },
+    {
+      "name": "No browser runtime or console errors",
+      "pass": false,
+      "evidence": [
+        {
+          "stage": "missing scene",
+          "kind": "console",
+          "text": "%cAstro background: linear-gradient(66.77deg, #D83333 0%, #F041FF 100%); color: white; padding-inline: 4px; border-radius: 2px; font-family: monospace; Error while running audit's match function: TypeError: Failed to fetch"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "name": "home-1440-dark.png",
+      "stage": "responsive screenshots",
+      "fullPage": true,
+      "dimensions": {
+        "width": 1440,
+        "height": 1000,
+        "scrollHeight": 4075
+      }
+    },
+    {
+      "name": "ambient-1440-dark.png",
+      "stage": "responsive screenshots",
+      "fullPage": false,
+      "dimensions": {
+        "width": 1440,
+        "height": 1000,
+        "scrollHeight": 1000
+      }
+    },
+    {
+      "name": "home-1440-light.png",
+      "stage": "responsive screenshots",
+      "fullPage": true,
+      "dimensions": {
+        "width": 1440,
+        "height": 1000,
+        "scrollHeight": 4075
+      }
+    },
+    {
+      "name": "ambient-1440-light.png",
+      "stage": "responsive screenshots",
+      "fullPage": false,
+      "dimensions": {
+        "width": 1440,
+        "height": 1000,
+        "scrollHeight": 1000
+      }
+    },
+    {
+      "name": "home-390-dark.png",
+      "stage": "responsive screenshots",
+      "fullPage": true,
+      "dimensions": {
+        "width": 390,
+        "height": 844,
+        "scrollHeight": 5696
+      }
+    },
+    {
+      "name": "ambient-390-dark.png",
+      "stage": "responsive screenshots",
+      "fullPage": false,
+      "dimensions": {
+        "width": 390,
+        "height": 844,
+        "scrollHeight": 844
+      }
+    },
+    {
+      "name": "home-390-light.png",
+      "stage": "responsive screenshots",
+      "fullPage": true,
+      "dimensions": {
+        "width": 390,
+        "height": 844,
+        "scrollHeight": 5696
+      }
+    },
+    {
+      "name": "ambient-390-light.png",
+      "stage": "responsive screenshots",
+      "fullPage": false,
+      "dimensions": {
+        "width": 390,
+        "height": 844,
+        "scrollHeight": 844
+      }
+    },
+    {
+      "name": "home-320-dark.png",
+      "stage": "responsive screenshots",
+      "fullPage": true,
+      "dimensions": {
+        "width": 320,
+        "height": 740,
+        "scrollHeight": 5878
+      }
+    },
+    {
+      "name": "ambient-320-dark.png",
+      "stage": "responsive screenshots",
+      "fullPage": false,
+      "dimensions": {
+        "width": 320,
+        "height": 740,
+        "scrollHeight": 5878
+      }
+    },
+    {
+      "name": "home-320-light.png",
+      "stage": "responsive screenshots",
+      "fullPage": true,
+      "dimensions": {
+        "width": 320,
+        "height": 740,
+        "scrollHeight": 5878
+      }
+    },
+    {
+      "name": "ambient-320-light.png",
+      "stage": "responsive screenshots",
+      "fullPage": false,
+      "dimensions": {
+        "width": 320,
+        "height": 740,
+        "scrollHeight": 5878
+      }
+    },
+    {
+      "name": "home-768-dark.png",
+      "stage": "responsive screenshots",
+      "fullPage": true,
+      "dimensions": {
+        "width": 768,
+        "height": 1024,
+        "scrollHeight": 4047
+      }
+    },
+    {
+      "name": "ambient-768-dark.png",
+      "stage": "responsive screenshots",
+      "fullPage": false,
+      "dimensions": {
+        "width": 768,
+        "height": 1024,
+        "scrollHeight": 1024
+      }
+    },
+    {
+      "name": "home-768-light.png",
+      "stage": "responsive screenshots",
+      "fullPage": true,
+      "dimensions": {
+        "width": 768,
+        "height": 1024,
+        "scrollHeight": 4047
+      }
+    },
+    {
+      "name": "ambient-768-light.png",
+      "stage": "responsive screenshots",
+      "fullPage": false,
+      "dimensions": {
+        "width": 768,
+        "height": 1024,
+        "scrollHeight": 1024
+      }
+    },
+    {
+      "name": "motion-paused-desktop.png",
+      "stage": "motion and keyboard",
+      "fullPage": false,
+      "dimensions": {
+        "width": 1440,
+        "height": 1000,
+        "scrollHeight": 4075
+      }
+    },
+    {
+      "name": "reduced-motion-desktop.png",
+      "stage": "motion and keyboard",
+      "fullPage": false,
+      "dimensions": {
+        "width": 1440,
+        "height": 1000,
+        "scrollHeight": 4075
+      }
+    },
+    {
+      "name": "keyboard-focus-ambient.png",
+      "stage": "motion and keyboard",
+      "fullPage": false,
+      "dimensions": {
+        "width": 1440,
+        "height": 1000,
+        "scrollHeight": 1000
+      }
+    },
+    {
+      "name": "audio-mixer-muted-desktop.png",
+      "stage": "audio independent playback",
+      "fullPage": false,
+      "dimensions": {
+        "width": 1440,
+        "height": 1000,
+        "scrollHeight": 4075
+      }
+    },
+    {
+      "name": "audio-loading.png",
+      "stage": "audio loading and errors",
+      "fullPage": false,
+      "dimensions": {
+        "width": 1440,
+        "height": 1000,
+        "scrollHeight": 4075
+      }
+    },
+    {
+      "name": "audio-error-desktop.png",
+      "stage": "audio loading and errors",
+      "fullPage": false,
+      "dimensions": {
+        "width": 1440,
+        "height": 1000,
+        "scrollHeight": 4075
+      }
+    },
+    {
+      "name": "audio-error-mobile.png",
+      "stage": "audio loading and errors",
+      "fullPage": false,
+      "dimensions": {
+        "width": 390,
+        "height": 844,
+        "scrollHeight": 5696
+      }
+    },
+    {
+      "name": "missing-scene-mobile.png",
+      "stage": "missing scene",
+      "fullPage": true,
+      "dimensions": {
+        "width": 390,
+        "height": 844,
+        "scrollHeight": 5696
+      }
+    },
+    {
+      "name": "missing-scene-ambient-mobile.png",
+      "stage": "missing scene",
+      "fullPage": false,
+      "dimensions": {
+        "width": 390,
+        "height": 844,
+        "scrollHeight": 844
+      }
+    },
+    {
+      "name": "no-javascript-desktop.png",
+      "stage": "no JavaScript",
+      "fullPage": false,
+      "dimensions": {
+        "width": 1440,
+        "height": 1000,
+        "scrollHeight": 4029
+      }
+    }
+  ],
+  "consoleErrors": [
+    {
+      "stage": "missing scene",
+      "kind": "console",
+      "text": "%cAstro background: linear-gradient(66.77deg, #D83333 0%, #F041FF 100%); color: white; padding-inline: 4px; border-radius: 2px; font-family: monospace; Error while running audit's match function: TypeError: Failed to fetch"
+    }
+  ],
+  "gaps": [],
+  "idle": {
+    "elapsedSeconds": 12,
+    "taskDurationSeconds": 0.027033,
+    "scriptDurationSeconds": 0.0006440000000000005,
+    "layoutDurationSeconds": 0.0007740000000000004,
+    "recalcStyleDurationSeconds": 0.0009349999999999983,
+    "jsHeapBefore": 3250008,
+    "jsHeapAfter": 3250532,
+    "domNodesBefore": 2696,
+    "domNodesAfter": 2697,
+    "audio": {
+      "music": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.4,
+        "muted": false,
+        "ready": 0,
+        "error": null,
+        "duration": null
+      },
+      "rain": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.18,
+        "muted": false,
+        "ready": 0,
+        "error": null,
+        "duration": null
+      },
+      "status": "Sound is off. Make yourself at home."
+    },
+    "scope": "One 12-second headless Edge ambient idle sample, no audio playing; not a device benchmark."
+  },
+  "finished": "2026-11-08T18:45:03.927Z",
+  "passed": 47,
+  "failed": 10
+}

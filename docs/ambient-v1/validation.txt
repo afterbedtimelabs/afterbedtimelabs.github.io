@@ -1,0 +1,101 @@
+
+> afterbedtimelabs.github.io@0.0.1 validate
+> npm run check && npm run build && npm run verify && npm run mascot:verify && npm run showcase:verify
+
+
+> afterbedtimelabs.github.io@0.0.1 check
+> astro check
+
+13:52:24 [content] Syncing content
+13:52:24 [content] Synced content
+13:52:24 [types] Generated 695ms
+13:52:24 [check] Getting diagnostics for Astro files in C:\AI\afterbedtimelabs.github.io\.ambient-worktrees\v1...
+Result (42 files):
+- 0 errors
+- 0 warnings
+- 0 hints
+
+
+> afterbedtimelabs.github.io@0.0.1 build
+> astro build
+
+13:52:36 [content] Syncing content
+13:52:36 [content] Synced content
+13:52:36 [types] Generated 668ms
+13:52:36 [build] output: "static"
+13:52:36 [build] mode: "static"
+13:52:36 [build] directory: C:\AI\afterbedtimelabs.github.io\.ambient-worktrees\v1\dist\
+13:52:36 [build] Collecting build info...
+13:52:36 [build] ✓ Completed in 720ms.
+13:52:36 [build] Building static entrypoints...
+13:52:36 [vite] ✓ built in 310ms
+13:52:36 [vite] ✓ built in 94ms
+13:52:36 [build] Rearranging server assets...
+
+ generating static routes
+13:52:36   ├─ /404.html (+11ms)
+13:52:36   ├─ /about/index.html (+5ms)
+13:52:36   ├─ /navi/privacy/index.html (+7ms)
+13:52:36   ├─ /navi/index.html (+5ms)
+13:52:36   ├─ /projects/riku/index.html (+3ms)
+13:52:36   ├─ /projects/mission-control/index.html (+2ms)
+13:52:36   ├─ /projects/midnight-chiba/index.html (+2ms)
+13:52:36   ├─ /projects/dungeon-deckbuilder/index.html (+2ms)
+13:52:36   ├─ /projects/nightstock/index.html (+2ms)
+13:52:36   ├─ /projects/local-ai-utilities/index.html (+2ms)
+13:52:36   ├─ /projects/index.html (+8ms)
+13:52:36   ├─ /robots.txt (+3ms)
+13:52:36   ├─ /rss.xml (+69ms)
+13:52:36   ├─ /writing/meet-navi-waypoint/index.html (+2ms)
+13:52:36   ├─ /writing/topics/games/index.html (+3ms)
+13:52:36   ├─ /writing/topics/local-ai/index.html (+2ms)
+13:52:36   ├─ /writing/topics/project-introductions/index.html (+2ms)
+13:52:36   ├─ /writing/topics/studio-notes/index.html (+2ms)
+13:52:36   ├─ /writing/index.html (+5ms)
+13:52:36   ├─ /writing/meet-dungeon-deckbuilder/index.html (+2ms)
+13:52:36   ├─ /writing/meet-midnight-chiba/index.html (+2ms)
+13:52:36   ├─ /writing/meet-mission-control/index.html (+2ms)
+13:52:36   ├─ /writing/meet-nightstock/index.html (+2ms)
+13:52:36   ├─ /writing/meet-riku/index.html (+2ms)
+13:52:36   ├─ /writing/welcome-to-after-bedtime-labs/index.html (+2ms)
+13:52:36   ├─ /index.html (+6ms)
+13:52:36 ✓ Completed in 202ms.
+
+13:52:36 [build] ✓ Completed in 691ms.
+13:52:36 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+13:52:36 [build] 23 page(s) built in 1.47s
+13:52:36 [build] Complete!
+
+> afterbedtimelabs.github.io@0.0.1 verify
+> node scripts/verify-build.mjs
+
+Verified 24 HTML pages: metadata, local links, fragments, assets, sitemap, RSS, robots, and 1 excluded draft.
+
+> afterbedtimelabs.github.io@0.0.1 mascot:verify
+> node scripts/verify-tinker-panda-v3-4.mjs && node scripts/verify-tinker-controller.cjs
+
+PASS: exact approved front; 191 face-only pixels; 18 native frames; 16400 PNG bytes; 75 existing files preserved (47 raw matches, 28 text line-ending-only matches; 106 historical files absent in this checkout).
+PASS 1: static markup and CSS retain accessible no-JavaScript fallback and integral pixel sizing
+PASS 2: initial reduced-motion state: static, no timers or atlas loads, greeting still works
+PASS 3: preference change cancels an unresolved atlas and later resumes scheduling
+PASS 4: pause while atlas loads cancels completion; paused greetings stay static; resume restarts timer
+PASS 5: user pause survives enabling then disabling reduced-motion preference
+PASS 6: document visibility and viewport exit stop active animation and suppress work
+PASS 7: viewport motion requires at least fifteen percent visibility and stops below that threshold
+PASS 8: failed atlas keeps approved front visible and caches failure without repeated requests
+PASS 9: repeated greeting cancels stale sequence; exact happy frames then static front
+PASS 10: ambient schedule rotates blink, idle, and tail with exact timing and one timer
+PASS 11: stalled atlas times out to the approved front and ignores late completion
+PASS 12: malformed atlas dimensions keep the approved front visible
+PASS 13: pagehide invalidates pending image completion; pageshow can resume
+PASS 14: missing IntersectionObserver falls back safely to visible static initialization and delayed motion
+PASS 15: hidden page initialization does not fetch or schedule until visible
+
+15/15 actual-controller scenarios passed.
+Source: C:\AI\afterbedtimelabs.github.io\.ambient-worktrees\v1\src\components\TinkerPanda.astro
+Method: TypeScript transpileModule + Node vm with deterministic fake DOM/timers/media/image I/O. No dependencies added; no native browser media-emulation claim.
+
+> afterbedtimelabs.github.io@0.0.1 showcase:verify
+> node scripts/verify-nightstock-showcase.mjs
+
+PASS: six pinned build captures, original SHA-256s, 18 responsive WebP hashes/dimensions and exact production copies; one eager/five lazy gallery images.
