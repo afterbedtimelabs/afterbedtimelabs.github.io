@@ -108,7 +108,10 @@ const before=JSON.parse(await fs.readFile(`${source}/preservation-before.json`,'
 // V1.1 also clarifies the fictional mascot's identity in About and the legacy
 // mascot component. These are copy-only exceptions; the component's animation
 // timing, canonical PNGs, pixel masks, palette and all frame hashes stay checked.
-const intentional=new Set(['src/pages/index.astro','src/pages/about.astro','src/components/TinkerPanda.astro','astro.config.mjs','package.json','src/data/projects.ts','src/content/writing/meet-nightstock.md','public/images/projects/showcase/provenance.json','scripts/verify-build.mjs']);
+// V1.2 adds ClientRouter/shared audio to BaseLayout and makes ThemeToggle
+// navigation-aware. These intentional behavior changes are covered by the
+// continuity browser suite; this historical audit still pins all artwork.
+const intentional=new Set(['src/layouts/BaseLayout.astro','src/components/ThemeToggle.astro','src/pages/index.astro','src/pages/about.astro','src/components/TinkerPanda.astro','astro.config.mjs','package.json','src/data/projects.ts','src/content/writing/meet-nightstock.md','public/images/projects/showcase/provenance.json','scripts/verify-build.mjs']);
 const knownText=path=>/\.(?:astro|css|html|json|md|mjs|cjs|js|ts|svg|txt|xml|yml|yaml)$/i.test(path)||path==='.gitignore';
 function normalizedLfHash(bytes) {
   const text=bytes.toString('utf8');
@@ -140,6 +143,6 @@ assert.deepEqual(await fs.readFile('dist/mascot/tinker-panda-v3.4/front.png'),fr
 for(const name of Object.keys(timing)) assert.deepEqual(await fs.readFile(`dist/mascot/tinker-panda-v3.4/atlases/${name}.png`),await fs.readFile(`${dir}/atlases/${name}.png`));
 const report={passed:true,canonicalSha256:expected,changedFacePixels:changes,unchangedNonFacePixels:96*96-1094,alphaIdenticalToV32:true,opaquePaletteColors:palette.size,animationFrameCount:frameReport.length,pngBytes,preservationChecked,preservationRawMatches,preservationNormalizedMatches,preservationAbsent,frames:frameReport};
 // Preserve historical V3.4 and V1 review evidence; record this candidate separately.
-await fs.mkdir('docs/night-workshop-v1-1',{recursive:true});
-await fs.writeFile('docs/night-workshop-v1-1/canonical-asset-validation.json',JSON.stringify(report,null,2)+'\n');
+await fs.mkdir('docs/ambient-v1-2',{recursive:true});
+await fs.writeFile('docs/ambient-v1-2/canonical-asset-validation.json',JSON.stringify(report,null,2)+'\n');
 console.log(`PASS: exact approved front; 191 face-only pixels; 18 native frames; ${pngBytes} PNG bytes; ${preservationChecked} existing files preserved (${preservationRawMatches} raw matches, ${preservationNormalizedMatches} text line-ending-only matches; ${preservationAbsent} historical files absent in this checkout).`);

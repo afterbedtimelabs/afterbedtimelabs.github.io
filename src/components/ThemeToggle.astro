@@ -8,7 +8,6 @@ import Icon from './Icon.astro';
   <span class="sr-only" id="theme-label">Theme: system</span>
 </button>
 <script>
-  const button = document.querySelector<HTMLButtonElement>('#theme-toggle');
   const modes = ['system', 'light', 'dark'] as const;
   type Mode = typeof modes[number];
   const preference = window.matchMedia('(prefers-color-scheme: dark)');
@@ -18,6 +17,8 @@ import Icon from './Icon.astro';
     if (saved === 'light' || saved === 'dark') mode = saved;
   } catch { /* The system preference still works when storage is unavailable. */ }
   function applyTheme() {
+    const button = document.querySelector<HTMLButtonElement>('#theme-toggle');
+    if (button) button.hidden = false;
     document.documentElement.dataset.theme = mode === 'system' ? (preference.matches ? 'dark' : 'light') : mode;
     document.documentElement.dataset.themeMode = mode;
     const next = modes[(modes.indexOf(mode) + 1) % modes.length];
@@ -27,10 +28,9 @@ import Icon from './Icon.astro';
     const label = document.querySelector('#theme-label');
     if (label) label.textContent = `Theme: ${mode}`;
   }
-  if (button) {
-    button.hidden = false;
-    applyTheme();
-    button.addEventListener('click', () => {
+  applyTheme();
+  document.addEventListener('click', (event) => {
+      if (!(event.target instanceof Element) || !event.target.closest('#theme-toggle')) return;
       mode = modes[(modes.indexOf(mode) + 1) % modes.length];
       try {
         if (mode === 'system') localStorage.removeItem('abl-theme');
@@ -44,7 +44,8 @@ import Icon from './Icon.astro';
       mode = event.newValue === 'light' || event.newValue === 'dark' ? event.newValue : 'system';
       applyTheme();
     });
-  }
+  document.addEventListener('astro:after-swap', applyTheme);
+  document.addEventListener('astro:page-load', applyTheme);
 </script>
 <style>
   .theme-toggle { display: grid; place-items: center; width: 44px; height: 44px; padding: 0; background: transparent; border: 1px solid var(--border); color: var(--muted); border-radius: 50%; cursor: pointer; }

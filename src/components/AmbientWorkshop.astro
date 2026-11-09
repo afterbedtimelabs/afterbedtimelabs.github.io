@@ -8,11 +8,16 @@ const drops = Array.from({ length: 31 }, (_, i) => ({ x: 816 + ((i * 137) % 688)
       <img class="scene-image" src="/images/ambient/night-workshop-v1-1.webp" alt="" width="1659" height="948" fetchpriority="high" />
       <svg width="0" height="0" aria-hidden="true"><defs><clipPath id="tinker-eyes" clipPathUnits="objectBoundingBox"><ellipse cx=".588909" cy=".526371" rx=".029536" ry=".045359" /><polygon points=".635322,.485232 .638336,.471519 .644364,.462025 .653406,.462025 .660036,.469409 .664858,.484177 .667872,.504219 .670283,.517932 .669078,.531646 .663050,.542194 .650995,.546414 .644364,.539030 .641953,.529536 .635925,.523207 .634117,.504219" /></clipPath></defs></svg>
       <img class="blink-overlay" src="/images/ambient/rainy-workshop-blink-v1.webp" alt="" width="1659" height="948" aria-hidden="true" />
-      <canvas class="typing-overlay" width="300" height="170" data-pose="rest" aria-hidden="true"></canvas>
       <div class="scene-fallback" hidden><img src="/mascot/tinker-panda-v3.4/front.png" width="192" height="192" alt="Tinker Panda, the lab’s resident mascot" /><p>The workshop illustration couldn’t load.<br />You’re still welcome to stay awhile.</p></div>
       <svg class="scene-weather" viewBox="0 0 1659 948" aria-hidden="true">
         <defs><mask id="rain-window" maskUnits="userSpaceOnUse" x="0" y="0" width="1659" height="948"><image href="/images/ambient/window-motion-mask-v1-1.png" width="1659" height="948" /></mask></defs>
         <g mask="url(#rain-window)" class="rain-field">{drops.map(({ x, y, length, duration, delay },i) => <path class={`rain ${i % 3 === 0 ? 'rain-far' : 'rain-near'}`} style={`animation-duration:${duration}s;animation-delay:${delay}s`} d={`M${x} ${y} v${length} h-1 v3`} />)}</g>
+        <!-- Registered to the existing LED at (1269, 817), not the viewport. -->
+        <g class="circuit-light" shape-rendering="crispEdges">
+          <path class="bulb-reflection" d="M1258 813 h4 v-5 h14 v5 h5 v11 h-5 v4 h-14 v-4 h-4z" />
+          <path class="bulb-core" d="M1266 811 h6 v3 h2 v9 h-9 v-9 h1z" />
+          <path class="bulb-spark" d="M1268 814 h3 v5 h-3z" />
+        </g>
         <g class="steam" shape-rendering="crispEdges"><path d="M1363 615 v-7 h-3 v-9 h3 v-7 h4 v-8 h-3 v-6" /><path d="M1373 614 v-6 h3 v-7 h-2 v-8" /></g>
       </svg>
     </div>
@@ -31,16 +36,14 @@ const drops = Array.from({ length: 31 }, (_, i) => ({ x: 816 + ((i * 137) % 688)
   <div class="ambient-toolbar" hidden>
     <div class="track-info"><span class="record" aria-hidden="true">♪</span><div><strong>Window seat</strong><span>Original lo-fi · 74 BPM</span></div></div>
     <div class="sound-buttons"><button type="button" data-audio-toggle="music" aria-pressed="false"><span aria-hidden="true">▷</span> Play music</button></div>
-    <details class="sound-mixer"><summary aria-label="Music volume settings">Volume <span aria-hidden="true">⌄</span></summary><div class="mixer-panel"><p class="mixer-title">Make yourself comfortable</p><label for="music-volume">Music <output id="music-level" for="music-volume">40%</output></label><input id="music-volume" type="range" min="0" max="100" value="40" /><button type="button" class="mute-button" aria-pressed="false">Mute music</button><p>Music only starts when you choose it.</p></div></details>
+    <details class="sound-mixer"><summary aria-label="Music volume settings">Volume <span aria-hidden="true">⌄</span></summary><div class="mixer-panel"><p class="mixer-title">Make yourself comfortable</p><label for="music-volume">Music <output data-music-level id="music-level" for="music-volume">40%</output></label><input data-music-volume id="music-volume" type="range" min="0" max="100" value="40" /><button type="button" class="mute-button" aria-pressed="false">Mute music</button><p>Music only starts when you choose it.</p></div></details>
     <div class="view-buttons"><button type="button" class="motion-button" aria-pressed="false">Pause motion</button><button type="button" class="stay-button" aria-expanded="false" aria-controls="workshop">Stay awhile <span aria-hidden="true">↗</span></button></div>
     <p class="audio-status" role="status" aria-live="polite">Sound is off. Make yourself at home.</p>
   </div>
   <noscript><p class="no-script">A quiet moment, just as it is. Sound and ambient controls need JavaScript.</p></noscript>
-  <audio data-audio="music" preload="none" loop src="/audio/ambient/after-hours.ogg"></audio>
 </section>
 <script>
-  import { initAmbientWorkshop } from '../scripts/ambient-workshop';
-  initAmbientWorkshop();
+  import '../scripts/ambient-workshop';
 </script>
 <style>
   .ambient-workshop { --scene-cream:#fff4df; --scene-gold:#f5c580; margin:26px auto 0; width:min(100% - 48px, 1440px); border:1px solid var(--border); border-radius:12px; position:relative; }
@@ -50,7 +53,6 @@ const drops = Array.from({ length: 31 }, (_, i) => ({ x: 816 + ((i * 137) % 688)
   .blink-overlay { opacity:0; clip-path:url(#tinker-eyes); pointer-events:none; }
   .blink-overlay.eyes-closed { opacity:1; }
   .scene-image { object-fit:cover; }
-  .typing-overlay { position:absolute; left:53.646775%; top:60.654008%; width:18.083183%; height:17.932489%; display:none; pointer-events:none; }
   .scene-weather { pointer-events:none; }
   .scene-fallback { height:100%; display:grid; place-content:center; text-align:center; gap:20px; color:var(--scene-cream); background:radial-gradient(ellipse at 70% 60%,#65442e,#20242c); }
   .scene-fallback img { margin:auto; image-rendering:pixelated; }
@@ -98,6 +100,17 @@ const drops = Array.from({ length: 31 }, (_, i) => ({ x: 816 + ((i * 137) % 688)
   .steam { fill:none; stroke:#c9ad95; stroke-width:3px; opacity:.22; animation:steam-rise 6.7s steps(8) infinite; transform-origin:1367px 615px; }
   .steam path:last-child { opacity:.5; }
   [data-motion="paused"] :is(.rain,.steam,.blink-overlay) { animation-play-state:paused; }
+  .circuit-light { color:#efb45c; animation:bulb-breathe 16s ease-in-out infinite; }
+  .bulb-core { fill:currentColor; opacity:.55; }
+  .bulb-reflection { fill:currentColor; opacity:.1; }
+  .bulb-spark { fill:#fff1c2; opacity:.55; }
+  [data-motion="paused"] .circuit-light { animation:none; color:#efb45c; opacity:.72; }
+  @keyframes bulb-breathe {
+    0%,18%,100% { color:#efb45c; opacity:.72; }
+    32%,40% { color:#f4be70; opacity:.94; }
+    65%,76% { color:#70a99f; opacity:.85; }
+    92% { color:#efb45c; opacity:.72; }
+  }
   @keyframes rain-fall { 0% { transform:translate(0,-52px); opacity:0; } 15%,65% { opacity:.36; } 100% { transform:translate(-3px,60px); opacity:0; } }
   @keyframes steam-rise { 0%,100% { transform:scaleY(.78); opacity:.12; } 45% { transform:scaleY(1.12); opacity:.28; } 75% { transform:scaleY(1); opacity:.2; } }
   .ambient-heading { position:absolute; top:30px; left:34px; color:var(--scene-cream); z-index:2; }
@@ -159,7 +172,7 @@ const drops = Array.from({ length: 31 }, (_, i) => ({ x: 816 + ((i * 137) % 688)
   }
   @media (min-width:601px) and (max-width:900px) { .scene-canvas { width:140%; margin-left:-35%; } :global(.ambient-mode) .scene-canvas { transform:translate(-64%,-50%); } }
   @media(max-width:390px) { .hero-copy { padding-inline:20px; } .view-buttons { flex-basis:100%; justify-content:space-between; } .sound-buttons { flex-basis:100%; } .sound-buttons button { flex:1; } :global(.ambient-mode) .view-buttons { flex-basis:auto; } :global(.ambient-mode) .sound-buttons { flex-basis:auto; } }
-  @media(prefers-reduced-motion:reduce) { .rain,.steam { animation:none; } }
+  @media(prefers-reduced-motion:reduce) { .rain,.steam,.circuit-light { animation:none; } }
   .scene-unavailable .scene-canvas { width:100%; height:100%; left:0; top:0; transform:none; margin:0; aspect-ratio:auto; }
   .scene-unavailable .scene-fallback { padding-left:38%; font-size:14px; }
   :global(.ambient-mode) .scene-unavailable .scene-fallback { padding-left:0; }

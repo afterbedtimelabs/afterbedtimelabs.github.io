@@ -1,4 +1,6 @@
 ---
+import { ClientRouter } from 'astro:transitions';
+import MusicPlayer from '../components/MusicPlayer.astro';
 import SEO, { type Props } from '../components/SEO.astro';
 import Icon from '../components/Icon.astro';
 import ThemeToggle from '../components/ThemeToggle.astro';
@@ -8,7 +10,7 @@ const pathname = Astro.url.pathname;
 const navigation = [{ name: 'Home', href: '/' }, { name: 'Projects', href: '/projects/' }, { name: 'Writing', href: '/writing/' }, { name: 'About', href: '/about/' }];
 ---
 <!doctype html>
-<html lang="en">
+<html lang="en" transition:animate="none">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -26,6 +28,7 @@ const navigation = [{ name: 'Home', href: '/' }, { name: 'Projects', href: '/pro
         document.documentElement.dataset.themeMode = mode;
       })();
     </script>
+    <ClientRouter fallback="swap" />
     <SEO {...Astro.props} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" sizes="64x64" />
@@ -33,6 +36,17 @@ const navigation = [{ name: 'Home', href: '/' }, { name: 'Projects', href: '/pro
     <link rel="sitemap" href="/sitemap-index.xml" />
   </head>
   <body>
+    <MusicPlayer />
+    <script>
+      import type { TransitionBeforeSwapEvent } from 'astro:transitions/client';
+      // Reserve the interactive Home toolbar before history scroll restoration.
+      // Revealing it on page-load would shift the restored viewport downward.
+      document.addEventListener('astro:before-swap', event => {
+        const next = (event as TransitionBeforeSwapEvent).newDocument;
+        const toolbar = next.querySelector<HTMLElement>('.ambient-toolbar');
+        if (toolbar) toolbar.hidden = false;
+      });
+    </script>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="container header-inner">
