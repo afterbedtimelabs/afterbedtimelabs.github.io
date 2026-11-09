@@ -1,14 +1,16 @@
-# Ambient Homepage V1.2: local owner review
+# Ambient Homepage V1.2: accepted local baseline
+
+**Sprint closed.** Isaac accepted application checkpoint `ba475f7377c7d75a315a88714c6b1658c6cec621` on November 8, 2026 (America/New_York), approving the circuit-board bulb animation and continuous music playback across portfolio navigation. See [owner acceptance](owner-acceptance.md) and the separate [publication/integration backlog](publication-integration-backlog.md). This acceptance does not authorize push, merge, publication, or deployment.
 
 V1.2 restores Tinker's resting arms, adds a quiet circuit-board light, and keeps the original music playing across portfolio navigation. Tinker remains the fictional lab mascot; Isaac remains the portfolio owner.
 
-## Candidate
+## Accepted baseline
 
 - Reviewed parent: `4cf8a9487f15652b440549fd999d1445bd82539e`.
 - Branch: `feature/ambient-continuity-v1-2`.
 - Worktree: `C:\AI\afterbedtimelabs.github.io\.ambient-worktrees\continuity-v1-2`.
 - Owner preview: <http://127.0.0.1:4353/>.
-- Checkpoint: `git rev-parse HEAD` in this worktree; the delivery message supplies the committed hash.
+- Accepted application checkpoint: `ba475f7377c7d75a315a88714c6b1658c6cec621`. Subsequent sprint-closeout commits change documentation only.
 - V1 and V1.1 remain in their original worktrees, with ports 4351 and 4352 reserved. The outer checkout and its unrelated local work were not changed.
 
 The actual Git common directory for these ambient candidates is inside `.release-candidates\v34-2026-11-05\.git`, separate from the outer checkout's history. V1.1 was clean at the supplied checkpoint before this worktree was created.
@@ -74,12 +76,14 @@ node scripts/record-continuity.mjs
 
 The browser scripts accept a URL as their first argument. Final automated acceptance used a built-site preview on 4354 to exclude development hot reloads; the owner dev preview remains 4353. Browser profiles and raw recording frames use temporary directories outside the source watcher. Edge and ffmpeg must be on this PC (or use `EDGE_BINARY` / `FFMPEG_BINARY`).
 
-## Limits and owner review
+## Limits and completed owner review
 
-Instrumented browser checks and captured-audio signal analysis are completed separately from listening. No human speaker/headphone listening pass is claimed. Safari, Firefox, physical mobile devices, and older browsers without modern state-preserving DOM moves have not been tested. Hard reloads, new tabs, and external destinations deliberately do not carry playback.
+Instrumented browser checks and captured-audio signal analysis remain distinct from owner review. The owner has now approved the bulb animation and continuous music playback across portfolio navigation; the review browser, device, and listening setup were not specified. This does not expand the automated coverage beyond Edge. Safari, Firefox, physical mobile devices, and older browsers without modern state-preserving DOM moves remain unverified. Hard reloads, new tabs, and external destinations deliberately do not carry playback.
+
+The original review checklist is retained for reference:
 
 1. Watch the board for 20 seconds in Home and Stay awhile: is the brightness/color change subtle enough, with stable arms and a stationary bulb?
 2. Press Play music, wait a few seconds, then use the Mission Control workbench link. Listen through Writing, an article, About, Back/Forward, and Home for any audible gap or restart.
 3. Change volume, pause on an interior page, navigate, and resume. Confirm the compact controls are comfortable and Home shows the same state.
 
-No push, merge, deployment, or public preview was performed. Owner approval is pending.
+V1.2 development is closed and owner acceptance is recorded. No push, merge, deployment, or public preview was performed. Publication/integration remains a separately authorized scope.
