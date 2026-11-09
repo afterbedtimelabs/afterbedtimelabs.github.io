@@ -101,7 +101,7 @@ assert.match(workshop,/night-workshop-v1-1\.webp/);
 assert.doesNotMatch(component,/tinker-panda-v2\.1|128px|Combined Personality|Playful Expression/);
 assert.match(component,/--sprite-size: 192px/);assert.match(component,/--sprite-size: 96px/);
 assert.match(component,/prefers-reduced-motion: reduce/);
-let preservationChecked=0,preservationAbsent=0,preservationRawMatches=0,preservationNormalizedMatches=0;
+let preservationChecked=0,preservationAbsent=0,preservationRawMatches=0,preservationNormalizedMatches=0,preservationMaintainedLocks=0;
 const before=JSON.parse(await fs.readFile(`${source}/preservation-before.json`,'utf8'));
 // Website showcase refreshes intentionally update these content/provenance files.
 // All mascot sources, frames, atlases and hashes above remain exact.
@@ -126,6 +126,15 @@ for(const file of before.files) {
     // needs only the frozen V3.4 source subset, not all untracked large artwork.
     if(e.code==='ENOENT'&&file.path.startsWith('art/')){preservationAbsent++;continue;} throw e;
   }
+  if(file.path==='package-lock.json') {
+    // Release hardening changes only fast-uri 3.1.9, undici 8.12.2 and zod 4.6.6.
+    // Pin the entire reviewed lockfile instead of exempting it from preservation.
+    // verify-release-hardening.mjs additionally compares every entry with 43d308f.
+    assert.equal(normalizedLfHash(bytes),'ba5e93bead85bc129696f4e3e7d975bd9d268c09f745cf62723ed83a2ed900a9','Exact hardened dependency lock');
+    preservationChecked++;
+    preservationMaintainedLocks++;
+    continue;
+  }
   if(hash(bytes)===file.sha256) preservationRawMatches++;
   else {
     // Git may convert Windows CRLF to LF on a clean Linux checkout. Only known
@@ -141,9 +150,9 @@ assert.match(built,/\/mascot\/tinker-panda-v3\.4\/front\.png/);
 assert.doesNotMatch(built,/tinker-panda-v2\.1|01-expressive|combined-personality|playful-expression/);
 assert.deepEqual(await fs.readFile('dist/mascot/tinker-panda-v3.4/front.png'),frontBytes);
 for(const name of Object.keys(timing)) assert.deepEqual(await fs.readFile(`dist/mascot/tinker-panda-v3.4/atlases/${name}.png`),await fs.readFile(`${dir}/atlases/${name}.png`));
-const report={passed:true,canonicalSha256:expected,changedFacePixels:changes,unchangedNonFacePixels:96*96-1094,alphaIdenticalToV32:true,opaquePaletteColors:palette.size,animationFrameCount:frameReport.length,pngBytes,preservationChecked,preservationRawMatches,preservationNormalizedMatches,preservationAbsent,frames:frameReport};
+const report={passed:true,canonicalSha256:expected,changedFacePixels:changes,unchangedNonFacePixels:96*96-1094,alphaIdenticalToV32:true,opaquePaletteColors:palette.size,animationFrameCount:frameReport.length,pngBytes,preservationChecked,preservationRawMatches,preservationNormalizedMatches,preservationMaintainedLocks,preservationAbsent,frames:frameReport};
 // Preserve historical V3.4 and V1 review evidence; record this candidate separately.
 const evidenceDirectory = process.env.RELEASE_EVIDENCE_DIR || 'docs/ambient-v1-2';
 await fs.mkdir(evidenceDirectory,{recursive:true});
 await fs.writeFile(`${evidenceDirectory}/canonical-asset-validation.json`,JSON.stringify(report,null,2)+'\n');
-console.log(`PASS: exact approved front; 191 face-only pixels; 18 native frames; ${pngBytes} PNG bytes; ${preservationChecked} existing files preserved (${preservationRawMatches} raw matches, ${preservationNormalizedMatches} text line-ending-only matches; ${preservationAbsent} historical files absent in this checkout).`);
+console.log(`PASS: exact approved front; 191 face-only pixels; 18 native frames; ${pngBytes} PNG bytes; ${preservationChecked} existing files checked (${preservationRawMatches} raw matches, ${preservationNormalizedMatches} text line-ending-only matches, ${preservationMaintainedLocks} exactly pinned maintenance lock; ${preservationAbsent} historical files absent in this checkout).`);

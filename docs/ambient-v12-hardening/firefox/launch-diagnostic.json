@@ -1,0 +1,6 @@
+{
+  "directVersionProbe": "spawn UNKNOWN",
+  "playwrightLaunch": "spawn UNKNOWN",
+  "browser": "Firefox 159.0, Playwright revision 1572",
+  "securityRelaxations": false
+}

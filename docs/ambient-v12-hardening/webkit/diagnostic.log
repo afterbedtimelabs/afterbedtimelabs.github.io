@@ -1,0 +1,13 @@
+{
+  caption: ' Meet Tinker Panda, the lab’s resident mascot.',
+  src: '/images/ambient/night-workshop-v1-1.webp',
+  paused: true,
+  requests: []
+}
+{
+  disabled: true,
+  motion: 'paused',
+  color: 'rgb(239, 180, 92)',
+  animation: 'none',
+  count: 0
+}

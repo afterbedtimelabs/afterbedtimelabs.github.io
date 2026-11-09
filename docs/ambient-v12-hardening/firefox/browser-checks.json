@@ -1,0 +1,15 @@
+{
+  "name": "firefox",
+  "started": "2026-11-09T13:10:07.123Z",
+  "platform": "win32",
+  "assertions": [],
+  "errors": [],
+  "requests": [],
+  "screenshots": [],
+  "listeningPerformed": false,
+  "limitation": "Playwright browser builds on Windows; WebKit is not physical Safari coverage.",
+  "fatal": "browserType.launch: spawn UNKNOWN\nCall log:\n\u001b[2m  - <launching> C:\\Users\\'\\AppData\\Local\\ms-playwright\\firefox-1572\\firefox\\firefox.exe -no-remote -headless -profile C:\\Users\\'\\AppData\\Local\\Temp\\playwright_firefoxdev_profile-rQ6jVT -juggler-pipe -silent\u001b[22m\n\n    at C:\\AI\\afterbedtimelabs.github.io\\.release-candidates\\ambient-v12-hardening\\scripts\\verify-hardening-browsers.mjs:16:49",
+  "finished": "2026-11-09T13:10:07.691Z",
+  "passed": 0,
+  "failed": 0
+}

@@ -1,0 +1,783 @@
+{
+  "name": "webkit",
+  "started": "2026-11-09T13:13:45.028Z",
+  "platform": "win32",
+  "assertions": [
+    {
+      "name": "Fresh Home silent with one player at time zero",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.4,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": false,
+        "wall": 442,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Approved scene loaded, fictional mascot label present",
+      "pass": true,
+      "evidence": {
+        "caption": "Meet Tinker Panda, the lab’s resident mascot."
+      }
+    },
+    {
+      "name": "Bulb changes color without moving or duplicate animation",
+      "pass": true,
+      "evidence": [
+        {
+          "color": "rgb(239, 180, 92)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        },
+        {
+          "color": "rgb(239, 180, 92)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        },
+        {
+          "color": "rgb(239, 180, 92)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        },
+        {
+          "color": "rgb(240, 181, 95)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        },
+        {
+          "color": "rgb(243, 188, 109)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        },
+        {
+          "color": "rgb(244, 190, 112)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        },
+        {
+          "color": "rgb(244, 190, 112)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        },
+        {
+          "color": "rgb(223, 187, 120)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        },
+        {
+          "color": "rgb(170, 178, 138)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        },
+        {
+          "color": "rgb(124, 171, 155)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        },
+        {
+          "color": "rgb(112, 169, 159)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        },
+        {
+          "color": "rgb(112, 169, 159)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        },
+        {
+          "color": "rgb(120, 170, 155)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        },
+        {
+          "color": "rgb(191, 176, 117)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        },
+        {
+          "color": "rgb(239, 180, 92)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        },
+        {
+          "color": "rgb(239, 180, 92)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        },
+        {
+          "color": "rgb(239, 180, 92)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Motion pause holds steady amber",
+      "pass": true,
+      "evidence": {
+        "color": "rgb(239, 180, 92)",
+        "animation": "none",
+        "count": 0,
+        "transform": "none",
+        "rect": [
+          1079.0184326171875,
+          754.0604858398438,
+          19.2706298828125,
+          16.7569580078125
+        ]
+      }
+    },
+    {
+      "name": "Motion resumes one bulb animation",
+      "pass": true
+    },
+    {
+      "name": "1440 normal bulb alignment",
+      "pass": true,
+      "evidence": {
+        "dx": 0.41892754277091626,
+        "dy": 0.000026783359658111294,
+        "visible": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "1440 expanded bulb alignment",
+      "pass": true,
+      "evidence": {
+        "dx": 0.46837220010888814,
+        "dy": 0.0000015451938679689192,
+        "visible": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "390 normal bulb alignment",
+      "pass": true,
+      "evidence": {
+        "dx": 0.18239120290243704,
+        "dy": 0.000019958753682658426,
+        "visible": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "390 expanded bulb alignment",
+      "pass": true,
+      "evidence": {
+        "dx": 0.25300231160986186,
+        "dy": 0.000011717719871739973,
+        "visible": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Reduced motion steady amber",
+      "pass": true,
+      "evidence": {
+        "before": {
+          "color": "rgb(239, 180, 92)",
+          "animation": "none",
+          "count": 0,
+          "transform": "none",
+          "rect": [
+            244.5118408203125,
+            625.9619140625,
+            8.38995361328125,
+            7.29559326171875
+          ]
+        },
+        "after": {
+          "color": "rgb(239, 180, 92)",
+          "animation": "none",
+          "count": 0,
+          "transform": "none",
+          "rect": [
+            244.5118408203125,
+            625.9619140625,
+            8.38995361328125,
+            7.29559326171875
+          ]
+        }
+      }
+    },
+    {
+      "name": "Explicit click starts original music",
+      "pass": false,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.4,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 35521,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Single persistent player: /projects/mission-control/",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.4,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 35810,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Interior controls available after activation",
+      "pass": true
+    },
+    {
+      "name": "Single persistent player: /projects/",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.23,
+        "muted": true,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 36320,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Volume and mute retained",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.23,
+        "muted": true,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 36325,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Single persistent player: /projects/nightstock/",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.23,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 36674,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Single persistent player: /writing/",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.23,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 36998,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Single persistent player: /writing/meet-dungeon-deckbuilder/",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.23,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 37290,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Back/Forward retain single player and volume",
+      "pass": true,
+      "evidence": {
+        "back": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.23,
+          "muted": false,
+          "error": 4,
+          "count": 1,
+          "same": true,
+          "wall": 37599,
+          "moveBefore": "undefined",
+          "ogg": ""
+        },
+        "forward": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.23,
+          "muted": false,
+          "error": 4,
+          "count": 1,
+          "same": true,
+          "wall": 37911,
+          "moveBefore": "undefined",
+          "ogg": ""
+        }
+      }
+    },
+    {
+      "name": "Single persistent player: /about/",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.23,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 38201,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Single persistent player: /",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.23,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 38541,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Single persistent player: /about/",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.23,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 38818,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Single persistent player: /",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.23,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 39126,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Single persistent player: /about/",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.23,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 39404,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Single persistent player: /",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.23,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 39714,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Single persistent player: /about/",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.23,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 39989,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Single persistent player: /",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.23,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 40314,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Uninterrupted navigation clock and no restart/buffering events",
+      "pass": false,
+      "evidence": {
+        "started": null,
+        "final": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.23,
+          "muted": false,
+          "error": 4,
+          "count": 1,
+          "same": true,
+          "wall": 40316,
+          "moveBefore": "undefined",
+          "ogg": ""
+        },
+        "interruptions": [
+          {
+            "type": "emptied",
+            "time": 0,
+            "wall": 20519
+          },
+          {
+            "type": "play",
+            "time": 0,
+            "wall": 20519
+          },
+          {
+            "type": "waiting",
+            "time": 0,
+            "wall": 20520
+          },
+          {
+            "type": "loadstart",
+            "time": 0,
+            "wall": 20534
+          },
+          {
+            "type": "pause",
+            "time": 0,
+            "wall": 20596
+          }
+        ],
+        "events": [
+          {
+            "type": "emptied",
+            "time": 0,
+            "wall": 20519
+          },
+          {
+            "type": "play",
+            "time": 0,
+            "wall": 20519
+          },
+          {
+            "type": "waiting",
+            "time": 0,
+            "wall": 20520
+          },
+          {
+            "type": "loadstart",
+            "time": 0,
+            "wall": 20534
+          },
+          {
+            "type": "pause",
+            "time": 0,
+            "wall": 20596
+          }
+        ]
+      }
+    },
+    {
+      "name": "Single persistent player: /about/",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.23,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 40592,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Pause retained with available resume control",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.23,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 41105,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Single persistent player: /",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.23,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 41424,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Home controls synchronized",
+      "pass": true
+    },
+    {
+      "name": "Hard reload silent",
+      "pass": true
+    },
+    {
+      "name": "Fresh tab silent and unactivated",
+      "pass": true
+    },
+    {
+      "name": "No console or page errors",
+      "pass": true,
+      "evidence": []
+    }
+  ],
+  "errors": [],
+  "requests": [
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg"
+  ],
+  "screenshots": [
+    "home-desktop.png",
+    "1440-normal.png",
+    "1440-expanded.png",
+    "390-normal.png",
+    "390-expanded.png",
+    "mission-control.png"
+  ],
+  "listeningPerformed": false,
+  "limitation": "Playwright browser builds on Windows; WebKit is not physical Safari coverage.",
+  "version": "27.2",
+  "freshAudioRequests": [
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg"
+  ],
+  "audioInitiationError": "page.waitForFunction: Timeout 15000ms exceeded.",
+  "finished": "2026-11-09T13:14:29.719Z",
+  "passed": 33,
+  "failed": 2
+}

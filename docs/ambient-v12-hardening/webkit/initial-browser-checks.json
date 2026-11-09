@@ -1,0 +1,751 @@
+{
+  "name": "webkit",
+  "started": "2026-11-09T13:10:07.695Z",
+  "platform": "win32",
+  "assertions": [
+    {
+      "name": "Fresh Home silent, one player and no audio request",
+      "pass": false,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.4,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": false,
+        "wall": 608,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Approved scene loaded, fictional mascot label present",
+      "pass": false
+    },
+    {
+      "name": "Bulb changes color without moving or duplicate animation",
+      "pass": true,
+      "evidence": [
+        {
+          "color": "rgb(239, 180, 92)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        },
+        {
+          "color": "rgb(239, 180, 92)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        },
+        {
+          "color": "rgb(239, 180, 92)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        },
+        {
+          "color": "rgb(240, 181, 95)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        },
+        {
+          "color": "rgb(243, 188, 109)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        },
+        {
+          "color": "rgb(244, 190, 112)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        },
+        {
+          "color": "rgb(244, 190, 112)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        },
+        {
+          "color": "rgb(222, 187, 120)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        },
+        {
+          "color": "rgb(171, 178, 138)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        },
+        {
+          "color": "rgb(125, 171, 154)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        },
+        {
+          "color": "rgb(112, 169, 159)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        },
+        {
+          "color": "rgb(112, 169, 159)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        },
+        {
+          "color": "rgb(119, 170, 155)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        },
+        {
+          "color": "rgb(188, 176, 119)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        },
+        {
+          "color": "rgb(239, 180, 92)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        },
+        {
+          "color": "rgb(239, 180, 92)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        },
+        {
+          "color": "rgb(239, 180, 92)",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "rect": [
+            1079.0184326171875,
+            754.0604858398438,
+            19.2706298828125,
+            16.7569580078125
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Motion pause holds steady amber",
+      "pass": true,
+      "evidence": {
+        "color": "rgb(239, 180, 92)",
+        "animation": "none",
+        "count": 0,
+        "transform": "none",
+        "rect": [
+          1079.0184326171875,
+          754.0604858398438,
+          19.2706298828125,
+          16.7569580078125
+        ]
+      }
+    },
+    {
+      "name": "Motion resumes one bulb animation",
+      "pass": true
+    },
+    {
+      "name": "1440 normal bulb alignment",
+      "pass": true,
+      "evidence": {
+        "dx": 0.41892754277091626,
+        "dy": 0.000026783359658111294,
+        "visible": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "1440 expanded bulb alignment",
+      "pass": true,
+      "evidence": {
+        "dx": 0.46837220010888814,
+        "dy": 0.0000015451938679689192,
+        "visible": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "390 normal bulb alignment",
+      "pass": true,
+      "evidence": {
+        "dx": 0.18239120290243704,
+        "dy": 0.000019958753682658426,
+        "visible": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "390 expanded bulb alignment",
+      "pass": true,
+      "evidence": {
+        "dx": 0.25300231160986186,
+        "dy": 0.000011717719871739973,
+        "visible": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Reduced motion steady amber",
+      "pass": false
+    },
+    {
+      "name": "Explicit click starts original music",
+      "pass": false,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.4,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 35052,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Single persistent player: /projects/mission-control/",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.4,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 35403,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Interior controls available after activation",
+      "pass": true
+    },
+    {
+      "name": "Single persistent player: /projects/",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.23,
+        "muted": true,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 35957,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Volume and mute retained",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.23,
+        "muted": true,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 35962,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Single persistent player: /projects/nightstock/",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.23,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 36326,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Single persistent player: /writing/",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.23,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 36696,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Single persistent player: /writing/meet-dungeon-deckbuilder/",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.23,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 37018,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Back/Forward retain single player and volume",
+      "pass": true,
+      "evidence": {
+        "back": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.23,
+          "muted": false,
+          "error": 4,
+          "count": 1,
+          "same": true,
+          "wall": 37326,
+          "moveBefore": "undefined",
+          "ogg": ""
+        },
+        "forward": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.23,
+          "muted": false,
+          "error": 4,
+          "count": 1,
+          "same": true,
+          "wall": 37641,
+          "moveBefore": "undefined",
+          "ogg": ""
+        }
+      }
+    },
+    {
+      "name": "Single persistent player: /about/",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.23,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 37945,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Single persistent player: /",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.23,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 38270,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Single persistent player: /about/",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.23,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 38547,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Single persistent player: /",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.23,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 38887,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Single persistent player: /about/",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.23,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 39209,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Single persistent player: /",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.23,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 39532,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Single persistent player: /about/",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.23,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 39811,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Single persistent player: /",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.23,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 40119,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Uninterrupted navigation clock and no restart/buffering events",
+      "pass": false,
+      "evidence": {
+        "started": null,
+        "final": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.23,
+          "muted": false,
+          "error": 4,
+          "count": 1,
+          "same": true,
+          "wall": 40121,
+          "moveBefore": "undefined",
+          "ogg": ""
+        },
+        "interruptions": [
+          {
+            "type": "emptied",
+            "time": 0,
+            "wall": 20039
+          },
+          {
+            "type": "play",
+            "time": 0,
+            "wall": 20039
+          },
+          {
+            "type": "waiting",
+            "time": 0,
+            "wall": 20040
+          },
+          {
+            "type": "loadstart",
+            "time": 0,
+            "wall": 20054
+          },
+          {
+            "type": "pause",
+            "time": 0,
+            "wall": 20131
+          }
+        ],
+        "events": [
+          {
+            "type": "emptied",
+            "time": 0,
+            "wall": 20039
+          },
+          {
+            "type": "play",
+            "time": 0,
+            "wall": 20039
+          },
+          {
+            "type": "waiting",
+            "time": 0,
+            "wall": 20040
+          },
+          {
+            "type": "loadstart",
+            "time": 0,
+            "wall": 20054
+          },
+          {
+            "type": "pause",
+            "time": 0,
+            "wall": 20131
+          }
+        ]
+      }
+    },
+    {
+      "name": "Single persistent player: /about/",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.23,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 40427,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Pause retained with available resume control",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.23,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 40943,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Single persistent player: /",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.23,
+        "muted": false,
+        "error": 4,
+        "count": 1,
+        "same": true,
+        "wall": 41277,
+        "moveBefore": "undefined",
+        "ogg": ""
+      }
+    },
+    {
+      "name": "Home controls synchronized",
+      "pass": true
+    },
+    {
+      "name": "Hard reload silent",
+      "pass": true
+    },
+    {
+      "name": "Fresh tab silent and unactivated",
+      "pass": true
+    },
+    {
+      "name": "No console or page errors",
+      "pass": true,
+      "evidence": []
+    }
+  ],
+  "errors": [],
+  "requests": [
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg",
+    "http://127.0.0.1:4357/audio/ambient/after-hours.ogg"
+  ],
+  "screenshots": [
+    "home-desktop.png",
+    "1440-normal.png",
+    "1440-expanded.png",
+    "390-normal.png",
+    "390-expanded.png",
+    "mission-control.png"
+  ],
+  "listeningPerformed": false,
+  "limitation": "Playwright browser builds on Windows; WebKit is not physical Safari coverage.",
+  "version": "27.2",
+  "audioInitiationError": "page.waitForFunction: Timeout 15000ms exceeded.",
+  "finished": "2026-11-09T13:10:52.571Z",
+  "passed": 30,
+  "failed": 5
+}
