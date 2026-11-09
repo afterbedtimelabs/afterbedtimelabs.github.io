@@ -143,6 +143,7 @@ assert.deepEqual(await fs.readFile('dist/mascot/tinker-panda-v3.4/front.png'),fr
 for(const name of Object.keys(timing)) assert.deepEqual(await fs.readFile(`dist/mascot/tinker-panda-v3.4/atlases/${name}.png`),await fs.readFile(`${dir}/atlases/${name}.png`));
 const report={passed:true,canonicalSha256:expected,changedFacePixels:changes,unchangedNonFacePixels:96*96-1094,alphaIdenticalToV32:true,opaquePaletteColors:palette.size,animationFrameCount:frameReport.length,pngBytes,preservationChecked,preservationRawMatches,preservationNormalizedMatches,preservationAbsent,frames:frameReport};
 // Preserve historical V3.4 and V1 review evidence; record this candidate separately.
-await fs.mkdir('docs/ambient-v1-2',{recursive:true});
-await fs.writeFile('docs/ambient-v1-2/canonical-asset-validation.json',JSON.stringify(report,null,2)+'\n');
+const evidenceDirectory = process.env.RELEASE_EVIDENCE_DIR || 'docs/ambient-v1-2';
+await fs.mkdir(evidenceDirectory,{recursive:true});
+await fs.writeFile(`${evidenceDirectory}/canonical-asset-validation.json`,JSON.stringify(report,null,2)+'\n');
 console.log(`PASS: exact approved front; 191 face-only pixels; 18 native frames; ${pngBytes} PNG bytes; ${preservationChecked} existing files preserved (${preservationRawMatches} raw matches, ${preservationNormalizedMatches} text line-ending-only matches; ${preservationAbsent} historical files absent in this checkout).`);

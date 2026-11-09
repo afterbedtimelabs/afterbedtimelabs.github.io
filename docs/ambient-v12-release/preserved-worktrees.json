@@ -1,0 +1,39 @@
+[
+  {
+    "path": "C:\\AI\\afterbedtimelabs.github.io",
+    "head": "709f60031cd72f085ff4ad799aba767c65814c69",
+    "status": [
+      "?? .ambient-worktrees/",
+      "?? .codex/",
+      "?? .recovery/",
+      "?? .release-candidates/",
+      "?? art/tinker-panda-approved-v3.3/",
+      "?? art/tinker-panda-v3-exploration/",
+      "?? art/tinker-panda-v3.2-hybrid/",
+      "?? art/tinker-panda-v3.3-face/",
+      "?? docs/releases/"
+    ]
+  },
+  {
+    "path": "C:\\AI\\afterbedtimelabs.github.io\\.ambient-worktrees\\v1",
+    "head": "86ad877aacf63b59a340dd02dd23d32c59cecc62",
+    "status": []
+  },
+  {
+    "path": "C:\\AI\\afterbedtimelabs.github.io\\.ambient-worktrees\\night-workshop-v1-1",
+    "head": "4cf8a9487f15652b440549fd999d1445bd82539e",
+    "status": []
+  },
+  {
+    "path": "C:\\AI\\afterbedtimelabs.github.io\\.ambient-worktrees\\continuity-v1-2",
+    "head": "d972b1dbd0d48e05b03fd5537a6a4b152603018c",
+    "status": []
+  },
+  {
+    "path": "C:\\AI\\afterbedtimelabs.github.io\\.release-candidates\\v34-2026-11-05",
+    "head": "8d792a4af95c17e7d697b223228bc4d9300bd4f2",
+    "status": [
+      " M docs/tinker-panda-v3.4/asset-validation.json"
+    ]
+  }
+]

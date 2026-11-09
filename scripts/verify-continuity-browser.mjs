@@ -6,10 +6,10 @@ import { tmpdir } from 'node:os';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const output = path.join(root, 'docs/ambient-v1-2');
+const output = path.resolve(root, process.argv[3] || 'docs/ambient-v1-2');
 const captures = path.join(output, 'screenshots');
 const base = process.argv[2] || process.env.AMBIENT_URL || 'http://127.0.0.1:4353';
-const edge = process.env.EDGE_BINARY || 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe';
+const edge = process.argv[4] || process.env.EDGE_BINARY || 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe';
 const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
 await mkdir(captures, { recursive: true });
 await mkdir(path.join(root, '.astro'), { recursive: true });
@@ -129,6 +129,8 @@ try {
   await route('.site-header a[href="/projects/"]','/projects/','Projects');
   check('Volume and mute survive navigation',await evaluate('originalPlayer.volume===.23&&originalPlayer.muted'));
   await click('.interior-music summary'); await click('.interior-music .mute-button');
+  await route('main a[href="/projects/nightstock/"]','/projects/nightstock/','Projects');
+  await screenshot('nightstock-playing');
   await route('.site-header a[href="/writing/"]','/writing/','Writing');
   const article=await evaluate("document.querySelector('.article-summary h3 a').getAttribute('href')");
   await route(`main a[href="${article}"]`,article,'Writing');
@@ -143,6 +145,17 @@ try {
   await route('.site-header a[href="/"]','/','Home');
   check('Theme and volume retained on Home',await evaluate(`document.documentElement.dataset.themeMode===${JSON.stringify(theme)}&&document.querySelector('#music-volume').value==='23'`));
   check('Homepage controls synchronized',await evaluate("document.querySelector('.ambient-workshop [data-audio-toggle]').textContent==='Pause music'&&!document.querySelector('.interior-music').checkVisibility()"));
+  for (const expectedTheme of ['light','dark']) {
+    for(let n=0;n<3 && await evaluate('document.documentElement.dataset.themeMode')!==expectedTheme;n++) await click('#theme-toggle');
+    check(`${expectedTheme} interface selected`,await evaluate('document.documentElement.dataset.themeMode')===expectedTheme);
+    await screenshot(`home-${expectedTheme}`);
+  }
+  await viewport(390,844);
+  await route('.site-header a[href="/about/"]','/about/','About');
+  check('Mobile interior control remains accessible without overflow',await evaluate("document.querySelector('.interior-music [data-audio-toggle]').checkVisibility()&&document.documentElement.scrollWidth<=innerWidth"));
+  await screenshot('mobile-interior-playing');
+  await route('.site-header a[href="/"]','/','Home');
+  await viewport(1440,1000);
   for(let n=0;n<5;n++) {
     await route('.site-header a[href="/about/"]','/about/','About');
     await route('.site-header a[href="/"]','/','Home');
@@ -233,6 +246,8 @@ try {
   check('Fresh interior tab silent',freshResult.result?.result?.value?.paused&&freshResult.result.result.value.time===0&&!freshResult.result.result.value.visible,freshResult.result?.result?.value);
   freshSocket.close();await cdp('Target.closeTarget',{targetId:fresh.targetId});
   check('No runtime or console errors',report.consoleErrors.length===0,report.consoleErrors);
+  check('All loaded images decoded',await evaluate('Array.from(document.images).filter(i=>i.loading!=="lazy").every(i=>i.complete&&i.naturalWidth>0)'));
+  check('No third-party runtime requests',requests.every(url=>url.startsWith(base)||url.startsWith('data:')),Array.from(new Set(requests.filter(url=>!url.startsWith(base)&&!url.startsWith('data:')))));
 } catch(error) {
   report.fatal=error.stack||String(error);process.exitCode=1;console.error(error);
   try{report.failureState=await evaluate("({url:location.href,loads:window.routeLoads,scroll:scrollY,active:document.activeElement?.outerHTML,header:document.querySelector('.site-header')?.outerHTML})");await screenshot('failure');}catch{}

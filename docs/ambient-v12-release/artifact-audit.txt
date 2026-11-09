@@ -1,0 +1,9 @@
+PASS No high-confidence secret patterns or private filesystem paths in deployed text
+PASS No source artwork, review recordings, environment files, source maps or dependency directories deployed
+PASS Accepted application, artwork, music, dependencies, workflows and historical evidence unchanged
+PASS Latest fetched main is an ancestor of accepted closeout
+PASS No main source or public asset paths deleted
+PASS Every public asset copied byte-for-byte
+PASS All current public sitemap URLs retained
+PASS All production files served without missing assets or content mismatch
+{"files":95,"bytes":18085306,"licenses":{"MIT":305,"ISC":14,"Apache-2.0":17,"LGPL-3.0-or-later":10,"Apache-2.0 AND LGPL-3.0-or-later AND MIT":1,"Apache-2.0 AND LGPL-3.0-or-later":3,"Python-2.0":1,"BlueOak-1.0.0":3,"BSD-2-Clause":8,"CC0-1.0":2,"BSD-3-Clause":4,"MPL-2.0":12,"0BSD":1}}
