@@ -1,0 +1,111 @@
+{
+  "title": "After Hours",
+  "bpm": 74,
+  "bars": 48,
+  "key": "D major",
+  "chordSequence": [
+    "Dmaj9",
+    "Bm9",
+    "Gmaj9",
+    "A13",
+    "F#m7",
+    "Bm9",
+    "Em9",
+    "A13"
+  ],
+  "music": {
+    "seconds": 155.67566893424035,
+    "sampleRate": 44100,
+    "channels": 2,
+    "samplesPerChannel": 6865297,
+    "peakDbFS": -3.0980393476346837,
+    "rmsDbFS": -18.414461258135027,
+    "clippedSamples": 0,
+    "boundaryStep": [
+      0.0004446040838956833,
+      0.000557752326130867
+    ],
+    "rmsAdjacentStep": 0.003897579888292414,
+    "maximumAdjacentStep": 0.028925132006406784
+  },
+  "rain": {
+    "seconds": 40,
+    "sampleRate": 44100,
+    "channels": 2,
+    "samplesPerChannel": 1764000,
+    "peakDbFS": -7.330630743928448,
+    "rmsDbFS": -18.696520473984087,
+    "clippedSamples": 0,
+    "boundaryStep": [
+      0.06073729693889618,
+      0.1146421954035759
+    ],
+    "rmsAdjacentStep": 0.10230953491706836,
+    "maximumAdjacentStep": 0.28231771290302277
+  },
+  "source": "scripts/generate-ambient-audio.mjs",
+  "origin": "New deterministic additive/FM/noise synthesis; no external samples, recordings, soundfonts, streams, or paid APIs.",
+  "encoded": [
+    {
+      "file": "after-hours.ogg",
+      "bytes": 1953768,
+      "sha256": "49329d4d3c94011a5b98c9ff6d7a4711a7ad7612248e06cb7153d6bb5c30d61d",
+      "decoded": {
+        "seconds": 155.67566893424035,
+        "sampleRate": 44100,
+        "channels": 2,
+        "samplesPerChannel": 6865297,
+        "peakDbFS": -3.159229889422232,
+        "rmsDbFS": -18.404283144420855,
+        "clippedSamples": 0,
+        "boundaryStep": [
+          0.0003188531845808029,
+          0.0014093238860368729
+        ],
+        "rmsAdjacentStep": 0.0038740308786657245,
+        "maximumAdjacentStep": 0.030253827571868896
+      }
+    },
+    {
+      "file": "window-rain.ogg",
+      "bytes": 592871,
+      "sha256": "ab3b264aead4542a4264653e5589b4a3149df895bdf548691ed506b3db6968e2",
+      "decoded": {
+        "seconds": 40,
+        "sampleRate": 44100,
+        "channels": 2,
+        "samplesPerChannel": 1764000,
+        "peakDbFS": -5.213550289256451,
+        "rmsDbFS": -18.900936548499722,
+        "clippedSamples": 0,
+        "boundaryStep": [
+          0.0022929757833480835,
+          0.11185911297798157
+        ],
+        "rmsAdjacentStep": 0.09632292946987231,
+        "maximumAdjacentStep": 0.46482424437999725
+      }
+    },
+    {
+      "file": "after-hours.flac",
+      "bytes": 7786106,
+      "sha256": "48ce7cc1ccccc8b59d36d5df52a8812f919ea851ea6580b8743a52c9dc0449e8",
+      "decoded": {
+        "seconds": 155.67566893424035,
+        "sampleRate": 44100,
+        "channels": 2,
+        "samplesPerChannel": 6865297,
+        "peakDbFS": -3.0982664075284743,
+        "rmsDbFS": -18.41472627571416,
+        "clippedSamples": 0,
+        "boundaryStep": [
+          0.000457763671875,
+          0.00054931640625
+        ],
+        "rmsAdjacentStep": 0.0038974807202905746,
+        "maximumAdjacentStep": 0.0289306640625
+      }
+    }
+  ],
+  "verification": "Numerical signal and full encoded-file decoding validation only. No speaker playback. Owner listening and subjective musical approval remain pending."
+}

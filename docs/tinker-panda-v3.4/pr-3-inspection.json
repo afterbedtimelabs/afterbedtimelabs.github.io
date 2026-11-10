@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-10-25",
+  "url": "https://github.com/afterbedtimelabs/afterbedtimelabs.github.io/pull/3",
+  "title": "Tinker Panda V2.1: approved B and production assets",
+  "state": "open",
+  "draft": true,
+  "merged": false,
+  "head": "codex/tinker-panda-v2-1-production",
+  "headSha": "824ecaa4b42c0a6797059a5dbd716e9b8548e0fa",
+  "reportedBaseSha": "7d695e47b8a47f448d0dd5bb9f9086be15bf41fd",
+  "changedFiles": 70,
+  "integrationState": "Asset-only V2.1 draft; no website component integration. V3.4 is isolated on current main; does not rewrite this PR.",
+  "recommendedPath": "After owner authorization, push this separate V3.4 branch and open a new integration PR against main. Link PR #3 as historical provenance; preserve or separately archive its V2.1 asset-only work. Do not force-update or merge the old draft as the canonical website implementation."
+}

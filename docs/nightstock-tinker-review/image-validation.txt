@@ -1,0 +1,1 @@
+PASS: six pinned build captures, original SHA-256s, 18 responsive WebP hashes/dimensions and exact production copies; one eager/five lazy gallery images.

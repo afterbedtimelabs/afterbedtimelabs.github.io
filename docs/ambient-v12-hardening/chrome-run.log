@@ -1,0 +1,68 @@
+PASS Fresh visit silent with no music preload
+PASS No typing runtime or canvas
+PASS Persistent player and page metadata: /projects/mission-control/
+PASS Interior controls visible after Home activation
+PASS Persistent player and page metadata: /projects/
+PASS Volume and mute survive navigation
+PASS Persistent player and page metadata: /projects/nightstock/
+PASS Persistent player and page metadata: /writing/
+PASS Persistent player and page metadata: /writing/meet-dungeon-deckbuilder/
+PASS Back and Forward retain same playing media
+PASS Persistent player and page metadata: /about/
+PASS Persistent player and page metadata: /
+PASS Theme and volume retained on Home
+PASS Homepage controls synchronized
+PASS light interface selected
+PASS dark interface selected
+PASS Persistent player and page metadata: /about/
+PASS Mobile interior control remains accessible without overflow
+PASS Persistent player and page metadata: /
+PASS Persistent player and page metadata: /about/
+PASS Persistent player and page metadata: /
+PASS Persistent player and page metadata: /about/
+PASS Persistent player and page metadata: /
+PASS Persistent player and page metadata: /about/
+PASS Persistent player and page metadata: /
+PASS Persistent player and page metadata: /about/
+PASS Persistent player and page metadata: /
+PASS Persistent player and page metadata: /about/
+PASS Persistent player and page metadata: /
+PASS No accumulated document or window listeners
+PASS Uninterrupted media clock through repeated routes
+PASS No pause, reload, seek or buffering during navigation
+PASS One play call through all playing navigation
+PASS Persistent player and page metadata: /about/
+PASS Paused music stays paused and controls remain available
+PASS Persistent player and page metadata: /
+PASS Single toggle after repeated navigation
+PASS Resting arm pixels unchanged across 18 seconds
+PASS Natural blink observed
+PASS Bulb varies gently without moving
+PASS Accepted rain and steam still animate
+PASS Pause holds warm amber
+PASS Resume creates only one CSS animation
+PASS 1440 normal bulb aligned and visible
+PASS 1440 expanded bulb aligned and visible
+PASS 1440 Escape focus
+PASS 768 normal bulb aligned and visible
+PASS 768 expanded bulb aligned and visible
+PASS 768 Escape focus
+PASS 390 normal bulb aligned and visible
+PASS 390 expanded bulb aligned and visible
+PASS 390 Escape focus
+PASS 320 normal bulb aligned and visible
+PASS 320 expanded bulb aligned and visible
+PASS 320 Escape focus
+PASS Reduced motion steady amber
+PASS Ctrl-click left to native browser behavior
+PASS External link left to native browser behavior
+PASS Same-page anchor scroll
+PASS Persistent player and page metadata: /projects/mission-control/
+PASS Forward route resets scroll
+PASS Back restores scroll
+PASS Hard refresh silent and unactivated
+PASS Fresh interior tab silent
+PASS No runtime or console errors
+PASS All loaded images decoded
+PASS No third-party runtime requests
+{"passed":67,"failed":0}

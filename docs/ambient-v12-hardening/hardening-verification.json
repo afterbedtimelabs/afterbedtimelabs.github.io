@@ -1,0 +1,1025 @@
+{
+  "passed": true,
+  "baseline": "43d308f4409af854f2f6a58d701c0820011e7780",
+  "dependencyChanges": [
+    {
+      "name": "fast-uri",
+      "before": "3.1.8",
+      "after": "3.1.9",
+      "parents": [
+        {
+          "path": "node_modules/ajv",
+          "constraint": "^3.0.1"
+        }
+      ]
+    },
+    {
+      "name": "undici",
+      "before": "8.11.2",
+      "after": "8.12.2",
+      "parents": [
+        {
+          "path": "node_modules/unifont",
+          "constraint": "^8.0.0"
+        }
+      ]
+    },
+    {
+      "name": "zod",
+      "before": "4.6.5",
+      "after": "4.6.6",
+      "parents": [
+        {
+          "path": "node_modules/@astrojs/rss",
+          "constraint": "^4.3.6"
+        },
+        {
+          "path": "node_modules/@astrojs/sitemap",
+          "constraint": "^4.3.6"
+        },
+        {
+          "path": "node_modules/astro",
+          "constraint": "^4.5.4"
+        }
+      ]
+    }
+  ],
+  "onlyNineLockValuesChanged": true,
+  "sourceArtworkMusicWorkflowsHistoricalEvidenceUnchanged": true,
+  "priorProductionFilesExact": 95,
+  "addedProductionFiles": [
+    "THIRD-PARTY-NOTICES.txt"
+  ],
+  "audit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "manifest": [
+    {
+      "path": "404.html",
+      "bytes": 13895,
+      "sha256": "55640c4069f7fbf97f4795d0b191818493a822ccdf1817b352cb6d60a077eb20"
+    },
+    {
+      "path": "about/index.html",
+      "bytes": 18417,
+      "sha256": "335894ac54a6c5cc5ca011ecc5ea53080e7bdc3a1ce0b7252a989df948c354e6"
+    },
+    {
+      "path": "audio/ambient/after-hours.flac",
+      "bytes": 7786106,
+      "sha256": "48ce7cc1ccccc8b59d36d5df52a8812f919ea851ea6580b8743a52c9dc0449e8"
+    },
+    {
+      "path": "audio/ambient/after-hours.ogg",
+      "bytes": 1953768,
+      "sha256": "49329d4d3c94011a5b98c9ff6d7a4711a7ad7612248e06cb7153d6bb5c30d61d"
+    },
+    {
+      "path": "audio/ambient/audio-analysis.json",
+      "bytes": 3299,
+      "sha256": "e0691a3184cac693fd8490da47bdae22f5c8b52331da2fa511beccb989d20afd"
+    },
+    {
+      "path": "audio/ambient/window-rain.ogg",
+      "bytes": 592871,
+      "sha256": "ab3b264aead4542a4264653e5589b4a3149df895bdf548691ed506b3db6968e2"
+    },
+    {
+      "path": "favicon.ico",
+      "bytes": 1567,
+      "sha256": "a4b4bcfac451b1699f1245e783e200ada7a31565658b72406552ad42ac819049"
+    },
+    {
+      "path": "favicon.svg",
+      "bytes": 311,
+      "sha256": "7c36e0458e11751a6f7cc81470c902cc1542c4f6548fda2c0dc53075543bae52"
+    },
+    {
+      "path": "images/ambient/night-workshop-v1-1.webp",
+      "bytes": 1515538,
+      "sha256": "b8d87d75208cab246667c6ac5a9fcf0ad92bed8b4ec658fababedeb3ee777399"
+    },
+    {
+      "path": "images/ambient/rainy-workshop-blink-v1.webp",
+      "bytes": 1557792,
+      "sha256": "3e70647e360465a31f311475f8934d28bf50daba5d26d41f98cc3849cab6fb10"
+    },
+    {
+      "path": "images/ambient/rainy-workshop-v1.webp",
+      "bytes": 1649216,
+      "sha256": "55588301c3871d9bfd6080c4e00f393631d4c76b63d4b52c31682ac8430dd683"
+    },
+    {
+      "path": "images/ambient/typing-v1-1.webp",
+      "bytes": 221316,
+      "sha256": "77166f19e04116b930d01049ee907f0f8bca488f5c53595aaef4343690c8f5fb"
+    },
+    {
+      "path": "images/ambient/window-motion-mask-v1-1.png",
+      "bytes": 13668,
+      "sha256": "73a131a1ca75d7db8ad9425738c7bf9f4b304a1cb4f92015fa3bfb121e583b61"
+    },
+    {
+      "path": "images/projects/dungeon-deckbuilder.png",
+      "bytes": 107151,
+      "sha256": "175ef4fa5aefd0ed710e90d1226e9957571e896c86325d9d544a77f3f4470c05"
+    },
+    {
+      "path": "images/projects/midnight-chiba.png",
+      "bytes": 717321,
+      "sha256": "28a750d45b2e803b697e06c1bcc926c04eede352b92d336ac0659d606e71c5e1"
+    },
+    {
+      "path": "images/projects/showcase/chiba-fields-640.webp",
+      "bytes": 5248,
+      "sha256": "9a54877a26cfabf08611bb0816626698a1248e72461f7cd00ee1f121ac57c8b8"
+    },
+    {
+      "path": "images/projects/showcase/chiba-fields.webp",
+      "bytes": 17390,
+      "sha256": "f2d3ee4ed20d8c048524ab617718872c72ef694eee3b0f2e3a779f0745a438ad"
+    },
+    {
+      "path": "images/projects/showcase/chiba-shrine-640.webp",
+      "bytes": 3512,
+      "sha256": "0b17e5a9da75e490f6264987cc5fe8e124cf3c34e51a388a926d460bc73f64e5"
+    },
+    {
+      "path": "images/projects/showcase/chiba-shrine.webp",
+      "bytes": 10250,
+      "sha256": "bcc7ae1e74626d1fcfb3b44fff044c03f6c406857234a6427d88779d7e51fe5b"
+    },
+    {
+      "path": "images/projects/showcase/chiba-store-640.webp",
+      "bytes": 11150,
+      "sha256": "d9ce3920b1c06d6c61f96b07ecbee79ffc8121fbe45527522e781d1738c69b3b"
+    },
+    {
+      "path": "images/projects/showcase/chiba-store.webp",
+      "bytes": 31832,
+      "sha256": "0477c9c5e418134e8bab2462f1f2bad42d64c7681cebede84a4d506c66831910"
+    },
+    {
+      "path": "images/projects/showcase/deck-classes-640.webp",
+      "bytes": 29368,
+      "sha256": "7986f2635a32a8a8bc95971277ba8bfc5e079a94e4bf729e312d7982010d1888"
+    },
+    {
+      "path": "images/projects/showcase/deck-classes.webp",
+      "bytes": 83308,
+      "sha256": "716ff451e3292a44e00eecce873fd49c52dcaf418090531f5dd763f8b814601c"
+    },
+    {
+      "path": "images/projects/showcase/deck-mage-640.webp",
+      "bytes": 19996,
+      "sha256": "88fce429c9ced00b03f6a82aef7088726e4b4971e6c75f52a42727d32c0ba72d"
+    },
+    {
+      "path": "images/projects/showcase/deck-mage.webp",
+      "bytes": 50592,
+      "sha256": "f1728c7f8445339f049051c30b00d464e155a40c86e08b9a9eafaeb28b051014"
+    },
+    {
+      "path": "images/projects/showcase/deck-summoner-640.webp",
+      "bytes": 24384,
+      "sha256": "cd2eb2919cfa3425245490900862f6038bfb6c2083e14c58696e4c6743b493e9"
+    },
+    {
+      "path": "images/projects/showcase/deck-summoner.webp",
+      "bytes": 64114,
+      "sha256": "684fd19f47916115dff67cbd25462dd6bd515819a5a6d79375528ec81cbc09a3"
+    },
+    {
+      "path": "images/projects/showcase/mission-activity-640.webp",
+      "bytes": 16388,
+      "sha256": "87ddef30fb19b47ed877259b038f5397a7be18efbe578565c6779855b2abd182"
+    },
+    {
+      "path": "images/projects/showcase/mission-activity.webp",
+      "bytes": 44274,
+      "sha256": "c3924044c565d9cc52623899c983fce3ed85d824a10df610167fb46dfe602a02"
+    },
+    {
+      "path": "images/projects/showcase/mission-output-640.webp",
+      "bytes": 14388,
+      "sha256": "a0958207b7442749fae8af3b7f618bba59711bb4d5314e06b1432ea4db4f7dd9"
+    },
+    {
+      "path": "images/projects/showcase/mission-output.webp",
+      "bytes": 40032,
+      "sha256": "abb3318d2a87092b3d19792e019f6176340b25412124477f2cb5e963534582d3"
+    },
+    {
+      "path": "images/projects/showcase/mission-overview-640.webp",
+      "bytes": 16030,
+      "sha256": "ce3328addd204a6db0fb6ca02532c973b25c615ac41f58558e0a4d1fbeabcde4"
+    },
+    {
+      "path": "images/projects/showcase/mission-overview.webp",
+      "bytes": 42660,
+      "sha256": "be32db4b6f04883a2c17ddfb29a2b8f56384ed50f6d421f49ce038b7536499fb"
+    },
+    {
+      "path": "images/projects/showcase/nightstock-bumps-640.webp",
+      "bytes": 17648,
+      "sha256": "7e9737ea88c3799eddbbca67e03f0e6a498d3af1e383e40da9e0c286326c717d"
+    },
+    {
+      "path": "images/projects/showcase/nightstock-bumps.webp",
+      "bytes": 40434,
+      "sha256": "0695ad2f661ff1da6f17402ef34c546bc440fa76dca4c9de24918877a7b68588"
+    },
+    {
+      "path": "images/projects/showcase/nightstock-loaded-640.webp",
+      "bytes": 20812,
+      "sha256": "27bfb86c3974791fb889fd105e9c8da1e6c7558001dce12915ca26673a3a0913"
+    },
+    {
+      "path": "images/projects/showcase/nightstock-loaded.webp",
+      "bytes": 50250,
+      "sha256": "a0167e3f8f188173b82c6d3cf9f6b9abedfbdb94df94085a53ebf0cf2d205834"
+    },
+    {
+      "path": "images/projects/showcase/nightstock-tailgate-640.webp",
+      "bytes": 20076,
+      "sha256": "775097b3841e78a4ee8facb857385e129d7519b4ea5ca71f05f0cc297221d16c"
+    },
+    {
+      "path": "images/projects/showcase/nightstock-tailgate.webp",
+      "bytes": 46036,
+      "sha256": "483e09b17f7536b4493a255c4f8f2b417ad65a52a27c98ab016bf14b245685ae"
+    },
+    {
+      "path": "images/projects/showcase/nightstock-v131-delivery-1280.webp",
+      "bytes": 46780,
+      "sha256": "4d18b5bac95f7a6a8bd515ee0f45f6a55181880b8fd64076ea563f77cbdbd086"
+    },
+    {
+      "path": "images/projects/showcase/nightstock-v131-delivery-640.webp",
+      "bytes": 19318,
+      "sha256": "36c3fd6a2b4d830fcf535b528c728a8b709e8b967590e5a5b11ed58db9363535"
+    },
+    {
+      "path": "images/projects/showcase/nightstock-v131-delivery.webp",
+      "bytes": 76800,
+      "sha256": "5d08c294823ac254a07089fbb4b10f65dd84d0f37be35e73dff1ca905c1d62bf"
+    },
+    {
+      "path": "images/projects/showcase/nightstock-v131-forest-1280.webp",
+      "bytes": 22836,
+      "sha256": "4cdb04b44efc34719a33e92a4969e3509d205b0c9032fe88686bb00174a9e698"
+    },
+    {
+      "path": "images/projects/showcase/nightstock-v131-forest-640.webp",
+      "bytes": 8818,
+      "sha256": "b3057d909590c72654617167f79abdd74ee07f748f0689660793f427e725ebbf"
+    },
+    {
+      "path": "images/projects/showcase/nightstock-v131-forest.webp",
+      "bytes": 39098,
+      "sha256": "80a81618b3501ecd90581c84d941772373288aeeb632c6ba56cc84447e74b491"
+    },
+    {
+      "path": "images/projects/showcase/nightstock-v131-phone-1280.webp",
+      "bytes": 52808,
+      "sha256": "712c40156c3864d7be0f5cbcdbc910be907d4ba4937668cf2e7826e8398f2c32"
+    },
+    {
+      "path": "images/projects/showcase/nightstock-v131-phone-640.webp",
+      "bytes": 21298,
+      "sha256": "67ed07a7a9166e81a9b19c0bccbb98d41ae0e264db571f193216df678930ec23"
+    },
+    {
+      "path": "images/projects/showcase/nightstock-v131-phone.webp",
+      "bytes": 86700,
+      "sha256": "e5c8fc9fced3e5c62bc4dd0ebb954f3d0af01695b25ab9467da4b1c85d09aaa7"
+    },
+    {
+      "path": "images/projects/showcase/nightstock-v131-road-1280.webp",
+      "bytes": 29148,
+      "sha256": "dd46b44cf79c67db79f9531f3455963c9fb53a96685d3d1023f427a1f00812d0"
+    },
+    {
+      "path": "images/projects/showcase/nightstock-v131-road-640.webp",
+      "bytes": 11860,
+      "sha256": "f12770e8de72eb1bf3176c8e1298c347b33ae301dc0fa95842cfffd41bfdcb95"
+    },
+    {
+      "path": "images/projects/showcase/nightstock-v131-road.webp",
+      "bytes": 49830,
+      "sha256": "15f1c267207573134bfbf11915e1a5b6c2e9ff50db84b96408d4f22a464867a3"
+    },
+    {
+      "path": "images/projects/showcase/nightstock-v131-store-1280.webp",
+      "bytes": 23460,
+      "sha256": "bb70ed87c5fa9e409b498dd4051a59d3f82399e5919945f06f3e80cb9c79788b"
+    },
+    {
+      "path": "images/projects/showcase/nightstock-v131-store-640.webp",
+      "bytes": 8620,
+      "sha256": "0497ece5b4af3467fb294a0408d8b2b021ea99bee9411ad8d1c4e4abb244672d"
+    },
+    {
+      "path": "images/projects/showcase/nightstock-v131-store.webp",
+      "bytes": 43642,
+      "sha256": "8b184cfdeb6a29d33699690013d103b7e6eafb0bc9ccbfaecb12985ea5db751a"
+    },
+    {
+      "path": "images/projects/showcase/nightstock-v131-tunnel-1280.webp",
+      "bytes": 15622,
+      "sha256": "2d7747c22bd726e406317532b4128a0dc7e2eeb2bd05a4e183c2181471ef6297"
+    },
+    {
+      "path": "images/projects/showcase/nightstock-v131-tunnel-640.webp",
+      "bytes": 6558,
+      "sha256": "d979dfd06603f4cba60266fc362387fc0c7a68ca1a4b984c79568a0e2d87fe9c"
+    },
+    {
+      "path": "images/projects/showcase/nightstock-v131-tunnel.webp",
+      "bytes": 25904,
+      "sha256": "eee64ae39ac9332bfdff7c31483694ba6a8fa52b746e7db400d0b1d76eadb268"
+    },
+    {
+      "path": "images/projects/showcase/provenance.json",
+      "bytes": 14132,
+      "sha256": "1042fa7a3bda8fb963b558a75ce140081eef6e4193b590abf7da441d0527fab3"
+    },
+    {
+      "path": "index.html",
+      "bytes": 48767,
+      "sha256": "7060a4b8feecf0bd5121b2fab2d8d2eb48a5a90984c138af11c73a39782eb657"
+    },
+    {
+      "path": "mascot/tinker-panda-v3.4/atlases/blink.png",
+      "bytes": 3622,
+      "sha256": "31bce4aee9a1c5a310d67cbcab478d1ac5803b88083620ac8623fbb1f68d83c4"
+    },
+    {
+      "path": "mascot/tinker-panda-v3.4/atlases/happy.png",
+      "bytes": 3777,
+      "sha256": "3f58647280618b0f04259fcaaf66f75482b228635e9e526e5d73b28ae5ba6dd8"
+    },
+    {
+      "path": "mascot/tinker-panda-v3.4/atlases/idle.png",
+      "bytes": 2990,
+      "sha256": "8096ba9a4e9ad97b29b7c91660bec49ad1a7ae7b746a56d3e3be2b468c468d61"
+    },
+    {
+      "path": "mascot/tinker-panda-v3.4/atlases/tail.png",
+      "bytes": 3733,
+      "sha256": "cbd69d6f853c4eec70bbb3b595f2808d5851a596ab80f64da12e212cac45d1db"
+    },
+    {
+      "path": "mascot/tinker-panda-v3.4/front.png",
+      "bytes": 2278,
+      "sha256": "b7a25d71ae8b74a0f692462090809843fab594eb58ef38f8c4e6d3bc68f3963e"
+    },
+    {
+      "path": "mascot/tinker-panda-v3.4/manifest.json",
+      "bytes": 5415,
+      "sha256": "5b52aaecb04e0b989c0d73379ee48de1ea456c3062b06c2e6fd177b0e2638ea6"
+    },
+    {
+      "path": "navi/index.html",
+      "bytes": 17370,
+      "sha256": "a3ebe686d7d197bd814fa0496fd55ef2007be63a5fbe5a232cda8b442271d5fc"
+    },
+    {
+      "path": "navi/privacy/index.html",
+      "bytes": 25267,
+      "sha256": "1d0252b5da2df49f9966e9a7ed3d61d4f2335af2cdb8f525309c46dfa27a7f12"
+    },
+    {
+      "path": "projects/dungeon-deckbuilder/index.html",
+      "bytes": 21833,
+      "sha256": "85e340f0fc46d110cf0e11f67c406fe11a3ed5eb065fc5fd5851e1f9c97eca41"
+    },
+    {
+      "path": "projects/index.html",
+      "bytes": 29150,
+      "sha256": "9214680860edceb5fe1d5886b6a6b488209239e7c94e91af19f103ec3d340965"
+    },
+    {
+      "path": "projects/local-ai-utilities/index.html",
+      "bytes": 22043,
+      "sha256": "af84746931459bd9ea2a0aa65d761f3417546c83fa30bf996a67b4a43fbdb088"
+    },
+    {
+      "path": "projects/midnight-chiba/index.html",
+      "bytes": 21761,
+      "sha256": "423d44767dba7511fda59fbbbdd53752a3ef61870079183cb34f8d329d73a8b1"
+    },
+    {
+      "path": "projects/mission-control/index.html",
+      "bytes": 22004,
+      "sha256": "fcd59807e84bfa373ab1bdc414114169dfe577d0ca285221240126ee24e49889"
+    },
+    {
+      "path": "projects/nightstock/index.html",
+      "bytes": 22044,
+      "sha256": "9e8ac999a1776e48508ade00bf1951a76cb097a8f8c62a96f8955a1441ff72c2"
+    },
+    {
+      "path": "projects/riku/index.html",
+      "bytes": 23633,
+      "sha256": "777e44e3088447b39ddb41e5e60152fc7bde5bc02dce1a086b69516cb98c3a8f"
+    },
+    {
+      "path": "robots.txt",
+      "bytes": 80,
+      "sha256": "2d49fb4b8bef528c7b019dcf23bedbd338a0fb0d7d15c46eb23fa2392a669220"
+    },
+    {
+      "path": "rss.xml",
+      "bytes": 3125,
+      "sha256": "2a66f7d028841d8c32e9bf0e48426f747d1c3ccacc3d4891ee561078e3743968"
+    },
+    {
+      "path": "sitemap-0.xml",
+      "bytes": 1917,
+      "sha256": "a6e8e08f6f59b7284ddfcbe4fd3938c775f8878de865e68313cdd2e3a840483e"
+    },
+    {
+      "path": "sitemap-index.xml",
+      "bytes": 191,
+      "sha256": "4909257a1c0deb58c81f45b40f220c06cb6de9ec2de0d66d6c4b0af7f6e2af5b"
+    },
+    {
+      "path": "social-card.png",
+      "bytes": 53928,
+      "sha256": "45d9bb08d980a80ab530591413da51c6b25f2434a2e72ff8543132267f269299"
+    },
+    {
+      "path": "social-card.svg",
+      "bytes": 1068,
+      "sha256": "abfd91d1adbd9874a51b496e3a50c3b2a77f5681e4cf0f427eebc58be3dc1923"
+    },
+    {
+      "path": "THIRD-PARTY-NOTICES.txt",
+      "bytes": 1585,
+      "sha256": "14b4848cc18660956be901d132be13dc08db3508a46e343220e5ccb9c43df448"
+    },
+    {
+      "path": "writing/index.html",
+      "bytes": 24480,
+      "sha256": "4ba1ac296de875ac665ec92d3ebe04dfc68e855df27c3bdf43f32c661f9ff1b3"
+    },
+    {
+      "path": "writing/meet-dungeon-deckbuilder/index.html",
+      "bytes": 22952,
+      "sha256": "45b2016823cbb50747cbe8ba7be876c39fba6ef20c1c05134ff872ec21282370"
+    },
+    {
+      "path": "writing/meet-midnight-chiba/index.html",
+      "bytes": 23105,
+      "sha256": "4890246652aef1f8d6432b39118a1ffe99c6ff992f63f7d72e977946273602c2"
+    },
+    {
+      "path": "writing/meet-mission-control/index.html",
+      "bytes": 23309,
+      "sha256": "124869f91966b0979597cf5315aeabc7ed851e98b0590a2ea77162f4548dc024"
+    },
+    {
+      "path": "writing/meet-navi-waypoint/index.html",
+      "bytes": 385,
+      "sha256": "0baa1c98379b9b11500115bd3159b6e980eac068ff06127df471d86545e88ee2"
+    },
+    {
+      "path": "writing/meet-nightstock/index.html",
+      "bytes": 27053,
+      "sha256": "b5c6b31a577a39a15478991ef1066f5639aabbb398c8be8fd6b49fc069c7afa9"
+    },
+    {
+      "path": "writing/meet-riku/index.html",
+      "bytes": 20763,
+      "sha256": "04bf71950125e4ea054278d047fd0c933462889091d20718cf5d2740a105f12b"
+    },
+    {
+      "path": "writing/topics/games/index.html",
+      "bytes": 15835,
+      "sha256": "031d5f76a4b2dad805eb30532dfc6cfca053588a2ac41b353544e9f4c1fd0a90"
+    },
+    {
+      "path": "writing/topics/local-ai/index.html",
+      "bytes": 15420,
+      "sha256": "278efd7a80fe334002f433ba962879d369a0021e77d77a746f7db53b8b0ab2b6"
+    },
+    {
+      "path": "writing/topics/project-introductions/index.html",
+      "bytes": 16417,
+      "sha256": "ec7a3433f4762463c9f3d211681aedd69e3f42948fc32218936c62c099a607be"
+    },
+    {
+      "path": "writing/topics/studio-notes/index.html",
+      "bytes": 14591,
+      "sha256": "e7f7956c03e55251ea72675792d56dc118cac7490d8bc411b03668fdb7a6e598"
+    },
+    {
+      "path": "writing/welcome-to-after-bedtime-labs/index.html",
+      "bytes": 23541,
+      "sha256": "a6063af04cac593e97c31f4e4318edc26afcf7264737603096c8fb52c3b2ae57"
+    },
+    {
+      "path": "_astro/BaseLayout.B2q3KOud.css",
+      "bytes": 10082,
+      "sha256": "aee299f78c13e4e9db0a64df6c666e5503fe7d2f1326e183a45da0e4f19b7af2"
+    },
+    {
+      "path": "_astro/ClientRouter.astro_astro_type_script_index_0_lang.CYDbzu1r.js",
+      "bytes": 16357,
+      "sha256": "69eb3ac5c16a8d9a6aee7b815f71aa468701cc9c731c9dd5660b58e0dd5e399c"
+    },
+    {
+      "path": "_astro/index.ba644FnT.css",
+      "bytes": 19380,
+      "sha256": "957aed352bf93c51b32f1daac7fab2dcf86cd53531b3c15347e6cf4e50c4c5c7"
+    }
+  ],
+  "http": [
+    {
+      "route": "/404.html",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/about/",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/audio/ambient/after-hours.flac",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/audio/ambient/after-hours.ogg",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/audio/ambient/audio-analysis.json",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/audio/ambient/window-rain.ogg",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/favicon.ico",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/favicon.svg",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/ambient/night-workshop-v1-1.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/ambient/rainy-workshop-blink-v1.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/ambient/rainy-workshop-v1.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/ambient/typing-v1-1.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/ambient/window-motion-mask-v1-1.png",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/dungeon-deckbuilder.png",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/midnight-chiba.png",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/chiba-fields-640.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/chiba-fields.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/chiba-shrine-640.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/chiba-shrine.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/chiba-store-640.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/chiba-store.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/deck-classes-640.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/deck-classes.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/deck-mage-640.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/deck-mage.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/deck-summoner-640.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/deck-summoner.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/mission-activity-640.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/mission-activity.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/mission-output-640.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/mission-output.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/mission-overview-640.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/mission-overview.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/nightstock-bumps-640.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/nightstock-bumps.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/nightstock-loaded-640.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/nightstock-loaded.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/nightstock-tailgate-640.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/nightstock-tailgate.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/nightstock-v131-delivery-1280.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/nightstock-v131-delivery-640.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/nightstock-v131-delivery.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/nightstock-v131-forest-1280.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/nightstock-v131-forest-640.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/nightstock-v131-forest.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/nightstock-v131-phone-1280.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/nightstock-v131-phone-640.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/nightstock-v131-phone.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/nightstock-v131-road-1280.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/nightstock-v131-road-640.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/nightstock-v131-road.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/nightstock-v131-store-1280.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/nightstock-v131-store-640.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/nightstock-v131-store.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/nightstock-v131-tunnel-1280.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/nightstock-v131-tunnel-640.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/nightstock-v131-tunnel.webp",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/images/projects/showcase/provenance.json",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/mascot/tinker-panda-v3.4/atlases/blink.png",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/mascot/tinker-panda-v3.4/atlases/happy.png",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/mascot/tinker-panda-v3.4/atlases/idle.png",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/mascot/tinker-panda-v3.4/atlases/tail.png",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/mascot/tinker-panda-v3.4/front.png",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/mascot/tinker-panda-v3.4/manifest.json",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/navi/",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/navi/privacy/",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/projects/dungeon-deckbuilder/",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/projects/",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/projects/local-ai-utilities/",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/projects/midnight-chiba/",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/projects/mission-control/",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/projects/nightstock/",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/projects/riku/",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/robots.txt",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/rss.xml",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/sitemap-0.xml",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/sitemap-index.xml",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/social-card.png",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/social-card.svg",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/THIRD-PARTY-NOTICES.txt",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/writing/",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/writing/meet-dungeon-deckbuilder/",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/writing/meet-midnight-chiba/",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/writing/meet-mission-control/",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/writing/meet-navi-waypoint/",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/writing/meet-nightstock/",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/writing/meet-riku/",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/writing/topics/games/",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/writing/topics/local-ai/",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/writing/topics/project-introductions/",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/writing/topics/studio-notes/",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/writing/welcome-to-after-bedtime-labs/",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/_astro/BaseLayout.B2q3KOud.css",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CYDbzu1r.js",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "route": "/_astro/index.ba644FnT.css",
+      "status": 200,
+      "exact": true
+    }
+  ]
+}

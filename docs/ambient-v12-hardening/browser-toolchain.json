@@ -1,0 +1,26 @@
+{
+  "playwright": "1.65.0",
+  "browsers": [
+    {
+      "name": "firefox",
+      "revision": "1572",
+      "installByDefault": true,
+      "browserVersion": "159.0",
+      "title": "Firefox"
+    },
+    {
+      "name": "webkit",
+      "revision": "2388",
+      "installByDefault": true,
+      "revisionOverrides": {
+        "mac14": "2251",
+        "mac14-arm64": "2251"
+      },
+      "browserVersion": "27.2",
+      "title": "WebKit"
+    }
+  ],
+  "siteDependency": false,
+  "platform": "Windows",
+  "browserInstallExit": 0
+}

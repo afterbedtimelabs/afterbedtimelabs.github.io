@@ -1,0 +1,184 @@
+---
+import Icon from './Icon.astro';
+const drops = Array.from({ length: 31 }, (_, i) => ({ x: 816 + ((i * 137) % 688), y: (i * 79) % 620, length: 5 + (i % 4) * 3, duration: 2.1 + (i % 7) * .37, delay: -((i * .73) % 5) }));
+---
+<section class="ambient-workshop" id="workshop" aria-label="After-hours workshop" data-motion="paused">
+  <div class="scene-viewport">
+    <div class="scene-canvas" role="img" aria-label="Tinker Panda, the lab’s resident mascot, in his teal scarf at a wooden desk beside a rainy nighttime city window. A warm lamp lights a notebook, mug, and small electronics project.">
+      <img class="scene-image" src="/images/ambient/night-workshop-v1-1.webp" alt="" width="1659" height="948" fetchpriority="high" />
+      <svg width="0" height="0" aria-hidden="true"><defs><clipPath id="tinker-eyes" clipPathUnits="objectBoundingBox"><ellipse cx=".588909" cy=".526371" rx=".029536" ry=".045359" /><polygon points=".635322,.485232 .638336,.471519 .644364,.462025 .653406,.462025 .660036,.469409 .664858,.484177 .667872,.504219 .670283,.517932 .669078,.531646 .663050,.542194 .650995,.546414 .644364,.539030 .641953,.529536 .635925,.523207 .634117,.504219" /></clipPath></defs></svg>
+      <img class="blink-overlay" src="/images/ambient/rainy-workshop-blink-v1.webp" alt="" width="1659" height="948" aria-hidden="true" />
+      <div class="scene-fallback" hidden><img src="/mascot/tinker-panda-v3.4/front.png" width="192" height="192" alt="Tinker Panda, the lab’s resident mascot" /><p>The workshop illustration couldn’t load.<br />You’re still welcome to stay awhile.</p></div>
+      <svg class="scene-weather" viewBox="0 0 1659 948" aria-hidden="true">
+        <defs><mask id="rain-window" maskUnits="userSpaceOnUse" x="0" y="0" width="1659" height="948"><image href="/images/ambient/window-motion-mask-v1-1.png" width="1659" height="948" /></mask></defs>
+        <g mask="url(#rain-window)" class="rain-field">{drops.map(({ x, y, length, duration, delay },i) => <path class={`rain ${i % 3 === 0 ? 'rain-far' : 'rain-near'}`} style={`animation-duration:${duration}s;animation-delay:${delay}s`} d={`M${x} ${y} v${length} h-1 v3`} />)}</g>
+        <!-- Registered to the existing LED at (1269, 817), not the viewport. -->
+        <g class="circuit-light" shape-rendering="crispEdges">
+          <path class="bulb-reflection" d="M1258 813 h4 v-5 h14 v5 h5 v11 h-5 v4 h-14 v-4 h-4z" />
+          <path class="bulb-core" d="M1266 811 h6 v3 h2 v9 h-9 v-9 h1z" />
+          <path class="bulb-spark" d="M1268 814 h3 v5 h-3z" />
+        </g>
+        <g class="steam" shape-rendering="crispEdges"><path d="M1363 615 v-7 h-3 v-9 h3 v-7 h4 v-8 h-3 v-6" /><path d="M1373 614 v-6 h3 v-7 h-2 v-8" /></g>
+      </svg>
+    </div>
+    <div class="scene-shade" aria-hidden="true"></div>
+    <div class="hero-copy">
+      <p class="eyebrow"><span aria-hidden="true">✦</span> An after-hours workshop by Isaac</p>
+      <h1 id="hero-title">Built after<br /><em>bedtime.</em></h1>
+      <p class="hero-description">I’m Isaac, a software engineer building useful software, local AI experiments, and games worth getting lost in.</p>
+      <div class="hero-actions"><a class="hero-link" href="#projects-title">Explore the work <Icon name="arrow-right" size={18} /></a><a class="hero-secondary" href="/about/">About & contact <span aria-hidden="true">↗</span></a></div>
+      <p class="hero-note">A little curiosity. A few quiet hours.</p>
+    </div>
+    <div class="ambient-heading" hidden><a href="/" aria-label="After Bedtime Labs home">After Bedtime Labs<span>.</span></a><p>Nothing to do. Nowhere to rush.</p></div>
+    <div class="scene-caption"><span class="scene-dot" aria-hidden="true"></span> Meet Tinker Panda, the lab’s resident mascot.</div>
+    <button class="return-button" type="button" hidden><span aria-hidden="true">↙</span> Back to portfolio</button>
+  </div>
+  <div class="ambient-toolbar" hidden>
+    <div class="track-info"><span class="record" aria-hidden="true">♪</span><div><strong>Window seat</strong><span>Original lo-fi · 74 BPM</span></div></div>
+    <div class="sound-buttons"><button type="button" data-audio-toggle="music" aria-pressed="false"><span aria-hidden="true">▷</span> Play music</button></div>
+    <details class="sound-mixer"><summary aria-label="Music volume settings">Volume <span aria-hidden="true">⌄</span></summary><div class="mixer-panel"><p class="mixer-title">Make yourself comfortable</p><label for="music-volume">Music <output data-music-level id="music-level" for="music-volume">40%</output></label><input data-music-volume id="music-volume" type="range" min="0" max="100" value="40" /><button type="button" class="mute-button" aria-pressed="false">Mute music</button><p>Music only starts when you choose it.</p></div></details>
+    <div class="view-buttons"><button type="button" class="motion-button" aria-pressed="false">Pause motion</button><button type="button" class="stay-button" aria-expanded="false" aria-controls="workshop">Stay awhile <span aria-hidden="true">↗</span></button></div>
+    <p class="audio-status" role="status" aria-live="polite">Sound is off. Make yourself at home.</p>
+  </div>
+  <noscript><p class="no-script">A quiet moment, just as it is. Sound and ambient controls need JavaScript.</p></noscript>
+</section>
+<script>
+  import '../scripts/ambient-workshop';
+</script>
+<style>
+  .ambient-workshop { --scene-cream:#fff4df; --scene-gold:#f5c580; margin:26px auto 0; width:min(100% - 48px, 1440px); border:1px solid var(--border); border-radius:12px; position:relative; }
+  .scene-viewport { position:relative; aspect-ratio:1659/850; overflow:hidden; border-radius:11px 11px 0 0; background:#2d2422; isolation:isolate; }
+  .scene-canvas { position:absolute; width:100%; height:auto; aspect-ratio:1659/948; top:50%; left:50%; transform:translate(-50%,-50%); }
+  .scene-image,.scene-weather,.blink-overlay { width:100%; height:100%; position:absolute; inset:0; }
+  .blink-overlay { opacity:0; clip-path:url(#tinker-eyes); pointer-events:none; }
+  .blink-overlay.eyes-closed { opacity:1; }
+  .scene-image { object-fit:cover; }
+  .scene-weather { pointer-events:none; }
+  .scene-fallback { height:100%; display:grid; place-content:center; text-align:center; gap:20px; color:var(--scene-cream); background:radial-gradient(ellipse at 70% 60%,#65442e,#20242c); }
+  .scene-fallback img { margin:auto; image-rendering:pixelated; }
+  .scene-shade { position:absolute; inset:0; background:linear-gradient(90deg,rgba(24,19,21,.80),rgba(24,19,21,.52) 28%,transparent 52%),linear-gradient(0deg,#14171860,transparent 20%); pointer-events:none; }
+  .hero-copy { position:relative; z-index:1; width:42%; padding:clamp(36px,5.1vw,78px) 0 60px clamp(28px,4vw,64px); color:var(--scene-cream); }
+  .hero-copy .eyebrow { color:var(--scene-gold); font-size:10px; letter-spacing:.09em; display:flex; align-items:center; gap:9px; }
+  h1 { font-size:clamp(48px,6.1vw,88px); letter-spacing:-.055em; font-weight:500; line-height:1.04; margin:24px 0; }
+  h1 em { font-family:var(--font-serif); font-weight:400; color:var(--scene-gold); }
+  .hero-description { max-width:340px; font-size:clamp(14px,1.14vw,17px); line-height:1.8; color:#e3d7ca; }
+  .hero-actions { display:flex; flex-wrap:wrap; gap:14px 24px; align-items:center; margin-top:28px; }
+  .hero-link { display:inline-flex; align-items:center; gap:16px; padding:11px 16px; border-radius:4px; background:#efd2a5; color:#30271f; text-decoration:none; font-weight:600; font-size:13px; min-height:44px; }
+  .hero-link:hover { background:#fff0d7; color:#30271f; }
+  .hero-secondary { color:#f1dfc7; text-decoration:none; font-size:12px; padding:12px 0; }
+  .hero-secondary:hover { color:white; }
+  .hero-note { font:10px var(--font-mono); color:#c2b2a5; margin-top:30px; }
+  .scene-caption { position:absolute; bottom:20px; right:26px; display:flex; align-items:center; gap:8px; color:#fff0d9; font:10px var(--font-mono); text-shadow:0 1px 6px #000; }
+  .scene-dot { width:5px; height:5px; background:#edc887; border-radius:50%; }
+  .ambient-toolbar { display:flex; flex-wrap:wrap; align-items:center; gap:10px 18px; padding:16px 24px 11px; background:var(--surface); border-radius:0 0 11px 11px; position:relative; z-index:3; }
+  .track-info { display:flex; align-items:center; gap:11px; margin-right:auto; }
+  .record { border:1px solid var(--border); width:37px; height:37px; border-radius:50%; display:grid; place-items:center; color:var(--accent); font-size:19px; }
+  .track-info strong { display:block; font-size:12px; font-weight:600; }
+  .track-info div > span { display:block; font:9px var(--font-mono); color:var(--muted); margin-top:3px; }
+  .sound-buttons,.view-buttons { display:flex; align-items:center; gap:7px; }
+  button,summary { font-size:12px; color:var(--text); background:transparent; border:1px solid var(--border); border-radius:5px; padding:10px 13px; min-height:44px; cursor:pointer; white-space:nowrap; }
+  button:hover,summary:hover { border-color:var(--accent); color:var(--accent); }
+  button[aria-pressed="true"] { color:var(--accent); background:var(--accent-soft); }
+  .stay-button { background:var(--text); color:var(--bg); border-color:var(--text); padding-inline:18px; }
+  .stay-button:hover { background:var(--accent); color:var(--bg); }
+  .stay-button span { margin-left:10px; }
+  .motion-button { border-color:transparent; }
+  .audio-status { flex-basis:100%; font-size:10px; color:var(--muted); min-height:16px; }
+  .sound-mixer { position:relative; }
+  summary { list-style:none; display:flex; align-items:center; gap:8px; }
+  summary::-webkit-details-marker { display:none; }
+  .mixer-panel { position:absolute; bottom:calc(100% + 16px); right:0; width:266px; padding:21px; background:var(--bg); color:var(--text); border:1px solid var(--border); border-radius:9px; box-shadow:0 12px 50px #0003; }
+  .mixer-title { font-size:13px; margin-bottom:15px; }
+  .mixer-panel label { display:flex; justify-content:space-between; font-size:12px; }
+  .mixer-panel output { font:11px var(--font-mono); color:var(--muted); }
+  input[type="range"] { width:100%; accent-color:var(--accent); margin:0 0 10px; height:32px; cursor:pointer; }
+  .mute-button { width:100%; margin-top:2px; }
+  .mixer-panel > p:last-child { font-size:10px; color:var(--muted); margin-top:12px; }
+  .no-script { padding:16px 24px; font-size:12px; }
+  .rain { fill:none; stroke:#8199b2; stroke-width:1.5; opacity:0; animation:rain-fall 2.6s steps(18) infinite; }
+  .rain-far { stroke:#5b708b; stroke-width:1; }
+  .steam { fill:none; stroke:#c9ad95; stroke-width:3px; opacity:.22; animation:steam-rise 6.7s steps(8) infinite; transform-origin:1367px 615px; }
+  .steam path:last-child { opacity:.5; }
+  [data-motion="paused"] :is(.rain,.steam,.blink-overlay) { animation-play-state:paused; }
+  .circuit-light { color:#efb45c; animation:bulb-breathe 16s ease-in-out infinite; }
+  .bulb-core { fill:currentColor; opacity:.55; }
+  .bulb-reflection { fill:currentColor; opacity:.1; }
+  .bulb-spark { fill:#fff1c2; opacity:.55; }
+  [data-motion="paused"] .circuit-light { animation:none; color:#efb45c; opacity:.72; }
+  @keyframes bulb-breathe {
+    0%,18%,100% { color:#efb45c; opacity:.72; }
+    32%,40% { color:#f4be70; opacity:.94; }
+    65%,76% { color:#70a99f; opacity:.85; }
+    92% { color:#efb45c; opacity:.72; }
+  }
+  @keyframes rain-fall { 0% { transform:translate(0,-52px); opacity:0; } 15%,65% { opacity:.36; } 100% { transform:translate(-3px,60px); opacity:0; } }
+  @keyframes steam-rise { 0%,100% { transform:scaleY(.78); opacity:.12; } 45% { transform:scaleY(1.12); opacity:.28; } 75% { transform:scaleY(1); opacity:.2; } }
+  .ambient-heading { position:absolute; top:30px; left:34px; color:var(--scene-cream); z-index:2; }
+  .ambient-heading a { font-size:16px; font-weight:600; text-decoration:none; }
+  .ambient-heading a span { color:var(--scene-gold); }
+  .ambient-heading p { margin-top:7px; font:10px var(--font-mono); color:#ddcebf; }
+  .return-button { position:absolute; right:28px; top:27px; background:#251f22d9; border-color:#a7968080; color:var(--scene-cream); z-index:2; }
+  .return-button:hover { color:var(--scene-gold); }
+  :global(html.ambient-mode) { overflow:hidden; }
+  :global(.ambient-mode .site-header),:global(.ambient-mode .site-footer),:global(.ambient-mode .portfolio-content) { display:none; }
+  :global(.ambient-mode) .ambient-workshop { position:fixed; inset:0; margin:0; width:100%; height:100dvh; border:0; border-radius:0; display:flex; flex-direction:column; z-index:20; }
+  :global(.ambient-mode) .scene-viewport { flex:1; aspect-ratio:auto; min-height:0; border-radius:0; }
+  :global(.ambient-mode) .scene-canvas { width:max(100%,calc((100dvh - 112px) * 1.75)); }
+  :global(.ambient-mode) .scene-shade { background:linear-gradient(180deg,#17151b9c,transparent 22%,transparent 80%,#17151b40); }
+  :global(.ambient-mode) .hero-copy { display:none; }
+  :global(.ambient-mode) .ambient-toolbar { border-radius:0; padding-inline:28px; flex-shrink:0; }
+  :global(.ambient-mode) .stay-button { display:none; }
+  :global(.ambient-mode) .scene-caption { bottom:18px; }
+  :global(.ambient-mode) .ambient-heading { display:block; }
+  .hero-copy :focus-visible,.return-button:focus-visible,.ambient-heading :focus-visible { outline-color:#ffdf9e; }
+  @media (min-width:901px) and (max-width:1100px) { .hero-copy { width:46%; padding-top:32px; padding-bottom:35px; } h1 { font-size:58px; margin:16px 0; } .hero-note { display:none; } .hero-actions { gap:8px 16px; margin-top:20px; } .hero-description { max-width:290px; } .ambient-toolbar { gap:8px 12px; padding-inline:16px; } .track-info { min-width:155px; } }
+  @media (max-width:900px) {
+    .ambient-workshop { width:calc(100% - 32px); margin-top:18px; }
+    .scene-viewport { display:flex; flex-direction:column; aspect-ratio:auto; overflow:hidden; }
+    .hero-copy { order:-1; width:auto; padding:31px 24px 29px; background:var(--bg); color:var(--text); }
+    .hero-copy .eyebrow { color:var(--accent); font-size:9px; }
+    h1 { font-size:clamp(53px,10vw,72px); margin:19px 0; }
+    h1 em { color:var(--accent); }
+    .hero-description { color:var(--muted); font-size:15px; max-width:470px; }
+    .hero-secondary { color:var(--text); }
+    .hero-secondary:hover { color:var(--accent); }
+    .hero-link { background:var(--text); color:var(--bg); }
+    .hero-link:hover { background:var(--accent); color:var(--bg); }
+    .hero-actions { margin-top:22px; gap:10px 20px; }
+    .hero-note { display:none; }
+    .scene-canvas { position:relative; top:auto; left:auto; transform:none; width:170%; margin-left:-65%; flex-shrink:0; }
+    .scene-shade { display:none; }
+    .scene-caption { bottom:14px; right:16px; font-size:8px; }
+    .ambient-toolbar { padding:14px 16px 10px; gap:10px; }
+    .track-info { flex-basis:calc(100% - 85px); order:0; }
+    .sound-mixer { order:1; margin-left:auto; }
+    .sound-buttons { order:2; flex:1; }
+    .view-buttons { order:3; flex:1; justify-content:flex-end; }
+    .audio-status { order:4; font-size:9px; }
+    .motion-button { padding-inline:8px; }
+    .stay-button { padding-inline:12px; }
+    .stay-button span { margin-left:3px; }
+    button,summary { font-size:11px; padding-inline:10px; }
+    .mixer-panel { right:0; }
+    :global(.ambient-mode) .scene-viewport { background:linear-gradient(#211d23,#3c2b25 55%,#241e21); }
+    :global(.ambient-mode) .scene-canvas { position:absolute; height:min(100%,123vw); width:auto; aspect-ratio:1659/948; top:50%; left:50%; margin:0; transform:translate(-71%,-50%); max-width:none; }
+    :global(.ambient-mode) .scene-shade { display:block; }
+    :global(.ambient-mode) .ambient-toolbar { padding:12px 16px 8px; }
+    :global(.ambient-mode) .ambient-heading { top:22px; left:20px; }
+    :global(.ambient-mode) .ambient-heading a { font-size:13px; }
+    :global(.ambient-mode) .ambient-heading p { display:none; }
+    :global(.ambient-mode) .return-button { right:16px; top:57px; }
+    .hero-copy :focus-visible { outline-color:var(--accent); }
+  }
+  @media (min-width:601px) and (max-width:900px) { .scene-canvas { width:140%; margin-left:-35%; } :global(.ambient-mode) .scene-canvas { transform:translate(-64%,-50%); } }
+  @media(max-width:390px) { .hero-copy { padding-inline:20px; } .view-buttons { flex-basis:100%; justify-content:space-between; } .sound-buttons { flex-basis:100%; } .sound-buttons button { flex:1; } :global(.ambient-mode) .view-buttons { flex-basis:auto; } :global(.ambient-mode) .sound-buttons { flex-basis:auto; } }
+  @media(prefers-reduced-motion:reduce) { .rain,.steam,.circuit-light { animation:none; } }
+  .scene-unavailable .scene-canvas { width:100%; height:100%; left:0; top:0; transform:none; margin:0; aspect-ratio:auto; }
+  .scene-unavailable .scene-fallback { padding-left:38%; font-size:14px; }
+  :global(.ambient-mode) .scene-unavailable .scene-fallback { padding-left:0; }
+  @media(max-width:900px) {
+    .scene-unavailable .scene-canvas { position:relative; height:340px; }
+    .scene-unavailable .scene-fallback { padding:20px; }
+    :global(.ambient-mode) .scene-unavailable .scene-canvas { position:absolute; width:100%; height:100%; left:0; top:0; transform:none; margin:0; }
+  }
+</style>

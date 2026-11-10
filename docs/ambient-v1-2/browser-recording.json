@@ -1,0 +1,4996 @@
+{
+  "started": "2026-11-09T02:13:49.104Z",
+  "url": "http://127.0.0.1:4354",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "method": "Actual headless Edge Page.startScreencast compositor frames, timestamped by CDP; ffmpeg encodes those captured frames at their original timing. No generated scene video and no forced animation poses.",
+  "intendedSeconds": 46,
+  "music": "Actual media-element captureStream, recorded across navigation and muxed with browser compositor frames. Browser speaker output muted. No human listening claim.",
+  "interactions": [
+    {
+      "second": null,
+      "action": "click",
+      "selector": ".ambient-workshop [data-audio-toggle=\"music\"]"
+    },
+    {
+      "second": 3.083,
+      "action": "click",
+      "selector": ".stay-button"
+    },
+    {
+      "second": 24.021,
+      "action": "click",
+      "selector": ".return-button"
+    },
+    {
+      "second": 27.04,
+      "action": "click",
+      "selector": "a[href=\"/projects/mission-control/\"]"
+    },
+    {
+      "second": 36.04,
+      "action": "click",
+      "selector": ".site-header a[href=\"/\"]"
+    }
+  ],
+  "poses": [
+    {
+      "second": 0.003,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 0.32202,
+      "blink": false
+    },
+    {
+      "second": 0.069,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 0.386444,
+      "blink": false
+    },
+    {
+      "second": 0.143,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 0.461815,
+      "blink": false
+    },
+    {
+      "second": 0.212,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 0.529134,
+      "blink": false
+    },
+    {
+      "second": 0.296,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 0.650837,
+      "blink": false
+    },
+    {
+      "second": 0.462,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 0.788842,
+      "blink": false
+    },
+    {
+      "second": 0.575,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 0.916166,
+      "blink": false
+    },
+    {
+      "second": 0.688,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 1.002236,
+      "blink": false
+    },
+    {
+      "second": 0.757,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 1.069197,
+      "blink": false
+    },
+    {
+      "second": 0.836,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 1.160668,
+      "blink": false
+    },
+    {
+      "second": 0.934,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 1.509858,
+      "blink": false
+    },
+    {
+      "second": 1.32,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 1.644591,
+      "blink": false
+    },
+    {
+      "second": 1.428,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 1.746487,
+      "blink": false
+    },
+    {
+      "second": 1.507,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 1.829082,
+      "blink": false
+    },
+    {
+      "second": 1.589,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 1.909135,
+      "blink": false
+    },
+    {
+      "second": 1.676,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 1.998944,
+      "blink": false
+    },
+    {
+      "second": 1.757,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 2.08922,
+      "blink": false
+    },
+    {
+      "second": 1.865,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 2.195189,
+      "blink": false
+    },
+    {
+      "second": 1.988,
+      "path": "/",
+      "bulb": "rgb(239, 180, 93)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 2.30552,
+      "blink": false
+    },
+    {
+      "second": 2.082,
+      "path": "/",
+      "bulb": "rgb(239, 181, 93)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 2.40389,
+      "blink": false
+    },
+    {
+      "second": 2.16,
+      "path": "/",
+      "bulb": "rgb(239, 181, 94)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 2.48113,
+      "blink": false
+    },
+    {
+      "second": 2.246,
+      "path": "/",
+      "bulb": "rgb(240, 181, 95)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 2.566779,
+      "blink": false
+    },
+    {
+      "second": 2.331,
+      "path": "/",
+      "bulb": "rgb(240, 182, 95)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 2.643732,
+      "blink": false
+    },
+    {
+      "second": 2.429,
+      "path": "/",
+      "bulb": "rgb(240, 182, 97)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 2.748062,
+      "blink": false
+    },
+    {
+      "second": 2.518,
+      "path": "/",
+      "bulb": "rgb(240, 183, 98)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 2.834296,
+      "blink": false
+    },
+    {
+      "second": 2.595,
+      "path": "/",
+      "bulb": "rgb(241, 183, 99)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 2.912704,
+      "blink": false
+    },
+    {
+      "second": 2.675,
+      "path": "/",
+      "bulb": "rgb(241, 184, 100)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 2.995544,
+      "blink": false
+    },
+    {
+      "second": 2.767,
+      "path": "/",
+      "bulb": "rgb(241, 185, 101)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 3.079423,
+      "blink": false
+    },
+    {
+      "second": 2.844,
+      "path": "/",
+      "bulb": "rgb(242, 185, 103)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 3.157545,
+      "blink": false
+    },
+    {
+      "second": 2.922,
+      "path": "/",
+      "bulb": "rgb(242, 186, 104)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 3.239672,
+      "blink": false
+    },
+    {
+      "second": 2.999,
+      "path": "/",
+      "bulb": "rgb(242, 186, 105)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 3.310771,
+      "blink": false
+    },
+    {
+      "second": 3.069,
+      "path": "/",
+      "bulb": "rgb(242, 187, 106)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 3.398488,
+      "blink": false
+    },
+    {
+      "second": 3.153,
+      "path": "/",
+      "bulb": "rgb(243, 188, 107)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 3.47098,
+      "blink": false
+    },
+    {
+      "second": 3.246,
+      "path": "/",
+      "bulb": "rgb(243, 188, 108)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 3.566462,
+      "blink": false
+    },
+    {
+      "second": 3.338,
+      "path": "/",
+      "bulb": "rgb(243, 189, 109)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 3.681845,
+      "blink": false
+    },
+    {
+      "second": 3.461,
+      "path": "/",
+      "bulb": "rgb(244, 189, 110)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 3.781002,
+      "blink": false
+    },
+    {
+      "second": 3.538,
+      "path": "/",
+      "bulb": "rgb(244, 189, 111)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 3.855819,
+      "blink": false
+    },
+    {
+      "second": 3.631,
+      "path": "/",
+      "bulb": "rgb(244, 190, 111)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 3.982233,
+      "blink": false
+    },
+    {
+      "second": 3.771,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 4.085787,
+      "blink": false
+    },
+    {
+      "second": 3.864,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 4.203413,
+      "blink": false
+    },
+    {
+      "second": 3.972,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 4.29768,
+      "blink": false
+    },
+    {
+      "second": 4.053,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 4.373431,
+      "blink": false
+    },
+    {
+      "second": 4.126,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 4.458804,
+      "blink": false
+    },
+    {
+      "second": 4.219,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 4.535361,
+      "blink": false
+    },
+    {
+      "second": 4.311,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 4.627267,
+      "blink": false
+    },
+    {
+      "second": 4.378,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 4.690708,
+      "blink": false
+    },
+    {
+      "second": 4.449,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 4.763404,
+      "blink": false
+    },
+    {
+      "second": 4.526,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 4.847421,
+      "blink": false
+    },
+    {
+      "second": 4.603,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 4.958225,
+      "blink": false
+    },
+    {
+      "second": 4.756,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 5.073157,
+      "blink": false
+    },
+    {
+      "second": 4.835,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 5.155331,
+      "blink": false
+    },
+    {
+      "second": 4.928,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 5.238566,
+      "blink": false
+    },
+    {
+      "second": 5.005,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 5.317306,
+      "blink": false
+    },
+    {
+      "second": 5.082,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 5.404106,
+      "blink": false
+    },
+    {
+      "second": 5.175,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 5.489021,
+      "blink": false
+    },
+    {
+      "second": 5.252,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 5.56734,
+      "blink": false
+    },
+    {
+      "second": 5.329,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 5.645539,
+      "blink": false
+    },
+    {
+      "second": 5.406,
+      "path": "/",
+      "bulb": "rgb(243, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 5.726636,
+      "blink": false
+    },
+    {
+      "second": 5.483,
+      "path": "/",
+      "bulb": "rgb(243, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 5.804012,
+      "blink": false
+    },
+    {
+      "second": 5.575,
+      "path": "/",
+      "bulb": "rgb(242, 190, 113)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 5.885745,
+      "blink": false
+    },
+    {
+      "second": 5.652,
+      "path": "/",
+      "bulb": "rgb(241, 190, 113)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 5.962099,
+      "blink": false
+    },
+    {
+      "second": 5.719,
+      "path": "/",
+      "bulb": "rgb(240, 189, 113)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 6.038438,
+      "blink": false
+    },
+    {
+      "second": 5.792,
+      "path": "/",
+      "bulb": "rgb(238, 189, 114)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 6.101981,
+      "blink": false
+    },
+    {
+      "second": 5.868,
+      "path": "/",
+      "bulb": "rgb(237, 189, 115)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 6.180027,
+      "blink": false
+    },
+    {
+      "second": 5.946,
+      "path": "/",
+      "bulb": "rgb(235, 189, 115)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 6.260226,
+      "blink": false
+    },
+    {
+      "second": 6.025,
+      "path": "/",
+      "bulb": "rgb(233, 188, 116)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 6.339348,
+      "blink": false
+    },
+    {
+      "second": 6.102,
+      "path": "/",
+      "bulb": "rgb(231, 188, 117)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 6.418181,
+      "blink": false
+    },
+    {
+      "second": 6.179,
+      "path": "/",
+      "bulb": "rgb(228, 187, 118)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 6.497345,
+      "blink": false
+    },
+    {
+      "second": 6.257,
+      "path": "/",
+      "bulb": "rgb(225, 187, 119)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 6.572293,
+      "blink": false
+    },
+    {
+      "second": 6.324,
+      "path": "/",
+      "bulb": "rgb(222, 187, 120)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 6.639406,
+      "blink": false
+    },
+    {
+      "second": 6.396,
+      "path": "/",
+      "bulb": "rgb(220, 186, 121)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 6.711783,
+      "blink": false
+    },
+    {
+      "second": 6.472,
+      "path": "/",
+      "bulb": "rgb(217, 186, 122)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 6.786775,
+      "blink": false
+    },
+    {
+      "second": 6.55,
+      "path": "/",
+      "bulb": "rgb(213, 185, 123)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 6.865787,
+      "blink": false
+    },
+    {
+      "second": 6.627,
+      "path": "/",
+      "bulb": "rgb(209, 184, 124)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 6.947992,
+      "blink": false
+    },
+    {
+      "second": 6.736,
+      "path": "/",
+      "bulb": "rgb(204, 184, 126)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 7.045488,
+      "blink": false
+    },
+    {
+      "second": 6.805,
+      "path": "/",
+      "bulb": "rgb(201, 183, 127)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 7.115616,
+      "blink": false
+    },
+    {
+      "second": 6.89,
+      "path": "/",
+      "bulb": "rgb(196, 182, 129)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 7.202375,
+      "blink": false
+    },
+    {
+      "second": 6.966,
+      "path": "/",
+      "bulb": "rgb(192, 182, 131)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 7.280315,
+      "blink": false
+    },
+    {
+      "second": 7.043,
+      "path": "/",
+      "bulb": "rgb(187, 181, 132)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 7.359408,
+      "blink": false
+    },
+    {
+      "second": 7.139,
+      "path": "/",
+      "bulb": "rgb(183, 180, 134)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 7.454794,
+      "blink": false
+    },
+    {
+      "second": 7.215,
+      "path": "/",
+      "bulb": "rgb(177, 179, 136)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 7.541394,
+      "blink": false
+    },
+    {
+      "second": 7.304,
+      "path": "/",
+      "bulb": "rgb(173, 179, 137)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 7.614402,
+      "blink": false
+    },
+    {
+      "second": 7.381,
+      "path": "/",
+      "bulb": "rgb(168, 178, 139)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 7.693096,
+      "blink": false
+    },
+    {
+      "second": 7.458,
+      "path": "/",
+      "bulb": "rgb(164, 177, 141)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 7.768326,
+      "blink": false
+    },
+    {
+      "second": 7.535,
+      "path": "/",
+      "bulb": "rgb(160, 177, 142)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 7.846035,
+      "blink": false
+    },
+    {
+      "second": 7.602,
+      "path": "/",
+      "bulb": "rgb(156, 176, 143)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 7.914306,
+      "blink": false
+    },
+    {
+      "second": 7.674,
+      "path": "/",
+      "bulb": "rgb(153, 176, 144)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 7.984152,
+      "blink": false
+    },
+    {
+      "second": 7.752,
+      "path": "/",
+      "bulb": "rgb(149, 175, 146)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 8.063265,
+      "blink": false
+    },
+    {
+      "second": 7.828,
+      "path": "/",
+      "bulb": "rgb(145, 174, 147)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 8.140617,
+      "blink": false
+    },
+    {
+      "second": 7.905,
+      "path": "/",
+      "bulb": "rgb(141, 174, 149)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 8.225086,
+      "blink": false
+    },
+    {
+      "second": 7.998,
+      "path": "/",
+      "bulb": "rgb(137, 173, 150)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 8.313364,
+      "blink": false
+    },
+    {
+      "second": 8.073,
+      "path": "/",
+      "bulb": "rgb(135, 173, 151)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 8.389551,
+      "blink": false
+    },
+    {
+      "second": 8.152,
+      "path": "/",
+      "bulb": "rgb(131, 172, 152)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 8.477124,
+      "blink": false
+    },
+    {
+      "second": 8.23,
+      "path": "/",
+      "bulb": "rgb(128, 172, 153)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 8.549105,
+      "blink": false
+    },
+    {
+      "second": 8.307,
+      "path": "/",
+      "bulb": "rgb(126, 171, 154)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 8.618747,
+      "blink": false
+    },
+    {
+      "second": 8.384,
+      "path": "/",
+      "bulb": "rgb(124, 171, 155)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 8.694899,
+      "blink": false
+    },
+    {
+      "second": 8.458,
+      "path": "/",
+      "bulb": "rgb(121, 170, 156)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 8.778796,
+      "blink": false
+    },
+    {
+      "second": 8.538,
+      "path": "/",
+      "bulb": "rgb(120, 170, 156)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 8.853062,
+      "blink": false
+    },
+    {
+      "second": 8.631,
+      "path": "/",
+      "bulb": "rgb(118, 170, 157)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 8.944722,
+      "blink": false
+    },
+    {
+      "second": 8.707,
+      "path": "/",
+      "bulb": "rgb(116, 170, 157)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 9.022545,
+      "blink": false
+    },
+    {
+      "second": 8.785,
+      "path": "/",
+      "bulb": "rgb(115, 169, 158)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 9.10255,
+      "blink": false
+    },
+    {
+      "second": 8.862,
+      "path": "/",
+      "bulb": "rgb(114, 169, 158)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 9.179842,
+      "blink": false
+    },
+    {
+      "second": 8.929,
+      "path": "/",
+      "bulb": "rgb(113, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 9.24502,
+      "blink": false
+    },
+    {
+      "second": 9,
+      "path": "/",
+      "bulb": "rgb(113, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 9.313806,
+      "blink": false
+    },
+    {
+      "second": 9.077,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 9.392056,
+      "blink": false
+    },
+    {
+      "second": 9.154,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 9.472003,
+      "blink": false
+    },
+    {
+      "second": 9.247,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 9.555807,
+      "blink": false
+    },
+    {
+      "second": 9.324,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 9.634562,
+      "blink": false
+    },
+    {
+      "second": 9.401,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 9.713179,
+      "blink": false
+    },
+    {
+      "second": 9.468,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 9.777578,
+      "blink": false
+    },
+    {
+      "second": 9.542,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 9.859799,
+      "blink": false
+    },
+    {
+      "second": 9.616,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 9.926591,
+      "blink": false
+    },
+    {
+      "second": 9.694,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 10.020691,
+      "blink": false
+    },
+    {
+      "second": 9.786,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 10.101253,
+      "blink": false
+    },
+    {
+      "second": 9.863,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 10.17935,
+      "blink": false
+    },
+    {
+      "second": 9.941,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 10.258786,
+      "blink": false
+    },
+    {
+      "second": 10.017,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 10.332756,
+      "blink": false
+    },
+    {
+      "second": 10.095,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 10.412132,
+      "blink": false
+    },
+    {
+      "second": 10.172,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 10.490102,
+      "blink": false
+    },
+    {
+      "second": 10.249,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 10.571319,
+      "blink": false
+    },
+    {
+      "second": 10.327,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 10.636961,
+      "blink": false
+    },
+    {
+      "second": 10.403,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 10.713221,
+      "blink": false
+    },
+    {
+      "second": 10.469,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 10.788518,
+      "blink": false
+    },
+    {
+      "second": 10.542,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 10.853836,
+      "blink": false
+    },
+    {
+      "second": 10.618,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 10.939183,
+      "blink": false
+    },
+    {
+      "second": 10.71,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 11.022281,
+      "blink": false
+    },
+    {
+      "second": 10.776,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 11.086841,
+      "blink": false
+    },
+    {
+      "second": 10.85,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 11.161769,
+      "blink": false
+    },
+    {
+      "second": 10.943,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 11.260722,
+      "blink": false
+    },
+    {
+      "second": 11.036,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 11.353269,
+      "blink": false
+    },
+    {
+      "second": 11.102,
+      "path": "/",
+      "bulb": "rgb(113, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 11.420005,
+      "blink": false
+    },
+    {
+      "second": 11.174,
+      "path": "/",
+      "bulb": "rgb(113, 169, 158)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 11.490096,
+      "blink": false
+    },
+    {
+      "second": 11.25,
+      "path": "/",
+      "bulb": "rgb(115, 169, 157)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 11.568012,
+      "blink": false
+    },
+    {
+      "second": 11.324,
+      "path": "/",
+      "bulb": "rgb(117, 169, 157)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 11.64318,
+      "blink": false
+    },
+    {
+      "second": 11.404,
+      "path": "/",
+      "bulb": "rgb(119, 170, 155)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 11.712658,
+      "blink": false
+    },
+    {
+      "second": 11.481,
+      "path": "/",
+      "bulb": "rgb(123, 170, 153)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 11.804216,
+      "blink": false
+    },
+    {
+      "second": 11.574,
+      "path": "/",
+      "bulb": "rgb(126, 170, 152)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 11.88497,
+      "blink": false
+    },
+    {
+      "second": 11.651,
+      "path": "/",
+      "bulb": "rgb(131, 171, 149)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 11.963165,
+      "blink": false
+    },
+    {
+      "second": 11.727,
+      "path": "/",
+      "bulb": "rgb(135, 171, 147)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 12.041499,
+      "blink": false
+    },
+    {
+      "second": 11.804,
+      "path": "/",
+      "bulb": "rgb(140, 171, 144)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 12.12395,
+      "blink": false
+    },
+    {
+      "second": 11.88,
+      "path": "/",
+      "bulb": "rgb(146, 172, 141)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 12.197558,
+      "blink": false
+    },
+    {
+      "second": 11.958,
+      "path": "/",
+      "bulb": "rgb(151, 172, 139)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 12.27195,
+      "blink": false
+    },
+    {
+      "second": 12.035,
+      "path": "/",
+      "bulb": "rgb(157, 173, 135)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 12.351064,
+      "blink": false
+    },
+    {
+      "second": 12.113,
+      "path": "/",
+      "bulb": "rgb(164, 174, 131)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 12.430023,
+      "blink": false
+    },
+    {
+      "second": 12.19,
+      "path": "/",
+      "bulb": "rgb(170, 174, 129)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 12.507933,
+      "blink": false
+    },
+    {
+      "second": 12.267,
+      "path": "/",
+      "bulb": "rgb(177, 175, 125)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 12.587111,
+      "blink": false
+    },
+    {
+      "second": 12.344,
+      "path": "/",
+      "bulb": "rgb(184, 175, 121)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 12.65397,
+      "blink": false
+    },
+    {
+      "second": 12.421,
+      "path": "/",
+      "bulb": "rgb(190, 176, 118)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 12.732733,
+      "blink": true
+    },
+    {
+      "second": 12.489,
+      "path": "/",
+      "bulb": "rgb(195, 176, 115)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 12.80932,
+      "blink": true
+    },
+    {
+      "second": 12.56,
+      "path": "/",
+      "bulb": "rgb(202, 177, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 12.87048,
+      "blink": false
+    },
+    {
+      "second": 12.628,
+      "path": "/",
+      "bulb": "rgb(206, 177, 109)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 12.947511,
+      "blink": false
+    },
+    {
+      "second": 12.698,
+      "path": "/",
+      "bulb": "rgb(211, 178, 107)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 13.016156,
+      "blink": false
+    },
+    {
+      "second": 12.765,
+      "path": "/",
+      "bulb": "rgb(215, 178, 104)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 13.085176,
+      "blink": false
+    },
+    {
+      "second": 12.838,
+      "path": "/",
+      "bulb": "rgb(220, 178, 102)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 13.165639,
+      "blink": false
+    },
+    {
+      "second": 12.915,
+      "path": "/",
+      "bulb": "rgb(224, 179, 100)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 13.23714,
+      "blink": false
+    },
+    {
+      "second": 12.992,
+      "path": "/",
+      "bulb": "rgb(227, 179, 98)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 13.31135,
+      "blink": false
+    },
+    {
+      "second": 13.059,
+      "path": "/",
+      "bulb": "rgb(230, 179, 97)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 13.375846,
+      "blink": false
+    },
+    {
+      "second": 13.131,
+      "path": "/",
+      "bulb": "rgb(233, 179, 95)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 13.45142,
+      "blink": false
+    },
+    {
+      "second": 13.207,
+      "path": "/",
+      "bulb": "rgb(235, 180, 94)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 13.532249,
+      "blink": false
+    },
+    {
+      "second": 13.284,
+      "path": "/",
+      "bulb": "rgb(237, 180, 93)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 13.598071,
+      "blink": false
+    },
+    {
+      "second": 13.36,
+      "path": "/",
+      "bulb": "rgb(238, 180, 93)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 13.67147,
+      "blink": false
+    },
+    {
+      "second": 13.44,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 13.75531,
+      "blink": false
+    },
+    {
+      "second": 13.534,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 13.847826,
+      "blink": false
+    },
+    {
+      "second": 13.61,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 13.968003,
+      "blink": false
+    },
+    {
+      "second": 13.797,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 14.115464,
+      "blink": false
+    },
+    {
+      "second": 13.889,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 14.212674,
+      "blink": false
+    },
+    {
+      "second": 13.966,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 14.280369,
+      "blink": false
+    },
+    {
+      "second": 14.032,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 14.346086,
+      "blink": false
+    },
+    {
+      "second": 14.104,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 14.420273,
+      "blink": false
+    },
+    {
+      "second": 14.196,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 14.513795,
+      "blink": false
+    },
+    {
+      "second": 14.273,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 14.589868,
+      "blink": false
+    },
+    {
+      "second": 14.363,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 14.672016,
+      "blink": false
+    },
+    {
+      "second": 14.433,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 14.752064,
+      "blink": false
+    },
+    {
+      "second": 14.503,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 14.812733,
+      "blink": false
+    },
+    {
+      "second": 14.58,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 14.898317,
+      "blink": false
+    },
+    {
+      "second": 14.657,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 14.976426,
+      "blink": false
+    },
+    {
+      "second": 14.736,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 15.044714,
+      "blink": false
+    },
+    {
+      "second": 14.813,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 15.123494,
+      "blink": false
+    },
+    {
+      "second": 14.879,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 15.199343,
+      "blink": false
+    },
+    {
+      "second": 14.952,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 15.261434,
+      "blink": false
+    },
+    {
+      "second": 15.03,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 15.341043,
+      "blink": false
+    },
+    {
+      "second": 15.106,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 15.41857,
+      "blink": false
+    },
+    {
+      "second": 15.173,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 15.483139,
+      "blink": false
+    },
+    {
+      "second": 15.261,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 15.576728,
+      "blink": false
+    },
+    {
+      "second": 15.338,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 15.650823,
+      "blink": false
+    },
+    {
+      "second": 15.404,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 15.718424,
+      "blink": false
+    },
+    {
+      "second": 15.478,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 15.79096,
+      "blink": false
+    },
+    {
+      "second": 15.556,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 15.869625,
+      "blink": false
+    },
+    {
+      "second": 15.633,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 15.947838,
+      "blink": false
+    },
+    {
+      "second": 15.71,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 16.025843,
+      "blink": false
+    },
+    {
+      "second": 15.787,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 16.10378,
+      "blink": false
+    },
+    {
+      "second": 15.864,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 16.185193,
+      "blink": false
+    },
+    {
+      "second": 15.942,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 16.261406,
+      "blink": false
+    },
+    {
+      "second": 16.019,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 16.336765,
+      "blink": false
+    },
+    {
+      "second": 16.096,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 16.415117,
+      "blink": false
+    },
+    {
+      "second": 16.173,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 16.48168,
+      "blink": false
+    },
+    {
+      "second": 16.25,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 16.559833,
+      "blink": false
+    },
+    {
+      "second": 16.327,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 16.639196,
+      "blink": false
+    },
+    {
+      "second": 16.404,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 16.717384,
+      "blink": false
+    },
+    {
+      "second": 16.482,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 16.805891,
+      "blink": false
+    },
+    {
+      "second": 16.573,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 16.888558,
+      "blink": false
+    },
+    {
+      "second": 16.651,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 16.96694,
+      "blink": false
+    },
+    {
+      "second": 16.728,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 17.045279,
+      "blink": false
+    },
+    {
+      "second": 16.793,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 17.108718,
+      "blink": false
+    },
+    {
+      "second": 16.867,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 17.184663,
+      "blink": false
+    },
+    {
+      "second": 16.943,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 17.261593,
+      "blink": false
+    },
+    {
+      "second": 17.022,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 17.341588,
+      "blink": false
+    },
+    {
+      "second": 17.099,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 17.416581,
+      "blink": false
+    },
+    {
+      "second": 17.176,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 17.494903,
+      "blink": false
+    },
+    {
+      "second": 17.253,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 17.561391,
+      "blink": false
+    },
+    {
+      "second": 17.33,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 17.640389,
+      "blink": false
+    },
+    {
+      "second": 17.396,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 17.71606,
+      "blink": false
+    },
+    {
+      "second": 17.468,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 17.777395,
+      "blink": false
+    },
+    {
+      "second": 17.547,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 17.857271,
+      "blink": false
+    },
+    {
+      "second": 17.623,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 17.935597,
+      "blink": false
+    },
+    {
+      "second": 17.716,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 18.029188,
+      "blink": false
+    },
+    {
+      "second": 17.793,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 18.106951,
+      "blink": false
+    },
+    {
+      "second": 17.87,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 18.185353,
+      "blink": false
+    },
+    {
+      "second": 17.947,
+      "path": "/",
+      "bulb": "rgb(239, 180, 93)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 18.264387,
+      "blink": false
+    },
+    {
+      "second": 18.024,
+      "path": "/",
+      "bulb": "rgb(239, 180, 93)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 18.342026,
+      "blink": false
+    },
+    {
+      "second": 18.101,
+      "path": "/",
+      "bulb": "rgb(239, 181, 93)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 18.42027,
+      "blink": false
+    },
+    {
+      "second": 18.178,
+      "path": "/",
+      "bulb": "rgb(239, 181, 94)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 18.495958,
+      "blink": false
+    },
+    {
+      "second": 18.245,
+      "path": "/",
+      "bulb": "rgb(240, 181, 94)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 18.563298,
+      "blink": false
+    },
+    {
+      "second": 18.316,
+      "path": "/",
+      "bulb": "rgb(240, 182, 95)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 18.633119,
+      "blink": false
+    },
+    {
+      "second": 18.382,
+      "path": "/",
+      "bulb": "rgb(240, 182, 96)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 18.699697,
+      "blink": false
+    },
+    {
+      "second": 18.456,
+      "path": "/",
+      "bulb": "rgb(240, 182, 97)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 18.773717,
+      "blink": false
+    },
+    {
+      "second": 18.549,
+      "path": "/",
+      "bulb": "rgb(241, 183, 98)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 18.860725,
+      "blink": false
+    },
+    {
+      "second": 18.626,
+      "path": "/",
+      "bulb": "rgb(241, 184, 99)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 18.935983,
+      "blink": false
+    },
+    {
+      "second": 18.704,
+      "path": "/",
+      "bulb": "rgb(241, 184, 100)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 19.015754,
+      "blink": false
+    },
+    {
+      "second": 18.781,
+      "path": "/",
+      "bulb": "rgb(241, 185, 102)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 19.094521,
+      "blink": false
+    },
+    {
+      "second": 18.858,
+      "path": "/",
+      "bulb": "rgb(242, 185, 103)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 19.168982,
+      "blink": false
+    },
+    {
+      "second": 18.935,
+      "path": "/",
+      "bulb": "rgb(242, 186, 104)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 19.247562,
+      "blink": false
+    },
+    {
+      "second": 19.013,
+      "path": "/",
+      "bulb": "rgb(242, 187, 105)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 19.327853,
+      "blink": false
+    },
+    {
+      "second": 19.089,
+      "path": "/",
+      "bulb": "rgb(243, 187, 106)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 19.403602,
+      "blink": false
+    },
+    {
+      "second": 19.163,
+      "path": "/",
+      "bulb": "rgb(243, 188, 107)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 19.479831,
+      "blink": false
+    },
+    {
+      "second": 19.233,
+      "path": "/",
+      "bulb": "rgb(243, 188, 108)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 19.546733,
+      "blink": false
+    },
+    {
+      "second": 19.304,
+      "path": "/",
+      "bulb": "rgb(243, 188, 109)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 19.621798,
+      "blink": false
+    },
+    {
+      "second": 19.395,
+      "path": "/",
+      "bulb": "rgb(243, 189, 110)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 19.710786,
+      "blink": false
+    },
+    {
+      "second": 19.467,
+      "path": "/",
+      "bulb": "rgb(244, 189, 110)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 19.784219,
+      "blink": false
+    },
+    {
+      "second": 19.536,
+      "path": "/",
+      "bulb": "rgb(244, 189, 111)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 19.851493,
+      "blink": false
+    },
+    {
+      "second": 19.613,
+      "path": "/",
+      "bulb": "rgb(244, 190, 111)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 19.935124,
+      "blink": false
+    },
+    {
+      "second": 19.696,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 20.014021,
+      "blink": false
+    },
+    {
+      "second": 19.767,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 20.087641,
+      "blink": false
+    },
+    {
+      "second": 19.834,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 20.152012,
+      "blink": false
+    },
+    {
+      "second": 19.906,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 20.22507,
+      "blink": false
+    },
+    {
+      "second": 19.983,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 20.303226,
+      "blink": false
+    },
+    {
+      "second": 20.075,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 20.38482,
+      "blink": false
+    },
+    {
+      "second": 20.167,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 20.483152,
+      "blink": false
+    },
+    {
+      "second": 20.235,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 20.547185,
+      "blink": false
+    },
+    {
+      "second": 20.305,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 20.618985,
+      "blink": false
+    },
+    {
+      "second": 20.382,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 20.706873,
+      "blink": false
+    },
+    {
+      "second": 20.461,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 20.77939,
+      "blink": false
+    },
+    {
+      "second": 20.535,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 20.84965,
+      "blink": false
+    },
+    {
+      "second": 20.602,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 20.916891,
+      "blink": false
+    },
+    {
+      "second": 20.673,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 20.987517,
+      "blink": false
+    },
+    {
+      "second": 20.767,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 21.087537,
+      "blink": false
+    },
+    {
+      "second": 20.844,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 21.163197,
+      "blink": false
+    },
+    {
+      "second": 20.921,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 21.231295,
+      "blink": false
+    },
+    {
+      "second": 20.998,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 21.31639,
+      "blink": false
+    },
+    {
+      "second": 21.09,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 21.401899,
+      "blink": false
+    },
+    {
+      "second": 21.167,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 21.479577,
+      "blink": false
+    },
+    {
+      "second": 21.243,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 21.556939,
+      "blink": false
+    },
+    {
+      "second": 21.336,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 21.653054,
+      "blink": false
+    },
+    {
+      "second": 21.413,
+      "path": "/",
+      "bulb": "rgb(243, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 21.7294,
+      "blink": false
+    },
+    {
+      "second": 21.49,
+      "path": "/",
+      "bulb": "rgb(243, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 21.80778,
+      "blink": true
+    },
+    {
+      "second": 21.567,
+      "path": "/",
+      "bulb": "rgb(242, 190, 113)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 21.886831,
+      "blink": true
+    },
+    {
+      "second": 21.644,
+      "path": "/",
+      "bulb": "rgb(241, 190, 113)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 21.953232,
+      "blink": false
+    },
+    {
+      "second": 21.72,
+      "path": "/",
+      "bulb": "rgb(240, 189, 114)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 22.038359,
+      "blink": false
+    },
+    {
+      "second": 21.798,
+      "path": "/",
+      "bulb": "rgb(238, 189, 114)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 22.118268,
+      "blink": false
+    },
+    {
+      "second": 21.864,
+      "path": "/",
+      "bulb": "rgb(237, 189, 115)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 22.174462,
+      "blink": false
+    },
+    {
+      "second": 21.937,
+      "path": "/",
+      "bulb": "rgb(235, 189, 115)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 22.25843,
+      "blink": false
+    },
+    {
+      "second": 22.03,
+      "path": "/",
+      "bulb": "rgb(232, 188, 116)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 22.34295,
+      "blink": false
+    },
+    {
+      "second": 22.109,
+      "path": "/",
+      "bulb": "rgb(230, 188, 117)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 22.421912,
+      "blink": false
+    },
+    {
+      "second": 22.186,
+      "path": "/",
+      "bulb": "rgb(228, 187, 118)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 22.50096,
+      "blink": false
+    },
+    {
+      "second": 22.263,
+      "path": "/",
+      "bulb": "rgb(225, 187, 119)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 22.578272,
+      "blink": false
+    },
+    {
+      "second": 22.339,
+      "path": "/",
+      "bulb": "rgb(222, 187, 120)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 22.653196,
+      "blink": false
+    },
+    {
+      "second": 22.416,
+      "path": "/",
+      "bulb": "rgb(219, 186, 121)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 22.731057,
+      "blink": false
+    },
+    {
+      "second": 22.493,
+      "path": "/",
+      "bulb": "rgb(216, 186, 122)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 22.809394,
+      "blink": false
+    },
+    {
+      "second": 22.57,
+      "path": "/",
+      "bulb": "rgb(212, 185, 123)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 22.889653,
+      "blink": false
+    },
+    {
+      "second": 22.646,
+      "path": "/",
+      "bulb": "rgb(209, 184, 124)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 22.964298,
+      "blink": false
+    },
+    {
+      "second": 22.724,
+      "path": "/",
+      "bulb": "rgb(205, 184, 126)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 23.044775,
+      "blink": false
+    },
+    {
+      "second": 22.815,
+      "path": "/",
+      "bulb": "rgb(200, 183, 128)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 23.125661,
+      "blink": false
+    },
+    {
+      "second": 22.887,
+      "path": "/",
+      "bulb": "rgb(196, 182, 129)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 23.197531,
+      "blink": false
+    },
+    {
+      "second": 22.956,
+      "path": "/",
+      "bulb": "rgb(192, 182, 130)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 23.266003,
+      "blink": false
+    },
+    {
+      "second": 23.048,
+      "path": "/",
+      "bulb": "rgb(187, 181, 132)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 23.361786,
+      "blink": false
+    },
+    {
+      "second": 23.125,
+      "path": "/",
+      "bulb": "rgb(183, 180, 134)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 23.442452,
+      "blink": false
+    },
+    {
+      "second": 23.218,
+      "path": "/",
+      "bulb": "rgb(177, 179, 136)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 23.535255,
+      "blink": false
+    },
+    {
+      "second": 23.285,
+      "path": "/",
+      "bulb": "rgb(174, 179, 137)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 23.604305,
+      "blink": false
+    },
+    {
+      "second": 23.357,
+      "path": "/",
+      "bulb": "rgb(170, 178, 138)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 23.672545,
+      "blink": false
+    },
+    {
+      "second": 23.435,
+      "path": "/",
+      "bulb": "rgb(164, 177, 140)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 23.770434,
+      "blink": false
+    },
+    {
+      "second": 23.527,
+      "path": "/",
+      "bulb": "rgb(161, 177, 142)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 23.839086,
+      "blink": false
+    },
+    {
+      "second": 23.62,
+      "path": "/",
+      "bulb": "rgb(155, 176, 144)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 23.930693,
+      "blink": false
+    },
+    {
+      "second": 23.696,
+      "path": "/",
+      "bulb": "rgb(152, 175, 145)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 24.008721,
+      "blink": false
+    },
+    {
+      "second": 23.769,
+      "path": "/",
+      "bulb": "rgb(148, 175, 146)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 24.087811,
+      "blink": false
+    },
+    {
+      "second": 23.847,
+      "path": "/",
+      "bulb": "rgb(144, 174, 147)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 24.162208,
+      "blink": false
+    },
+    {
+      "second": 23.925,
+      "path": "/",
+      "bulb": "rgb(141, 174, 149)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 24.241233,
+      "blink": false
+    },
+    {
+      "second": 24.003,
+      "path": "/",
+      "bulb": "rgb(136, 173, 150)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 24.332795,
+      "blink": false
+    },
+    {
+      "second": 24.096,
+      "path": "/",
+      "bulb": "rgb(133, 172, 152)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 24.41788,
+      "blink": false
+    },
+    {
+      "second": 24.187,
+      "path": "/",
+      "bulb": "rgb(130, 172, 153)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 24.498545,
+      "blink": false
+    },
+    {
+      "second": 24.264,
+      "path": "/",
+      "bulb": "rgb(127, 171, 154)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 24.580046,
+      "blink": false
+    },
+    {
+      "second": 24.357,
+      "path": "/",
+      "bulb": "rgb(124, 171, 155)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 24.671879,
+      "blink": false
+    },
+    {
+      "second": 24.443,
+      "path": "/",
+      "bulb": "rgb(122, 171, 155)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 24.761395,
+      "blink": false
+    },
+    {
+      "second": 24.512,
+      "path": "/",
+      "bulb": "rgb(120, 170, 156)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 24.827833,
+      "blink": false
+    },
+    {
+      "second": 24.588,
+      "path": "/",
+      "bulb": "rgb(118, 170, 157)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 24.907052,
+      "blink": false
+    },
+    {
+      "second": 24.677,
+      "path": "/",
+      "bulb": "rgb(117, 170, 157)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 24.995785,
+      "blink": false
+    },
+    {
+      "second": 24.758,
+      "path": "/",
+      "bulb": "rgb(115, 170, 158)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 25.06733,
+      "blink": false
+    },
+    {
+      "second": 24.851,
+      "path": "/",
+      "bulb": "rgb(114, 169, 158)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 25.164077,
+      "blink": false
+    },
+    {
+      "second": 24.928,
+      "path": "/",
+      "bulb": "rgb(113, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 25.244688,
+      "blink": false
+    },
+    {
+      "second": 25.002,
+      "path": "/",
+      "bulb": "rgb(113, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 25.317572,
+      "blink": false
+    },
+    {
+      "second": 25.077,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 25.390859,
+      "blink": false
+    },
+    {
+      "second": 25.145,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 25.459598,
+      "blink": false
+    },
+    {
+      "second": 25.223,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 25.55005,
+      "blink": false
+    },
+    {
+      "second": 25.31,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 25.627524,
+      "blink": false
+    },
+    {
+      "second": 25.378,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 25.694196,
+      "blink": false
+    },
+    {
+      "second": 25.454,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 25.770875,
+      "blink": false
+    },
+    {
+      "second": 25.532,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 25.852837,
+      "blink": false
+    },
+    {
+      "second": 25.625,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 25.937288,
+      "blink": false
+    },
+    {
+      "second": 25.71,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 26.021933,
+      "blink": false
+    },
+    {
+      "second": 25.778,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 26.088109,
+      "blink": false
+    },
+    {
+      "second": 25.856,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 26.180963,
+      "blink": false
+    },
+    {
+      "second": 25.941,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 26.256953,
+      "blink": false
+    },
+    {
+      "second": 26.01,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 26.324159,
+      "blink": false
+    },
+    {
+      "second": 26.086,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 26.401748,
+      "blink": false
+    },
+    {
+      "second": 26.164,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 26.483775,
+      "blink": false
+    },
+    {
+      "second": 26.257,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 26.574586,
+      "blink": false
+    },
+    {
+      "second": 26.334,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 26.653492,
+      "blink": false
+    },
+    {
+      "second": 26.411,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 26.719794,
+      "blink": false
+    },
+    {
+      "second": 26.488,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 26.79849,
+      "blink": false
+    },
+    {
+      "second": 26.581,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 26.895437,
+      "blink": false
+    },
+    {
+      "second": 26.657,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 26.969713,
+      "blink": false
+    },
+    {
+      "second": 26.735,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 27.060467,
+      "blink": false
+    },
+    {
+      "second": 26.812,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 27.127857,
+      "blink": false
+    },
+    {
+      "second": 26.878,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 27.190695,
+      "blink": false
+    },
+    {
+      "second": 26.952,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 27.266494,
+      "blink": false
+    },
+    {
+      "second": 27.029,
+      "path": "/",
+      "bulb": "rgb(112, 169, 159)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 27.377261,
+      "blink": false
+    },
+    {
+      "second": 27.153,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 27.465317
+    },
+    {
+      "second": 27.23,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 27.543019
+    },
+    {
+      "second": 27.307,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 27.621
+    },
+    {
+      "second": 27.384,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 27.699406
+    },
+    {
+      "second": 27.462,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 27.778527
+    },
+    {
+      "second": 27.539,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 27.853882
+    },
+    {
+      "second": 27.616,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 27.932802
+    },
+    {
+      "second": 27.693,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 28.010095
+    },
+    {
+      "second": 27.769,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 28.088141
+    },
+    {
+      "second": 27.846,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 28.166524
+    },
+    {
+      "second": 27.924,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 28.23329
+    },
+    {
+      "second": 28,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 28.311424
+    },
+    {
+      "second": 28.078,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 28.38664
+    },
+    {
+      "second": 28.154,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 28.464453
+    },
+    {
+      "second": 28.231,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 28.542761
+    },
+    {
+      "second": 28.308,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 28.621285
+    },
+    {
+      "second": 28.385,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 28.698613
+    },
+    {
+      "second": 28.461,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 28.776785
+    },
+    {
+      "second": 28.538,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 28.851429
+    },
+    {
+      "second": 28.616,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 28.930292
+    },
+    {
+      "second": 28.692,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 29.008249
+    },
+    {
+      "second": 28.769,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 29.086022
+    },
+    {
+      "second": 28.845,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 29.164116
+    },
+    {
+      "second": 28.923,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 29.242755
+    },
+    {
+      "second": 29,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 29.317923
+    },
+    {
+      "second": 29.078,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 29.396773
+    },
+    {
+      "second": 29.155,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 29.46403
+    },
+    {
+      "second": 29.232,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 29.542332
+    },
+    {
+      "second": 29.309,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 29.620037
+    },
+    {
+      "second": 29.386,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 29.698955
+    },
+    {
+      "second": 29.463,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 29.776967
+    },
+    {
+      "second": 29.541,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 29.855948
+    },
+    {
+      "second": 29.617,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 29.930543
+    },
+    {
+      "second": 29.695,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 30.010121
+    },
+    {
+      "second": 29.772,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 30.08791
+    },
+    {
+      "second": 29.85,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 30.166973
+    },
+    {
+      "second": 29.927,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 30.245326
+    },
+    {
+      "second": 30.004,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 30.323824
+    },
+    {
+      "second": 30.082,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 30.39082
+    },
+    {
+      "second": 30.159,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 30.477771
+    },
+    {
+      "second": 30.236,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 30.556121
+    },
+    {
+      "second": 30.313,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 30.622969
+    },
+    {
+      "second": 30.392,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 30.702681
+    },
+    {
+      "second": 30.468,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 30.780604
+    },
+    {
+      "second": 30.545,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 30.858881
+    },
+    {
+      "second": 30.623,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 30.937601
+    },
+    {
+      "second": 30.7,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 31.012929
+    },
+    {
+      "second": 30.778,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 31.092212
+    },
+    {
+      "second": 30.856,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 31.171506
+    },
+    {
+      "second": 30.933,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 31.24957
+    },
+    {
+      "second": 31.011,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 31.329211
+    },
+    {
+      "second": 31.088,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 31.407893
+    },
+    {
+      "second": 31.166,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 31.475276
+    },
+    {
+      "second": 31.244,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 31.555221
+    },
+    {
+      "second": 31.322,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 31.632898
+    },
+    {
+      "second": 31.399,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 31.707909
+    },
+    {
+      "second": 31.477,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 31.787536
+    },
+    {
+      "second": 31.555,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 31.866855
+    },
+    {
+      "second": 31.631,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 31.943977
+    },
+    {
+      "second": 31.708,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 32.022448
+    },
+    {
+      "second": 31.785,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 32.101169
+    },
+    {
+      "second": 31.863,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 32.180367
+    },
+    {
+      "second": 31.939,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 32.254203
+    },
+    {
+      "second": 32.016,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 32.332547
+    },
+    {
+      "second": 32.093,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 32.410994
+    },
+    {
+      "second": 32.169,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 32.488248
+    },
+    {
+      "second": 32.247,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 32.556221
+    },
+    {
+      "second": 32.324,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 32.634892
+    },
+    {
+      "second": 32.401,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 32.712404
+    },
+    {
+      "second": 32.478,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 32.787424
+    },
+    {
+      "second": 32.556,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 32.866477
+    },
+    {
+      "second": 32.633,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 32.944787
+    },
+    {
+      "second": 32.712,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 33.024771
+    },
+    {
+      "second": 32.788,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 33.101807
+    },
+    {
+      "second": 32.865,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 33.181076
+    },
+    {
+      "second": 32.942,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 33.258998
+    },
+    {
+      "second": 33.019,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 33.334233
+    },
+    {
+      "second": 33.096,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 33.412066
+    },
+    {
+      "second": 33.172,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 33.489764
+    },
+    {
+      "second": 33.25,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 33.56826
+    },
+    {
+      "second": 33.327,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 33.64684
+    },
+    {
+      "second": 33.404,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 33.713495
+    },
+    {
+      "second": 33.481,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 33.792791
+    },
+    {
+      "second": 33.557,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 33.866278
+    },
+    {
+      "second": 33.635,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 33.945534
+    },
+    {
+      "second": 33.712,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 34.023454
+    },
+    {
+      "second": 33.788,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 34.101227
+    },
+    {
+      "second": 33.866,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 34.180268
+    },
+    {
+      "second": 33.944,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 34.259694
+    },
+    {
+      "second": 34.021,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 34.338302
+    },
+    {
+      "second": 34.098,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 34.412632
+    },
+    {
+      "second": 34.175,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 34.491271
+    },
+    {
+      "second": 34.253,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 34.57019
+    },
+    {
+      "second": 34.33,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 34.648675
+    },
+    {
+      "second": 34.407,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 34.726739
+    },
+    {
+      "second": 34.484,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 34.793573
+    },
+    {
+      "second": 34.562,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 34.872201
+    },
+    {
+      "second": 34.639,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 34.947412
+    },
+    {
+      "second": 34.716,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 35.02613
+    },
+    {
+      "second": 34.794,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 35.104913
+    },
+    {
+      "second": 34.871,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 35.184312
+    },
+    {
+      "second": 34.948,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 35.261907
+    },
+    {
+      "second": 35.025,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 35.340452
+    },
+    {
+      "second": 35.102,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 35.418716
+    },
+    {
+      "second": 35.18,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 35.49839
+    },
+    {
+      "second": 35.257,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 35.572773
+    },
+    {
+      "second": 35.334,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 35.650761
+    },
+    {
+      "second": 35.412,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 35.73077
+    },
+    {
+      "second": 35.489,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 35.809311
+    },
+    {
+      "second": 35.566,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 35.875398
+    },
+    {
+      "second": 35.644,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 35.954929
+    },
+    {
+      "second": 35.721,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 36.033174
+    },
+    {
+      "second": 35.799,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 36.108274
+    },
+    {
+      "second": 35.877,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 36.187719
+    },
+    {
+      "second": 35.953,
+      "path": "/projects/mission-control/",
+      "bulb": null,
+      "musicPaused": false,
+      "time": 36.265746
+    },
+    {
+      "second": 36.031,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 36.469094,
+      "blink": false
+    },
+    {
+      "second": 36.232,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 36.556017,
+      "blink": false
+    },
+    {
+      "second": 36.324,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 36.64774,
+      "blink": false
+    },
+    {
+      "second": 36.404,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 36.723587,
+      "blink": false
+    },
+    {
+      "second": 36.478,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 36.793018,
+      "blink": false
+    },
+    {
+      "second": 36.556,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 36.894141,
+      "blink": false
+    },
+    {
+      "second": 36.647,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 36.95609,
+      "blink": false
+    },
+    {
+      "second": 36.735,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 37.045008,
+      "blink": false
+    },
+    {
+      "second": 36.809,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 37.11982,
+      "blink": false
+    },
+    {
+      "second": 36.893,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 37.221839,
+      "blink": false
+    },
+    {
+      "second": 36.985,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 37.306954,
+      "blink": false
+    },
+    {
+      "second": 37.078,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 37.397398,
+      "blink": false
+    },
+    {
+      "second": 37.169,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 37.48003,
+      "blink": false
+    },
+    {
+      "second": 37.248,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 37.562247,
+      "blink": false
+    },
+    {
+      "second": 37.341,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 37.669029,
+      "blink": false
+    },
+    {
+      "second": 37.432,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 37.761626,
+      "blink": false
+    },
+    {
+      "second": 37.526,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 37.837872,
+      "blink": false
+    },
+    {
+      "second": 37.618,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 37.930541,
+      "blink": false
+    },
+    {
+      "second": 37.707,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 38.023721,
+      "blink": false
+    },
+    {
+      "second": 37.787,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 38.108127,
+      "blink": false
+    },
+    {
+      "second": 37.88,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 38.193172,
+      "blink": false
+    },
+    {
+      "second": 37.967,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 38.279393,
+      "blink": false
+    },
+    {
+      "second": 38.037,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 38.347509,
+      "blink": false
+    },
+    {
+      "second": 38.112,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 38.423619,
+      "blink": false
+    },
+    {
+      "second": 38.188,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 38.502421,
+      "blink": false
+    },
+    {
+      "second": 38.266,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 38.57963,
+      "blink": false
+    },
+    {
+      "second": 38.343,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 38.659154,
+      "blink": false
+    },
+    {
+      "second": 38.42,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 38.738309,
+      "blink": false
+    },
+    {
+      "second": 38.496,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 38.810544,
+      "blink": false
+    },
+    {
+      "second": 38.574,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 38.889754,
+      "blink": false
+    },
+    {
+      "second": 38.651,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 38.970076,
+      "blink": false
+    },
+    {
+      "second": 38.729,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 39.047156,
+      "blink": false
+    },
+    {
+      "second": 38.806,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 39.138332,
+      "blink": false
+    },
+    {
+      "second": 38.897,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 39.205948,
+      "blink": false
+    },
+    {
+      "second": 38.977,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 39.287406,
+      "blink": false
+    },
+    {
+      "second": 39.053,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 39.365036,
+      "blink": false
+    },
+    {
+      "second": 39.129,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 39.442124,
+      "blink": false
+    },
+    {
+      "second": 39.206,
+      "path": "/",
+      "bulb": "rgb(239, 180, 92)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 39.520916,
+      "blink": false
+    },
+    {
+      "second": 39.28,
+      "path": "/",
+      "bulb": "rgb(239, 180, 93)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 39.592537,
+      "blink": false
+    },
+    {
+      "second": 39.36,
+      "path": "/",
+      "bulb": "rgb(239, 180, 93)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 39.677569,
+      "blink": false
+    },
+    {
+      "second": 39.437,
+      "path": "/",
+      "bulb": "rgb(239, 181, 93)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 39.752206,
+      "blink": false
+    },
+    {
+      "second": 39.515,
+      "path": "/",
+      "bulb": "rgb(239, 181, 94)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 39.831401,
+      "blink": false
+    },
+    {
+      "second": 39.593,
+      "path": "/",
+      "bulb": "rgb(240, 181, 95)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 39.910627,
+      "blink": false
+    },
+    {
+      "second": 39.671,
+      "path": "/",
+      "bulb": "rgb(240, 182, 96)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 39.992966,
+      "blink": false
+    },
+    {
+      "second": 39.763,
+      "path": "/",
+      "bulb": "rgb(240, 182, 97)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 40.095577,
+      "blink": false
+    },
+    {
+      "second": 39.857,
+      "path": "/",
+      "bulb": "rgb(240, 183, 98)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 40.169616,
+      "blink": false
+    },
+    {
+      "second": 39.934,
+      "path": "/",
+      "bulb": "rgb(241, 183, 99)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 40.248632,
+      "blink": false
+    },
+    {
+      "second": 40.011,
+      "path": "/",
+      "bulb": "rgb(241, 184, 100)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 40.326524,
+      "blink": false
+    },
+    {
+      "second": 40.089,
+      "path": "/",
+      "bulb": "rgb(241, 185, 101)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 40.408119,
+      "blink": false
+    },
+    {
+      "second": 40.166,
+      "path": "/",
+      "bulb": "rgb(242, 185, 102)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 40.484078,
+      "blink": false
+    },
+    {
+      "second": 40.243,
+      "path": "/",
+      "bulb": "rgb(242, 186, 104)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 40.563059,
+      "blink": false
+    },
+    {
+      "second": 40.309,
+      "path": "/",
+      "bulb": "rgb(242, 186, 105)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 40.627541,
+      "blink": false
+    },
+    {
+      "second": 40.383,
+      "path": "/",
+      "bulb": "rgb(242, 187, 106)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 40.702233,
+      "blink": false
+    },
+    {
+      "second": 40.477,
+      "path": "/",
+      "bulb": "rgb(243, 187, 107)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 40.797703,
+      "blink": false
+    },
+    {
+      "second": 40.546,
+      "path": "/",
+      "bulb": "rgb(243, 188, 108)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 40.855542,
+      "blink": false
+    },
+    {
+      "second": 40.615,
+      "path": "/",
+      "bulb": "rgb(243, 188, 109)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 40.93895,
+      "blink": false
+    },
+    {
+      "second": 40.703,
+      "path": "/",
+      "bulb": "rgb(243, 189, 109)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 41.014976,
+      "blink": false
+    },
+    {
+      "second": 40.771,
+      "path": "/",
+      "bulb": "rgb(243, 189, 110)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 41.080827,
+      "blink": false
+    },
+    {
+      "second": 40.846,
+      "path": "/",
+      "bulb": "rgb(244, 189, 111)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 41.158517,
+      "blink": false
+    },
+    {
+      "second": 40.935,
+      "path": "/",
+      "bulb": "rgb(244, 190, 111)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 41.248132,
+      "blink": false
+    },
+    {
+      "second": 41.016,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 41.346123,
+      "blink": false
+    },
+    {
+      "second": 41.103,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 41.421826,
+      "blink": false
+    },
+    {
+      "second": 41.173,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 41.491594,
+      "blink": false
+    },
+    {
+      "second": 41.248,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 41.578087,
+      "blink": false
+    },
+    {
+      "second": 41.336,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 41.654705,
+      "blink": false
+    },
+    {
+      "second": 41.404,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 41.713165,
+      "blink": false
+    },
+    {
+      "second": 41.481,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 41.791203,
+      "blink": false
+    },
+    {
+      "second": 41.559,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 41.882814,
+      "blink": false
+    },
+    {
+      "second": 41.651,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 41.964011,
+      "blink": false
+    },
+    {
+      "second": 41.728,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 42.042739,
+      "blink": false
+    },
+    {
+      "second": 41.821,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 42.139394,
+      "blink": false
+    },
+    {
+      "second": 41.896,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 42.212434,
+      "blink": false
+    },
+    {
+      "second": 41.966,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 42.283903,
+      "blink": false
+    },
+    {
+      "second": 42.037,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 42.353033,
+      "blink": false
+    },
+    {
+      "second": 42.114,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 42.430931,
+      "blink": false
+    },
+    {
+      "second": 42.193,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 42.514333,
+      "blink": false
+    },
+    {
+      "second": 42.286,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 42.59664,
+      "blink": false
+    },
+    {
+      "second": 42.363,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 42.676053,
+      "blink": false
+    },
+    {
+      "second": 42.44,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 42.764437,
+      "blink": false
+    },
+    {
+      "second": 42.532,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 42.847168,
+      "blink": false
+    },
+    {
+      "second": 42.61,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 42.927502,
+      "blink": false
+    },
+    {
+      "second": 42.687,
+      "path": "/",
+      "bulb": "rgb(244, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 43.004372,
+      "blink": false
+    },
+    {
+      "second": 42.763,
+      "path": "/",
+      "bulb": "rgb(243, 190, 112)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 43.082317,
+      "blink": false
+    },
+    {
+      "second": 42.842,
+      "path": "/",
+      "bulb": "rgb(243, 190, 113)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 43.160946,
+      "blink": false
+    },
+    {
+      "second": 42.922,
+      "path": "/",
+      "bulb": "rgb(242, 190, 113)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 43.232318,
+      "blink": false
+    },
+    {
+      "second": 42.997,
+      "path": "/",
+      "bulb": "rgb(241, 189, 113)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 43.316873,
+      "blink": false
+    },
+    {
+      "second": 43.072,
+      "path": "/",
+      "bulb": "rgb(240, 189, 114)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 43.38144,
+      "blink": false
+    },
+    {
+      "second": 43.152,
+      "path": "/",
+      "bulb": "rgb(238, 189, 114)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 43.462951,
+      "blink": false
+    },
+    {
+      "second": 43.23,
+      "path": "/",
+      "bulb": "rgb(236, 189, 115)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 43.541215,
+      "blink": false
+    },
+    {
+      "second": 43.307,
+      "path": "/",
+      "bulb": "rgb(234, 188, 116)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 43.632076,
+      "blink": false
+    },
+    {
+      "second": 43.4,
+      "path": "/",
+      "bulb": "rgb(232, 188, 116)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 43.718697,
+      "blink": false
+    },
+    {
+      "second": 43.489,
+      "path": "/",
+      "bulb": "rgb(229, 188, 117)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 43.807746,
+      "blink": false
+    },
+    {
+      "second": 43.57,
+      "path": "/",
+      "bulb": "rgb(226, 187, 118)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 43.890649,
+      "blink": false
+    },
+    {
+      "second": 43.648,
+      "path": "/",
+      "bulb": "rgb(222, 187, 120)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 43.969223,
+      "blink": false
+    },
+    {
+      "second": 43.741,
+      "path": "/",
+      "bulb": "rgb(219, 186, 121)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 44.058244,
+      "blink": false
+    },
+    {
+      "second": 43.819,
+      "path": "/",
+      "bulb": "rgb(216, 185, 122)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 44.146386,
+      "blink": false
+    },
+    {
+      "second": 43.91,
+      "path": "/",
+      "bulb": "rgb(212, 185, 124)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 44.22701,
+      "blink": false
+    },
+    {
+      "second": 43.988,
+      "path": "/",
+      "bulb": "rgb(208, 184, 125)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 44.306826,
+      "blink": false
+    },
+    {
+      "second": 44.08,
+      "path": "/",
+      "bulb": "rgb(203, 184, 126)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 44.399345,
+      "blink": false
+    },
+    {
+      "second": 44.157,
+      "path": "/",
+      "bulb": "rgb(199, 183, 128)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 44.480885,
+      "blink": false
+    },
+    {
+      "second": 44.25,
+      "path": "/",
+      "bulb": "rgb(195, 182, 130)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 44.564522,
+      "blink": false
+    },
+    {
+      "second": 44.327,
+      "path": "/",
+      "bulb": "rgb(190, 181, 131)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 44.641106,
+      "blink": false
+    },
+    {
+      "second": 44.404,
+      "path": "/",
+      "bulb": "rgb(186, 181, 133)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 44.719582,
+      "blink": false
+    },
+    {
+      "second": 44.469,
+      "path": "/",
+      "bulb": "rgb(182, 180, 134)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 44.799239,
+      "blink": false
+    },
+    {
+      "second": 44.559,
+      "path": "/",
+      "bulb": "rgb(177, 179, 136)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 44.8916,
+      "blink": false
+    },
+    {
+      "second": 44.651,
+      "path": "/",
+      "bulb": "rgb(172, 179, 138)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 44.970886,
+      "blink": false
+    },
+    {
+      "second": 44.728,
+      "path": "/",
+      "bulb": "rgb(167, 178, 139)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 45.037466,
+      "blink": true
+    },
+    {
+      "second": 44.805,
+      "path": "/",
+      "bulb": "rgb(164, 177, 141)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 45.116001,
+      "blink": true
+    },
+    {
+      "second": 44.871,
+      "path": "/",
+      "bulb": "rgb(160, 177, 142)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 45.179348,
+      "blink": true
+    },
+    {
+      "second": 44.943,
+      "path": "/",
+      "bulb": "rgb(156, 176, 143)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 45.25303,
+      "blink": false
+    },
+    {
+      "second": 45.02,
+      "path": "/",
+      "bulb": "rgb(151, 175, 145)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 45.342446,
+      "blink": false
+    },
+    {
+      "second": 45.112,
+      "path": "/",
+      "bulb": "rgb(147, 175, 146)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 45.424663,
+      "blink": false
+    },
+    {
+      "second": 45.19,
+      "path": "/",
+      "bulb": "rgb(144, 174, 148)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 45.503387,
+      "blink": false
+    },
+    {
+      "second": 45.267,
+      "path": "/",
+      "bulb": "rgb(140, 173, 149)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 45.581816,
+      "blink": false
+    },
+    {
+      "second": 45.344,
+      "path": "/",
+      "bulb": "rgb(137, 173, 150)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 45.660174,
+      "blink": false
+    },
+    {
+      "second": 45.419,
+      "path": "/",
+      "bulb": "rgb(134, 172, 151)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 45.733221,
+      "blink": false
+    },
+    {
+      "second": 45.498,
+      "path": "/",
+      "bulb": "rgb(131, 172, 152)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 45.81425,
+      "blink": false
+    },
+    {
+      "second": 45.575,
+      "path": "/",
+      "bulb": "rgb(128, 172, 153)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 45.893286,
+      "blink": false
+    },
+    {
+      "second": 45.649,
+      "path": "/",
+      "bulb": "rgb(126, 171, 154)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 45.966964,
+      "blink": false
+    },
+    {
+      "second": 45.73,
+      "path": "/",
+      "bulb": "rgb(123, 171, 155)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 46.049149,
+      "blink": false
+    },
+    {
+      "second": 45.807,
+      "path": "/",
+      "bulb": "rgb(121, 170, 156)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 46.11942,
+      "blink": false
+    },
+    {
+      "second": 45.9,
+      "path": "/",
+      "bulb": "rgb(119, 170, 157)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 46.225342,
+      "blink": false
+    },
+    {
+      "second": 45.993,
+      "path": "/",
+      "bulb": "rgb(117, 170, 157)",
+      "motion": "running",
+      "musicPaused": false,
+      "time": 46.308872,
+      "blink": false
+    }
+  ],
+  "errors": [],
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Edg/157.0.4341.42",
+    "revision": "@7b1486be4607d53d9f93841b7c776bc525ca74b7",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+    "jsVersion": "15.7.11.4"
+  },
+  "audioCapture": {
+    "method": "HTMLMediaElement.captureStream + MediaRecorder Opus",
+    "samePlayer": true,
+    "elapsedMs": 46086.5
+  },
+  "wallClockSeconds": 46.135,
+  "file": "docs/ambient-v1-2/ambient-v1-2-browser-46s.mp4",
+  "capturedFrameCount": 645,
+  "sourceFrameTimes": {
+    "first": 1794190432.462388,
+    "last": 1794190478.449494
+  },
+  "encoding": {
+    "frameRate": 24,
+    "durationSeconds": 46,
+    "codec": "H.264",
+    "qualityCRF": 18
+  },
+  "hasBulbColorChanges": true,
+  "scratch": "../../../../Users/'/AppData/Local/Temp/abl-v12-recording-4sXA07",
+  "finished": "2026-11-09T02:14:45.804Z"
+}

@@ -1,0 +1,1848 @@
+{
+  "started": "2026-11-09T02:13:49.076Z",
+  "url": "http://127.0.0.1:4354",
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Edg/157.0.4341.42",
+    "revision": "@7b1486be4607d53d9f93841b7c776bc525ca74b7",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+    "jsVersion": "15.7.11.4"
+  },
+  "safety": {
+    "headless": true,
+    "browserAudioMuted": true,
+    "isolatedProfile": true,
+    "sandboxDisabled": false
+  },
+  "assertions": [
+    {
+      "name": "Fresh visit silent with no music preload",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null,
+          "loop": true
+        },
+        "audioElements": 1,
+        "rainControls": 0,
+        "status": "Music paused. Press Play music when you are ready."
+      }
+    },
+    {
+      "name": "No typing runtime or canvas",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "Persistent player and page metadata: /projects/mission-control/",
+      "pass": true,
+      "evidence": {
+        "same": true,
+        "count": 1,
+        "time": 2.392852,
+        "paused": false,
+        "title": "Mission Control · After Bedtime Labs",
+        "active": "Projects",
+        "theme": "system",
+        "interior": true,
+        "focus": "BODY",
+        "scroll": 0
+      }
+    },
+    {
+      "name": "Interior controls visible after Home activation",
+      "pass": true
+    },
+    {
+      "name": "Persistent player and page metadata: /projects/",
+      "pass": true,
+      "evidence": {
+        "same": true,
+        "count": 1,
+        "time": 3.236389,
+        "paused": false,
+        "title": "Projects · After Bedtime Labs",
+        "active": "Projects",
+        "theme": "system",
+        "interior": true,
+        "focus": "BODY",
+        "scroll": 0
+      }
+    },
+    {
+      "name": "Volume and mute survive navigation",
+      "pass": true
+    },
+    {
+      "name": "Persistent player and page metadata: /writing/",
+      "pass": true,
+      "evidence": {
+        "same": true,
+        "count": 1,
+        "time": 3.862028,
+        "paused": false,
+        "title": "Writing · After Bedtime Labs",
+        "active": "Writing",
+        "theme": "system",
+        "interior": true,
+        "focus": "BODY",
+        "scroll": 0
+      }
+    },
+    {
+      "name": "Persistent player and page metadata: /writing/meet-dungeon-deckbuilder/",
+      "pass": true,
+      "evidence": {
+        "same": true,
+        "count": 1,
+        "time": 4.179843,
+        "paused": false,
+        "title": "Dungeon Deckbuilder: pack your next move · After Bedtime Labs",
+        "active": "Writing",
+        "theme": "system",
+        "interior": true,
+        "focus": "BODY",
+        "scroll": 0
+      }
+    },
+    {
+      "name": "Back and Forward retain same playing media",
+      "pass": true
+    },
+    {
+      "name": "Persistent player and page metadata: /about/",
+      "pass": true,
+      "evidence": {
+        "same": true,
+        "count": 1,
+        "time": 4.691121,
+        "paused": false,
+        "title": "About · After Bedtime Labs",
+        "active": "About",
+        "theme": "system",
+        "interior": true,
+        "focus": "BODY",
+        "scroll": 0
+      }
+    },
+    {
+      "name": "Persistent player and page metadata: /",
+      "pass": true,
+      "evidence": {
+        "same": true,
+        "count": 1,
+        "time": 5.16655,
+        "paused": false,
+        "title": "After Bedtime Labs — Software, AI & games by Isaac",
+        "active": "Home",
+        "theme": "light",
+        "interior": false,
+        "focus": "BODY",
+        "scroll": 0
+      }
+    },
+    {
+      "name": "Theme and volume retained on Home",
+      "pass": true
+    },
+    {
+      "name": "Homepage controls synchronized",
+      "pass": true
+    },
+    {
+      "name": "Persistent player and page metadata: /about/",
+      "pass": true,
+      "evidence": {
+        "same": true,
+        "count": 1,
+        "time": 5.513274,
+        "paused": false,
+        "title": "About · After Bedtime Labs",
+        "active": "About",
+        "theme": "light",
+        "interior": true,
+        "focus": "BODY",
+        "scroll": 0
+      }
+    },
+    {
+      "name": "Persistent player and page metadata: /",
+      "pass": true,
+      "evidence": {
+        "same": true,
+        "count": 1,
+        "time": 5.830461,
+        "paused": false,
+        "title": "After Bedtime Labs — Software, AI & games by Isaac",
+        "active": "Home",
+        "theme": "light",
+        "interior": false,
+        "focus": "BODY",
+        "scroll": 0
+      }
+    },
+    {
+      "name": "Persistent player and page metadata: /about/",
+      "pass": true,
+      "evidence": {
+        "same": true,
+        "count": 1,
+        "time": 6.177115,
+        "paused": false,
+        "title": "About · After Bedtime Labs",
+        "active": "About",
+        "theme": "light",
+        "interior": true,
+        "focus": "BODY",
+        "scroll": 0
+      }
+    },
+    {
+      "name": "Persistent player and page metadata: /",
+      "pass": true,
+      "evidence": {
+        "same": true,
+        "count": 1,
+        "time": 6.484244,
+        "paused": false,
+        "title": "After Bedtime Labs — Software, AI & games by Isaac",
+        "active": "Home",
+        "theme": "light",
+        "interior": false,
+        "focus": "BODY",
+        "scroll": 0
+      }
+    },
+    {
+      "name": "Persistent player and page metadata: /about/",
+      "pass": true,
+      "evidence": {
+        "same": true,
+        "count": 1,
+        "time": 6.825754,
+        "paused": false,
+        "title": "About · After Bedtime Labs",
+        "active": "About",
+        "theme": "light",
+        "interior": true,
+        "focus": "BODY",
+        "scroll": 0
+      }
+    },
+    {
+      "name": "Persistent player and page metadata: /",
+      "pass": true,
+      "evidence": {
+        "same": true,
+        "count": 1,
+        "time": 7.130009,
+        "paused": false,
+        "title": "After Bedtime Labs — Software, AI & games by Isaac",
+        "active": "Home",
+        "theme": "light",
+        "interior": false,
+        "focus": "BODY",
+        "scroll": 0
+      }
+    },
+    {
+      "name": "Persistent player and page metadata: /about/",
+      "pass": true,
+      "evidence": {
+        "same": true,
+        "count": 1,
+        "time": 7.475447,
+        "paused": false,
+        "title": "About · After Bedtime Labs",
+        "active": "About",
+        "theme": "light",
+        "interior": true,
+        "focus": "BODY",
+        "scroll": 0
+      }
+    },
+    {
+      "name": "Persistent player and page metadata: /",
+      "pass": true,
+      "evidence": {
+        "same": true,
+        "count": 1,
+        "time": 7.791409,
+        "paused": false,
+        "title": "After Bedtime Labs — Software, AI & games by Isaac",
+        "active": "Home",
+        "theme": "light",
+        "interior": false,
+        "focus": "BODY",
+        "scroll": 0
+      }
+    },
+    {
+      "name": "Persistent player and page metadata: /about/",
+      "pass": true,
+      "evidence": {
+        "same": true,
+        "count": 1,
+        "time": 8.120914,
+        "paused": false,
+        "title": "About · After Bedtime Labs",
+        "active": "About",
+        "theme": "light",
+        "interior": true,
+        "focus": "BODY",
+        "scroll": 0
+      }
+    },
+    {
+      "name": "Persistent player and page metadata: /",
+      "pass": true,
+      "evidence": {
+        "same": true,
+        "count": 1,
+        "time": 8.439833,
+        "paused": false,
+        "title": "After Bedtime Labs — Software, AI & games by Isaac",
+        "active": "Home",
+        "theme": "light",
+        "interior": false,
+        "focus": "BODY",
+        "scroll": 0
+      }
+    },
+    {
+      "name": "No accumulated document or window listeners",
+      "pass": true,
+      "evidence": {
+        "before": {
+          "document": [
+            "astro:after-swap",
+            "astro:after-swap",
+            "astro:before-swap",
+            "astro:before-swap",
+            "astro:page-load",
+            "astro:page-load",
+            "astro:page-load",
+            "astro:page-load",
+            "astro:page-load",
+            "astro:page-load",
+            "astro:page-load",
+            "click",
+            "click",
+            "click",
+            "input",
+            "keydown",
+            "keydown",
+            "mousedown",
+            "submit",
+            "touchstart",
+            "visibilitychange"
+          ],
+          "window": [
+            "load",
+            "pagehide",
+            "pagehide",
+            "pageshow",
+            "popstate",
+            "scrollend",
+            "storage"
+          ],
+          "document.querySelector(\"audio\")": [
+            "error",
+            "pause",
+            "playing",
+            "volumechange",
+            "waiting"
+          ]
+        },
+        "after": {
+          "document": [
+            "astro:after-swap",
+            "astro:after-swap",
+            "astro:before-swap",
+            "astro:before-swap",
+            "astro:page-load",
+            "astro:page-load",
+            "astro:page-load",
+            "astro:page-load",
+            "astro:page-load",
+            "astro:page-load",
+            "astro:page-load",
+            "click",
+            "click",
+            "click",
+            "input",
+            "keydown",
+            "keydown",
+            "mousedown",
+            "submit",
+            "touchstart",
+            "visibilitychange"
+          ],
+          "window": [
+            "load",
+            "pagehide",
+            "pagehide",
+            "pageshow",
+            "popstate",
+            "scrollend",
+            "storage"
+          ],
+          "document.querySelector(\"audio\")": [
+            "emptied",
+            "error",
+            "loadstart",
+            "pause",
+            "pause",
+            "play",
+            "playing",
+            "playing",
+            "seeking",
+            "stalled",
+            "volumechange",
+            "waiting",
+            "waiting"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Uninterrupted media clock through repeated routes",
+      "pass": true,
+      "evidence": {
+        "audioDelta": 6.438837,
+        "wallDelta": 6.428700000017882,
+        "unexpected": []
+      }
+    },
+    {
+      "name": "No pause, reload, seek or buffering during navigation",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "One play call through all playing navigation",
+      "pass": true,
+      "evidence": [
+        {
+          "type": "play",
+          "time": 0,
+          "wall": 737.5,
+          "path": "/"
+        },
+        {
+          "type": "waiting",
+          "time": 0,
+          "wall": 737.7000000178814,
+          "path": "/"
+        },
+        {
+          "type": "playing",
+          "time": 0,
+          "wall": 1237.6000000238419,
+          "path": "/"
+        }
+      ]
+    },
+    {
+      "name": "Persistent player and page metadata: /about/",
+      "pass": true,
+      "evidence": {
+        "same": true,
+        "count": 1,
+        "time": 8.48581,
+        "paused": true,
+        "title": "About · After Bedtime Labs",
+        "active": "About",
+        "theme": "light",
+        "interior": true,
+        "focus": "BODY",
+        "scroll": 0
+      }
+    },
+    {
+      "name": "Paused music stays paused and controls remain available",
+      "pass": true
+    },
+    {
+      "name": "Persistent player and page metadata: /",
+      "pass": true,
+      "evidence": {
+        "same": true,
+        "count": 1,
+        "time": 9.107813,
+        "paused": false,
+        "title": "After Bedtime Labs — Software, AI & games by Isaac",
+        "active": "Home",
+        "theme": "light",
+        "interior": false,
+        "focus": "BODY",
+        "scroll": 0
+      }
+    },
+    {
+      "name": "Single toggle after repeated navigation",
+      "pass": true
+    },
+    {
+      "name": "Resting arm pixels unchanged across 18 seconds",
+      "pass": true
+    },
+    {
+      "name": "Natural blink observed",
+      "pass": true
+    },
+    {
+      "name": "Bulb varies gently without moving",
+      "pass": true,
+      "evidence": [
+        {
+          "color": "rgb(239, 180, 92)",
+          "opacity": "0.72",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "box": {
+            "x": 1067.64111328125,
+            "y": 747.0538330078125,
+            "width": 19.0623779296875,
+            "height": 16.57598876953125,
+            "top": 747.0538330078125,
+            "right": 1086.7034912109375,
+            "bottom": 763.6298217773438,
+            "left": 1067.64111328125
+          }
+        },
+        {
+          "color": "rgb(239, 180, 92)",
+          "opacity": "0.72",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "box": {
+            "x": 1067.64111328125,
+            "y": 747.0538330078125,
+            "width": 19.0623779296875,
+            "height": 16.57598876953125,
+            "top": 747.0538330078125,
+            "right": 1086.7034912109375,
+            "bottom": 763.6298217773438,
+            "left": 1067.64111328125
+          }
+        },
+        {
+          "color": "rgb(239, 180, 92)",
+          "opacity": "0.720251",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "box": {
+            "x": 1067.64111328125,
+            "y": 747.0538330078125,
+            "width": 19.0623779296875,
+            "height": 16.57598876953125,
+            "top": 747.0538330078125,
+            "right": 1086.7034912109375,
+            "bottom": 763.6298217773438,
+            "left": 1067.64111328125
+          }
+        },
+        {
+          "color": "rgb(241, 185, 101)",
+          "opacity": "0.819048",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "box": {
+            "x": 1067.64111328125,
+            "y": 747.0538330078125,
+            "width": 19.0623779296875,
+            "height": 16.57598876953125,
+            "top": 747.0538330078125,
+            "right": 1086.7034912109375,
+            "bottom": 763.6298217773438,
+            "left": 1067.64111328125
+          }
+        },
+        {
+          "color": "rgb(244, 190, 112)",
+          "opacity": "0.937591",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "box": {
+            "x": 1067.64111328125,
+            "y": 747.0538330078125,
+            "width": 19.0623779296875,
+            "height": 16.57598876953125,
+            "top": 747.0538330078125,
+            "right": 1086.7034912109375,
+            "bottom": 763.6298217773438,
+            "left": 1067.64111328125
+          }
+        },
+        {
+          "color": "rgb(244, 190, 112)",
+          "opacity": "0.94",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "box": {
+            "x": 1067.64111328125,
+            "y": 747.0538330078125,
+            "width": 19.0623779296875,
+            "height": 16.57598876953125,
+            "top": 747.0538330078125,
+            "right": 1086.7034912109375,
+            "bottom": 763.6298217773438,
+            "left": 1067.64111328125
+          }
+        },
+        {
+          "color": "rgb(239, 189, 114)",
+          "opacity": "0.936341",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "box": {
+            "x": 1067.64111328125,
+            "y": 747.0538330078125,
+            "width": 19.0623779296875,
+            "height": 16.57598876953125,
+            "top": 747.0538330078125,
+            "right": 1086.7034912109375,
+            "bottom": 763.6298217773438,
+            "left": 1067.64111328125
+          }
+        },
+        {
+          "color": "rgb(202, 183, 127)",
+          "opacity": "0.911194",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "box": {
+            "x": 1067.64111328125,
+            "y": 747.0538330078125,
+            "width": 19.0623779296875,
+            "height": 16.57598876953125,
+            "top": 747.0538330078125,
+            "right": 1086.7034912109375,
+            "bottom": 763.6298217773438,
+            "left": 1067.64111328125
+          }
+        },
+        {
+          "color": "rgb(147, 175, 146)",
+          "opacity": "0.873969",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "box": {
+            "x": 1067.64111328125,
+            "y": 747.0538330078125,
+            "width": 19.0623779296875,
+            "height": 16.57598876953125,
+            "top": 747.0538330078125,
+            "right": 1086.7034912109375,
+            "bottom": 763.6298217773438,
+            "left": 1067.64111328125
+          }
+        },
+        {
+          "color": "rgb(115, 169, 158)",
+          "opacity": "0.852049",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "box": {
+            "x": 1067.64111328125,
+            "y": 747.0538330078125,
+            "width": 19.0623779296875,
+            "height": 16.57598876953125,
+            "top": 747.0538330078125,
+            "right": 1086.7034912109375,
+            "bottom": 763.6298217773438,
+            "left": 1067.64111328125
+          }
+        },
+        {
+          "color": "rgb(112, 169, 159)",
+          "opacity": "0.85",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "box": {
+            "x": 1067.64111328125,
+            "y": 747.0538330078125,
+            "width": 19.0623779296875,
+            "height": 16.57598876953125,
+            "top": 747.0538330078125,
+            "right": 1086.7034912109375,
+            "bottom": 763.6298217773438,
+            "left": 1067.64111328125
+          }
+        },
+        {
+          "color": "rgb(112, 169, 159)",
+          "opacity": "0.85",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "box": {
+            "x": 1067.64111328125,
+            "y": 747.0538330078125,
+            "width": 19.0623779296875,
+            "height": 16.57598876953125,
+            "top": 747.0538330078125,
+            "right": 1086.7034912109375,
+            "bottom": 763.6298217773438,
+            "left": 1067.64111328125
+          }
+        },
+        {
+          "color": "rgb(141, 172, 144)",
+          "opacity": "0.820418",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "box": {
+            "x": 1067.64111328125,
+            "y": 747.0538330078125,
+            "width": 19.0623779296875,
+            "height": 16.57598876953125,
+            "top": 747.0538330078125,
+            "right": 1086.7034912109375,
+            "bottom": 763.6298217773438,
+            "left": 1067.64111328125
+          }
+        },
+        {
+          "color": "rgb(218, 178, 103)",
+          "opacity": "0.741002",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "box": {
+            "x": 1067.64111328125,
+            "y": 747.0538330078125,
+            "width": 19.0623779296875,
+            "height": 16.57598876953125,
+            "top": 747.0538330078125,
+            "right": 1086.7034912109375,
+            "bottom": 763.6298217773438,
+            "left": 1067.64111328125
+          }
+        },
+        {
+          "color": "rgb(239, 180, 92)",
+          "opacity": "0.72",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "box": {
+            "x": 1067.64111328125,
+            "y": 747.0538330078125,
+            "width": 19.0623779296875,
+            "height": 16.57598876953125,
+            "top": 747.0538330078125,
+            "right": 1086.7034912109375,
+            "bottom": 763.6298217773438,
+            "left": 1067.64111328125
+          }
+        },
+        {
+          "color": "rgb(239, 180, 92)",
+          "opacity": "0.72",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "box": {
+            "x": 1067.64111328125,
+            "y": 747.0538330078125,
+            "width": 19.0623779296875,
+            "height": 16.57598876953125,
+            "top": 747.0538330078125,
+            "right": 1086.7034912109375,
+            "bottom": 763.6298217773438,
+            "left": 1067.64111328125
+          }
+        },
+        {
+          "color": "rgb(239, 180, 92)",
+          "opacity": "0.72",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "box": {
+            "x": 1067.64111328125,
+            "y": 747.0538330078125,
+            "width": 19.0623779296875,
+            "height": 16.57598876953125,
+            "top": 747.0538330078125,
+            "right": 1086.7034912109375,
+            "bottom": 763.6298217773438,
+            "left": 1067.64111328125
+          }
+        },
+        {
+          "color": "rgb(239, 180, 92)",
+          "opacity": "0.72",
+          "animation": "bulb-breathe",
+          "count": 1,
+          "transform": "none",
+          "box": {
+            "x": 1067.64111328125,
+            "y": 747.0538330078125,
+            "width": 19.0623779296875,
+            "height": 16.57598876953125,
+            "top": 747.0538330078125,
+            "right": 1086.7034912109375,
+            "bottom": 763.6298217773438,
+            "left": 1067.64111328125
+          }
+        }
+      ]
+    },
+    {
+      "name": "Accepted rain and steam still animate",
+      "pass": true
+    },
+    {
+      "name": "Pause holds warm amber",
+      "pass": true,
+      "evidence": {
+        "color": "rgb(239, 180, 92)",
+        "opacity": "0.72",
+        "animation": "none",
+        "count": 0,
+        "transform": "none",
+        "box": {
+          "x": 1067.64111328125,
+          "y": 747.0538330078125,
+          "width": 19.0623779296875,
+          "height": 16.57598876953125,
+          "top": 747.0538330078125,
+          "right": 1086.7034912109375,
+          "bottom": 763.6298217773438,
+          "left": 1067.64111328125
+        }
+      }
+    },
+    {
+      "name": "Resume creates only one CSS animation",
+      "pass": true
+    },
+    {
+      "name": "1440 normal bulb aligned and visible",
+      "pass": true,
+      "evidence": {
+        "x": 1076.7579361155063,
+        "y": 754.5130373154009,
+        "dx": 0.4144271657437457,
+        "dy": 0.000006309541504379013,
+        "visible": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "1440 expanded bulb aligned and visible",
+      "pass": true,
+      "evidence": {
+        "x": 1131.6835443037974,
+        "y": 772.5411392405064,
+        "dx": 0.46837220010888814,
+        "dy": 0.0000015451938679689192,
+        "visible": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "1440 Escape focus",
+      "pass": true
+    },
+    {
+      "name": "768 normal bulb aligned and visible",
+      "pass": true,
+      "evidence": {
+        "x": 535.3175435126582,
+        "y": 991.9548391350211,
+        "dx": 0.30336713187307396,
+        "dy": 0.000025366932050019386,
+        "visible": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "768 expanded bulb aligned and visible",
+      "pass": true,
+      "evidence": {
+        "x": 576.3747079583663,
+        "y": 758.3966244725739,
+        "dx": 0.4641592291336565,
+        "dy": 0.000012490316748881014,
+        "visible": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "768 Escape focus",
+      "pass": true
+    },
+    {
+      "name": "390 normal bulb aligned and visible",
+      "pass": true,
+      "evidence": {
+        "x": 248.5244264240507,
+        "y": 801.7449235232068,
+        "dx": 0.18239120290243704,
+        "dy": 0.000010558824442341574,
+        "visible": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "390 expanded bulb aligned and visible",
+      "pass": true,
+      "evidence": {
+        "x": 241.10161194620264,
+        "y": 523.557819092827,
+        "dx": 0.25300231160986186,
+        "dy": 0.000011717719871739973,
+        "visible": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "390 Escape focus",
+      "pass": true
+    },
+    {
+      "name": "320 normal bulb aligned and visible",
+      "pass": true,
+      "evidence": {
+        "x": 202.99910996835445,
+        "y": 823.9384229957806,
+        "dx": 0.1465199144580538,
+        "dy": 0.000007468436820090574,
+        "visible": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "320 expanded bulb aligned and visible",
+      "pass": true,
+      "evidence": {
+        "x": 197.8269086565291,
+        "y": 440.40625,
+        "dx": 0.20757620675215094,
+        "dy": 0,
+        "visible": true,
+        "overflow": false
+      }
+    },
+    {
+      "name": "320 Escape focus",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion steady amber",
+      "pass": true
+    },
+    {
+      "name": "Ctrl-click left to native browser behavior",
+      "pass": true,
+      "evidence": {
+        "preventedByRouter": false,
+        "ctrl": true
+      }
+    },
+    {
+      "name": "External link left to native browser behavior",
+      "pass": true,
+      "evidence": {
+        "preventedByRouter": false,
+        "url": "https://github.com/afterbedtimelabs"
+      }
+    },
+    {
+      "name": "Same-page anchor scroll",
+      "pass": true
+    },
+    {
+      "name": "Persistent player and page metadata: /projects/mission-control/",
+      "pass": true,
+      "evidence": {
+        "same": true,
+        "count": 1,
+        "time": 9.138669,
+        "paused": true,
+        "title": "Mission Control · After Bedtime Labs",
+        "active": "Projects",
+        "theme": "light",
+        "interior": true,
+        "focus": "BODY",
+        "scroll": 0
+      }
+    },
+    {
+      "name": "Forward route resets scroll",
+      "pass": true
+    },
+    {
+      "name": "Back restores scroll",
+      "pass": true,
+      "evidence": {
+        "scrollBefore": 751,
+        "after": 751
+      }
+    },
+    {
+      "name": "Hard refresh silent and unactivated",
+      "pass": true
+    },
+    {
+      "name": "Fresh interior tab silent",
+      "pass": true,
+      "evidence": {
+        "paused": true,
+        "time": 0,
+        "visible": false
+      }
+    },
+    {
+      "name": "No runtime or console errors",
+      "pass": true,
+      "evidence": []
+    }
+  ],
+  "screenshots": [
+    {
+      "name": "mission-control-playing.png",
+      "stage": "music navigation",
+      "fullPage": false,
+      "dimensions": {
+        "width": 1440,
+        "height": 1000,
+        "scrollHeight": 2167
+      }
+    },
+    {
+      "name": "home-desktop.png",
+      "stage": "motion and visual",
+      "fullPage": false,
+      "dimensions": {
+        "width": 1440,
+        "height": 1000,
+        "scrollHeight": 4075
+      }
+    },
+    {
+      "name": "home-1440.png",
+      "stage": "motion and visual",
+      "fullPage": false,
+      "dimensions": {
+        "width": 1440,
+        "height": 1000,
+        "scrollHeight": 4075
+      }
+    },
+    {
+      "name": "expanded-1440.png",
+      "stage": "motion and visual",
+      "fullPage": false,
+      "dimensions": {
+        "width": 1440,
+        "height": 1000,
+        "scrollHeight": 1000
+      }
+    },
+    {
+      "name": "home-768.png",
+      "stage": "motion and visual",
+      "fullPage": false,
+      "dimensions": {
+        "width": 768,
+        "height": 1024,
+        "scrollHeight": 4668
+      }
+    },
+    {
+      "name": "expanded-768.png",
+      "stage": "motion and visual",
+      "fullPage": false,
+      "dimensions": {
+        "width": 768,
+        "height": 1024,
+        "scrollHeight": 1024
+      }
+    },
+    {
+      "name": "home-390.png",
+      "stage": "motion and visual",
+      "fullPage": false,
+      "dimensions": {
+        "width": 390,
+        "height": 844,
+        "scrollHeight": 5696
+      }
+    },
+    {
+      "name": "expanded-390.png",
+      "stage": "motion and visual",
+      "fullPage": false,
+      "dimensions": {
+        "width": 390,
+        "height": 844,
+        "scrollHeight": 844
+      }
+    },
+    {
+      "name": "home-320.png",
+      "stage": "motion and visual",
+      "fullPage": false,
+      "dimensions": {
+        "width": 320,
+        "height": 740,
+        "scrollHeight": 5878
+      }
+    },
+    {
+      "name": "expanded-320.png",
+      "stage": "motion and visual",
+      "fullPage": false,
+      "dimensions": {
+        "width": 320,
+        "height": 740,
+        "scrollHeight": 740
+      }
+    },
+    {
+      "name": "reduced-motion-mobile.png",
+      "stage": "motion and visual",
+      "fullPage": false,
+      "dimensions": {
+        "width": 320,
+        "height": 740,
+        "scrollHeight": 5878
+      }
+    }
+  ],
+  "consoleErrors": [],
+  "gaps": [],
+  "audioRequests": [
+    {
+      "stage": "startup",
+      "url": "http://127.0.0.1:4354/audio/ambient/after-hours.ogg"
+    },
+    {
+      "stage": "startup",
+      "url": "http://127.0.0.1:4354/audio/ambient/after-hours.ogg"
+    },
+    {
+      "stage": "startup",
+      "url": "http://127.0.0.1:4354/audio/ambient/after-hours.ogg"
+    }
+  ],
+  "idle": null,
+  "continuitySamples": [
+    {
+      "wall": 720.7000000178814,
+      "time": 0,
+      "paused": true,
+      "same": true
+    },
+    {
+      "wall": 796,
+      "time": 0,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 873.2000000178814,
+      "time": 0,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 953.5,
+      "time": 0,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 1035.1000000238419,
+      "time": 0,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 1118.5,
+      "time": 0,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 1203,
+      "time": 0,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 1273.2000000178814,
+      "time": 0,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 1356.800000011921,
+      "time": 0,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 1435.7000000178814,
+      "time": 0.006508,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 1518.6000000238419,
+      "time": 0.084522,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 1602,
+      "time": 0.169167,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 1680.800000011921,
+      "time": 0.249385,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 1758.800000011921,
+      "time": 0.328583,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 1836,
+      "time": 0.395394,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 1913.7000000178814,
+      "time": 0.474411,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 2003.1000000238419,
+      "time": 0.565081,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 2092,
+      "time": 0.658554,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 2155.4000000059605,
+      "time": 0.719884,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 2236.7000000178814,
+      "time": 0.802478,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 2320.300000011921,
+      "time": 0.887326,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 2395.5,
+      "time": 0.963828,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 2486.300000011921,
+      "time": 1.055983,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 2553,
+      "time": 1.11226,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 2644.300000011921,
+      "time": 1.204737,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 2719.2000000178814,
+      "time": 1.281031,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 2800.100000023842,
+      "time": 1.363167,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 2874.4000000059605,
+      "time": 1.438721,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 2953.300000011921,
+      "time": 1.518856,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 3036.9000000059605,
+      "time": 1.603739,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 3119.4000000059605,
+      "time": 1.687423,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 3203.5,
+      "time": 1.772904,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 3281.4000000059605,
+      "time": 1.84051,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 3353.800000011921,
+      "time": 1.916495,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 3437.9000000059605,
+      "time": 1.999581,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 3517.4000000059605,
+      "time": 2.080231,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 3601.9000000059605,
+      "time": 2.166007,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 3688.2000000178814,
+      "time": 2.253568,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 3763.4000000059605,
+      "time": 2.330122,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 3834.7000000178814,
+      "time": 2.402616,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 3919.800000011921,
+      "time": 2.489096,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 3994.2000000178814,
+      "time": 2.564725,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 4075.800000011921,
+      "time": 2.635969,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 4154.4000000059605,
+      "time": 2.715767,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 4234.200000017881,
+      "time": 2.815123,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 4313.5,
+      "time": 2.895246,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 4393.300000011921,
+      "time": 2.973535,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 4473,
+      "time": 3.054567,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 4553.5,
+      "time": 3.135352,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 4633.300000011921,
+      "time": 3.215197,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 4713.9000000059605,
+      "time": 3.29489,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 4793.600000023842,
+      "time": 3.374565,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 4881.800000011921,
+      "time": 3.452893,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 4959.5,
+      "time": 3.531751,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 5037.600000023842,
+      "time": 3.611141,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 5113.800000011921,
+      "time": 3.688704,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 5205.700000017881,
+      "time": 3.781859,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 5283.300000011921,
+      "time": 3.860697,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 5368.700000017881,
+      "time": 3.947389,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 5433.600000023842,
+      "time": 4.013629,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 5515.800000011921,
+      "time": 4.085495,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 5596,
+      "time": 4.166888,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 5673.300000011921,
+      "time": 4.245503,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 5758.9000000059605,
+      "time": 4.332284,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 5838.9000000059605,
+      "time": 4.413525,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 5917.100000023842,
+      "time": 4.493049,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 5993.600000023842,
+      "time": 4.570783,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 6086.200000017881,
+      "time": 4.664679,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 6153.800000011921,
+      "time": 4.733625,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 6240.200000017881,
+      "time": 4.809589,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 6313.4000000059605,
+      "time": 4.884099,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 6393.600000023842,
+      "time": 4.96558,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 6473.200000017881,
+      "time": 5.046415,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 6554,
+      "time": 5.12851,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 6638,
+      "time": 5.213752,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 6719,
+      "time": 5.296071,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 6796,
+      "time": 5.374396,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 6888.700000017881,
+      "time": 5.468281,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 6952.9000000059605,
+      "time": 5.522225,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 7038.800000011921,
+      "time": 5.609343,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 7121.200000017881,
+      "time": 5.693005,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 7196.700000017881,
+      "time": 5.769765,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 7273,
+      "time": 5.847326,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 7353.200000017881,
+      "time": 5.928837,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 7442.800000011921,
+      "time": 6.019636,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 7521.600000023842,
+      "time": 6.099796,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 7597.200000017881,
+      "time": 6.176632,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 7674.100000023842,
+      "time": 6.243181,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 7754.800000011921,
+      "time": 6.325159,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 7838.4000000059605,
+      "time": 6.410101,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 7922.9000000059605,
+      "time": 6.495743,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 7997.800000011921,
+      "time": 6.572025,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 8077.800000011921,
+      "time": 6.653283,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 8155.300000011921,
+      "time": 6.731947,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 8247.300000011921,
+      "time": 6.825293,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 8313.300000011921,
+      "time": 6.892491,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 8402.600000023842,
+      "time": 6.971466,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 8480.300000011921,
+      "time": 7.050366,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 8555.5,
+      "time": 7.127004,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 8635.600000023842,
+      "time": 7.208303,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 8714.100000023842,
+      "time": 7.288052,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 8802.800000011921,
+      "time": 7.378091,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 8879.700000017881,
+      "time": 7.456216,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 8956,
+      "time": 7.533849,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 9033,
+      "time": 7.612125,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 9121.800000011921,
+      "time": 7.690404,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 9202.200000017881,
+      "time": 7.772235,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 9280,
+      "time": 7.850851,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 9353.600000023842,
+      "time": 7.92605,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 9434.40000000596,
+      "time": 8.008185,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 9526.40000000596,
+      "time": 8.101467,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 9593.700000017881,
+      "time": 8.17004,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 9680.300000011921,
+      "time": 8.257909,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 9755.700000017881,
+      "time": 8.334572,
+      "paused": false,
+      "same": true
+    },
+    {
+      "wall": 9834.90000000596,
+      "time": 8.415089,
+      "paused": false,
+      "same": true
+    }
+  ],
+  "finished": "2026-11-09T02:14:30.709Z",
+  "passed": 59,
+  "failed": 0
+}

@@ -1,0 +1,106 @@
+{
+  "pass": "Tinker Panda — approved Expressive Markings master + website preview preparation",
+  "version": "approved-v3.3",
+  "pathConvention": "All paths in references and lineage are repository-root relative. Files named without art/ elsewhere are relative to this handoff directory.",
+  "method": "Copy the selected exported V3.3 front sprite byte-for-byte as the approved master. Render only comparison/handoff canvases with exact integer nearest-neighbor enlargement. No image generation, redraw, recoloring, resizing of the native master or edits to prior work.",
+  "generationHistory": "The existing V3.3 imagegen face source was generated above native size, sampled over its full canvas to 96 × 96 with nearest-neighbor, mapped to the inherited 19-color palette, then composited as RGB only inside a fixed face mask on the V3.2 baseline. V3.3 retained all original alpha and all RGBA outside the mask. This handoff adopts that existing native export exactly; it does not describe it as a newly hand-drawn pixel master.",
+  "lineage": [
+    {
+      "role": "Structural direction",
+      "path": "art/tinker-panda-v3-exploration/sprites/03-iconic-mascot.png",
+      "note": "Silhouette, compact seated body, upright oversized striped tail and memorable overall shape."
+    },
+    {
+      "role": "Earlier face direction",
+      "path": "art/tinker-panda-v3-exploration/sprites/01-refined-original.png",
+      "note": "Warm eye clarity, cream muzzle and readable smile informed the V3.2 hybrid."
+    },
+    {
+      "role": "Exact body and alpha baseline",
+      "path": "art/tinker-panda-v3.2-hybrid/sprites/05-hybrid-96.png",
+      "sha256": "37df93785c3bf4eb8616cbfe84249168446c780e36c8a7bbe08ee7a61517500f"
+    },
+    {
+      "role": "Selected face export and approved master source",
+      "path": "art/tinker-panda-v3.3-face/sprites/01-expressive-markings.png",
+      "sha256": "b7a25d71ae8b74a0f692462090809843fab594eb58ef38f8c4e6d3bc68f3963e"
+    }
+  ],
+  "references": {
+    "approvedMaster": {
+      "path": "art/tinker-panda-approved-v3.3/master/tinker-panda-approved-v3.3-front-96.png",
+      "sha256": "b7a25d71ae8b74a0f692462090809843fab594eb58ef38f8c4e6d3bc68f3963e"
+    },
+    "selectedV33": {
+      "path": "art/tinker-panda-v3.3-face/sprites/01-expressive-markings.png",
+      "sha256": "b7a25d71ae8b74a0f692462090809843fab594eb58ef38f8c4e6d3bc68f3963e"
+    },
+    "structuralV32": {
+      "path": "art/tinker-panda-v3.2-hybrid/sprites/05-hybrid-96.png",
+      "sha256": "37df93785c3bf4eb8616cbfe84249168446c780e36c8a7bbe08ee7a61517500f"
+    },
+    "faceMask": {
+      "path": "art/tinker-panda-v3.3-face/sources/face-mask.json",
+      "copiedTo": "art/tinker-panda-approved-v3.3/sources/face-mask.json",
+      "sha256": "f949e2da12a0905b12f2e28dc9ccf6637c79b3d448881ee56b6d0a61daefce86"
+    },
+    "selectedPromptCollection": {
+      "path": "art/tinker-panda-v3.3-face/sources/prompts.json",
+      "key": "01-expressive-markings",
+      "sha256": "c47f0182e210c1a1a00413b38181a253bde5c33c248431f0b916a21cb7c02f4d"
+    },
+    "rawGeneratedFaceSource": {
+      "path": "art/tinker-panda-v3.3-face/sources/01-expressive-markings-generated.png",
+      "sha256": "23e5f50e5b6fbf19c0e448998330b4c8a991f2e4423fdae07bd51fec040949f2"
+    },
+    "generationReference": {
+      "path": "art/tinker-panda-v3.3-face/sources/00-native-reference-12x.png",
+      "sha256": "b75b27a3fe01ec3e985a8f0a7702f8a424ea5026cb43f633a9d5ae201a53648f"
+    },
+    "nativeExtraction": {
+      "path": "art/tinker-panda-v3.3-face/sources/native-extraction.json",
+      "sha256": "49f2c5ea3bb7a9b34f4fa62b9aae4933cba5f19e8ae047d4ac6d90d26ad24883"
+    }
+  },
+  "verification": {
+    "byteIdenticalToSelectedV33": true,
+    "sourceSize": [
+      96,
+      96
+    ],
+    "opaquePixels": 5215,
+    "transparentPixels": 4001,
+    "binaryAlpha": true,
+    "actualOpaqueColors": 19,
+    "changedPixelsFromV32": 191,
+    "allowedFaceMaskPixels": 1094,
+    "changedPixelsOutsideMask": 0,
+    "changedAlphaPixels": 0,
+    "outsideMaskRGBAExact": true,
+    "alphaExactEverywhere": true,
+    "visibleBounds": {
+      "left": 4,
+      "top": 11,
+      "width": 87,
+      "height": 79
+    }
+  },
+  "priorPrompts": [
+    {
+      "path": "art/tinker-panda-v3.2-hybrid/sources/prompts.json",
+      "key": "05-hybrid-96"
+    },
+    {
+      "path": "art/tinker-panda-v3.2-hybrid/sources/revision-prompts.json",
+      "key": "05-hybrid-96"
+    },
+    {
+      "path": "art/tinker-panda-v3.3-face/sources/prompts.json",
+      "key": "01-expressive-markings",
+      "exactSelectedCopy": "sources/selected-prompt.json"
+    }
+  ],
+  "approvalScope": "Owner-approved default FRONT design. Website placements remain mockups for review. Other faces, poses, views and animations are not approved.",
+  "sourcePreservation": "Prior V2.1, V3, V3.2 and V3.3 files are read-only inputs; no prior source, prompt, board or review file is modified.",
+  "rebuild": "node art/tinker-panda-approved-v3.3/build-handoff.mjs"
+}

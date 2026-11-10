@@ -1,0 +1,36 @@
+PASS Fresh Home silent with one player at time zero
+PASS Approved scene loaded, fictional mascot label present
+PASS Bulb changes color without moving or duplicate animation
+PASS Motion pause holds steady amber
+PASS Motion resumes one bulb animation
+PASS 1440 normal bulb alignment
+PASS 1440 expanded bulb alignment
+PASS 390 normal bulb alignment
+PASS 390 expanded bulb alignment
+FAIL Reduced motion steady amber
+FAIL Explicit click starts original music
+PASS Single persistent player: /projects/mission-control/
+PASS Interior controls available after activation
+PASS Single persistent player: /projects/
+PASS Volume and mute retained
+PASS Single persistent player: /projects/nightstock/
+PASS Single persistent player: /writing/
+PASS Single persistent player: /writing/meet-dungeon-deckbuilder/
+PASS Back/Forward retain single player and volume
+PASS Single persistent player: /about/
+PASS Single persistent player: /
+PASS Single persistent player: /about/
+PASS Single persistent player: /
+PASS Single persistent player: /about/
+PASS Single persistent player: /
+PASS Single persistent player: /about/
+PASS Single persistent player: /
+FAIL Uninterrupted navigation clock and no restart/buffering events
+PASS Single persistent player: /about/
+PASS Pause retained with available resume control
+PASS Single persistent player: /
+PASS Home controls synchronized
+PASS Hard reload silent
+PASS Fresh tab silent and unactivated
+PASS No console or page errors
+{"browser":"webkit","passed":32,"failed":3}

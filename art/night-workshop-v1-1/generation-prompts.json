@@ -1,0 +1,22 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "date": "2026-11-08",
+  "edits": [
+    {
+      "input": "art/ambient-v1/rainy-workshop-v1.png",
+      "output": "environment/generated-night-clean.png",
+      "prompt": "Use case: lighting-weather and precise-object-edit. Edit this exact 1659x948 pixel-art workshop illustration, preserving EXACT composition, pixel scale, window frame geometry, character and furniture registration. This is a nighttime relight and clean environmental animation plate. Change ONLY the view through the glass panes: sky, roofs, buildings, blossoms and wet street must become genuinely DARK deep desaturated blue-black peaceful night, not blue dusk. Greatly reduce broad blue illumination, subdue pink blossoms, reduce wet reflections to small quiet glints. Retain only a few warm inhabited windows and small streetlights. REMOVE all painted rain streaks and raindrops from the glass/view, replacing with natural matching dark city/sky textures, because they will animate separately. Also REMOVE the entire painted white steam plume above the mug (near x1365 y540), reconstructing matching background behind it. Do not change the mug or its rim. CRITICAL INVARIANTS: Tinker Panda face eyes ears head proportions scarf paws outfit tail and chair must remain exactly the same. Desk lamp, laptop keyboard desk notebook plants shelves and ALL interior pixels stay registered and unchanged, with comfortable existing warm lighting. Do not dim the interior or apply a blanket dark overlay. No new objects, stars, moon, text, labels or watermark. Full opaque scene, exact framing. Output at 1659x948 if possible."
+    },
+    {
+      "input": "source/typing-reference-4x.png",
+      "output": "source/clean-paws-generated.png",
+      "prompt": "Use case: precise-object-edit. This is an enlarged pixel-art crop of a mascot typing at a keyboard. Create a CLEAN BACKGROUND animation plate at EXACTLY the same framing. Remove BOTH dark brown paws/hands and lower forearms that rest over the keyboard, leaving their upper orange arms and shoulders unchanged. Reconstruct the hidden dark charcoal overalls/clothing behind the hands and the small keyboard keys underneath each removed paw with matching existing pixel texture, dark outlines and warm palette. Do NOT add new hands or arms or change the laptop, existing visible keys, buttons, scarf, background wall, upper orange sleeves or desk. This is a local clean plate that will be hidden underneath original animated paw layers; only the occupied paw areas should be reconstructed. Keep exact camera registration and apparent pixel scale. No text or labels. Output opaque crop exactly1200x680 if possible."
+    },
+    {
+      "input": "source/typing-reference-4x.png",
+      "output": "source/contact-study-generated.png",
+      "productionUse": false,
+      "prompt": "Use case: precise-object-edit. Make one economical typing key-contact animation cel from this EXACT enlarged crop of Tinker Panda's forearms and paws at his laptop. Keep camera framing, every keyboard key, laptop edge, scarf, overall buttons, torso, orange upper arms and background absolutely stationary and identical. Change ONLY the two dark brown paws: the nearer paw (large lower-left) curls its front two fingers down onto two keyboard keys with a small flattened contact contour, a tiny wrist bend; the farther paw (smaller upper-right) lifts its front fingertips a very small amount (12 pixels in this 4x enlarged crop equivalent3 native pixels). Preserve exact paw sizes, outlines, warm brown/charcoal palette and textured pixel clusters. This is restrained typing, no exaggerated raising. No new fingers/claws, no new objects, no glow. Original artwork is canonical. Output same opaque full crop at exactly1200x680 if possible. Key contact should read clearly with changed fingertip contours; everything else fixed. No text."
+    }
+  ]
+}

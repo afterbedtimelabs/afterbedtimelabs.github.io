@@ -1,0 +1,26 @@
+[
+  {
+    "overflow": false,
+    "overlap": false,
+    "sprite": 192,
+    "width": 320
+  },
+  {
+    "overflow": false,
+    "overlap": false,
+    "sprite": 192,
+    "width": 768
+  },
+  {
+    "overflow": false,
+    "overlap": false,
+    "sprite": 192,
+    "width": 820
+  },
+  {
+    "overflow": false,
+    "overlap": false,
+    "sprite": 192,
+    "width": 390
+  }
+]

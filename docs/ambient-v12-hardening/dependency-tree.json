@@ -1,0 +1,90 @@
+{
+  "version": "0.0.1",
+  "name": "afterbedtimelabs.github.io",
+  "dependencies": {
+    "@astrojs/check": {
+      "version": "0.9.10",
+      "resolved": "https://registry.npmjs.org/@astrojs/check/-/check-0.9.10.tgz",
+      "overridden": false,
+      "dependencies": {
+        "@astrojs/language-server": {
+          "version": "2.17.1",
+          "resolved": "https://registry.npmjs.org/@astrojs/language-server/-/language-server-2.17.1.tgz",
+          "overridden": false,
+          "dependencies": {
+            "volar-service-yaml": {
+              "version": "0.0.71",
+              "resolved": "https://registry.npmjs.org/volar-service-yaml/-/volar-service-yaml-0.0.71.tgz",
+              "overridden": false,
+              "dependencies": {
+                "yaml-language-server": {
+                  "version": "1.23.0",
+                  "resolved": "https://registry.npmjs.org/yaml-language-server/-/yaml-language-server-1.23.0.tgz",
+                  "overridden": false,
+                  "dependencies": {
+                    "ajv": {
+                      "version": "8.20.0",
+                      "resolved": "https://registry.npmjs.org/ajv/-/ajv-8.20.0.tgz",
+                      "overridden": false,
+                      "dependencies": {
+                        "fast-uri": {
+                          "version": "3.1.9",
+                          "resolved": "https://registry.npmjs.org/fast-uri/-/fast-uri-3.1.9.tgz",
+                          "overridden": false
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "@astrojs/rss": {
+      "version": "4.0.19",
+      "resolved": "https://registry.npmjs.org/@astrojs/rss/-/rss-4.0.19.tgz",
+      "overridden": false,
+      "dependencies": {
+        "zod": {
+          "version": "4.6.6",
+          "resolved": "https://registry.npmjs.org/zod/-/zod-4.6.6.tgz",
+          "overridden": false
+        }
+      }
+    },
+    "@astrojs/sitemap": {
+      "version": "3.7.4",
+      "resolved": "https://registry.npmjs.org/@astrojs/sitemap/-/sitemap-3.7.4.tgz",
+      "overridden": false,
+      "dependencies": {
+        "zod": {
+          "version": "4.6.6"
+        }
+      }
+    },
+    "astro": {
+      "version": "7.3.5",
+      "resolved": "https://registry.npmjs.org/astro/-/astro-7.3.5.tgz",
+      "overridden": false,
+      "dependencies": {
+        "unifont": {
+          "version": "0.7.5",
+          "resolved": "https://registry.npmjs.org/unifont/-/unifont-0.7.5.tgz",
+          "overridden": false,
+          "dependencies": {
+            "undici": {
+              "version": "8.12.2",
+              "resolved": "https://registry.npmjs.org/undici/-/undici-8.12.2.tgz",
+              "overridden": false
+            }
+          }
+        },
+        "zod": {
+          "version": "4.6.6"
+        }
+      }
+    }
+  }
+}

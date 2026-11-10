@@ -1,0 +1,101 @@
+[
+  {
+    "status": "fulfilled",
+    "value": {
+      "requested": "https://afterbedtimelabs.dev/",
+      "url": "https://afterbedtimelabs.dev/",
+      "status": 200,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "server": "GitHub.com",
+        "cache-control": "max-age=600"
+      },
+      "canonical": "<link rel=\"canonical\" href=\"https://afterbedtimelabs.dev/\">",
+      "locations": []
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "requested": "https://afterbedtimelabs.dev/sitemap-index.xml",
+      "url": "https://afterbedtimelabs.dev/sitemap-index.xml",
+      "status": 200,
+      "headers": {
+        "content-type": "application/xml",
+        "server": "GitHub.com",
+        "cache-control": "max-age=600"
+      },
+      "locations": [
+        "https://afterbedtimelabs.dev/sitemap-0.xml"
+      ],
+      "bodyPreview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><sitemapindex xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"><sitemap><loc>https://afterbedtimelabs.dev/sitemap-0.xml</loc></sitemap></sitemapindex>"
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "requested": "https://afterbedtimelabs.dev/sitemap-0.xml",
+      "url": "https://afterbedtimelabs.dev/sitemap-0.xml",
+      "status": 200,
+      "headers": {
+        "content-type": "application/xml",
+        "server": "GitHub.com",
+        "cache-control": "max-age=600"
+      },
+      "locations": [
+        "https://afterbedtimelabs.dev/",
+        "https://afterbedtimelabs.dev/about/",
+        "https://afterbedtimelabs.dev/navi/",
+        "https://afterbedtimelabs.dev/navi/privacy/",
+        "https://afterbedtimelabs.dev/projects/",
+        "https://afterbedtimelabs.dev/projects/dungeon-deckbuilder/",
+        "https://afterbedtimelabs.dev/projects/local-ai-utilities/",
+        "https://afterbedtimelabs.dev/projects/midnight-chiba/",
+        "https://afterbedtimelabs.dev/projects/mission-control/",
+        "https://afterbedtimelabs.dev/projects/nightstock/",
+        "https://afterbedtimelabs.dev/projects/riku/",
+        "https://afterbedtimelabs.dev/writing/",
+        "https://afterbedtimelabs.dev/writing/meet-dungeon-deckbuilder/",
+        "https://afterbedtimelabs.dev/writing/meet-midnight-chiba/",
+        "https://afterbedtimelabs.dev/writing/meet-mission-control/",
+        "https://afterbedtimelabs.dev/writing/meet-nightstock/",
+        "https://afterbedtimelabs.dev/writing/meet-riku/",
+        "https://afterbedtimelabs.dev/writing/topics/games/",
+        "https://afterbedtimelabs.dev/writing/topics/local-ai/",
+        "https://afterbedtimelabs.dev/writing/topics/project-introductions/",
+        "https://afterbedtimelabs.dev/writing/topics/studio-notes/",
+        "https://afterbedtimelabs.dev/writing/welcome-to-after-bedtime-labs/"
+      ],
+      "bodyPreview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\" xmlns:news=\"http://www.google.com/schemas/sitemap-news/0.9\" xmlns:xhtml=\"http://www.w3.org/1999/xhtml\" xmlns:image=\"http://www.google.com/schemas/sitemap-image/1.1\" xmlns:video=\"http://www.google.com/schemas/sitemap-video/1.1\"><url><loc>https://afterbedtimelabs.dev/</loc></url><url><loc>https://afterbedtimelabs.dev/about/</loc></url><url><loc>https://afterbedtimelabs.dev/navi/</loc></url><url><loc>https://afterbedtimelabs.dev/navi/privacy/</loc></url><url><loc>https://afterbedtimelabs.dev/projects/</loc></url><url><loc>https://afterbedtimelabs.dev/projects/dungeon-deckbuilder/</loc></url><url><loc>https://afterbedtimelabs.dev/projects/local-ai-utilities/</loc></url><url><loc>https://afterbedtimelabs.dev/projects/midnight-chiba/</loc></url><url><loc>https://afterbedtimelabs.dev/projects/mission-control/</loc></url><url><loc>https://afterbedtimelabs.dev/projects/nightstock/</loc></url><url><loc>https://afterbedtimelabs.dev/projects/riku/</loc></url><url><loc>https://afterbedtimelabs.dev/writing/</loc></url><url><loc>https://afterbedtimelabs.dev/writing/meet-dungeon-deckbuilder/</loc></url><url><loc>https://afterbedtimelabs.dev/writing/meet-midnight-chiba/</loc></url><url><loc>https://afterbedtimelabs.dev/writing/meet-mission-control/</loc></url><url><loc>https://afterbedtimelabs.dev/writing/meet-nightstock/</loc></url><url><loc>https://afterbedtimelabs.dev/writing/meet-riku/</loc></url><url><loc>https://afterbedtimelabs.dev/writing/topics/games/</loc></url><url><loc>https://afterbedtimelabs.dev/writing/topics/local-ai/</loc></url><url><loc>https://afterbedtimelabs.dev/writing/topics/project-introductions/</loc></url><url><loc>https://afterbedtimelabs.dev/writing/topics/studio-notes/</loc></url><url><loc>https://afterbedtimelabs.dev/writing/welcome-to-after-bedtime-labs/</loc></url></urlset>"
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "requested": "https://afterbedtimelabs.dev/robots.txt",
+      "url": "https://afterbedtimelabs.dev/robots.txt",
+      "status": 200,
+      "headers": {
+        "content-type": "text/plain; charset=utf-8",
+        "server": "GitHub.com",
+        "cache-control": "max-age=600"
+      },
+      "locations": [],
+      "bodyPreview": "User-agent: *\nAllow: /\n\nSitemap: https://afterbedtimelabs.dev/sitemap-index.xml\n"
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "requested": "https://afterbedtimelabs.dev/rss.xml",
+      "url": "https://afterbedtimelabs.dev/rss.xml",
+      "status": 200,
+      "headers": {
+        "content-type": "application/xml",
+        "server": "GitHub.com",
+        "cache-control": "max-age=600"
+      },
+      "locations": []
+    }
+  }
+]

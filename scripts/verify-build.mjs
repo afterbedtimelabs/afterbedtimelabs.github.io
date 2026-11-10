@@ -80,10 +80,11 @@ for (const slug of ['mission-control', 'midnight-chiba', 'dungeon-deckbuilder', 
   assert(article?.source.includes('Work in progress'), `${file}: missing development status`);
   if (slug !== 'riku') {
     const captures = article?.tags.filter((tag) => tag.name === 'img' && tag.attrs.src?.startsWith('/images/projects/showcase/')) ?? [];
-    assert(captures.length === 3, `${file}: expected three genuine project captures`);
-    const [width, height] = slug === 'mission-control' ? ['1265', '712'] : ['1280', '720'];
+    const captureCount = slug === 'nightstock' ? 6 : 3;
+    assert(captures.length === captureCount, `${file}: expected ${captureCount} genuine project captures`);
+    const [width, height] = slug === 'mission-control' ? ['1265', '712'] : slug === 'nightstock' ? ['1920', '1080'] : ['1280', '720'];
     assert(captures.every(({ attrs }) => attrs.alt?.trim() && attrs.width === width && attrs.height === height && attrs.srcset), `${file}: capture must have alt text, dimensions, and responsive sources`);
-    assert((article?.markup.match(/<figcaption\b/g) ?? []).length === 3, `${file}: expected three screenshot captions`);
+    assert((article?.markup.match(/<figcaption\b/g) ?? []).length === captureCount, `${file}: expected ${captureCount} screenshot captions`);
     if (slug === 'mission-control') assert(article?.source.includes('sample data throughout'), `${file}: missing isolated demo disclosure`);
   } else {
     assert(article?.source.includes('Character screenshots will come later'), `${file}: missing character artwork status`);

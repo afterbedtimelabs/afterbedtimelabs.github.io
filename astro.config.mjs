@@ -11,6 +11,7 @@ if (!['https:', 'http:'].includes(site.protocol) || site.pathname !== '/' || sit
 }
 
 export default defineConfig({
+  devToolbar: { enabled: false },
   site: site.href,
   output: 'static',
   trailingSlash: 'always',

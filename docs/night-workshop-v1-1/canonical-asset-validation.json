@@ -1,0 +1,142 @@
+{
+  "passed": true,
+  "canonicalSha256": "b7a25d71ae8b74a0f692462090809843fab594eb58ef38f8c4e6d3bc68f3963e",
+  "changedFacePixels": 191,
+  "unchangedNonFacePixels": 8122,
+  "alphaIdenticalToV32": true,
+  "opaquePaletteColors": 19,
+  "animationFrameCount": 18,
+  "pngBytes": 16400,
+  "preservationChecked": 74,
+  "preservationRawMatches": 47,
+  "preservationNormalizedMatches": 27,
+  "preservationAbsent": 106,
+  "frames": [
+    {
+      "state": "idle:0",
+      "durationMs": 1200,
+      "changedPixels": 0,
+      "opaquePixels": 5215,
+      "faceExact": true
+    },
+    {
+      "state": "idle:1",
+      "durationMs": 1200,
+      "changedPixels": 55,
+      "opaquePixels": 5215,
+      "faceExact": true
+    },
+    {
+      "state": "idle:2",
+      "durationMs": 1200,
+      "changedPixels": 0,
+      "opaquePixels": 5215,
+      "faceExact": true
+    },
+    {
+      "state": "blink:0",
+      "durationMs": 120,
+      "changedPixels": 0,
+      "opaquePixels": 5215,
+      "faceExact": "Except eye aperture"
+    },
+    {
+      "state": "blink:1",
+      "durationMs": 70,
+      "changedPixels": 69,
+      "opaquePixels": 5215,
+      "faceExact": "Except eye aperture"
+    },
+    {
+      "state": "blink:2",
+      "durationMs": 90,
+      "changedPixels": 205,
+      "opaquePixels": 5215,
+      "faceExact": "Except eye aperture"
+    },
+    {
+      "state": "blink:3",
+      "durationMs": 70,
+      "changedPixels": 69,
+      "opaquePixels": 5215,
+      "faceExact": "Except eye aperture"
+    },
+    {
+      "state": "blink:4",
+      "durationMs": 120,
+      "changedPixels": 0,
+      "opaquePixels": 5215,
+      "faceExact": "Except eye aperture"
+    },
+    {
+      "state": "happy:0",
+      "durationMs": 200,
+      "changedPixels": 0,
+      "opaquePixels": 5215,
+      "faceExact": "Exact after inverse translation"
+    },
+    {
+      "state": "happy:1",
+      "durationMs": 120,
+      "changedPixels": 1736,
+      "opaquePixels": 5215,
+      "faceExact": "Exact after inverse translation"
+    },
+    {
+      "state": "happy:2",
+      "durationMs": 180,
+      "changedPixels": 2662,
+      "opaquePixels": 5215,
+      "faceExact": "Exact after inverse translation"
+    },
+    {
+      "state": "happy:3",
+      "durationMs": 120,
+      "changedPixels": 1736,
+      "opaquePixels": 5215,
+      "faceExact": "Exact after inverse translation"
+    },
+    {
+      "state": "happy:4",
+      "durationMs": 200,
+      "changedPixels": 0,
+      "opaquePixels": 5215,
+      "faceExact": "Exact after inverse translation"
+    },
+    {
+      "state": "tail:0",
+      "durationMs": 400,
+      "changedPixels": 0,
+      "opaquePixels": 5215,
+      "faceExact": true
+    },
+    {
+      "state": "tail:1",
+      "durationMs": 220,
+      "changedPixels": 143,
+      "opaquePixels": 5215,
+      "faceExact": true
+    },
+    {
+      "state": "tail:2",
+      "durationMs": 400,
+      "changedPixels": 0,
+      "opaquePixels": 5215,
+      "faceExact": true
+    },
+    {
+      "state": "tail:3",
+      "durationMs": 220,
+      "changedPixels": 143,
+      "opaquePixels": 5215,
+      "faceExact": true
+    },
+    {
+      "state": "tail:4",
+      "durationMs": 400,
+      "changedPixels": 0,
+      "opaquePixels": 5215,
+      "faceExact": true
+    }
+  ]
+}

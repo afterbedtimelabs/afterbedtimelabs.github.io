@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-05",
+  "ownerDesktopAppearanceApproval": "2026-11-05, localhost:4326, user instruction",
+  "freshApprovedPreviewObservation": {
+    "url": "http://localhost:4326/",
+    "viewport": {"width": 1440, "height": 1000},
+    "theme": "dark",
+    "horizontalOverflow": false,
+    "mascot": "/mascot/tinker-panda-v3.4/front.png",
+    "figure": {"x":848.578125,"y":206.0625,"width":384,"height":395.234375},
+    "stage": {"x":848.578125,"y":206.0625,"width":384,"height":224},
+    "greet": {"x":914.578125,"y":504.296875,"width":101.65625,"height":44},
+    "pause": {"x":1024.234375,"y":504.296875,"width":142.34375,"height":44},
+    "message": {"x":890.578125,"y":557.296875,"width":300,"height":44}
+  },
+  "freshCandidateBrowserMatrix": "blocked",
+  "browserBlockers": [
+    "In-app browser: no browser route available when navigating to candidate",
+    "Local Chrome: Computer Use app approval timed out",
+    "Codex browser opening: app tool request failed"
+  ],
+  "httpBlocker": "connect EACCES 127.0.0.1:4327",
+  "approvedWorktreeDirectStatus": "blocked by filesystem Permission denied",
+  "historicalEvidence": [
+    "docs/nightstock-tinker-review/browser-checks.json",
+    "docs/nightstock-tinker-review/responsive-checks.json",
+    "docs/tinker-panda-v3.4/browser-validation.json"
+  ],
+  "historicalScreenshotsInspectedAgain": [
+    "docs/nightstock-tinker-review/screenshots/home-mobile-light.jpg",
+    "docs/nightstock-tinker-review/screenshots/home-mobile-dark.jpg",
+    "docs/nightstock-tinker-review/screenshots/home-desktop-light.jpg"
+  ],
+  "nativeReducedMotion": "not tested; 15 deterministic controller scenarios passed",
+  "preservation": {
+    "originalTrackedAndStagedClean": true,
+    "originalLocalBranchesUnchanged": 8,
+    "originalRemoteRefsUnchanged": 7,
+    "historicalArtExactRawHashMatches": 106,
+    "livingWorkshopExistingStagedDeletionsRetained": 82,
+    "livingWorkshopLinkedWorktreeClean": true
+  }
+}

@@ -1,0 +1,2474 @@
+{
+  "started": "2026-11-08T23:43:56.420Z",
+  "url": "http://127.0.0.1:4352",
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Edg/157.0.4341.42",
+    "revision": "@7b1486be4607d53d9f93841b7c776bc525ca74b7",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+    "jsVersion": "15.7.11.4"
+  },
+  "safety": {
+    "headless": true,
+    "browserAudioMuted": true,
+    "isolatedProfile": true,
+    "sandboxDisabled": false
+  },
+  "assertions": [
+    {
+      "name": "1440 dark normal layout",
+      "pass": true,
+      "evidence": {
+        "width": 1440,
+        "scrollWidth": 1425,
+        "mode": false,
+        "motion": "running",
+        "broken": [],
+        "pendingLazy": [],
+        "controls": [
+          {
+            "text": "▷ Play music",
+            "width": 96.78125,
+            "height": 44,
+            "left": 934.15625,
+            "right": 1030.9375
+          },
+          {
+            "text": "Volume ⌄",
+            "width": 83.03125,
+            "height": 44,
+            "left": 1048.9375,
+            "right": 1131.96875
+          },
+          {
+            "text": "Pause motion",
+            "width": 100.03125,
+            "height": 44,
+            "left": 1149.96875,
+            "right": 1250
+          },
+          {
+            "text": "Stay awhile ↗",
+            "width": 119,
+            "height": 44,
+            "left": 1257,
+            "right": 1376
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "1440 dark Tinker and Isaac remain distinct",
+      "pass": true,
+      "evidence": {
+        "caption": "Meet Tinker Panda, the lab’s resident mascot.",
+        "captionVisible": true,
+        "description": "Tinker Panda, the lab’s resident mascot, in his teal scarf at a wooden desk beside a rainy nighttime city window. A warm lamp lights a notebook, mug, and small electronics project.",
+        "intro": "I’m Isaac, a software engineer building useful software, local AI experiments, and games worth getting lost in."
+      }
+    },
+    {
+      "name": "1440 dark no autoplay",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null,
+          "loop": true
+        },
+        "audioElements": 1,
+        "rainControls": 0,
+        "status": "Sound is off. Make yourself at home."
+      }
+    },
+    {
+      "name": "1440 dark ambient layout",
+      "pass": true,
+      "evidence": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "mode": true,
+        "motion": "running",
+        "broken": [],
+        "pendingLazy": [],
+        "controls": [
+          {
+            "text": "↙ Back to portfolio",
+            "width": 128.203125,
+            "height": 44,
+            "left": 1283.796875,
+            "right": 1412
+          },
+          {
+            "text": "▷ Play music",
+            "width": 96.78125,
+            "height": 44,
+            "left": 1096.15625,
+            "right": 1192.9375
+          },
+          {
+            "text": "Volume ⌄",
+            "width": 83.03125,
+            "height": 44,
+            "left": 1210.9375,
+            "right": 1293.96875
+          },
+          {
+            "text": "Pause motion",
+            "width": 100.03125,
+            "height": 44,
+            "left": 1311.96875,
+            "right": 1412
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "1440 dark Escape returns focus",
+      "pass": true,
+      "evidence": {
+        "focus": "stay-button",
+        "scrollY": 0
+      }
+    },
+    {
+      "name": "1440 light normal layout",
+      "pass": true,
+      "evidence": {
+        "width": 1440,
+        "scrollWidth": 1425,
+        "mode": false,
+        "motion": "running",
+        "broken": [],
+        "pendingLazy": [],
+        "controls": [
+          {
+            "text": "▷ Play music",
+            "width": 96.78125,
+            "height": 44,
+            "left": 934.15625,
+            "right": 1030.9375
+          },
+          {
+            "text": "Volume ⌄",
+            "width": 83.03125,
+            "height": 44,
+            "left": 1048.9375,
+            "right": 1131.96875
+          },
+          {
+            "text": "Pause motion",
+            "width": 100.03125,
+            "height": 44,
+            "left": 1149.96875,
+            "right": 1250
+          },
+          {
+            "text": "Stay awhile ↗",
+            "width": 119,
+            "height": 44,
+            "left": 1257,
+            "right": 1376
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "1440 light Tinker and Isaac remain distinct",
+      "pass": true,
+      "evidence": {
+        "caption": "Meet Tinker Panda, the lab’s resident mascot.",
+        "captionVisible": true,
+        "description": "Tinker Panda, the lab’s resident mascot, in his teal scarf at a wooden desk beside a rainy nighttime city window. A warm lamp lights a notebook, mug, and small electronics project.",
+        "intro": "I’m Isaac, a software engineer building useful software, local AI experiments, and games worth getting lost in."
+      }
+    },
+    {
+      "name": "1440 light no autoplay",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null,
+          "loop": true
+        },
+        "audioElements": 1,
+        "rainControls": 0,
+        "status": "Sound is off. Make yourself at home."
+      }
+    },
+    {
+      "name": "1440 light ambient layout",
+      "pass": true,
+      "evidence": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "mode": true,
+        "motion": "running",
+        "broken": [],
+        "pendingLazy": [],
+        "controls": [
+          {
+            "text": "↙ Back to portfolio",
+            "width": 128.203125,
+            "height": 44,
+            "left": 1283.796875,
+            "right": 1412
+          },
+          {
+            "text": "▷ Play music",
+            "width": 96.78125,
+            "height": 44,
+            "left": 1096.15625,
+            "right": 1192.9375
+          },
+          {
+            "text": "Volume ⌄",
+            "width": 83.03125,
+            "height": 44,
+            "left": 1210.9375,
+            "right": 1293.96875
+          },
+          {
+            "text": "Pause motion",
+            "width": 100.03125,
+            "height": 44,
+            "left": 1311.96875,
+            "right": 1412
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "1440 light Escape returns focus",
+      "pass": true,
+      "evidence": {
+        "focus": "stay-button",
+        "scrollY": 0
+      }
+    },
+    {
+      "name": "390 dark normal layout",
+      "pass": true,
+      "evidence": {
+        "width": 390,
+        "scrollWidth": 390,
+        "mode": false,
+        "motion": "running",
+        "broken": [],
+        "pendingLazy": [
+          "/images/projects/showcase/deck-mage.webp",
+          "/images/projects/showcase/nightstock-v131-road.webp"
+        ],
+        "controls": [
+          {
+            "text": "▷ Play music",
+            "width": 324,
+            "height": 44,
+            "left": 33,
+            "right": 357
+          },
+          {
+            "text": "Volume ⌄",
+            "width": 72.796875,
+            "height": 44,
+            "left": 284.203125,
+            "right": 357
+          },
+          {
+            "text": "Pause motion",
+            "width": 84.03125,
+            "height": 44,
+            "left": 33,
+            "right": 117.03125
+          },
+          {
+            "text": "Stay awhile ↗",
+            "width": 94.078125,
+            "height": 44,
+            "left": 262.921875,
+            "right": 357
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "390 dark Tinker and Isaac remain distinct",
+      "pass": true,
+      "evidence": {
+        "caption": "Meet Tinker Panda, the lab’s resident mascot.",
+        "captionVisible": true,
+        "description": "Tinker Panda, the lab’s resident mascot, in his teal scarf at a wooden desk beside a rainy nighttime city window. A warm lamp lights a notebook, mug, and small electronics project.",
+        "intro": "I’m Isaac, a software engineer building useful software, local AI experiments, and games worth getting lost in."
+      }
+    },
+    {
+      "name": "390 dark no autoplay",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null,
+          "loop": true
+        },
+        "audioElements": 1,
+        "rainControls": 0,
+        "status": "Sound is off. Make yourself at home."
+      }
+    },
+    {
+      "name": "390 dark ambient layout",
+      "pass": true,
+      "evidence": {
+        "width": 390,
+        "scrollWidth": 390,
+        "mode": true,
+        "motion": "running",
+        "broken": [],
+        "pendingLazy": [],
+        "controls": [
+          {
+            "text": "↙ Back to portfolio",
+            "width": 113.859375,
+            "height": 44,
+            "left": 260.140625,
+            "right": 374
+          },
+          {
+            "text": "▷ Play music",
+            "width": 174.515625,
+            "height": 44,
+            "left": 16,
+            "right": 190.515625
+          },
+          {
+            "text": "Volume ⌄",
+            "width": 72.796875,
+            "height": 44,
+            "left": 301.203125,
+            "right": 374
+          },
+          {
+            "text": "Pause motion",
+            "width": 84.03125,
+            "height": 44,
+            "left": 200.515625,
+            "right": 284.546875
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "390 dark Escape returns focus",
+      "pass": true,
+      "evidence": {
+        "focus": "stay-button",
+        "scrollY": 172
+      }
+    },
+    {
+      "name": "390 light normal layout",
+      "pass": true,
+      "evidence": {
+        "width": 390,
+        "scrollWidth": 390,
+        "mode": false,
+        "motion": "running",
+        "broken": [],
+        "pendingLazy": [
+          "/images/projects/showcase/deck-mage.webp",
+          "/images/projects/showcase/nightstock-v131-road.webp"
+        ],
+        "controls": [
+          {
+            "text": "▷ Play music",
+            "width": 324,
+            "height": 44,
+            "left": 33,
+            "right": 357
+          },
+          {
+            "text": "Volume ⌄",
+            "width": 72.796875,
+            "height": 44,
+            "left": 284.203125,
+            "right": 357
+          },
+          {
+            "text": "Pause motion",
+            "width": 84.03125,
+            "height": 44,
+            "left": 33,
+            "right": 117.03125
+          },
+          {
+            "text": "Stay awhile ↗",
+            "width": 94.078125,
+            "height": 44,
+            "left": 262.921875,
+            "right": 357
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "390 light Tinker and Isaac remain distinct",
+      "pass": true,
+      "evidence": {
+        "caption": "Meet Tinker Panda, the lab’s resident mascot.",
+        "captionVisible": true,
+        "description": "Tinker Panda, the lab’s resident mascot, in his teal scarf at a wooden desk beside a rainy nighttime city window. A warm lamp lights a notebook, mug, and small electronics project.",
+        "intro": "I’m Isaac, a software engineer building useful software, local AI experiments, and games worth getting lost in."
+      }
+    },
+    {
+      "name": "390 light no autoplay",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null,
+          "loop": true
+        },
+        "audioElements": 1,
+        "rainControls": 0,
+        "status": "Sound is off. Make yourself at home."
+      }
+    },
+    {
+      "name": "390 light ambient layout",
+      "pass": true,
+      "evidence": {
+        "width": 390,
+        "scrollWidth": 390,
+        "mode": true,
+        "motion": "running",
+        "broken": [],
+        "pendingLazy": [],
+        "controls": [
+          {
+            "text": "↙ Back to portfolio",
+            "width": 113.859375,
+            "height": 44,
+            "left": 260.140625,
+            "right": 374
+          },
+          {
+            "text": "▷ Play music",
+            "width": 174.515625,
+            "height": 44,
+            "left": 16,
+            "right": 190.515625
+          },
+          {
+            "text": "Volume ⌄",
+            "width": 72.796875,
+            "height": 44,
+            "left": 301.203125,
+            "right": 374
+          },
+          {
+            "text": "Pause motion",
+            "width": 84.03125,
+            "height": 44,
+            "left": 200.515625,
+            "right": 284.546875
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "390 light Escape returns focus",
+      "pass": true,
+      "evidence": {
+        "focus": "stay-button",
+        "scrollY": 172
+      }
+    },
+    {
+      "name": "320 dark normal layout",
+      "pass": true,
+      "evidence": {
+        "width": 320,
+        "scrollWidth": 320,
+        "mode": false,
+        "motion": "running",
+        "broken": [],
+        "pendingLazy": [
+          "/images/projects/showcase/deck-mage.webp",
+          "/images/projects/showcase/nightstock-v131-road.webp"
+        ],
+        "controls": [
+          {
+            "text": "▷ Play music",
+            "width": 254,
+            "height": 44,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "text": "Volume ⌄",
+            "width": 72.796875,
+            "height": 44,
+            "left": 214.203125,
+            "right": 287
+          },
+          {
+            "text": "Pause motion",
+            "width": 84.03125,
+            "height": 44,
+            "left": 33,
+            "right": 117.03125
+          },
+          {
+            "text": "Stay awhile ↗",
+            "width": 94.078125,
+            "height": 44,
+            "left": 192.921875,
+            "right": 287
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "320 dark Tinker and Isaac remain distinct",
+      "pass": true,
+      "evidence": {
+        "caption": "Meet Tinker Panda, the lab’s resident mascot.",
+        "captionVisible": true,
+        "description": "Tinker Panda, the lab’s resident mascot, in his teal scarf at a wooden desk beside a rainy nighttime city window. A warm lamp lights a notebook, mug, and small electronics project.",
+        "intro": "I’m Isaac, a software engineer building useful software, local AI experiments, and games worth getting lost in."
+      }
+    },
+    {
+      "name": "320 dark no autoplay",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null,
+          "loop": true
+        },
+        "audioElements": 1,
+        "rainControls": 0,
+        "status": "Sound is off. Make yourself at home."
+      }
+    },
+    {
+      "name": "320 dark ambient layout",
+      "pass": true,
+      "evidence": {
+        "width": 320,
+        "scrollWidth": 320,
+        "mode": true,
+        "motion": "running",
+        "broken": [],
+        "pendingLazy": [],
+        "controls": [
+          {
+            "text": "↙ Back to portfolio",
+            "width": 113.859375,
+            "height": 44,
+            "left": 190.140625,
+            "right": 304
+          },
+          {
+            "text": "▷ Play music",
+            "width": 139.515625,
+            "height": 44,
+            "left": 16,
+            "right": 155.515625
+          },
+          {
+            "text": "Volume ⌄",
+            "width": 72.796875,
+            "height": 44,
+            "left": 231.203125,
+            "right": 304
+          },
+          {
+            "text": "Pause motion",
+            "width": 84.03125,
+            "height": 44,
+            "left": 165.515625,
+            "right": 249.546875
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "320 dark Escape returns focus",
+      "pass": true,
+      "evidence": {
+        "focus": "stay-button",
+        "scrollY": 288
+      }
+    },
+    {
+      "name": "320 light normal layout",
+      "pass": true,
+      "evidence": {
+        "width": 320,
+        "scrollWidth": 320,
+        "mode": false,
+        "motion": "running",
+        "broken": [],
+        "pendingLazy": [
+          "/images/projects/showcase/deck-mage.webp",
+          "/images/projects/showcase/nightstock-v131-road.webp"
+        ],
+        "controls": [
+          {
+            "text": "▷ Play music",
+            "width": 254,
+            "height": 44,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "text": "Volume ⌄",
+            "width": 72.796875,
+            "height": 44,
+            "left": 214.203125,
+            "right": 287
+          },
+          {
+            "text": "Pause motion",
+            "width": 84.03125,
+            "height": 44,
+            "left": 33,
+            "right": 117.03125
+          },
+          {
+            "text": "Stay awhile ↗",
+            "width": 94.078125,
+            "height": 44,
+            "left": 192.921875,
+            "right": 287
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "320 light Tinker and Isaac remain distinct",
+      "pass": true,
+      "evidence": {
+        "caption": "Meet Tinker Panda, the lab’s resident mascot.",
+        "captionVisible": true,
+        "description": "Tinker Panda, the lab’s resident mascot, in his teal scarf at a wooden desk beside a rainy nighttime city window. A warm lamp lights a notebook, mug, and small electronics project.",
+        "intro": "I’m Isaac, a software engineer building useful software, local AI experiments, and games worth getting lost in."
+      }
+    },
+    {
+      "name": "320 light no autoplay",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null,
+          "loop": true
+        },
+        "audioElements": 1,
+        "rainControls": 0,
+        "status": "Sound is off. Make yourself at home."
+      }
+    },
+    {
+      "name": "320 light ambient layout",
+      "pass": true,
+      "evidence": {
+        "width": 320,
+        "scrollWidth": 320,
+        "mode": true,
+        "motion": "running",
+        "broken": [],
+        "pendingLazy": [],
+        "controls": [
+          {
+            "text": "↙ Back to portfolio",
+            "width": 113.859375,
+            "height": 44,
+            "left": 190.140625,
+            "right": 304
+          },
+          {
+            "text": "▷ Play music",
+            "width": 139.515625,
+            "height": 44,
+            "left": 16,
+            "right": 155.515625
+          },
+          {
+            "text": "Volume ⌄",
+            "width": 72.796875,
+            "height": 44,
+            "left": 231.203125,
+            "right": 304
+          },
+          {
+            "text": "Pause motion",
+            "width": 84.03125,
+            "height": 44,
+            "left": 165.515625,
+            "right": 249.546875
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "320 light Escape returns focus",
+      "pass": true,
+      "evidence": {
+        "focus": "stay-button",
+        "scrollY": 288
+      }
+    },
+    {
+      "name": "768 dark normal layout",
+      "pass": true,
+      "evidence": {
+        "width": 768,
+        "scrollWidth": 753,
+        "mode": false,
+        "motion": "running",
+        "broken": [],
+        "pendingLazy": [
+          "/images/projects/showcase/nightstock-v131-road.webp"
+        ],
+        "controls": [
+          {
+            "text": "▷ Play music",
+            "width": 85.078125,
+            "height": 44,
+            "left": 33,
+            "right": 118.078125
+          },
+          {
+            "text": "Volume ⌄",
+            "width": 72.796875,
+            "height": 44,
+            "left": 647.203125,
+            "right": 720
+          },
+          {
+            "text": "Pause motion",
+            "width": 84.03125,
+            "height": 44,
+            "left": 534.890625,
+            "right": 618.921875
+          },
+          {
+            "text": "Stay awhile ↗",
+            "width": 94.078125,
+            "height": 44,
+            "left": 625.921875,
+            "right": 720
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "768 dark Tinker and Isaac remain distinct",
+      "pass": true,
+      "evidence": {
+        "caption": "Meet Tinker Panda, the lab’s resident mascot.",
+        "captionVisible": true,
+        "description": "Tinker Panda, the lab’s resident mascot, in his teal scarf at a wooden desk beside a rainy nighttime city window. A warm lamp lights a notebook, mug, and small electronics project.",
+        "intro": "I’m Isaac, a software engineer building useful software, local AI experiments, and games worth getting lost in."
+      }
+    },
+    {
+      "name": "768 dark no autoplay",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null,
+          "loop": true
+        },
+        "audioElements": 1,
+        "rainControls": 0,
+        "status": "Sound is off. Make yourself at home."
+      }
+    },
+    {
+      "name": "768 dark ambient layout",
+      "pass": true,
+      "evidence": {
+        "width": 768,
+        "scrollWidth": 768,
+        "mode": true,
+        "motion": "running",
+        "broken": [],
+        "pendingLazy": [],
+        "controls": [
+          {
+            "text": "↙ Back to portfolio",
+            "width": 113.859375,
+            "height": 44,
+            "left": 638.140625,
+            "right": 752
+          },
+          {
+            "text": "▷ Play music",
+            "width": 85.078125,
+            "height": 44,
+            "left": 16,
+            "right": 101.078125
+          },
+          {
+            "text": "Volume ⌄",
+            "width": 72.796875,
+            "height": 44,
+            "left": 679.203125,
+            "right": 752
+          },
+          {
+            "text": "Pause motion",
+            "width": 84.03125,
+            "height": 44,
+            "left": 667.96875,
+            "right": 752
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "768 dark Escape returns focus",
+      "pass": true,
+      "evidence": {
+        "focus": "stay-button",
+        "scrollY": 171
+      }
+    },
+    {
+      "name": "768 light normal layout",
+      "pass": true,
+      "evidence": {
+        "width": 768,
+        "scrollWidth": 753,
+        "mode": false,
+        "motion": "running",
+        "broken": [],
+        "pendingLazy": [
+          "/images/projects/showcase/nightstock-v131-road.webp"
+        ],
+        "controls": [
+          {
+            "text": "▷ Play music",
+            "width": 85.078125,
+            "height": 44,
+            "left": 33,
+            "right": 118.078125
+          },
+          {
+            "text": "Volume ⌄",
+            "width": 72.796875,
+            "height": 44,
+            "left": 647.203125,
+            "right": 720
+          },
+          {
+            "text": "Pause motion",
+            "width": 84.03125,
+            "height": 44,
+            "left": 534.890625,
+            "right": 618.921875
+          },
+          {
+            "text": "Stay awhile ↗",
+            "width": 94.078125,
+            "height": 44,
+            "left": 625.921875,
+            "right": 720
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "768 light Tinker and Isaac remain distinct",
+      "pass": true,
+      "evidence": {
+        "caption": "Meet Tinker Panda, the lab’s resident mascot.",
+        "captionVisible": true,
+        "description": "Tinker Panda, the lab’s resident mascot, in his teal scarf at a wooden desk beside a rainy nighttime city window. A warm lamp lights a notebook, mug, and small electronics project.",
+        "intro": "I’m Isaac, a software engineer building useful software, local AI experiments, and games worth getting lost in."
+      }
+    },
+    {
+      "name": "768 light no autoplay",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null,
+          "loop": true
+        },
+        "audioElements": 1,
+        "rainControls": 0,
+        "status": "Sound is off. Make yourself at home."
+      }
+    },
+    {
+      "name": "768 light ambient layout",
+      "pass": true,
+      "evidence": {
+        "width": 768,
+        "scrollWidth": 768,
+        "mode": true,
+        "motion": "running",
+        "broken": [],
+        "pendingLazy": [],
+        "controls": [
+          {
+            "text": "↙ Back to portfolio",
+            "width": 113.859375,
+            "height": 44,
+            "left": 638.140625,
+            "right": 752
+          },
+          {
+            "text": "▷ Play music",
+            "width": 85.078125,
+            "height": 44,
+            "left": 16,
+            "right": 101.078125
+          },
+          {
+            "text": "Volume ⌄",
+            "width": 72.796875,
+            "height": 44,
+            "left": 679.203125,
+            "right": 752
+          },
+          {
+            "text": "Pause motion",
+            "width": 84.03125,
+            "height": 44,
+            "left": 667.96875,
+            "right": 752
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "768 light Escape returns focus",
+      "pass": true,
+      "evidence": {
+        "focus": "stay-button",
+        "scrollY": 171
+      }
+    },
+    {
+      "name": "Pause freezes visual animation at polished resting pose",
+      "pass": true,
+      "evidence": {
+        "pausedOne": {
+          "motion": "paused",
+          "pose": "rest",
+          "typingDisplay": "none",
+          "rain": "matrix(1, 0, 0, 1, -0.5, -33.3333)",
+          "steam": "matrix(1, 0, 0, 0.8225, 0, 0)"
+        },
+        "pausedTwo": {
+          "motion": "paused",
+          "pose": "rest",
+          "typingDisplay": "none",
+          "rain": "matrix(1, 0, 0, 1, -0.5, -33.3333)",
+          "steam": "matrix(1, 0, 0, 0.8225, 0, 0)"
+        }
+      }
+    },
+    {
+      "name": "Reduced motion disables animation and control",
+      "pass": true,
+      "evidence": {
+        "motion": "paused",
+        "button": "Reduced motion",
+        "pose": "rest"
+      }
+    },
+    {
+      "name": "Offscreen scene pauses motion and returns to rest",
+      "pass": true,
+      "evidence": {
+        "motion": "paused",
+        "pose": "rest",
+        "scrollY": 3075
+      }
+    },
+    {
+      "name": "Visible scene resumes motion",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "name": "Keyboard focus visibly styled",
+      "pass": true,
+      "evidence": {
+        "element": "<button type=\"button\" data-audio-toggle=\"music\" aria-pressed=\"false\" data-astro-cid-xo2cqgd4=\"\" aria-busy=\"false\">▷ Play music</button>",
+        "outline": "rgb(138, 87, 15) solid 2px"
+      }
+    },
+    {
+      "name": "Only music remains in audio controls and elements",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null,
+          "loop": true
+        },
+        "audioElements": 1,
+        "rainControls": 0,
+        "status": "Sound is off. Make yourself at home."
+      }
+    },
+    {
+      "name": "No audio loads before deliberate activation",
+      "pass": true,
+      "evidence": [
+        {
+          "stage": "music playback",
+          "url": "http://127.0.0.1:4352/audio/ambient/after-hours.ogg"
+        },
+        {
+          "stage": "music playback",
+          "url": "http://127.0.0.1:4352/audio/ambient/after-hours.ogg"
+        },
+        {
+          "stage": "music playback",
+          "url": "http://127.0.0.1:4352/audio/ambient/after-hours.ogg"
+        },
+        {
+          "stage": "music playback",
+          "url": "http://127.0.0.1:4352/audio/ambient/after-hours.ogg"
+        },
+        {
+          "stage": "audio loading and errors",
+          "url": "http://127.0.0.1:4352/audio/ambient/after-hours.ogg"
+        },
+        {
+          "stage": "audio loading and errors",
+          "url": "http://127.0.0.1:4352/audio/ambient/after-hours.ogg"
+        },
+        {
+          "stage": "audio loading and errors",
+          "url": "http://127.0.0.1:4352/audio/ambient/after-hours.ogg"
+        },
+        {
+          "stage": "audio loading and errors",
+          "url": "http://127.0.0.1:4352/audio/ambient/after-hours.ogg"
+        },
+        {
+          "stage": "audio loading and errors",
+          "url": "http://127.0.0.1:4352/audio/ambient/after-hours.ogg"
+        },
+        {
+          "stage": "audio loading and errors",
+          "url": "http://127.0.0.1:4352/audio/ambient/after-hours.ogg"
+        }
+      ]
+    },
+    {
+      "name": "Music advances after explicit click",
+      "pass": true,
+      "evidence": {
+        "state": {
+          "music": {
+            "paused": false,
+            "time": 0.128005,
+            "volume": 0.4,
+            "muted": false,
+            "ready": 4,
+            "error": null,
+            "duration": 155.678571,
+            "loop": true
+          },
+          "audioElements": 1,
+          "rainControls": 0,
+          "status": "Music playing."
+        },
+        "next": {
+          "music": {
+            "paused": false,
+            "time": 1.243456,
+            "volume": 0.4,
+            "muted": false,
+            "ready": 4,
+            "error": null,
+            "duration": 155.678571,
+            "loop": true
+          },
+          "audioElements": 1,
+          "rainControls": 0,
+          "status": "Music playing."
+        }
+      }
+    },
+    {
+      "name": "Pause motion leaves music playing",
+      "pass": true,
+      "evidence": {
+        "state": {
+          "music": {
+            "paused": false,
+            "time": 1.381176,
+            "volume": 0.4,
+            "muted": false,
+            "ready": 4,
+            "error": null,
+            "duration": 155.678571,
+            "loop": true
+          },
+          "audioElements": 1,
+          "rainControls": 0,
+          "status": "Music playing."
+        },
+        "next": {
+          "music": {
+            "paused": false,
+            "time": 1.887907,
+            "volume": 0.4,
+            "muted": false,
+            "ready": 4,
+            "error": null,
+            "duration": 155.678571,
+            "loop": true
+          },
+          "audioElements": 1,
+          "rainControls": 0,
+          "status": "Music playing."
+        }
+      }
+    },
+    {
+      "name": "Original music loops after seeking near end",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": false,
+          "time": 0.558084,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 4,
+          "error": null,
+          "duration": 155.678571,
+          "loop": true
+        },
+        "audioElements": 1,
+        "rainControls": 0,
+        "status": "Music playing."
+      }
+    },
+    {
+      "name": "Music volume slider controls playback level",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": false,
+          "time": 1.098416,
+          "volume": 0.02,
+          "muted": false,
+          "ready": 4,
+          "error": null,
+          "duration": 155.678571,
+          "loop": true
+        },
+        "audioElements": 1,
+        "rainControls": 0,
+        "status": "Music playing."
+      }
+    },
+    {
+      "name": "Mute silences music without stopping playback",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": false,
+          "time": 1.248535,
+          "volume": 0.02,
+          "muted": true,
+          "ready": 4,
+          "error": null,
+          "duration": 155.678571,
+          "loop": true
+        },
+        "audioElements": 1,
+        "rainControls": 0,
+        "status": "Music muted."
+      }
+    },
+    {
+      "name": "Unmute restores music",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": false,
+          "time": 1.692601,
+          "volume": 0.02,
+          "muted": false,
+          "ready": 4,
+          "error": null,
+          "duration": 155.678571,
+          "loop": true
+        },
+        "audioElements": 1,
+        "rainControls": 0,
+        "status": "Music playing."
+      }
+    },
+    {
+      "name": "Escape closes mixer and restores summary focus",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "name": "Music pause stops time while motion continues",
+      "pass": true,
+      "evidence": {
+        "state": {
+          "music": {
+            "paused": true,
+            "time": 1.790142,
+            "volume": 0.02,
+            "muted": false,
+            "ready": 4,
+            "error": null,
+            "duration": 155.678571,
+            "loop": true
+          },
+          "audioElements": 1,
+          "rainControls": 0,
+          "status": "Sound is off. Make yourself at home."
+        },
+        "next": {
+          "music": {
+            "paused": true,
+            "time": 1.790142,
+            "volume": 0.02,
+            "muted": false,
+            "ready": 4,
+            "error": null,
+            "duration": 155.678571,
+            "loop": true
+          },
+          "audioElements": 1,
+          "rainControls": 0,
+          "status": "Sound is off. Make yourself at home."
+        }
+      }
+    },
+    {
+      "name": "Reload never restores playback",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null,
+          "loop": true
+        },
+        "audioElements": 1,
+        "rainControls": 0,
+        "status": "Sound is off. Make yourself at home."
+      }
+    },
+    {
+      "name": "Obsolete audio preferences cannot reactivate rain or music",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null,
+          "loop": true
+        },
+        "audioElements": 1,
+        "rainControls": 0,
+        "status": "Sound is off. Make yourself at home."
+      }
+    },
+    {
+      "name": "Returning through browser history does not restart sound",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": true,
+          "time": 0.1,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 4,
+          "error": null,
+          "duration": 155.678571,
+          "loop": true
+        },
+        "audioElements": 1,
+        "rainControls": 0,
+        "status": "Sound is off. Make yourself at home."
+      }
+    },
+    {
+      "name": "External media pause updates player state",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": true,
+          "time": 0.378133,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 4,
+          "error": null,
+          "duration": 155.678571,
+          "loop": true
+        },
+        "audioElements": 1,
+        "rainControls": 0,
+        "status": "Sound is off. Make yourself at home."
+      }
+    },
+    {
+      "name": "Loading has cancel and clear status",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": false,
+          "time": 0,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null,
+          "loop": true
+        },
+        "audioElements": 1,
+        "rainControls": 0,
+        "status": "Loading music… You can cancel at any time."
+      }
+    },
+    {
+      "name": "Pending playback can be canceled",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 0,
+          "error": null,
+          "duration": null,
+          "loop": true
+        },
+        "audioElements": 1,
+        "rainControls": 0,
+        "status": "Sound is off. Make yourself at home."
+      }
+    },
+    {
+      "name": "Missing music produces useful retry error",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": true,
+          "time": 0,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 0,
+          "error": 4,
+          "duration": null,
+          "loop": true
+        },
+        "audioElements": 1,
+        "rainControls": 0,
+        "status": "Music couldn’t play. Check your connection and press Play music to retry."
+      }
+    },
+    {
+      "name": "Music retry recovers after media restored",
+      "pass": true,
+      "evidence": {
+        "music": {
+          "paused": false,
+          "time": 0.552713,
+          "volume": 0.4,
+          "muted": false,
+          "ready": 4,
+          "error": null,
+          "duration": 155.678571,
+          "loop": true
+        },
+        "audioElements": 1,
+        "rainControls": 0,
+        "status": "Music playing."
+      }
+    },
+    {
+      "name": "Missing scene retains approved mascot and usable content",
+      "pass": true,
+      "evidence": {
+        "width": 390,
+        "scrollWidth": 390,
+        "mode": false,
+        "motion": "paused",
+        "broken": [
+          "/images/ambient/night-workshop-v1-1.webp"
+        ],
+        "pendingLazy": [
+          "/images/projects/showcase/deck-mage.webp",
+          "/images/projects/showcase/nightstock-v131-road.webp"
+        ],
+        "controls": [
+          {
+            "text": "▷ Play music",
+            "width": 324,
+            "height": 44,
+            "left": 33,
+            "right": 357
+          },
+          {
+            "text": "Volume ⌄",
+            "width": 72.796875,
+            "height": 44,
+            "left": 284.203125,
+            "right": 357
+          },
+          {
+            "text": "Scene unavailable",
+            "width": 104.390625,
+            "height": 44,
+            "left": 33,
+            "right": 137.390625
+          },
+          {
+            "text": "Stay awhile ↗",
+            "width": 94.078125,
+            "height": 44,
+            "left": 262.921875,
+            "right": 357
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "Missing typing atlas retains polished scene without broken movement",
+      "pass": true,
+      "evidence": {
+        "scene": 1659,
+        "pose": "rest",
+        "display": "none",
+        "motion": "running",
+        "musicPaused": true
+      }
+    },
+    {
+      "name": "Touch tap opens ambient mode",
+      "pass": true,
+      "evidence": {
+        "width": 390,
+        "scrollWidth": 390,
+        "mode": true,
+        "motion": "running",
+        "broken": [],
+        "pendingLazy": [
+          "/images/projects/showcase/nightstock-v131-road.webp"
+        ],
+        "controls": [
+          {
+            "text": "↙ Back to portfolio",
+            "width": 113.859375,
+            "height": 44,
+            "left": 260.140625,
+            "right": 374
+          },
+          {
+            "text": "▷ Play music",
+            "width": 174.515625,
+            "height": 44,
+            "left": 16,
+            "right": 190.515625
+          },
+          {
+            "text": "Volume ⌄",
+            "width": 72.796875,
+            "height": 44,
+            "left": 301.203125,
+            "right": 374
+          },
+          {
+            "text": "Pause motion",
+            "width": 84.03125,
+            "height": 44,
+            "left": 200.515625,
+            "right": 284.546875
+          }
+        ],
+        "heading": "Built afterbedtime.",
+        "projectLink": true,
+        "aboutLink": true
+      }
+    },
+    {
+      "name": "Back button returns to portfolio and Stay awhile focus",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "name": "Idle keeps music paused and document DOM stable",
+      "pass": true,
+      "evidence": {
+        "elapsedSeconds": 14.503,
+        "taskDurationSeconds": 0.026882000000000003,
+        "scriptDurationSeconds": 0.0016780000000000002,
+        "layoutDurationSeconds": 0.0005809999999999999,
+        "recalcStyleDurationSeconds": 0.0042460000000000015,
+        "jsHeapBefore": 1400140,
+        "jsHeapAfter": 1409820,
+        "cdpNodesBefore": 884,
+        "cdpNodesAfter": 884,
+        "documentNodes": {
+          "before": 394,
+          "after": 394
+        },
+        "blinkEvents": [
+          {
+            "time": 11463.199999988079,
+            "closed": true
+          },
+          {
+            "time": 11625.799999982119,
+            "closed": false
+          }
+        ],
+        "audio": {
+          "music": {
+            "paused": true,
+            "time": 0,
+            "volume": 0.4,
+            "muted": false,
+            "ready": 0,
+            "error": null,
+            "duration": null,
+            "loop": true
+          },
+          "audioElements": 1,
+          "rainControls": 0,
+          "status": "Sound is off. Make yourself at home."
+        },
+        "scope": "One 14.5-second headless Edge ambient idle sample, no audio playing; CDP node counts include retained documents. Not a device benchmark.",
+        "poseEvents": [
+          {
+            "time": 685.7999999821186,
+            "pose": "rest"
+          },
+          {
+            "time": 8370.5,
+            "pose": "near-lift"
+          },
+          {
+            "time": 8523.199999988079,
+            "pose": "near-contact"
+          },
+          {
+            "time": 8646,
+            "pose": "near-release"
+          },
+          {
+            "time": 8769.5,
+            "pose": "far-lift"
+          },
+          {
+            "time": 8924.09999999404,
+            "pose": "far-contact"
+          },
+          {
+            "time": 9047.199999988079,
+            "pose": "settle"
+          },
+          {
+            "time": 9185.5,
+            "pose": "near-lift"
+          },
+          {
+            "time": 9307.299999982119,
+            "pose": "near-contact"
+          },
+          {
+            "time": 9428.299999982119,
+            "pose": "near-release"
+          },
+          {
+            "time": 9541.199999988079,
+            "pose": "far-contact"
+          },
+          {
+            "time": 9652.59999999404,
+            "pose": "settle"
+          },
+          {
+            "time": 9808.399999976158,
+            "pose": "rest"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Actual blink closes briefly and reopens after quiet interval",
+      "pass": true,
+      "evidence": [
+        {
+          "time": 11463.199999988079,
+          "closed": true
+        },
+        {
+          "time": 11625.799999982119,
+          "closed": false
+        }
+      ]
+    },
+    {
+      "name": "Actual typing traverses authored poses and returns to rest",
+      "pass": true,
+      "evidence": [
+        {
+          "time": 685.7999999821186,
+          "pose": "rest"
+        },
+        {
+          "time": 8370.5,
+          "pose": "near-lift"
+        },
+        {
+          "time": 8523.199999988079,
+          "pose": "near-contact"
+        },
+        {
+          "time": 8646,
+          "pose": "near-release"
+        },
+        {
+          "time": 8769.5,
+          "pose": "far-lift"
+        },
+        {
+          "time": 8924.09999999404,
+          "pose": "far-contact"
+        },
+        {
+          "time": 9047.199999988079,
+          "pose": "settle"
+        },
+        {
+          "time": 9185.5,
+          "pose": "near-lift"
+        },
+        {
+          "time": 9307.299999982119,
+          "pose": "near-contact"
+        },
+        {
+          "time": 9428.299999982119,
+          "pose": "near-release"
+        },
+        {
+          "time": 9541.199999988079,
+          "pose": "far-contact"
+        },
+        {
+          "time": 9652.59999999404,
+          "pose": "settle"
+        },
+        {
+          "time": 9808.399999976158,
+          "pose": "rest"
+        }
+      ]
+    },
+    {
+      "name": "Typing begins after several seconds of quiet rest",
+      "pass": true,
+      "evidence": [
+        {
+          "time": 685.7999999821186,
+          "pose": "rest"
+        },
+        {
+          "time": 8370.5,
+          "pose": "near-lift"
+        },
+        {
+          "time": 8523.199999988079,
+          "pose": "near-contact"
+        },
+        {
+          "time": 8646,
+          "pose": "near-release"
+        },
+        {
+          "time": 8769.5,
+          "pose": "far-lift"
+        },
+        {
+          "time": 8924.09999999404,
+          "pose": "far-contact"
+        },
+        {
+          "time": 9047.199999988079,
+          "pose": "settle"
+        },
+        {
+          "time": 9185.5,
+          "pose": "near-lift"
+        },
+        {
+          "time": 9307.299999982119,
+          "pose": "near-contact"
+        },
+        {
+          "time": 9428.299999982119,
+          "pose": "near-release"
+        },
+        {
+          "time": 9541.199999988079,
+          "pose": "far-contact"
+        },
+        {
+          "time": 9652.59999999404,
+          "pose": "settle"
+        },
+        {
+          "time": 9808.399999976158,
+          "pose": "rest"
+        }
+      ]
+    },
+    {
+      "name": "Pausing an active typing burst cancels it and holds rest",
+      "pass": true,
+      "evidence": {
+        "interrupted": {
+          "motion": "paused",
+          "pose": "rest",
+          "display": "none"
+        },
+        "held": {
+          "motion": "paused",
+          "pose": "rest",
+          "display": "none"
+        }
+      }
+    },
+    {
+      "name": "Hidden page pauses motion",
+      "pass": true,
+      "evidence": {
+        "hidden": true,
+        "motion": "paused"
+      }
+    },
+    {
+      "name": "No-JS portfolio and static scene remain complete",
+      "pass": true,
+      "evidence": {
+        "heading": "Built afterbedtime.",
+        "about": true,
+        "scene": 1659,
+        "controlsHidden": true
+      }
+    },
+    {
+      "name": "Existing route /projects/",
+      "pass": true,
+      "evidence": {
+        "path": "/projects/",
+        "title": "Projects · After Bedtime Labs",
+        "heading": "Projects & experiments.",
+        "overflow": false,
+        "main": true,
+        "text": "On the workbenchProjects & experiments.Tools to make the work a little easier. Games to explore an idea. A few things built simply to see what happens.Personal AI · Operations dashboardWork in progress · working dashboardMission Control↗A little mission control for my growing collection of AI experi"
+      }
+    },
+    {
+      "name": "Existing route /projects/mission-control/",
+      "pass": true,
+      "evidence": {
+        "path": "/projects/mission-control/",
+        "title": "Mission Control · After Bedtime Labs",
+        "heading": "Mission Control",
+        "overflow": false,
+        "main": true,
+        "text": "← All projectsPersonal AI · Operations dashboardMission ControlA little mission control for my growing collection of AI experiments. See what’s running, what just happened, and what needs attention.Work in progress · working dashboard Personal workspace · isolated demo shownGenuine application captu"
+      }
+    },
+    {
+      "name": "Existing route /projects/nightstock/",
+      "pass": true,
+      "evidence": {
+        "path": "/projects/nightstock/",
+        "title": "NightStock · After Bedtime Labs",
+        "heading": "NightStock",
+        "overflow": false,
+        "main": true,
+        "text": "← All projectsGame experimentNightStockA small delivery truck, loose cargo, and a late-night route through rural Japan. Take care of the boxes—and enjoy the road between stops.Work in progress · playable first shift Private prototype · no public download yetV1.3.1 packaged gameplay · staged bridge v"
+      }
+    },
+    {
+      "name": "Existing route /writing/",
+      "pass": true,
+      "evidence": {
+        "path": "/writing/",
+        "title": "Writing · After Bedtime Labs",
+        "heading": "Notes from the lab.",
+        "overflow": false,
+        "main": true,
+        "text": "The notebookNotes from the lab.Notes from the workbench. What I’m building, what I’m trying, and what I learn along the way.Subscribe via RSS ↗Browse by topicGamesLocal AIProject introductionsStudio notesField notes6 publishedOctober 19, 20262 min readDungeon Deckbuilder: pack your next moveA fantas"
+      }
+    },
+    {
+      "name": "Existing route /writing/meet-mission-control/",
+      "pass": true,
+      "evidence": {
+        "path": "/writing/meet-mission-control/",
+        "title": "Mission Control: keeping an eye on the experiments · After Bedtime Labs",
+        "heading": "Mission Control: keeping an eye on the experiments",
+        "overflow": false,
+        "main": true,
+        "text": "← All writingField notes Mission Control: keeping an eye on the experimentsFrom watching a Discord bot to a dashboard for my growing collection of personal AI projects.By IsaacOctober 19, 20262 min readLocal AIProject introductionsA small command center for the things I build after everyone else goe"
+      }
+    },
+    {
+      "name": "Existing route /about/",
+      "pass": true,
+      "evidence": {
+        "path": "/about/",
+        "title": "About · After Bedtime Labs",
+        "heading": "Engineer by day.Curious after hours.",
+        "overflow": false,
+        "main": true,
+        "text": "A little contextEngineer by day.Curious after hours.I’m Isaac. A husband, dad, and software engineer who likes making things and understanding how they work.After Bedtime LabsSmall windows of time.Room to experiment.The hours in betweenI’ve spent roughly a decade working professionally in software e"
+      }
+    },
+    {
+      "name": "Existing route /navi/privacy/",
+      "pass": true,
+      "evidence": {
+        "path": "/navi/privacy/",
+        "title": "Navi privacy policy · After Bedtime Labs",
+        "heading": "Navi privacy policy",
+        "overflow": false,
+        "main": true,
+        "text": "After Bedtime Labs/Navi/PrivacyYour data, explainedNavi privacy policyNavi Gmail Monitor · After Bedtime LabsLast updated: October 15, 2026This policy covers Navi Gmail Monitor, a locally operated application developed by Isaac at After Bedtime Labs, including its financial-email dashboard and optio"
+      }
+    },
+    {
+      "name": "No browser runtime or console errors",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "Rejected rain audio was never requested",
+      "pass": true,
+      "evidence": [
+        {
+          "stage": "music playback",
+          "url": "http://127.0.0.1:4352/audio/ambient/after-hours.ogg"
+        },
+        {
+          "stage": "music playback",
+          "url": "http://127.0.0.1:4352/audio/ambient/after-hours.ogg"
+        },
+        {
+          "stage": "music playback",
+          "url": "http://127.0.0.1:4352/audio/ambient/after-hours.ogg"
+        },
+        {
+          "stage": "music playback",
+          "url": "http://127.0.0.1:4352/audio/ambient/after-hours.ogg"
+        },
+        {
+          "stage": "audio loading and errors",
+          "url": "http://127.0.0.1:4352/audio/ambient/after-hours.ogg"
+        },
+        {
+          "stage": "audio loading and errors",
+          "url": "http://127.0.0.1:4352/audio/ambient/after-hours.ogg"
+        },
+        {
+          "stage": "audio loading and errors",
+          "url": "http://127.0.0.1:4352/audio/ambient/after-hours.ogg"
+        },
+        {
+          "stage": "audio loading and errors",
+          "url": "http://127.0.0.1:4352/audio/ambient/after-hours.ogg"
+        },
+        {
+          "stage": "audio loading and errors",
+          "url": "http://127.0.0.1:4352/audio/ambient/after-hours.ogg"
+        },
+        {
+          "stage": "audio loading and errors",
+          "url": "http://127.0.0.1:4352/audio/ambient/after-hours.ogg"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "name": "home-1440-dark.png",
+      "stage": "responsive screenshots",
+      "fullPage": true,
+      "dimensions": {
+        "width": 1440,
+        "height": 1000,
+        "scrollHeight": 4082
+      }
+    },
+    {
+      "name": "home-1440-dark-viewport.png",
+      "stage": "responsive screenshots",
+      "fullPage": false,
+      "dimensions": {
+        "width": 1440,
+        "height": 1000,
+        "scrollHeight": 4082
+      }
+    },
+    {
+      "name": "ambient-1440-dark.png",
+      "stage": "responsive screenshots",
+      "fullPage": false,
+      "dimensions": {
+        "width": 1440,
+        "height": 1000,
+        "scrollHeight": 1000
+      }
+    },
+    {
+      "name": "home-1440-light.png",
+      "stage": "responsive screenshots",
+      "fullPage": true,
+      "dimensions": {
+        "width": 1440,
+        "height": 1000,
+        "scrollHeight": 4082
+      }
+    },
+    {
+      "name": "home-1440-light-viewport.png",
+      "stage": "responsive screenshots",
+      "fullPage": false,
+      "dimensions": {
+        "width": 1440,
+        "height": 1000,
+        "scrollHeight": 4082
+      }
+    },
+    {
+      "name": "ambient-1440-light.png",
+      "stage": "responsive screenshots",
+      "fullPage": false,
+      "dimensions": {
+        "width": 1440,
+        "height": 1000,
+        "scrollHeight": 1000
+      }
+    },
+    {
+      "name": "home-390-dark.png",
+      "stage": "responsive screenshots",
+      "fullPage": true,
+      "dimensions": {
+        "width": 390,
+        "height": 844,
+        "scrollHeight": 5696
+      }
+    },
+    {
+      "name": "ambient-390-dark.png",
+      "stage": "responsive screenshots",
+      "fullPage": false,
+      "dimensions": {
+        "width": 390,
+        "height": 844,
+        "scrollHeight": 844
+      }
+    },
+    {
+      "name": "home-390-light.png",
+      "stage": "responsive screenshots",
+      "fullPage": true,
+      "dimensions": {
+        "width": 390,
+        "height": 844,
+        "scrollHeight": 5696
+      }
+    },
+    {
+      "name": "ambient-390-light.png",
+      "stage": "responsive screenshots",
+      "fullPage": false,
+      "dimensions": {
+        "width": 390,
+        "height": 844,
+        "scrollHeight": 844
+      }
+    },
+    {
+      "name": "home-320-dark.png",
+      "stage": "responsive screenshots",
+      "fullPage": true,
+      "dimensions": {
+        "width": 320,
+        "height": 740,
+        "scrollHeight": 5878
+      }
+    },
+    {
+      "name": "ambient-320-dark.png",
+      "stage": "responsive screenshots",
+      "fullPage": false,
+      "dimensions": {
+        "width": 320,
+        "height": 740,
+        "scrollHeight": 740
+      }
+    },
+    {
+      "name": "home-320-light.png",
+      "stage": "responsive screenshots",
+      "fullPage": true,
+      "dimensions": {
+        "width": 320,
+        "height": 740,
+        "scrollHeight": 5878
+      }
+    },
+    {
+      "name": "ambient-320-light.png",
+      "stage": "responsive screenshots",
+      "fullPage": false,
+      "dimensions": {
+        "width": 320,
+        "height": 740,
+        "scrollHeight": 740
+      }
+    },
+    {
+      "name": "home-768-dark.png",
+      "stage": "responsive screenshots",
+      "fullPage": true,
+      "dimensions": {
+        "width": 768,
+        "height": 1024,
+        "scrollHeight": 4697
+      }
+    },
+    {
+      "name": "ambient-768-dark.png",
+      "stage": "responsive screenshots",
+      "fullPage": false,
+      "dimensions": {
+        "width": 768,
+        "height": 1024,
+        "scrollHeight": 1024
+      }
+    },
+    {
+      "name": "home-768-light.png",
+      "stage": "responsive screenshots",
+      "fullPage": true,
+      "dimensions": {
+        "width": 768,
+        "height": 1024,
+        "scrollHeight": 4697
+      }
+    },
+    {
+      "name": "ambient-768-light.png",
+      "stage": "responsive screenshots",
+      "fullPage": false,
+      "dimensions": {
+        "width": 768,
+        "height": 1024,
+        "scrollHeight": 1024
+      }
+    },
+    {
+      "name": "motion-paused-desktop.png",
+      "stage": "motion and keyboard",
+      "fullPage": false,
+      "dimensions": {
+        "width": 1440,
+        "height": 1000,
+        "scrollHeight": 4075
+      }
+    },
+    {
+      "name": "blink-closed-for-art-review.png",
+      "stage": "motion and keyboard",
+      "fullPage": false,
+      "dimensions": {
+        "width": 1440,
+        "height": 1000,
+        "scrollHeight": 4075
+      },
+      "note": "Closed-eye class forced while paused for artwork inspection; actual animation timing is checked separately during idle."
+    },
+    {
+      "name": "reduced-motion-desktop.png",
+      "stage": "motion and keyboard",
+      "fullPage": false,
+      "dimensions": {
+        "width": 1440,
+        "height": 1000,
+        "scrollHeight": 4075
+      }
+    },
+    {
+      "name": "keyboard-focus-ambient.png",
+      "stage": "motion and keyboard",
+      "fullPage": false,
+      "dimensions": {
+        "width": 1440,
+        "height": 1000,
+        "scrollHeight": 1000
+      }
+    },
+    {
+      "name": "audio-mixer-muted-desktop.png",
+      "stage": "music playback",
+      "fullPage": false,
+      "dimensions": {
+        "width": 1440,
+        "height": 1000,
+        "scrollHeight": 4075
+      }
+    },
+    {
+      "name": "audio-loading.png",
+      "stage": "audio loading and errors",
+      "fullPage": false,
+      "dimensions": {
+        "width": 1440,
+        "height": 1000,
+        "scrollHeight": 4075
+      }
+    },
+    {
+      "name": "audio-error-desktop.png",
+      "stage": "audio loading and errors",
+      "fullPage": false,
+      "dimensions": {
+        "width": 1440,
+        "height": 1000,
+        "scrollHeight": 1000
+      }
+    },
+    {
+      "name": "audio-error-mobile.png",
+      "stage": "audio loading and errors",
+      "fullPage": false,
+      "dimensions": {
+        "width": 390,
+        "height": 844,
+        "scrollHeight": 844
+      }
+    },
+    {
+      "name": "missing-scene-mobile.png",
+      "stage": "missing scene",
+      "fullPage": true,
+      "dimensions": {
+        "width": 390,
+        "height": 844,
+        "scrollHeight": 5690
+      }
+    },
+    {
+      "name": "missing-scene-ambient-mobile.png",
+      "stage": "missing scene",
+      "fullPage": false,
+      "dimensions": {
+        "width": 390,
+        "height": 844,
+        "scrollHeight": 844
+      }
+    },
+    {
+      "name": "missing-typing-atlas-mobile.png",
+      "stage": "missing typing atlas",
+      "fullPage": false,
+      "dimensions": {
+        "width": 390,
+        "height": 844,
+        "scrollHeight": 5696
+      }
+    },
+    {
+      "name": "typing-interrupted-rest.png",
+      "stage": "idle and page lifecycle",
+      "fullPage": false,
+      "dimensions": {
+        "width": 1440,
+        "height": 1000,
+        "scrollHeight": 1000
+      }
+    },
+    {
+      "name": "no-javascript-desktop.png",
+      "stage": "no JavaScript",
+      "fullPage": false,
+      "dimensions": {
+        "width": 1440,
+        "height": 1000,
+        "scrollHeight": 4029
+      }
+    }
+  ],
+  "consoleErrors": [],
+  "gaps": [],
+  "audioRequests": [
+    {
+      "stage": "music playback",
+      "url": "http://127.0.0.1:4352/audio/ambient/after-hours.ogg"
+    },
+    {
+      "stage": "music playback",
+      "url": "http://127.0.0.1:4352/audio/ambient/after-hours.ogg"
+    },
+    {
+      "stage": "music playback",
+      "url": "http://127.0.0.1:4352/audio/ambient/after-hours.ogg"
+    },
+    {
+      "stage": "music playback",
+      "url": "http://127.0.0.1:4352/audio/ambient/after-hours.ogg"
+    },
+    {
+      "stage": "audio loading and errors",
+      "url": "http://127.0.0.1:4352/audio/ambient/after-hours.ogg"
+    },
+    {
+      "stage": "audio loading and errors",
+      "url": "http://127.0.0.1:4352/audio/ambient/after-hours.ogg"
+    },
+    {
+      "stage": "audio loading and errors",
+      "url": "http://127.0.0.1:4352/audio/ambient/after-hours.ogg"
+    },
+    {
+      "stage": "audio loading and errors",
+      "url": "http://127.0.0.1:4352/audio/ambient/after-hours.ogg"
+    },
+    {
+      "stage": "audio loading and errors",
+      "url": "http://127.0.0.1:4352/audio/ambient/after-hours.ogg"
+    },
+    {
+      "stage": "audio loading and errors",
+      "url": "http://127.0.0.1:4352/audio/ambient/after-hours.ogg"
+    }
+  ],
+  "idle": {
+    "elapsedSeconds": 14.503,
+    "taskDurationSeconds": 0.026882000000000003,
+    "scriptDurationSeconds": 0.0016780000000000002,
+    "layoutDurationSeconds": 0.0005809999999999999,
+    "recalcStyleDurationSeconds": 0.0042460000000000015,
+    "jsHeapBefore": 1400140,
+    "jsHeapAfter": 1409820,
+    "cdpNodesBefore": 884,
+    "cdpNodesAfter": 884,
+    "documentNodes": {
+      "before": 394,
+      "after": 394
+    },
+    "blinkEvents": [
+      {
+        "time": 11463.199999988079,
+        "closed": true
+      },
+      {
+        "time": 11625.799999982119,
+        "closed": false
+      }
+    ],
+    "audio": {
+      "music": {
+        "paused": true,
+        "time": 0,
+        "volume": 0.4,
+        "muted": false,
+        "ready": 0,
+        "error": null,
+        "duration": null,
+        "loop": true
+      },
+      "audioElements": 1,
+      "rainControls": 0,
+      "status": "Sound is off. Make yourself at home."
+    },
+    "scope": "One 14.5-second headless Edge ambient idle sample, no audio playing; CDP node counts include retained documents. Not a device benchmark.",
+    "poseEvents": [
+      {
+        "time": 685.7999999821186,
+        "pose": "rest"
+      },
+      {
+        "time": 8370.5,
+        "pose": "near-lift"
+      },
+      {
+        "time": 8523.199999988079,
+        "pose": "near-contact"
+      },
+      {
+        "time": 8646,
+        "pose": "near-release"
+      },
+      {
+        "time": 8769.5,
+        "pose": "far-lift"
+      },
+      {
+        "time": 8924.09999999404,
+        "pose": "far-contact"
+      },
+      {
+        "time": 9047.199999988079,
+        "pose": "settle"
+      },
+      {
+        "time": 9185.5,
+        "pose": "near-lift"
+      },
+      {
+        "time": 9307.299999982119,
+        "pose": "near-contact"
+      },
+      {
+        "time": 9428.299999982119,
+        "pose": "near-release"
+      },
+      {
+        "time": 9541.199999988079,
+        "pose": "far-contact"
+      },
+      {
+        "time": 9652.59999999404,
+        "pose": "settle"
+      },
+      {
+        "time": 9808.399999976158,
+        "pose": "rest"
+      }
+    ]
+  },
+  "finished": "2026-11-08T23:45:08.249Z",
+  "passed": 83,
+  "failed": 0
+}

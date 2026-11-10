@@ -1,0 +1,621 @@
+{
+  "purpose": "Technical pixel invariants only; no claim of artistic quality or owner approval.",
+  "canvas": {
+    "x": 890,
+    "y": 575,
+    "width": 300,
+    "height": 170,
+    "sceneWidth": 1659,
+    "sceneHeight": 948
+  },
+  "allowedMotion": {
+    "sourceMasks": [
+      "layers/near-mask.png",
+      "layers/far-mask.png"
+    ],
+    "expansionPixels": 6,
+    "metric": "Chebyshev",
+    "export": "layers/allowed-motion-mask-6px.png"
+  },
+  "occlusion": "The original keyboard/laptop foreground layer is composited last by assemble-night-typing.mjs; every opaque foreground pixel is compared directly below.",
+  "timing": {
+    "restMs": {
+      "minimum": 6800,
+      "maximum": 9200
+    },
+    "burstMs": 1360,
+    "poses": 7
+  },
+  "atlas": {
+    "dimensions": [
+      2100,
+      170
+    ],
+    "expectedDimensions": [
+      2100,
+      170
+    ],
+    "identicalPngAndRuntimeRgba": true
+  },
+  "frames": [
+    {
+      "index": 0,
+      "name": "rest",
+      "crop": "frames/00-rest.png",
+      "fullFrame": "frames-full/00-rest.png",
+      "changedPixels": 0,
+      "changeBounds": null,
+      "changedOutsideAllowed": 0,
+      "changedOutsideCrop": 0,
+      "foregroundMismatches": 0,
+      "atlasMismatches": 0,
+      "fixedRegions": {
+        "face": {
+          "bounds": [
+            827,
+            297,
+            320,
+            275
+          ],
+          "changedPixels": 0
+        },
+        "eyes": {
+          "bounds": [
+            935,
+            435,
+            165,
+            105
+          ],
+          "changedPixels": 0
+        },
+        "scarf": {
+          "bounds": [
+            826,
+            554,
+            231,
+            50
+          ],
+          "changedPixels": 0
+        },
+        "tail": {
+          "bounds": [
+            620,
+            450,
+            195,
+            315
+          ],
+          "changedPixels": 0
+        },
+        "chair": {
+          "bounds": [
+            600,
+            550,
+            75,
+            250
+          ],
+          "changedPixels": 0
+        },
+        "laptop": {
+          "bounds": [
+            1155,
+            510,
+            190,
+            237
+          ],
+          "changedPixels": 0
+        },
+        "keyboardOutsideContact": {
+          "bounds": [
+            968,
+            650,
+            194,
+            97
+          ],
+          "changedPixels": 0,
+          "excludedContactPixels": 8484
+        }
+      }
+    },
+    {
+      "index": 1,
+      "name": "near-lift",
+      "crop": "frames/01-near-lift.png",
+      "fullFrame": "frames-full/01-near-lift.png",
+      "changedPixels": 3361,
+      "changeBounds": [
+        917,
+        668,
+        146,
+        36
+      ],
+      "changedOutsideAllowed": 0,
+      "changedOutsideCrop": 0,
+      "foregroundMismatches": 0,
+      "atlasMismatches": 0,
+      "fixedRegions": {
+        "face": {
+          "bounds": [
+            827,
+            297,
+            320,
+            275
+          ],
+          "changedPixels": 0
+        },
+        "eyes": {
+          "bounds": [
+            935,
+            435,
+            165,
+            105
+          ],
+          "changedPixels": 0
+        },
+        "scarf": {
+          "bounds": [
+            826,
+            554,
+            231,
+            50
+          ],
+          "changedPixels": 0
+        },
+        "tail": {
+          "bounds": [
+            620,
+            450,
+            195,
+            315
+          ],
+          "changedPixels": 0
+        },
+        "chair": {
+          "bounds": [
+            600,
+            550,
+            75,
+            250
+          ],
+          "changedPixels": 0
+        },
+        "laptop": {
+          "bounds": [
+            1155,
+            510,
+            190,
+            237
+          ],
+          "changedPixels": 0
+        },
+        "keyboardOutsideContact": {
+          "bounds": [
+            968,
+            650,
+            194,
+            97
+          ],
+          "changedPixels": 0,
+          "excludedContactPixels": 8484
+        }
+      }
+    },
+    {
+      "index": 2,
+      "name": "near-contact",
+      "crop": "frames/02-near-contact.png",
+      "fullFrame": "frames-full/02-near-contact.png",
+      "changedPixels": 3418,
+      "changeBounds": [
+        920,
+        657,
+        217,
+        50
+      ],
+      "changedOutsideAllowed": 0,
+      "changedOutsideCrop": 0,
+      "foregroundMismatches": 0,
+      "atlasMismatches": 0,
+      "fixedRegions": {
+        "face": {
+          "bounds": [
+            827,
+            297,
+            320,
+            275
+          ],
+          "changedPixels": 0
+        },
+        "eyes": {
+          "bounds": [
+            935,
+            435,
+            165,
+            105
+          ],
+          "changedPixels": 0
+        },
+        "scarf": {
+          "bounds": [
+            826,
+            554,
+            231,
+            50
+          ],
+          "changedPixels": 0
+        },
+        "tail": {
+          "bounds": [
+            620,
+            450,
+            195,
+            315
+          ],
+          "changedPixels": 0
+        },
+        "chair": {
+          "bounds": [
+            600,
+            550,
+            75,
+            250
+          ],
+          "changedPixels": 0
+        },
+        "laptop": {
+          "bounds": [
+            1155,
+            510,
+            190,
+            237
+          ],
+          "changedPixels": 0
+        },
+        "keyboardOutsideContact": {
+          "bounds": [
+            968,
+            650,
+            194,
+            97
+          ],
+          "changedPixels": 0,
+          "excludedContactPixels": 8484
+        }
+      }
+    },
+    {
+      "index": 3,
+      "name": "near-release",
+      "crop": "frames/03-near-release.png",
+      "fullFrame": "frames-full/03-near-release.png",
+      "changedPixels": 1794,
+      "changeBounds": [
+        1001,
+        650,
+        147,
+        54
+      ],
+      "changedOutsideAllowed": 0,
+      "changedOutsideCrop": 0,
+      "foregroundMismatches": 0,
+      "atlasMismatches": 0,
+      "fixedRegions": {
+        "face": {
+          "bounds": [
+            827,
+            297,
+            320,
+            275
+          ],
+          "changedPixels": 0
+        },
+        "eyes": {
+          "bounds": [
+            935,
+            435,
+            165,
+            105
+          ],
+          "changedPixels": 0
+        },
+        "scarf": {
+          "bounds": [
+            826,
+            554,
+            231,
+            50
+          ],
+          "changedPixels": 0
+        },
+        "tail": {
+          "bounds": [
+            620,
+            450,
+            195,
+            315
+          ],
+          "changedPixels": 0
+        },
+        "chair": {
+          "bounds": [
+            600,
+            550,
+            75,
+            250
+          ],
+          "changedPixels": 0
+        },
+        "laptop": {
+          "bounds": [
+            1155,
+            510,
+            190,
+            237
+          ],
+          "changedPixels": 0
+        },
+        "keyboardOutsideContact": {
+          "bounds": [
+            968,
+            650,
+            194,
+            97
+          ],
+          "changedPixels": 0,
+          "excludedContactPixels": 8484
+        }
+      }
+    },
+    {
+      "index": 4,
+      "name": "far-lift",
+      "crop": "frames/04-far-lift.png",
+      "fullFrame": "frames-full/04-far-lift.png",
+      "changedPixels": 1824,
+      "changeBounds": [
+        1061,
+        647,
+        87,
+        30
+      ],
+      "changedOutsideAllowed": 0,
+      "changedOutsideCrop": 0,
+      "foregroundMismatches": 0,
+      "atlasMismatches": 0,
+      "fixedRegions": {
+        "face": {
+          "bounds": [
+            827,
+            297,
+            320,
+            275
+          ],
+          "changedPixels": 0
+        },
+        "eyes": {
+          "bounds": [
+            935,
+            435,
+            165,
+            105
+          ],
+          "changedPixels": 0
+        },
+        "scarf": {
+          "bounds": [
+            826,
+            554,
+            231,
+            50
+          ],
+          "changedPixels": 0
+        },
+        "tail": {
+          "bounds": [
+            620,
+            450,
+            195,
+            315
+          ],
+          "changedPixels": 0
+        },
+        "chair": {
+          "bounds": [
+            600,
+            550,
+            75,
+            250
+          ],
+          "changedPixels": 0
+        },
+        "laptop": {
+          "bounds": [
+            1155,
+            510,
+            190,
+            237
+          ],
+          "changedPixels": 0
+        },
+        "keyboardOutsideContact": {
+          "bounds": [
+            968,
+            650,
+            194,
+            97
+          ],
+          "changedPixels": 0,
+          "excludedContactPixels": 8484
+        }
+      }
+    },
+    {
+      "index": 5,
+      "name": "far-contact",
+      "crop": "frames/05-far-contact.png",
+      "fullFrame": "frames-full/05-far-contact.png",
+      "changedPixels": 2408,
+      "changeBounds": [
+        1001,
+        648,
+        147,
+        56
+      ],
+      "changedOutsideAllowed": 0,
+      "changedOutsideCrop": 0,
+      "foregroundMismatches": 0,
+      "atlasMismatches": 0,
+      "fixedRegions": {
+        "face": {
+          "bounds": [
+            827,
+            297,
+            320,
+            275
+          ],
+          "changedPixels": 0
+        },
+        "eyes": {
+          "bounds": [
+            935,
+            435,
+            165,
+            105
+          ],
+          "changedPixels": 0
+        },
+        "scarf": {
+          "bounds": [
+            826,
+            554,
+            231,
+            50
+          ],
+          "changedPixels": 0
+        },
+        "tail": {
+          "bounds": [
+            620,
+            450,
+            195,
+            315
+          ],
+          "changedPixels": 0
+        },
+        "chair": {
+          "bounds": [
+            600,
+            550,
+            75,
+            250
+          ],
+          "changedPixels": 0
+        },
+        "laptop": {
+          "bounds": [
+            1155,
+            510,
+            190,
+            237
+          ],
+          "changedPixels": 0
+        },
+        "keyboardOutsideContact": {
+          "bounds": [
+            968,
+            650,
+            194,
+            97
+          ],
+          "changedPixels": 0,
+          "excludedContactPixels": 8484
+        }
+      }
+    },
+    {
+      "index": 6,
+      "name": "settle",
+      "crop": "frames/06-settle.png",
+      "fullFrame": "frames-full/06-settle.png",
+      "changedPixels": 747,
+      "changeBounds": [
+        1001,
+        678,
+        38,
+        27
+      ],
+      "changedOutsideAllowed": 0,
+      "changedOutsideCrop": 0,
+      "foregroundMismatches": 0,
+      "atlasMismatches": 0,
+      "fixedRegions": {
+        "face": {
+          "bounds": [
+            827,
+            297,
+            320,
+            275
+          ],
+          "changedPixels": 0
+        },
+        "eyes": {
+          "bounds": [
+            935,
+            435,
+            165,
+            105
+          ],
+          "changedPixels": 0
+        },
+        "scarf": {
+          "bounds": [
+            826,
+            554,
+            231,
+            50
+          ],
+          "changedPixels": 0
+        },
+        "tail": {
+          "bounds": [
+            620,
+            450,
+            195,
+            315
+          ],
+          "changedPixels": 0
+        },
+        "chair": {
+          "bounds": [
+            600,
+            550,
+            75,
+            250
+          ],
+          "changedPixels": 0
+        },
+        "laptop": {
+          "bounds": [
+            1155,
+            510,
+            190,
+            237
+          ],
+          "changedPixels": 0
+        },
+        "keyboardOutsideContact": {
+          "bounds": [
+            968,
+            650,
+            194,
+            97
+          ],
+          "changedPixels": 0,
+          "excludedContactPixels": 8484
+        }
+      }
+    }
+  ],
+  "failures": [],
+  "restingFrameMatchesEnvironment": true,
+  "allPass": true
+}
