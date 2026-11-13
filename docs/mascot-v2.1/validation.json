@@ -1,0 +1,224 @@
+{
+  "status": "PASS",
+  "nativeFrameSize": [
+    64,
+    64
+  ],
+  "paletteColorsDeclared": 19,
+  "paletteColorsUsed": 19,
+  "pngFiles": 29,
+  "animationFrames": 14,
+  "consistencyPixelChecks": 57344,
+  "animatedPreviews": 12,
+  "previewScales": [
+    1,
+    4,
+    8
+  ],
+  "checks": [
+    "Dimensions",
+    "Fixed palette",
+    "Binary alpha",
+    "All atlas/frame equality",
+    "Stable non-animated regions",
+    "Rigid integer bounce and idle head lift",
+    "Transparent animation margins",
+    "Expression eye/mouth isolation",
+    "Connected ears",
+    "GIF durations and every decoded GIF pixel at 1x/4x/8x",
+    "Approved B exact SHA-256",
+    "Preserved silhouettes, body and bow",
+    "Exact nearest-neighbor light/dark static previews"
+  ],
+  "visualAcceptance": "Front B approved by owner; derived views, portrait, expressions and animations await review",
+  "files": {
+    "atlases/blink.png": {
+      "width": 256,
+      "height": 64,
+      "opaquePixels": 8756
+    },
+    "atlases/expressions.png": {
+      "width": 320,
+      "height": 64,
+      "opaquePixels": 10945
+    },
+    "atlases/happy.png": {
+      "width": 256,
+      "height": 64,
+      "opaquePixels": 8756
+    },
+    "atlases/idle.png": {
+      "width": 128,
+      "height": 64,
+      "opaquePixels": 4411
+    },
+    "atlases/tail.png": {
+      "width": 256,
+      "height": 64,
+      "opaquePixels": 8756
+    },
+    "atlases/views.png": {
+      "width": 256,
+      "height": 64,
+      "opaquePixels": 8845
+    },
+    "back.png": {
+      "width": 64,
+      "height": 64,
+      "opaquePixels": 2189
+    },
+    "expressions/blink.png": {
+      "width": 64,
+      "height": 64,
+      "opaquePixels": 2189
+    },
+    "expressions/curious.png": {
+      "width": 64,
+      "height": 64,
+      "opaquePixels": 2189
+    },
+    "expressions/happy.png": {
+      "width": 64,
+      "height": 64,
+      "opaquePixels": 2189
+    },
+    "expressions/neutral.png": {
+      "width": 64,
+      "height": 64,
+      "opaquePixels": 2189
+    },
+    "expressions/sleepy.png": {
+      "width": 64,
+      "height": 64,
+      "opaquePixels": 2189
+    },
+    "frames/blink-0.png": {
+      "width": 64,
+      "height": 64,
+      "opaquePixels": 2189
+    },
+    "frames/blink-1.png": {
+      "width": 64,
+      "height": 64,
+      "opaquePixels": 2189
+    },
+    "frames/blink-2.png": {
+      "width": 64,
+      "height": 64,
+      "opaquePixels": 2189
+    },
+    "frames/blink-3.png": {
+      "width": 64,
+      "height": 64,
+      "opaquePixels": 2189
+    },
+    "frames/happy-0.png": {
+      "width": 64,
+      "height": 64,
+      "opaquePixels": 2189
+    },
+    "frames/happy-1.png": {
+      "width": 64,
+      "height": 64,
+      "opaquePixels": 2189
+    },
+    "frames/happy-2.png": {
+      "width": 64,
+      "height": 64,
+      "opaquePixels": 2189
+    },
+    "frames/happy-3.png": {
+      "width": 64,
+      "height": 64,
+      "opaquePixels": 2189
+    },
+    "frames/idle-0.png": {
+      "width": 64,
+      "height": 64,
+      "opaquePixels": 2189
+    },
+    "frames/idle-1.png": {
+      "width": 64,
+      "height": 64,
+      "opaquePixels": 2222
+    },
+    "frames/tail-0.png": {
+      "width": 64,
+      "height": 64,
+      "opaquePixels": 2189
+    },
+    "frames/tail-1.png": {
+      "width": 64,
+      "height": 64,
+      "opaquePixels": 2195
+    },
+    "frames/tail-2.png": {
+      "width": 64,
+      "height": 64,
+      "opaquePixels": 2189
+    },
+    "frames/tail-3.png": {
+      "width": 64,
+      "height": 64,
+      "opaquePixels": 2183
+    },
+    "front.png": {
+      "width": 64,
+      "height": 64,
+      "opaquePixels": 2189
+    },
+    "portrait.png": {
+      "width": 64,
+      "height": 64,
+      "opaquePixels": 2972
+    },
+    "side.png": {
+      "width": 64,
+      "height": 64,
+      "opaquePixels": 1495
+    }
+  },
+  "sha256": {
+    "atlases/blink.png": "493519a081139d8e97fe7d88a6b9439b33ea9389be96ccc40923f318750d230b",
+    "atlases/expressions.png": "08f549e8ad6ef4ad515603376f9e44a4b744618b9e434c8f66a0c58e64396cc0",
+    "atlases/happy.png": "aa5cc2180a5f4d42c1844e7fef67337d630fcf1f8b676ea4d351cfedca4656ec",
+    "atlases/idle.png": "2be76293f77f83b107951dbf5e0b98044952124a756b295062c4ee99ddb9691e",
+    "atlases/tail.png": "5c08ceb413f3bff09606356e705e4c5aa526086c4acdd31101610b6b48dc6e39",
+    "atlases/views.png": "0af48e88009c969e43fa66ed7842cf5a7fe63a1bea5969f003f1bea1229b7531",
+    "back.png": "1bd3b67a7cdd8c3a7326e0d27016473d84464c22f005c980eaaffa4cd3b97695",
+    "expressions/blink.png": "a397e5e9489592a2fba9adc9e97e7e70c63719b2efc6521ec69c292cdb74ea84",
+    "expressions/curious.png": "49ccf25e37aefd88af5e2039a901b55ec44e78e719b121c67e561d3eb766ce51",
+    "expressions/happy.png": "df5cf14051ea2a42bcd19c1368487a203ea09ebb8643cb34284e29563c7bc543",
+    "expressions/neutral.png": "a07781439461bc715463a6d830598e8eb93ef47ec508d346307d71915f534ba3",
+    "expressions/sleepy.png": "cf4ce7daa838bb47369ff9331c48fdf213c6fd6493715204309ddfa34a5570bd",
+    "frames/blink-0.png": "a07781439461bc715463a6d830598e8eb93ef47ec508d346307d71915f534ba3",
+    "frames/blink-1.png": "f1484854868fea4caccbb9225fba3198911c00dde665d87091003a87ef5852d0",
+    "frames/blink-2.png": "a397e5e9489592a2fba9adc9e97e7e70c63719b2efc6521ec69c292cdb74ea84",
+    "frames/blink-3.png": "f1484854868fea4caccbb9225fba3198911c00dde665d87091003a87ef5852d0",
+    "frames/happy-0.png": "df5cf14051ea2a42bcd19c1368487a203ea09ebb8643cb34284e29563c7bc543",
+    "frames/happy-1.png": "2c63f3439b94d13f23a111e3155cb1b97e52bc7b49702bf0eaa45f904325d7e2",
+    "frames/happy-2.png": "bba782c24e67f2c3302ab74a1382a1dfb20b786a88e0d22d942acf5b48eb6344",
+    "frames/happy-3.png": "2c63f3439b94d13f23a111e3155cb1b97e52bc7b49702bf0eaa45f904325d7e2",
+    "frames/idle-0.png": "a07781439461bc715463a6d830598e8eb93ef47ec508d346307d71915f534ba3",
+    "frames/idle-1.png": "2ea0b95c54fb716607f39d615a50143465fed97b8438650db48d49a7c928639f",
+    "frames/tail-0.png": "a07781439461bc715463a6d830598e8eb93ef47ec508d346307d71915f534ba3",
+    "frames/tail-1.png": "9abaec45df5044828831164efe7930ad9269b9a24685166ebbb8b536485f46a9",
+    "frames/tail-2.png": "a07781439461bc715463a6d830598e8eb93ef47ec508d346307d71915f534ba3",
+    "frames/tail-3.png": "709708b0690cbe249fdf82ef2454f0890665780b3c7975bf1f93db91d1fd161e",
+    "front.png": "a07781439461bc715463a6d830598e8eb93ef47ec508d346307d71915f534ba3",
+    "portrait.png": "3189dc9efb32a88188395ee127868206a1f9ae32030387637d2599a2067c03a2",
+    "side.png": "b13bea52e82c2354d75dc6b9846b7a96c0d5417b457bb9903ae3af18c370ebe7",
+    "previews/idle-1x.gif": "ce5ea9fe9910429ddaa36d2079e3d37ea5518497d79ec149cd2c13790b2f759a",
+    "previews/idle-4x.gif": "7225588b715bd5b8152fd49d39c8de75a821da6986b9f32e221d099df147c3cb",
+    "previews/idle-8x.gif": "8aa84f6092a19a78505711392bffb725ef3a04d634778cc5fd03de944004d6f7",
+    "previews/blink-1x.gif": "ad8c918b0a6434a790774bb102d01dff1fda81354aad4322f2ff05ed9502c52f",
+    "previews/blink-4x.gif": "361c6f12acc8bd008f3f02379defd3b09bfd018c223ad4e8f7e0253ace2eb2e5",
+    "previews/blink-8x.gif": "ee307f3eb1741eb5d5de47312c889d3264f333c10e1aacb9321c821e15b704c0",
+    "previews/happy-1x.gif": "37513c08383ffe59c72386bff7da9450729e5479da6ce6f873cbd8378e12255f",
+    "previews/happy-4x.gif": "b1651e67953c949966c4398c75219ccd3022f0c07a5731015ecafb306b3e9b66",
+    "previews/happy-8x.gif": "1ab6087497536cb1fff56f78019d4a37bd102433ac7b26fe2f8f31ed02c5f39a",
+    "previews/tail-1x.gif": "992bd7a5f7da87c1f7c69dba547573bd2538c414b82e5afbec0a11f91833a270",
+    "previews/tail-4x.gif": "2e4e94d7de8728b32645ad31f24fa7ce6bbc97c5b5ad366c46c1715e8927c65f",
+    "previews/tail-8x.gif": "4ac211d257061b84a470156ebaab75c436d1ea56752569d68d25f8d0810dc317"
+  }
+}
