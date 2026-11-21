@@ -1,0 +1,58 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AtlasMap from '../../components/kaerimichi/AtlasMap.astro';
+import RegisterEditor from '../../components/kaerimichi/RegisterEditor.astro';
+import { milestones, gameMedia } from '../../lib/kaerimichi/game';
+import '../../styles/kaerimichi.css';
+---
+<BaseLayout title="Kaerimichi | Neighborhood atlas" description="Walk from Itabashihoncho A2 to LIFE Nakajuku through mapped streets, historical storefront records, and the Kaerimichi development journal.">
+  <kaerimichi-journal class="kj">
+    <header class="kj-cover">
+      <div class="kj-cover-image" aria-hidden="true"></div>
+      <div class="kj-cover-inner kj-width">
+        <div class="kj-kicker"><i></i> Historical neighborhood atlas</div>
+        <h1>Kaerimichi<span lang="ja">帰り道</span></h1>
+        <p class="kj-deck">A walk through Itabashi, Tokyo. Follow the old highway past neighborhood storefronts, from Itabashihoncho Station to LIFE Nakajuku.</p>
+        <a class="kj-enter" href="#walking-map">Explore the map <span aria-hidden="true">↓</span></a>
+      </div>
+      <a class="kj-credit" href="https://dl.ndl.go.jp/pid/1306225"><cite>Itabashi</cite> · Keisai Eisen, c. 1835–36 · National Diet Library ↗</a>
+    </header>
+    <div class="kj-width">
+      <nav class="kj-index" aria-label="Atlas sections"><a href="#walking-map">Walking map</a><a href="#historical-register">Historical register</a><a href="#reconstruction">Game journal</a><a href="#working-records">Working records</a></nav>
+      <section id="walking-map" class="kj-map-section" aria-labelledby="walk-heading">
+        <div class="kj-section-head"><div><p class="kj-kicker" lang="ja">散策地図</p><h2 id="walk-heading">The neighborhood walk</h2></div><span class="kj-route-tag"><i></i> A2 <span aria-hidden="true">→</span> LIFE Nakajuku</span></div>
+        <div class="kj-explorer">
+          <div class="kj-plot"><AtlasMap /></div>
+          <aside class="kj-guide" aria-labelledby="kj-place">
+            <div class="kj-guide-top"><span class="kj-kicker">On the route</span><span class="kj-folio" data-kj="folio"></span></div>
+            <div class="kj-guide-body"><div class="kj-ja" lang="ja" data-kj="place-ja"></div><h3 id="kj-place" data-kj="place"></h3><p class="kj-category" data-kj="category"></p><p class="kj-description" data-kj="description"></p><span class="kj-location-status" data-kj="location-state"></span><a class="kj-record-link" href="#historical-register" data-kj="view-record">Read field notes ↘</a></div>
+            <div class="kj-guide-controls"><label class="kj-mini" for="kj-stops">Jump to a stop</label><select id="kj-stops" data-kj="stops"></select><div class="kj-stepper"><button type="button" data-kj="prev">← Previous</button><button type="button" data-kj="next">Next stop →</button></div></div>
+          </aside>
+        </div>
+        <p class="kj-intro kj-route-note">The mapped walk covers 822 m from A2 to LIFE. For the northern storefronts, follow the 69 m spur to Yasuda and return to the junction before continuing south.</p>
+      </section>
+      <section id="historical-register" class="kj-section" aria-labelledby="register-heading">
+        <div class="kj-section-head"><div><p class="kj-kicker" lang="ja">街の記録</p><h2 id="register-heading">Historical register</h2></div></div>
+        <p class="kj-intro">Choose a year to read observations dated to that year. Gaps mark years the register has yet to document.</p>
+        <div data-kj="years" class="kj-years" role="group" aria-label="Filter observations by year"></div>
+        <p data-kj="filter-status" class="kj-result-count" role="status"></p>
+        <div class="kj-register">
+          <nav class="kj-place-list" aria-label="Landmark records" data-kj="list"></nav>
+          <article class="kj-paper" aria-labelledby="kj-notes-place"><span class="kj-paper-tag">Landmark record</span><div class="kj-paper-heading"><h3 id="kj-notes-place" data-kj="notes-place"></h3><span lang="ja" data-kj="notes-ja"></span></div><div class="kj-notes" data-kj="notes"></div></article>
+        </div>
+      </section>
+      <section id="reconstruction" class="kj-section" aria-labelledby="game-heading">
+        <div class="kj-section-head"><div><p class="kj-kicker" lang="ja">制作日誌</p><h2 id="game-heading">The reconstruction journal</h2></div></div>
+        <p class="kj-intro">Kaerimichi recreates the walk in Godot. These milestones come from the project's development history. The playable build is private.</p>
+        <ol class="kj-milestones">{milestones.map(m => <li><span>{m.version}</span><h3>{m.title}</h3><p>{m.description}</p></li>)}</ol>
+        {gameMedia.map(media => <figure class="kj-media">{media.kind === 'image' ? <img src={media.src} alt={media.description} loading="lazy" /> : <video controls preload="metadata" aria-label={media.description} src={media.src}></video>}<figcaption>{media.description}</figcaption></figure>)}
+      </section>
+      <section id="working-records" class="kj-section kj-working" aria-label="Local working records"><RegisterEditor /></section>
+    </div>
+    <span class="kj-sr" role="status" data-kj="selection-status"></span>
+    <noscript><p class="kj-width">Enable JavaScript to explore the map and historical register.</p></noscript>
+  </kaerimichi-journal>
+</BaseLayout>
+<script>
+  import '../../components/kaerimichi/journal';
+</script>

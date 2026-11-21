@@ -1,0 +1,112 @@
+<kaerimichi-register-editor>
+  <details>
+    <summary>Working register <span>JSON import &amp; export</span></summary>
+    <div class="editor-body">
+      <p>Edit or import a complete register. Applied edits stay in this browser. Download the JSON to keep a copy.</p>
+      <label for="kaerimichi-json-import">Import a JSON file</label>
+      <input id="kaerimichi-json-import" type="file" accept=".json,application/json" />
+      <label for="kaerimichi-json-records">Landmark records</label>
+      <textarea id="kaerimichi-json-records" rows="10" spellcheck="false" autocapitalize="off" autocomplete="off" wrap="off"></textarea>
+      <div class="actions">
+        <button type="button" data-action="apply">Apply to this browser</button>
+        <button type="button" data-action="download">Download JSON</button>
+        <button type="button" data-action="restore">Restore published records</button>
+      </div>
+      <p class="status" role="status" aria-live="polite" aria-atomic="true"></p>
+    </div>
+  </details>
+</kaerimichi-register-editor>
+
+<script>
+  import baseline from '../../data/kaerimichi/register.json'
+  import {
+    clearWorkingRegister, exportRegister, parseRegister, readWorkingRegister, saveWorkingRegister,
+    type Register,
+  } from '../../lib/kaerimichi/register'
+
+  class RegisterEditor extends HTMLElement {
+    connectedCallback() {
+      if (this.dataset.ready) return
+      this.dataset.ready = 'true'
+      const published = parseRegister(baseline)
+      const editor = this.querySelector('textarea')!
+      const fileInput = this.querySelector('input')!
+      const status = this.querySelector<HTMLElement>('.status')!
+      const announce = (message: string) => { status.textContent = message }
+      const notifyAtlas = (register: Register | null) =>
+        window.dispatchEvent(new CustomEvent('atlas:working', { detail: { register } }))
+      const errorMessage = (err: unknown) => err instanceof Error ? err.message : 'Could not read this working register.'
+      const showError = (err: unknown) => announce(errorMessage(err))
+      try {
+        const working = readWorkingRegister()
+        editor.value = exportRegister(working ?? published)
+        announce(working ? 'Showing your local working records.' : 'Showing the published records.')
+      } catch (err) {
+        editor.value = exportRegister(published)
+        announce('Showing the published register. Could not load local records. ' + errorMessage(err))
+      }
+
+      fileInput.addEventListener('change', async () => {
+        const file = fileInput.files?.[0]
+        if (!file) return
+        try {
+          const imported = parseRegister(JSON.parse(await file.text()))
+          editor.value = exportRegister(imported)
+          announce('Loaded ' + imported.landmarks.length + ' records. Apply them to see them in the atlas.')
+        } catch (err) { showError(err) }
+        fileInput.value = ''
+      })
+      this.querySelector('[data-action="apply"]')!.addEventListener('click', () => {
+        try {
+          const working = parseRegister(JSON.parse(editor.value))
+          saveWorkingRegister(working)
+          notifyAtlas(working)
+          announce('Applied ' + working.landmarks.length + ' local records to the atlas.')
+        } catch (err) { showError(err) }
+      })
+      this.querySelector('[data-action="download"]')!.addEventListener('click', () => {
+        try {
+          const data = exportRegister(parseRegister(JSON.parse(editor.value)))
+          const url = URL.createObjectURL(new Blob([data], { type: 'application/json;charset=utf-8' }))
+          const link = document.createElement('a')
+          link.href = url
+          link.download = 'kaerimichi-register-v1.json'
+          this.append(link)
+          link.click()
+          link.remove()
+          window.setTimeout(() => URL.revokeObjectURL(url), 1000)
+          announce('Prepared your working register for download.')
+        } catch (err) { showError(err) }
+      })
+      this.querySelector('[data-action="restore"]')!.addEventListener('click', () => {
+        try {
+          clearWorkingRegister()
+          editor.value = exportRegister(published)
+          notifyAtlas(null)
+          announce('Restored the published records in this browser.')
+        } catch (err) { showError(err) }
+      })
+    }
+  }
+
+  if (!customElements.get('kaerimichi-register-editor')) {
+    customElements.define('kaerimichi-register-editor', RegisterEditor)
+  }
+</script>
+
+<style>
+  kaerimichi-register-editor { display: block; min-width: 0; }
+  details { border-block: 1px solid #ab94634d; color: #ede7d8; background: #172320; }
+  summary { padding: 1rem 1.2rem; cursor: pointer; font-weight: 650; }
+  summary span { display: inline-block; margin-left: .6rem; font-size: .8rem; font-weight: 400; color: #ccbea1; }
+  .editor-body { padding: 0 1.2rem 1.2rem; }
+  .editor-body p { max-width: 70ch; margin: 0 0 1rem; font-size: .93rem; }
+  label { display: block; margin: 1rem 0 .4rem; font-weight: 600; font-size: .85rem; }
+  input { max-width: 100%; font: inherit; font-size: .9rem; color: inherit; }
+  textarea { display: block; width: 100%; max-width: 100%; box-sizing: border-box; padding: .75rem; resize: vertical; border: 1px solid #728078; border-radius: .35rem; background: #101916; color: #e1ece6; font: .85rem/1.5 ui-monospace, monospace; }
+  .actions { display: flex; flex-wrap: wrap; gap: .55rem; margin: .8rem 0; }
+  button { cursor: pointer; min-height: 2.75rem; border-radius: .4rem; padding: .55rem .85rem; border: 1px solid #738278; background: #23342c; color: #f0eddf; font: inherit; font-size: .85rem; }
+  button[data-action="apply"] { background: #e8c78c; color: #25231d; border-color: #e8c78c; font-weight: 650; }
+  :is(summary,input,textarea,button):focus-visible { outline: 2px solid #fdcb76; outline-offset: 3px; }
+  .editor-body .status { color: #d4c5a8; margin: .75rem 0 0; overflow-wrap: anywhere; }
+</style>

@@ -12,12 +12,13 @@
     "preview": "astro preview",
     "astro": "astro",
     "verify": "node scripts/verify-build.mjs",
-    "validate": "npm run check && npm run build && npm run verify && npm run mascot:verify && npm run showcase:verify",
+    "validate": "npm run check && npm run build && npm run verify && npm run mascot:verify && npm run showcase:verify && npm run atlas:verify",
     "showcase:verify": "node scripts/verify-nightstock-showcase.mjs",
     "brand-assets": "node scripts/generate-brand-assets.mjs",
     "mascot:generate": "node scripts/generate-tinker-panda-v3-4.mjs",
     "mascot:verify": "node scripts/verify-tinker-panda-v3-4.mjs && node scripts/verify-tinker-controller.cjs",
-    "mascot:review": "node scripts/build-tinker-review.mjs && node scripts/serve-tinker-review.mjs"
+    "mascot:review": "node scripts/build-tinker-review.mjs && node scripts/serve-tinker-review.mjs",
+    "atlas:verify": "node scripts/test-kaerimichi-geography.mjs && node --experimental-strip-types --test scripts/test-kaerimichi-register.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^8.0.2",
