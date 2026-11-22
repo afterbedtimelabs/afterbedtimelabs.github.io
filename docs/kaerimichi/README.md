@@ -45,3 +45,11 @@ See [the register format](schema.md) for the versioned JSON and how the game can
 ## Cover artwork
 
 Keisai Eisen’s *Itabashi Station* is an Edo-period woodblock design, dated circa 1835–36 by the Chiba City Museum of Art. The atlas displays a cropped view of a public-domain scan from the National Diet Library. [Collection record](https://dl.ndl.go.jp/pid/1306225) · [Design and date](https://www.ccma-net.jp/collection/works/4180/) · [Scan and rights information](https://commons.wikimedia.org/wiki/File:NDL-DC_1306225-Keisai_Eisen-第二_木曽街道板橋之駅-crd.jpg) · [Resized copy used in this atlas](https://github.com/SIMPLYBOYS/nakasendo-pixel/blob/3a8480b3274fac8ef48fd05bca42dbc58db2b707/game-assets/originals/02-itabashi.jpg)
+
+## Photographs and game captures
+
+The A2 record includes LERK’s 21 March 2020 photograph in the Commons reduced-resolution edition. The caption credits the author and links the source and license. Storefront evidence from other publishers opens on their original sites. [A2 file record](https://commons.wikimedia.org/wiki/File:Toei-subway-I19-Itabashihoncho-station-entrance-A2-20200321-131829.jpg) · [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+
+All 14 route cards include original V0.4 Godot screenshots. The journal includes a silent 14-second excerpt from the V0.5 street-activity film. These are renders of the game’s public streets. Their geometry adapts Tokyo Metropolitan Government's FY2025 Itabashi city model and OpenStreetMap. Milestones were checked against the companion project's release histories through V0.6. [PLATEAU dataset](https://www.geospatial.jp/ckan/dataset/plateau-13119-itabashi-ku-2025) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · [OpenStreetMap attribution and license](https://www.openstreetmap.org/copyright)
+
+Use the area controls to frame the station-side shops, the old highway or the stretch between the bridge and LIFE. Arrow keys pan a focused map, + and − zoom, and Home fits the full walk. Tab reaches the numbered pins. Enter opens a grouped pin and Escape closes its chooser. The stop selector provides an alternative to navigating pins.

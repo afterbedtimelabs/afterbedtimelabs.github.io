@@ -1,4 +1,5 @@
 import published from '../../data/kaerimichi/register.json';
+import { captureFor } from '../../lib/kaerimichi/game';
 import { parseRegister, readWorkingRegister, type Landmark, type Register } from '../../lib/kaerimichi/register';
 
 const initialYears = ['2021', '2023', '2024', '2025', '2026'];
@@ -124,6 +125,15 @@ class KaerimichiJournal extends HTMLElement {
     this.field('place-ja').textContent = row.nameJa;
     this.field('category').textContent = row.category;
     this.field('description').textContent = row.description;
+    const capture = captureFor(row.id);
+    this.field('capture').hidden = !capture;
+    if (capture) {
+      const img = this.field<HTMLImageElement>('capture-image');
+      img.src = capture.src;
+      img.alt = capture.description;
+      this.field<HTMLAnchorElement>('capture-link').href = capture.src;
+      this.field('capture-caption').textContent = 'Godot reconstruction · ' + capture.version;
+    }
     const position = this.field('location-state');
     position.textContent = row.location.coordinates ? (row.location.confidence === 'VERIFIED' ? 'Verified map position' : 'Approximate map position') : 'Map position unresolved';
     position.dataset.level = row.location.confidence;
@@ -168,6 +178,10 @@ class KaerimichiJournal extends HTMLElement {
       date.dateTime = observation.date;
       item.append(date, confidence(observation.confidence), make('p', observation.description));
       if (observation.appearance) item.append(make('p', observation.appearance));
+      if (record.id === 'a2' && observation.date === '2020-03-21' && observation.sourceIds.includes('a2-photo-2020')) {
+        const template = this.querySelector<HTMLTemplateElement>('#a2-photo')!;
+        item.append(template.content.cloneNode(true));
+      }
       item.append(citations(record, observation.sourceIds));
       notes.append(item);
     }

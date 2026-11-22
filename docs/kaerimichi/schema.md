@@ -1,6 +1,6 @@
 # Kaerimichi historical register
 
-The version 1 interchange document is UTF-8 JSON. The published snapshot lives in `src/data/kaerimichi/register.json`. TypeScript interfaces and executable validation rules live in `src/lib/kaerimichi/register.ts`. An import replaces the complete working snapshot. Array order is the sequence used by the walking journal. Geographic routing data has separate provenance.
+The version 1 interchange document is UTF-8 JSON. The production site serves the validated snapshot at `/kaerimichi/register.json`. Its source lives in `src/data/kaerimichi/register.json`. TypeScript interfaces and executable validation rules live in `src/lib/kaerimichi/register.ts`. An import replaces the complete working snapshot. Array order is the sequence used by the walking journal. Geographic routing data has separate provenance.
 
 ## Fields
 
@@ -28,4 +28,8 @@ For a future pipeline, parse a JSON file and call `parseRegister(input)`. Use la
 
 ## Game material
 
-`src/lib/kaerimichi/game.ts` holds the owner-supplied milestones and a typed media list. Add a cleared capture with its kind, URL, accessible description, matching landmark ID (or null for a whole-route view), game version and credit. The V0.4 route length is the project's estimate for its private Godot walk. The register supplies no conversion from real-world coordinates to game metres.
+Use `src/data/kaerimichi/development.json` for the development journal. Append a milestone with its version, title and description. Each media entry has a kind (image or video), a local asset URL in `src`, a version, a landmark ID from the published register, and a description that explains what the capture shows. Videos may include a local poster URL. Set `journalTitle` to include an entry in the journal gallery. The first image for a landmark appears on its map card.
+
+Place rendered media under `public/images/kaerimichi/game/`. Current game material is credited to After Bedtime Labs under the gallery. Include maker, upstream geography credits and applicable license links for future contributions. Keep historic photographs tied to their dated observations. A game screenshot depicts an interpretation of a place.
+
+For V0.4 joins, the register’s `godotAssetId` is an opaque model group from the game's public-place history table or a named mesh such as BridgeDeck. Storefronts that share a building can share a group. A null value leaves the asset join open. No game binaries or notebook fields are needed.

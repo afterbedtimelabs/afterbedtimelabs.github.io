@@ -109,7 +109,37 @@
 .kj-milestones span { font:12px var(--mono); color:var(--gold); }
 .kj-milestones h3 { font:normal 21px/1.24 var(--serif); letter-spacing:-.02em; margin:8px 0; }
 .kj-milestones p { font-size:13px; line-height:1.6; color:var(--mute); }
-.kj-media img,.kj-media video { max-width:100%; }
+.kj-areas { display:flex; align-items:center; gap:5px; flex-wrap:wrap; margin:16px 0 12px; }
+.kj-areas span { margin-right:8px; font-size:.875rem; color:var(--mute); }
+.kj-areas button { padding:8px 12px; border:1px solid var(--line); border-radius:4px; background:var(--panel); color:var(--paper); font:inherit; font-size:.875rem; cursor:pointer; }
+.kj-areas button[aria-pressed=true] { background:#32433d; border-color:#91b3a4; color:#e2f0da; }
+.kj-plot .walk-map { height:100%; min-height:var(--atlas-map-height); }
+.kj-guide { gap:14px; }
+.kj-stop-photo { margin:0; }
+.kj-stop-photo img,.kj-gallery :is(img,video) { display:block; width:100%; height:auto; aspect-ratio:16 / 9; border-radius:3px; }
+.kj-stop-photo img { max-height:150px; object-fit:cover; }
+.kj-stop-photo figcaption,.kj-media-credit { color:var(--mute); font-size:.8125rem; line-height:1.5; margin-top:5px; }
+.kj-archive-photo { display:flex; gap:14px; align-items:end; padding-block:8px; margin:0; }
+.kj-archive-photo img { display:block; width:100px; height:auto; }
+.kj-archive-photo figcaption { max-width:24ch; font-size:.875rem; }
+.kj-gallery { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin:26px 0 16px; }
+.kj-gallery figure { margin:0; }
+.kj-gallery figcaption { font-size:.9375rem; line-height:1.5; color:var(--mute); }
+.kj-gallery strong { display:block; margin:10px 0 3px; color:var(--paper); font:1.25rem var(--serif); }
+.kj-milestones { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.kj .kj-route-note { max-width:95ch; margin-top:.8rem; }
+.kj .kj-guide .kj-description { font-size:1rem; }
+.kj .kj-guide-controls select,.kj .kj-years button,.kj .kj-stepper button { font-size:.875rem; }
+@media (max-width:780px) {
+  .kj-plot .walk-map { height:var(--atlas-map-height); }
+  .kj-stop-photo img { max-height:180px; width:auto; max-width:100%; }
+}
+@media (max-width:560px) {
+  .kj-areas { display:grid; grid-template-columns:1fr 1fr; }
+  .kj-areas span { grid-column:1 / -1; }
+  .kj-areas button { min-height:44px; }
+  .kj-gallery { grid-template-columns:1fr; }
+}
 .kj-working { padding-bottom:65px; }
 @media (max-width:780px) {
   .kj-width { width:calc(100% - 36px); }

@@ -51,7 +51,7 @@
         {
           "date": "2020-03-21",
           "description": "A dated photograph identifies the A2 entrance to the Toei Mita Line station.",
-          "appearance": null,
+          "appearance": "Yellow tactile paving marks the stairhead. Dark handrails lead down past pale wall tiles to the A2 sign on the landing.",
           "confidence": "VERIFIED",
           "sourceIds": [
             "a2-photo-2020"
@@ -78,7 +78,7 @@
       "uncertainties": [
         "The photograph’s publication date is known. Its capture day and the dates of later signage changes are unknown."
       ],
-      "godotAssetId": null
+      "godotAssetId": "Facade_bldg_2f70f670_9d99_43b4_9e20_4cf76606c4dc"
     },
     {
       "id": "yamato-hospital",
@@ -123,6 +123,11 @@
           "id": "hospital-history",
           "title": "Hospital notice · opening and renaming history",
           "url": "https://tokyoyamato-hp.com/news/138150/"
+        },
+        {
+          "id": "garden",
+          "title": "Tokyo Yamato Hospital staff · entrance planting, May 2024",
+          "url": "https://note.com/yamato_kouhou/n/nd8b37d5eca0b"
         }
       ],
       "observations": [
@@ -143,6 +148,15 @@
           "sourceIds": [
             "hospital-history"
           ]
+        },
+        {
+          "date": "2024-05-23",
+          "description": "Hospital staff describe planting the space beside the main entrance.",
+          "appearance": "Flowers and small areas of lawn soften the threshold. The essay also includes earlier photographs of the first tulips.",
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "garden"
+          ]
         }
       ],
       "operatingPeriod": {
@@ -156,7 +170,7 @@
       "uncertainties": [
         "The renaming year does not date installation of new signs."
       ],
-      "godotAssetId": null
+      "godotAssetId": "Facade_bldg_ea09528e_9dff_48ce_bd55_4136d2e727e8"
     },
     {
       "id": "matsuya",
@@ -186,9 +200,24 @@
           "id": "osm-matsuya",
           "title": "OpenStreetMap · Matsuya restaurant point",
           "url": "https://www.openstreetmap.org/node/4974526551"
+        },
+        {
+          "id": "visit-2024",
+          "title": "Tommy Nakamura / Tabelog · September 2024 visit and exterior",
+          "url": "https://tabelog.com/tokyo/A1322/A132205/13162588/dtlrvwlst/B492638998/"
         }
       ],
-      "observations": [],
+      "observations": [
+        {
+          "date": "2024-09",
+          "description": "A diner photographed the restaurant at street level.",
+          "appearance": "A blue stripe crosses the yellow fascia. A projecting 松屋 sign marks the glazed entrance.",
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "visit-2024"
+          ]
+        }
+      ],
       "operatingPeriod": {
         "description": "Opening date and historical trading interval unresolved.",
         "confidence": "UNKNOWN",
@@ -196,9 +225,9 @@
       },
       "reconstructionConfidence": "UNKNOWN",
       "uncertainties": [
-        "The operator’s branch listing does not establish the colours or layout of its earlier storefront."
+        "The photograph gives no measurements for the shopfront. Later window graphics may differ."
       ],
-      "godotAssetId": null
+      "godotAssetId": "Facade_bldg_55e88121_3293_4a5c_b2c0_30d37ab5f915"
     },
     {
       "id": "korai",
@@ -233,31 +262,62 @@
           "id": "ekiten-korai",
           "title": "Ekiten · Kōrai location",
           "url": "https://www.ekiten.jp/shop_244604/"
+        },
+        {
+          "id": "front-2023",
+          "title": "Tabelog · July 2023 visit and façade photograph",
+          "url": "https://tabelog.com/tokyo/A1322/A132205/13031829/dtlrvwlst/B467955956/"
+        },
+        {
+          "id": "front-2025",
+          "title": "Tabelog · November 2025 visit and street view",
+          "url": "https://tabelog.com/tokyo/A1322/A132205/13031829/dtlrvwlst/B517031555/"
         }
       ],
       "observations": [
         {
           "date": "2023-07",
           "description": "A diner recorded a visit to Kōrai in July 2023.",
+          "appearance": "Red 焼肉 and dark 高麗 lettering share a backlit sign over the narrow, pale-tiled front.",
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "korai-visits",
+            "front-2023"
+          ]
+        },
+        {
+          "date": "2024-12",
+          "description": "A diner recorded a December visit to the Honchō restaurant.",
           "appearance": null,
           "confidence": "VERIFIED",
           "sourceIds": [
             "korai-visits"
           ]
+        },
+        {
+          "date": "2025-11",
+          "description": "A later photograph shows the narrow shop beneath an upper window.",
+          "appearance": "The illuminated sign still carries the two sets of lettering.",
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "front-2025"
+          ]
         }
       ],
       "operatingPeriod": {
-        "description": "Trading is attested in July 2023. The full operating span is unresolved.",
+        "description": "Visitors document this restaurant in 2023, 2024 and 2025. The full operating span remains unknown.",
         "confidence": "UNKNOWN",
         "sourceIds": [
-          "korai-visits"
+          "korai-visits",
+          "front-2023",
+          "front-2025"
         ]
       },
       "reconstructionConfidence": "UNKNOWN",
       "uncertainties": [
-        "A dated meal establishes a visit. It supplies no measured façade details."
+        "The July 2023 and November 2025 photographs bracket the target year. Details of the December 2024 frontage remain unresolved."
       ],
-      "godotAssetId": null
+      "godotAssetId": "Facade_bldg_f185170c_e953_4558_be1c_0a6c1227601f"
     },
     {
       "id": "my-basket",
@@ -325,7 +385,7 @@
       "uncertainties": [
         "The 2021 opening record supplies no dated exterior photograph."
       ],
-      "godotAssetId": null
+      "godotAssetId": "Facade_bldg_1cace9df_00b9_49eb_9279_6087aee25467"
     },
     {
       "id": "hair-salon-best",
@@ -384,7 +444,7 @@
       "uncertainties": [
         "The address is shared. Exact frontage width and earlier branding are unresolved."
       ],
-      "godotAssetId": null
+      "godotAssetId": "Facade_bldg_fcdaf47f_b19f_4050_bd8f_9e7d5ec262a7"
     },
     {
       "id": "ajishino",
@@ -418,7 +478,7 @@
         {
           "id": "ajishino-visit",
           "title": "Tabelog · February 2021 visit and exterior image by 満腹おじさん",
-          "url": "https://tabelog.com/tokyo/A1322/A132205/13083010/dtlrvwlst/"
+          "url": "https://tabelog.com/tokyo/A1322/A132205/13083010/dtlrvwlst/B435162006/"
         },
         {
           "id": "ajishino-photo",
@@ -433,7 +493,7 @@
         {
           "id": "choryu-visits",
           "title": "Tabelog · dated visits to Chōryū",
-          "url": "https://tabelog.com/tokyo/A1322/A132205/13062753/"
+          "url": "https://tabelog.com/tokyo/A1322/A132205/13062753/dtlrvwlst/B490668092/"
         },
         {
           "id": "choryu-2024-photo",
@@ -459,7 +519,7 @@
         },
         {
           "date": "2024-08",
-          "description": "The edge of the adjacent unit is visible in a photograph of Chōryū.",
+          "description": "A photograph looking at Chōryū catches the edge of the neighboring unit. Ajishino’s trading status in August 2024 is unknown.",
           "appearance": "A closed metal shutter appears to the left of Chōryū. It records the condition at the moment of the photograph.",
           "confidence": "VERIFIED",
           "sourceIds": [
@@ -493,7 +553,7 @@
       "uncertainties": [
         "The shutter photograph cannot establish when Ajishino stopped trading."
       ],
-      "godotAssetId": null
+      "godotAssetId": "Facade_bldg_fcdaf47f_b19f_4050_bd8f_9e7d5ec262a7"
     },
     {
       "id": "choryu",
@@ -532,7 +592,7 @@
         {
           "id": "choryu-visits",
           "title": "Tabelog · dated visits to Chōryū",
-          "url": "https://tabelog.com/tokyo/A1322/A132205/13062753/"
+          "url": "https://tabelog.com/tokyo/A1322/A132205/13062753/dtlrvwlst/B490668092/"
         },
         {
           "id": "choryu-2024-photo",
@@ -597,7 +657,7 @@
       "uncertainties": [
         "Photographs document signs and colours. They supply no measured elevation."
       ],
-      "godotAssetId": null
+      "godotAssetId": "Facade_bldg_fcdaf47f_b19f_4050_bd8f_9e7d5ec262a7"
     },
     {
       "id": "yasuda",
@@ -627,21 +687,125 @@
           "id": "yasuda-point",
           "title": "MapFan · address point for Shimizuchō 32-7",
           "url": "https://mapfan.com/spots/A%2C35.7623109039%2C139.7067301697%2C%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%9D%BF%E6%A9%8B%E5%8C%BA%E6%B8%85%E6%B0%B4%E7%94%BA%EF%BC%93%EF%BC%92%EF%BC%8D%EF%BC%97%2C"
+        },
+        {
+          "id": "field-2024",
+          "title": "Pachi Seven · on-site coverage of the Shimizuchō hall",
+          "url": "https://pachiseven.jp/reports/detail/20785"
+        },
+        {
+          "id": "archive",
+          "title": "Minpachi · 2017 listing of the frontage image",
+          "url": "https://minpachi.com/wp-json/wp/v2/media?slug=001431_03&_fields=id,date,source_url"
         }
       ],
-      "observations": [],
+      "observations": [
+        {
+          "date": "2017-06-03",
+          "description": "A frontage photograph was registered in the hall directory on this date. Its capture date is unknown.",
+          "appearance": "White YASUDA lettering sits between red uprights along a glazed frontage.",
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "archive"
+          ]
+        },
+        {
+          "date": "2024-10-11",
+          "description": "A reporter covered the Shimizuchō hall on site.",
+          "appearance": null,
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "field-2024"
+          ]
+        }
+      ],
       "operatingPeriod": {
-        "description": "The operator lists this branch. Its opening date and historical operating interval are unresolved.",
+        "description": "Documented at this address in October 2024. The complete trading interval is unknown.",
         "confidence": "UNKNOWN",
         "sourceIds": [
-          "yasuda-list"
+          "yasuda-list",
+          "field-2024"
         ]
       },
       "reconstructionConfidence": "UNKNOWN",
       "uncertainties": [
-        "Earlier signs and exterior finishes lack dated evidence in this register."
+        "The exact 2024 exterior and date of any sign replacement remain unresolved."
       ],
-      "godotAssetId": null
+      "godotAssetId": "Facade_bldg_039f9c45_55cb_4aae_a07f_4f7c03139023"
+    },
+    {
+      "id": "drug-papas",
+      "nameJa": "どらっぐぱぱす 板橋清水町店",
+      "nameEn": "Drug Papas",
+      "category": "Drugstore",
+      "description": "From Yasuda, continue north along Old Nakasendō. The Shimizuchō branch stands on the west side of the road near the fork into the Akebono shopping street.",
+      "location": {
+        "coordinates": [
+          139.706211,
+          35.7631
+        ],
+        "confidence": "APPROXIMATED",
+        "note": "Ekiten places the branch at this building point. The operator confirms Shimizuchō 39-4. The exact doorway is unresolved.",
+        "sourceIds": [
+          "operator",
+          "point"
+        ]
+      },
+      "sources": [
+        {
+          "id": "operator",
+          "title": "MatsukiyoCocokara · official Shimizuchō branch",
+          "url": "https://www.matsukiyococokara-online.com/map?kid=20306245"
+        },
+        {
+          "id": "point",
+          "title": "Ekiten · store address and map point",
+          "url": "https://www.ekiten.jp/shop_55141/access/"
+        },
+        {
+          "id": "fork",
+          "title": "Itabashi Times · walk along the Akebono shopping street, March 2024",
+          "url": "https://itabashi-times.com/archives/aburasoba-kojimaryu.html"
+        },
+        {
+          "id": "campaign",
+          "title": "Ministry of the Environment · 2024 participating shops, row 19",
+          "url": "https://www.re-style.env.go.jp/img/3r-campaign/2024/pdf/papasu.pdf"
+        }
+      ],
+      "observations": [
+        {
+          "date": "2024-03-27",
+          "description": "The reporter names Papas and Rico’s as nearby landmarks on Old Nakasendō.",
+          "appearance": "The view toward the fork shows a distant strip of yellow and red signage. Fine lettering and the entrance are indistinct.",
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "fork"
+          ]
+        },
+        {
+          "date": "2024-10",
+          "description": "The branch appears at Shimizuchō 39-4 on the October–December campaign list.",
+          "appearance": null,
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "campaign"
+          ]
+        }
+      ],
+      "operatingPeriod": {
+        "description": "The March report and the autumn campaign list both identify this branch in 2024.",
+        "confidence": "VERIFIED",
+        "sourceIds": [
+          "fork",
+          "campaign"
+        ]
+      },
+      "reconstructionConfidence": "APPROXIMATED",
+      "uncertainties": [
+        "The opening date, doorway position and 2024 shop-window layout remain unresolved."
+      ],
+      "godotAssetId": "Facade_bldg_154f54b9_a1ae_4dda_9264_a4aed75d61ec"
     },
     {
       "id": "old-nakasendo",
@@ -755,7 +919,7 @@
       "uncertainties": [
         "The guide’s update date does not date its photograph."
       ],
-      "godotAssetId": null
+      "godotAssetId": "BridgeDeck"
     },
     {
       "id": "nakajuku-street",
@@ -909,7 +1073,7 @@
       "uncertainties": [
         "The 2026 circular supplies no evidence about that year’s exterior."
       ],
-      "godotAssetId": null
+      "godotAssetId": "South_bldg_4433cd95-8484-4f4b-af3d-c65a1166f456"
     }
   ]
 }

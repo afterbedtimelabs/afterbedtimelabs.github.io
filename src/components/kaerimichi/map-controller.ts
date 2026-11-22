@@ -26,6 +26,9 @@ class WalkingMap extends HTMLElement {
   private routeExtent!: number[];
   private center: Point = [0,0];
   private scale = 1;
+  private area = 'walk';
+  private areaButtons: HTMLButtonElement[] = [];
+  private areas = new Map<string, number[]>();
   private fitScale = 1;
   private width = 0;
   private height = 0;
@@ -49,6 +52,23 @@ class WalkingMap extends HTMLElement {
     this.bounds = [this.project([bbox[0],bbox[3]]),this.project([bbox[2],bbox[1]])];
     this.routeExtent = this.dataset.routeExtent!.split(',').map(Number);
     this.setStops(register.landmarks as Landmark[]);
+    // Area boundaries come from the published geographic records, independent of local edits.
+    for (const [area, ids] of Object.entries({
+      station: ['a2', 'drug-papas', 'hair-salon-best', 'my-basket'],
+      honcho: ['old-nakasendo', 'itabashi-bridge'],
+      nakajuku: ['itabashi-bridge', 'nakajuku-street', 'life-nakajuku'],
+    })) {
+      const points = this.stops.filter(stop => ids.includes(stop.record.id)).map(stop => stop.point);
+      const xs = points.map(p => p[0]), ys = points.map(p => p[1]);
+      this.areas.set(area, [Math.min(...xs), Math.min(...ys), Math.max(...xs), Math.max(...ys)]);
+    }
+    this.areaButtons = Array.from(this.closest('kaerimichi-journal')!.querySelectorAll('button[data-area]'));
+    for (const button of this.areaButtons) button.addEventListener('click', () => {
+      const area = button.dataset.area!;
+      const anchor = {station:'a2', honcho:'old-nakasendo', nakajuku:'itabashi-bridge'}[area];
+      if (anchor && this.stops.some(s => s.record.id === anchor)) this.select(anchor);
+      this.fit(area);
+    }, {signal});
     this.querySelector('[data-tool="zoom-in"]')!.addEventListener('click',() => this.zoom(1.6),{signal});
     this.querySelector('[data-tool="zoom-out"]')!.addEventListener('click',() => this.zoom(1/1.6),{signal});
     this.querySelector('[data-tool="fit"]')!.addEventListener('click',() => this.fit(),{signal});
@@ -64,10 +84,10 @@ class WalkingMap extends HTMLElement {
     },{signal});
     window.addEventListener('kaerimichi:state',this.update,{signal});
     this.observer = new ResizeObserver(() => {
-      const wasFitted = !this.width || Math.abs(this.scale-this.fitScale) < .001;
+      const area = this.area;
       this.width = this.canvas.clientWidth;
       this.height = this.canvas.clientHeight;
-      if (wasFitted) this.fit();
+      if (area) this.fit(area);
       else this.draw();
     });
     this.observer.observe(this.canvas);
@@ -106,19 +126,29 @@ class WalkingMap extends HTMLElement {
       const stop = this.stops.find(s => s.record.id === selectedId);
       if (stop && this.width) {
         const [x,y] = this.screen(stop.point);
-        if (x < 36 || y < 52 || x > this.width-36 || y > this.height-52) this.center = [...stop.point];
+        if (x < 36 || y < 52 || x > this.width-36 || y > this.height-52) {
+          this.markArea('');
+          this.center = [...stop.point];
+        }
       }
     }
     this.draw();
   };
 
-  private fit() {
+  private markArea(area: string) {
+    this.area = area;
+    for (const button of this.areaButtons) button.setAttribute('aria-pressed', String(button.dataset.area === area));
+  }
+
+  private fit(area = 'walk') {
     if (!this.width || !this.height) return;
-    // Fit the published walk, independently of a visitor's editable landmark records.
-    const [minX,minY,maxX,maxY] = this.routeExtent;
-    this.center = [(minX+maxX)/2,(minY+maxY)/2];
-    this.fitScale = Math.max(.03,Math.min((this.width-106)/Math.max(maxX-minX,100),(this.height-132)/Math.max(maxY-minY,100)));
-    this.scale = this.fitScale;
+    const scaleTo = ([west,north,east,south]: number[]) => Math.max(.03, Math.min(
+      (this.width-110)/Math.max(east-west,100), (this.height-155)/Math.max(south-north,100)));
+    this.fitScale = scaleTo(this.routeExtent);
+    const extent = this.areas.get(area) ?? this.routeExtent;
+    this.center = [(extent[0]+extent[2])/2, (extent[1]+extent[3])/2];
+    this.scale = scaleTo(extent);
+    this.markArea(area);
     this.closeChooser();
     this.draw();
   }
@@ -128,6 +158,7 @@ class WalkingMap extends HTMLElement {
   }
 
   private zoom(factor: number, anchor: Point = [this.width/2,this.height/2]) {
+    this.markArea('');
     const prev = this.scale;
     this.scale = Math.min(this.fitScale*24,Math.max(this.fitScale*.65,this.scale*factor));
     this.center[0] += (anchor[0]-this.width/2)*(1/prev-1/this.scale);
@@ -255,6 +286,7 @@ class WalkingMap extends HTMLElement {
       case 'Home': this.fit(); break;
       default: return;
     }
+    if (event.key.startsWith('Arrow')) this.markArea('');
     event.preventDefault();
     this.draw();
   };
@@ -287,6 +319,7 @@ class WalkingMap extends HTMLElement {
         this.zoom(distance(other,current)/oldDistance,[(current[0]+other[0])/2-rect.left,(current[1]+other[1])/2-rect.top]);
       }
     } else {
+      this.markArea('');
       this.center[0] -= (current[0]-previous[0])/this.scale;
       this.center[1] -= (current[1]-previous[1])/this.scale;
       this.draw();
