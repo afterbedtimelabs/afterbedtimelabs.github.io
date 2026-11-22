@@ -1,0 +1,1079 @@
+{
+  "schemaVersion": 1,
+  "landmarks": [
+    {
+      "id": "a2",
+      "nameJa": "板橋本町駅 A2出口",
+      "nameEn": "Itabashihoncho Station A2",
+      "category": "Transit",
+      "description": "Step out of the Mita Line at the hospital side of the junction. In the 2021 photographs the station entrance is tucked directly beneath the hospital sign.",
+      "location": {
+        "coordinates": [
+          139.7060108,
+          35.7615554
+        ],
+        "confidence": "VERIFIED",
+        "note": "Exit A2 itself. Mini Tokyo 3D identifies this point as Toei.Itabashihoncho.A2, and Toei’s station diagram confirms the exit.",
+        "sourceIds": [
+          "a2-point",
+          "toei",
+          "hospital-access"
+        ]
+      },
+      "sources": [
+        {
+          "id": "toei",
+          "title": "Toei Transportation · station and exits",
+          "url": "https://www.kotsu.metro.tokyo.jp/subway/stations/itabashihoncho.html"
+        },
+        {
+          "id": "homelink",
+          "title": "Home Link · April 2021 station entrance photographs",
+          "url": "https://www.homelink-tokyo.com/blog/itabashi/1865/"
+        },
+        {
+          "id": "hospital-access",
+          "title": "Tokyo Yamato Hospital · access from A2",
+          "url": "https://tokyoyamato-hp.com/access/"
+        },
+        {
+          "id": "a2-point",
+          "title": "Mini Tokyo 3D · station exit dataset, entry Toei.Itabashihoncho.A2",
+          "url": "https://github.com/nagix/mini-tokyo-3d/blob/master/data/poi.json"
+        },
+        {
+          "id": "a2-photo-2020",
+          "title": "LERK · Itabashihoncho Station A2 entrance photograph, 21 March 2020",
+          "url": "https://commons.wikimedia.org/wiki/File:Toei-subway-I19-Itabashihoncho-station-entrance-A2-20200321-131829.jpg"
+        }
+      ],
+      "observations": [
+        {
+          "date": "2020-03-21",
+          "description": "A dated photograph identifies the A2 entrance to the Toei Mita Line station.",
+          "appearance": "Yellow tactile paving marks the stairhead. Dark handrails lead down past pale wall tiles to the A2 sign on the landing.",
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "a2-photo-2020"
+          ]
+        },
+        {
+          "date": "2021-04-22",
+          "description": "Home Link published a street-level photograph of A2.",
+          "appearance": "A wide, dark entrance sits under a blue hospital sign. A small yellow A2 panel and a white Mita Line panel hang below it.",
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "homelink"
+          ]
+        }
+      ],
+      "operatingPeriod": {
+        "description": "A2 is documented in April 2021. The opening date of this entrance is unresolved.",
+        "confidence": "UNKNOWN",
+        "sourceIds": [
+          "homelink"
+        ]
+      },
+      "reconstructionConfidence": "APPROXIMATED",
+      "uncertainties": [
+        "The photograph’s publication date is known. Its capture day and the dates of later signage changes are unknown."
+      ],
+      "godotAssetId": "Facade_bldg_2f70f670_9d99_43b4_9e20_4cf76606c4dc"
+    },
+    {
+      "id": "yamato-hospital",
+      "nameJa": "明理会東京大和病院",
+      "nameEn": "Tokyo Yamato Hospital",
+      "category": "Hospital",
+      "description": "The hospital shares a direct connection with exit A2. Its older name, Tokyo Kidney and Urology Center Yamato Hospital, explains the lettering above the exit in the 2021 photograph.",
+      "location": {
+        "coordinates": [
+          139.7061603,
+          35.7617357
+        ],
+        "confidence": "APPROXIMATED",
+        "note": "Honchō 36-3. The point identifies the hospital building; its entrance is a separate landmark.",
+        "sourceIds": [
+          "hospital",
+          "hospital-point"
+        ]
+      },
+      "sources": [
+        {
+          "id": "hospital",
+          "title": "Tokyo Yamato Hospital · institutional profile",
+          "url": "https://tokyoyamato-hp.com/outline/overview/"
+        },
+        {
+          "id": "hospital-access",
+          "title": "Tokyo Yamato Hospital · access from A2",
+          "url": "https://tokyoyamato-hp.com/access/"
+        },
+        {
+          "id": "homelink",
+          "title": "Home Link · April 2021 station entrance photographs",
+          "url": "https://www.homelink-tokyo.com/blog/itabashi/1865/"
+        },
+        {
+          "id": "hospital-point",
+          "title": "Open Data Japan · hospital location",
+          "url": "https://opd.opendata-japan.com/facility_and_place_v5s?facility_id=GV-705D-93D4-356D-0FBA"
+        },
+        {
+          "id": "hospital-history",
+          "title": "Hospital notice · opening and renaming history",
+          "url": "https://tokyoyamato-hp.com/news/138150/"
+        },
+        {
+          "id": "garden",
+          "title": "Tokyo Yamato Hospital staff · entrance planting, May 2024",
+          "url": "https://note.com/yamato_kouhou/n/nd8b37d5eca0b"
+        }
+      ],
+      "observations": [
+        {
+          "date": "2021-04-22",
+          "description": "The hospital’s previous name appears in Home Link’s A2 photograph.",
+          "appearance": "White lettering on a blue fascia spans the station entrance.",
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "homelink"
+          ]
+        },
+        {
+          "date": "2022",
+          "description": "The institution reports that it adopted its present name in 2022.",
+          "appearance": null,
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "hospital-history"
+          ]
+        },
+        {
+          "date": "2024-05-23",
+          "description": "Hospital staff describe planting the space beside the main entrance.",
+          "appearance": "Flowers and small areas of lawn soften the threshold. The essay also includes earlier photographs of the first tulips.",
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "garden"
+          ]
+        }
+      ],
+      "operatingPeriod": {
+        "description": "The hospital reports opening here under its former name in 2012 and changing names in 2022.",
+        "confidence": "VERIFIED",
+        "sourceIds": [
+          "hospital-history"
+        ]
+      },
+      "reconstructionConfidence": "APPROXIMATED",
+      "uncertainties": [
+        "The renaming year does not date installation of new signs."
+      ],
+      "godotAssetId": "Facade_bldg_ea09528e_9dff_48ce_bd55_4136d2e727e8"
+    },
+    {
+      "id": "matsuya",
+      "nameJa": "松屋 板橋本町店",
+      "nameEn": "Matsuya",
+      "category": "Gyūmeshi restaurant",
+      "description": "Matsuya’s Itabashihonchō branch occupies the ground floor of Barōru Honchō near the station.",
+      "location": {
+        "coordinates": [
+          139.7064853,
+          35.7616936
+        ],
+        "confidence": "APPROXIMATED",
+        "note": "A mapped restaurant point at the operator’s Honchō 36-1 address. The entrance has not been surveyed.",
+        "sourceIds": [
+          "matsuya-store",
+          "osm-matsuya"
+        ]
+      },
+      "sources": [
+        {
+          "id": "matsuya-store",
+          "title": "Matsuya Foods · Itabashihonchō branch",
+          "url": "https://pkg.navitime.co.jp/matsuyafoods2/spot/detail?code=0000000385"
+        },
+        {
+          "id": "osm-matsuya",
+          "title": "OpenStreetMap · Matsuya restaurant point",
+          "url": "https://www.openstreetmap.org/node/4974526551"
+        },
+        {
+          "id": "visit-2024",
+          "title": "Tommy Nakamura / Tabelog · September 2024 visit and exterior",
+          "url": "https://tabelog.com/tokyo/A1322/A132205/13162588/dtlrvwlst/B492638998/"
+        }
+      ],
+      "observations": [
+        {
+          "date": "2024-09",
+          "description": "A diner photographed the restaurant at street level.",
+          "appearance": "A blue stripe crosses the yellow fascia. A projecting 松屋 sign marks the glazed entrance.",
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "visit-2024"
+          ]
+        }
+      ],
+      "operatingPeriod": {
+        "description": "Opening date and historical trading interval unresolved.",
+        "confidence": "UNKNOWN",
+        "sourceIds": []
+      },
+      "reconstructionConfidence": "UNKNOWN",
+      "uncertainties": [
+        "The photograph gives no measurements for the shopfront. Later window graphics may differ."
+      ],
+      "godotAssetId": "Facade_bldg_55e88121_3293_4a5c_b2c0_30d37ab5f915"
+    },
+    {
+      "id": "korai",
+      "nameJa": "高麗",
+      "nameEn": "Kōrai",
+      "category": "Yakiniku restaurant",
+      "description": "Kōrai is the yakiniku restaurant at Honchō 36-19. A diner recorded a July 2023 visit, providing a dated reference for the business.",
+      "location": {
+        "coordinates": [
+          139.706603,
+          35.761786
+        ],
+        "confidence": "APPROXIMATED",
+        "note": "Directory point for Honchō 36-19. The exact position of the doorway is unresolved.",
+        "sourceIds": [
+          "korai-listing",
+          "ekiten-korai"
+        ]
+      },
+      "sources": [
+        {
+          "id": "korai-listing",
+          "title": "Rakuten Gurunavi · Kōrai address and reading",
+          "url": "https://r.gnavi.co.jp/ftpgfht80000/"
+        },
+        {
+          "id": "korai-visits",
+          "title": "Tabelog · dated reviews of Kōrai",
+          "url": "https://tabelog.com/tokyo/A1322/A132205/13031829/dtlrvwlst/"
+        },
+        {
+          "id": "ekiten-korai",
+          "title": "Ekiten · Kōrai location",
+          "url": "https://www.ekiten.jp/shop_244604/"
+        },
+        {
+          "id": "front-2023",
+          "title": "Tabelog · July 2023 visit and façade photograph",
+          "url": "https://tabelog.com/tokyo/A1322/A132205/13031829/dtlrvwlst/B467955956/"
+        },
+        {
+          "id": "front-2025",
+          "title": "Tabelog · November 2025 visit and street view",
+          "url": "https://tabelog.com/tokyo/A1322/A132205/13031829/dtlrvwlst/B517031555/"
+        }
+      ],
+      "observations": [
+        {
+          "date": "2023-07",
+          "description": "A diner recorded a visit to Kōrai in July 2023.",
+          "appearance": "Red 焼肉 and dark 高麗 lettering share a backlit sign over the narrow, pale-tiled front.",
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "korai-visits",
+            "front-2023"
+          ]
+        },
+        {
+          "date": "2024-12",
+          "description": "A diner recorded a December visit to the Honchō restaurant.",
+          "appearance": null,
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "korai-visits"
+          ]
+        },
+        {
+          "date": "2025-11",
+          "description": "A later photograph shows the narrow shop beneath an upper window.",
+          "appearance": "The illuminated sign still carries the two sets of lettering.",
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "front-2025"
+          ]
+        }
+      ],
+      "operatingPeriod": {
+        "description": "Visitors document this restaurant in 2023, 2024 and 2025. The full operating span remains unknown.",
+        "confidence": "UNKNOWN",
+        "sourceIds": [
+          "korai-visits",
+          "front-2023",
+          "front-2025"
+        ]
+      },
+      "reconstructionConfidence": "UNKNOWN",
+      "uncertainties": [
+        "The July 2023 and November 2025 photographs bracket the target year. Details of the December 2024 frontage remain unresolved."
+      ],
+      "godotAssetId": "Facade_bldg_f185170c_e953_4558_be1c_0a6c1227601f"
+    },
+    {
+      "id": "my-basket",
+      "nameJa": "まいばすけっと 板橋本町駅北店",
+      "nameEn": "My Basket",
+      "category": "Neighborhood grocer",
+      "description": "The station-north branch stands beside the turn into the restaurant lane. It is one of several My Basket locations near Itabashihonchō.",
+      "location": {
+        "coordinates": [
+          139.706763,
+          35.761894
+        ],
+        "confidence": "VERIFIED",
+        "note": "Honchō 13-8. The chain publishes this branch point; the 2025 photo report identifies the alley beside it.",
+        "sourceIds": [
+          "mybasket-store",
+          "hokkai"
+        ]
+      },
+      "sources": [
+        {
+          "id": "mybasket-store",
+          "title": "My Basket · Itabashihonchō Eki-kita branch and coordinates",
+          "url": "https://www.mybasket.co.jp/shop/detail/72843.html"
+        },
+        {
+          "id": "openings",
+          "title": "Sankei Eye · verified July 2021 retail openings, p. 8",
+          "url": "https://www.sankei-eye.co.jp/pdf/download/opening_information/opening_information202108.pdf"
+        },
+        {
+          "id": "hokkai",
+          "title": "Itabashi Times · Hokkai at the former Ajishino premises, August 2025",
+          "url": "https://itabashi-times.com/archives/hokkai-honcho.html"
+        }
+      ],
+      "observations": [
+        {
+          "date": "2021-07-30",
+          "description": "The branch appears in a July retail-opening survey at Honchō 13-8.",
+          "appearance": null,
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "openings"
+          ]
+        },
+        {
+          "date": "2025-08",
+          "description": "A local photographer looked down the side lane between the grocery and the salon.",
+          "appearance": "The shop’s Japanese lettering fills a long pink fascia edged with green, above the ground-floor windows.",
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "hokkai"
+          ]
+        }
+      ],
+      "operatingPeriod": {
+        "description": "Opening documented on 30 July 2021.",
+        "confidence": "VERIFIED",
+        "sourceIds": [
+          "openings"
+        ]
+      },
+      "reconstructionConfidence": "APPROXIMATED",
+      "uncertainties": [
+        "The 2021 opening record supplies no dated exterior photograph."
+      ],
+      "godotAssetId": "Facade_bldg_1cace9df_00b9_49eb_9279_6087aee25467"
+    },
+    {
+      "id": "hair-salon-best",
+      "nameJa": "ヘアーサロンベスト 東京板橋本町店",
+      "nameEn": "Hair Salon Best",
+      "category": "Hair salon",
+      "description": "The salon occupies a corner of the same building address as Chōryū and the former Ajishino. Its frontage helps identify the entrance to their side lane.",
+      "location": {
+        "coordinates": [
+          139.706757,
+          35.762081
+        ],
+        "confidence": "APPROXIMATED",
+        "note": "Shimizuchō 32-3. This building point is shared by several entries. The individual shop doors have yet to be surveyed.",
+        "sourceIds": [
+          "address-point",
+          "hokkai"
+        ]
+      },
+      "sources": [
+        {
+          "id": "salon-address",
+          "title": "Barber Navi · Hair Salon Best, Tokyo Itabashihonchō",
+          "url": "https://barbernavi.com/review/barbershopid-4776/"
+        },
+        {
+          "id": "hokkai",
+          "title": "Itabashi Times · Hokkai at the former Ajishino premises, August 2025",
+          "url": "https://itabashi-times.com/archives/hokkai-honcho.html"
+        },
+        {
+          "id": "address-point",
+          "title": "Sumnara · published building coordinates for Shimizuchō 32-3",
+          "url": "https://sumnara.jp/mansion/124038"
+        }
+      ],
+      "observations": [
+        {
+          "date": "2025-08",
+          "description": "Itabashi Times names the salon in its directions to the former Ajishino site.",
+          "appearance": "The corner in the photograph has a red band above a red-and-white checked façade.",
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "hokkai"
+          ]
+        }
+      ],
+      "operatingPeriod": {
+        "description": "Identified at this corner in the August 2025 report. Opening date unresolved.",
+        "confidence": "UNKNOWN",
+        "sourceIds": [
+          "hokkai"
+        ]
+      },
+      "reconstructionConfidence": "APPROXIMATED",
+      "uncertainties": [
+        "The address is shared. Exact frontage width and earlier branding are unresolved."
+      ],
+      "godotAssetId": "Facade_bldg_fcdaf47f_b19f_4050_bd8f_9e7d5ec262a7"
+    },
+    {
+      "id": "ajishino",
+      "nameJa": "味しの",
+      "nameEn": "Ajishino",
+      "category": "Former Japanese restaurant",
+      "description": "Three separate sign panels once spelled out the restaurant’s name. A 2025 neighborhood report identifies this shopfront as the site taken over by Hokkai.",
+      "location": {
+        "coordinates": [
+          139.706757,
+          35.762081
+        ],
+        "confidence": "APPROXIMATED",
+        "note": "Shimizuchō 32-3. This building point is shared by several entries. The individual shop doors have yet to be surveyed.",
+        "sourceIds": [
+          "address-point",
+          "hokkai"
+        ]
+      },
+      "sources": [
+        {
+          "id": "address-point",
+          "title": "Sumnara · published building coordinates for Shimizuchō 32-3",
+          "url": "https://sumnara.jp/mansion/124038"
+        },
+        {
+          "id": "hokkai",
+          "title": "Itabashi Times · Hokkai at the former Ajishino premises, August 2025",
+          "url": "https://itabashi-times.com/archives/hokkai-honcho.html"
+        },
+        {
+          "id": "ajishino-visit",
+          "title": "Tabelog · February 2021 visit and exterior image by 満腹おじさん",
+          "url": "https://tabelog.com/tokyo/A1322/A132205/13083010/dtlrvwlst/B435162006/"
+        },
+        {
+          "id": "ajishino-photo",
+          "title": "満腹おじさん / Tabelog · February 2021 storefront photograph",
+          "url": "https://tblg.k-img.com/restaurant/images/Rvw/146142/640x640_rect_146142815.jpg"
+        },
+        {
+          "id": "choryu-exterior",
+          "title": "Tabelog · Chōryū exterior photographs, including routast’s August 2024 visit",
+          "url": "https://tabelog.com/tokyo/A1322/A132205/13062753/dtlphotolst/4/smp2/"
+        },
+        {
+          "id": "choryu-visits",
+          "title": "Tabelog · dated visits to Chōryū",
+          "url": "https://tabelog.com/tokyo/A1322/A132205/13062753/dtlrvwlst/B490668092/"
+        },
+        {
+          "id": "choryu-2024-photo",
+          "title": "routast / Tabelog · August 2024 façade photograph",
+          "url": "https://tblg.k-img.com/restaurant/images/Rvw/273436/640x640_rect_7902b4ad02cf2077830fb81e72f6619d.jpg"
+        },
+        {
+          "id": "hokkai-visit",
+          "title": "Narimasu Channel · September 2025 visit to Hokkai after opening",
+          "url": "https://www.narimasu.tokyo/?p=27083"
+        }
+      ],
+      "observations": [
+        {
+          "date": "2021-02",
+          "description": "A diner’s February 2021 visit includes a photograph from the lane.",
+          "appearance": "Three white panels carry one black character each: 味, し and の. A dark blue noren hangs below.",
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "ajishino-visit",
+            "ajishino-photo"
+          ]
+        },
+        {
+          "date": "2024-08",
+          "description": "A photograph looking at Chōryū catches the edge of the neighboring unit. Ajishino’s trading status in August 2024 is unknown.",
+          "appearance": "A closed metal shutter appears to the left of Chōryū. It records the condition at the moment of the photograph.",
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "choryu-exterior",
+            "choryu-visits",
+            "choryu-2024-photo",
+            "hokkai"
+          ]
+        },
+        {
+          "date": "2025-09",
+          "description": "Hokkai opened at the former Ajishino address. A local report identifies the previous tenant and a later visit documents the successor.",
+          "appearance": null,
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "hokkai",
+            "hokkai-visit"
+          ]
+        }
+      ],
+      "operatingPeriod": {
+        "description": "A diner visited in February 2021. Hokkai occupied the premises by September 2025. Ajishino’s final trading date remains unknown.",
+        "confidence": "UNKNOWN",
+        "sourceIds": [
+          "ajishino-visit",
+          "hokkai",
+          "hokkai-visit"
+        ]
+      },
+      "reconstructionConfidence": "APPROXIMATED",
+      "uncertainties": [
+        "The shutter photograph cannot establish when Ajishino stopped trading."
+      ],
+      "godotAssetId": "Facade_bldg_fcdaf47f_b19f_4050_bd8f_9e7d5ec262a7"
+    },
+    {
+      "id": "choryu",
+      "nameJa": "長龍",
+      "nameEn": "Chōryū",
+      "category": "Neighborhood Chinese restaurant",
+      "description": "A few steps off Old Nakasendō, Chōryū shares the restaurant lane with the former Ajishino. Its projecting curved awning makes it easy to pick out in photographs.",
+      "location": {
+        "coordinates": [
+          139.706757,
+          35.762081
+        ],
+        "confidence": "APPROXIMATED",
+        "note": "Shimizuchō 32-3. This building point is shared by several entries. The individual shop doors have yet to be surveyed.",
+        "sourceIds": [
+          "address-point",
+          "hokkai"
+        ]
+      },
+      "sources": [
+        {
+          "id": "address-point",
+          "title": "Sumnara · published building coordinates for Shimizuchō 32-3",
+          "url": "https://sumnara.jp/mansion/124038"
+        },
+        {
+          "id": "hokkai",
+          "title": "Itabashi Times · Hokkai at the former Ajishino premises, August 2025",
+          "url": "https://itabashi-times.com/archives/hokkai-honcho.html"
+        },
+        {
+          "id": "choryu-exterior",
+          "title": "Tabelog · Chōryū exterior photographs, including routast’s August 2024 visit",
+          "url": "https://tabelog.com/tokyo/A1322/A132205/13062753/dtlphotolst/4/smp2/"
+        },
+        {
+          "id": "choryu-visits",
+          "title": "Tabelog · dated visits to Chōryū",
+          "url": "https://tabelog.com/tokyo/A1322/A132205/13062753/dtlrvwlst/B490668092/"
+        },
+        {
+          "id": "choryu-2024-photo",
+          "title": "routast / Tabelog · August 2024 façade photograph",
+          "url": "https://tblg.k-img.com/restaurant/images/Rvw/273436/640x640_rect_7902b4ad02cf2077830fb81e72f6619d.jpg"
+        },
+        {
+          "id": "choryu-2016",
+          "title": "Itabashi Times · visit and exterior photographs, June 2016",
+          "url": "https://itabashi-times.com/archives/chouryuu.html"
+        }
+      ],
+      "observations": [
+        {
+          "date": "2016-06",
+          "description": "Itabashi Times visited the restaurant and photographed the display of sample dishes by its entrance.",
+          "appearance": null,
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "choryu-2016"
+          ]
+        },
+        {
+          "date": "2023-12",
+          "description": "A Tabelog contributor recorded a December visit.",
+          "appearance": null,
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "choryu-visits"
+          ]
+        },
+        {
+          "date": "2024-08",
+          "description": "A dated dining visit includes a view of the restaurant from its lane.",
+          "appearance": "Pink ends curve around a white awning carrying red 長龍 lettering. A red noren hangs across the entrance.",
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "choryu-exterior",
+            "choryu-visits",
+            "choryu-2024-photo"
+          ]
+        },
+        {
+          "date": "2025-08",
+          "description": "The restaurant is pictured to the right of the premises being prepared for Hokkai.",
+          "appearance": "Its pink-ended awning remains visible beside the new Hokkai sign.",
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "hokkai"
+          ]
+        }
+      ],
+      "operatingPeriod": {
+        "description": "Individual visits are documented in 2016, 2023 and 2024. The opening date and uninterrupted trading span are unresolved.",
+        "confidence": "UNKNOWN",
+        "sourceIds": [
+          "choryu-2016",
+          "choryu-visits"
+        ]
+      },
+      "reconstructionConfidence": "APPROXIMATED",
+      "uncertainties": [
+        "Photographs document signs and colours. They supply no measured elevation."
+      ],
+      "godotAssetId": "Facade_bldg_fcdaf47f_b19f_4050_bd8f_9e7d5ec262a7"
+    },
+    {
+      "id": "yasuda",
+      "nameJa": "やすだ 清水町店",
+      "nameEn": "Yasuda",
+      "category": "Pachinko parlor",
+      "description": "The Shimizuchō branch of Yasuda lies beyond the restaurant lane on the station-side detour. Yasudaya also lists a separate Nakajuku branch farther south.",
+      "location": {
+        "coordinates": [
+          139.7067302,
+          35.7623109
+        ],
+        "confidence": "APPROXIMATED",
+        "note": "Shimizuchō 32-7. The pin marks the listed address, with the exact doorway unresolved.",
+        "sourceIds": [
+          "yasuda-list",
+          "yasuda-point"
+        ]
+      },
+      "sources": [
+        {
+          "id": "yasuda-list",
+          "title": "Yasudaya · Tokyo branch addresses",
+          "url": "https://www.yasudaya.co.jp/store/"
+        },
+        {
+          "id": "yasuda-point",
+          "title": "MapFan · address point for Shimizuchō 32-7",
+          "url": "https://mapfan.com/spots/A%2C35.7623109039%2C139.7067301697%2C%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%9D%BF%E6%A9%8B%E5%8C%BA%E6%B8%85%E6%B0%B4%E7%94%BA%EF%BC%93%EF%BC%92%EF%BC%8D%EF%BC%97%2C"
+        },
+        {
+          "id": "field-2024",
+          "title": "Pachi Seven · on-site coverage of the Shimizuchō hall",
+          "url": "https://pachiseven.jp/reports/detail/20785"
+        },
+        {
+          "id": "archive",
+          "title": "Minpachi · 2017 listing of the frontage image",
+          "url": "https://minpachi.com/wp-json/wp/v2/media?slug=001431_03&_fields=id,date,source_url"
+        }
+      ],
+      "observations": [
+        {
+          "date": "2017-06-03",
+          "description": "A frontage photograph was registered in the hall directory on this date. Its capture date is unknown.",
+          "appearance": "White YASUDA lettering sits between red uprights along a glazed frontage.",
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "archive"
+          ]
+        },
+        {
+          "date": "2024-10-11",
+          "description": "A reporter covered the Shimizuchō hall on site.",
+          "appearance": null,
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "field-2024"
+          ]
+        }
+      ],
+      "operatingPeriod": {
+        "description": "Documented at this address in October 2024. The complete trading interval is unknown.",
+        "confidence": "UNKNOWN",
+        "sourceIds": [
+          "yasuda-list",
+          "field-2024"
+        ]
+      },
+      "reconstructionConfidence": "UNKNOWN",
+      "uncertainties": [
+        "The exact 2024 exterior and date of any sign replacement remain unresolved."
+      ],
+      "godotAssetId": "Facade_bldg_039f9c45_55cb_4aae_a07f_4f7c03139023"
+    },
+    {
+      "id": "drug-papas",
+      "nameJa": "どらっぐぱぱす 板橋清水町店",
+      "nameEn": "Drug Papas",
+      "category": "Drugstore",
+      "description": "From Yasuda, continue north along Old Nakasendō. The Shimizuchō branch stands on the west side of the road near the fork into the Akebono shopping street.",
+      "location": {
+        "coordinates": [
+          139.706211,
+          35.7631
+        ],
+        "confidence": "APPROXIMATED",
+        "note": "Ekiten places the branch at this building point. The operator confirms Shimizuchō 39-4. The exact doorway is unresolved.",
+        "sourceIds": [
+          "operator",
+          "point"
+        ]
+      },
+      "sources": [
+        {
+          "id": "operator",
+          "title": "MatsukiyoCocokara · official Shimizuchō branch",
+          "url": "https://www.matsukiyococokara-online.com/map?kid=20306245"
+        },
+        {
+          "id": "point",
+          "title": "Ekiten · store address and map point",
+          "url": "https://www.ekiten.jp/shop_55141/access/"
+        },
+        {
+          "id": "fork",
+          "title": "Itabashi Times · walk along the Akebono shopping street, March 2024",
+          "url": "https://itabashi-times.com/archives/aburasoba-kojimaryu.html"
+        },
+        {
+          "id": "campaign",
+          "title": "Ministry of the Environment · 2024 participating shops, row 19",
+          "url": "https://www.re-style.env.go.jp/img/3r-campaign/2024/pdf/papasu.pdf"
+        }
+      ],
+      "observations": [
+        {
+          "date": "2024-03-27",
+          "description": "The reporter names Papas and Rico’s as nearby landmarks on Old Nakasendō.",
+          "appearance": "The view toward the fork shows a distant strip of yellow and red signage. Fine lettering and the entrance are indistinct.",
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "fork"
+          ]
+        },
+        {
+          "date": "2024-10",
+          "description": "The branch appears at Shimizuchō 39-4 on the October–December campaign list.",
+          "appearance": null,
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "campaign"
+          ]
+        }
+      ],
+      "operatingPeriod": {
+        "description": "The March report and the autumn campaign list both identify this branch in 2024.",
+        "confidence": "VERIFIED",
+        "sourceIds": [
+          "fork",
+          "campaign"
+        ]
+      },
+      "reconstructionConfidence": "APPROXIMATED",
+      "uncertainties": [
+        "The opening date, doorway position and 2024 shop-window layout remain unresolved."
+      ],
+      "godotAssetId": "Facade_bldg_154f54b9_a1ae_4dda_9264_a4aed75d61ec"
+    },
+    {
+      "id": "old-nakasendo",
+      "nameJa": "旧中山道",
+      "nameEn": "Old Nakasendō",
+      "category": "Historic road",
+      "description": "The old highway gives this walk its north–south spine. It passes the mouth of the little restaurant lane and crosses the Shakujii River on Itabashi Bridge.",
+      "location": {
+        "coordinates": [
+          139.707817,
+          35.758959
+        ],
+        "confidence": "APPROXIMATED",
+        "note": "Representative vertex on the named Old Nakasendō north of Itabashi Bridge. The highway extends beyond this walk.",
+        "sourceIds": [
+          "ward",
+          "hokkai",
+          "osm-local-road"
+        ]
+      },
+      "sources": [
+        {
+          "id": "ward",
+          "title": "Itabashi City · the bridge on the old Nakasendō",
+          "url": "https://www.city.itabashi.tokyo.jp/bunka/kanko/jyukei/1006821.html"
+        },
+        {
+          "id": "hokkai",
+          "title": "Itabashi Times · Hokkai at the former Ajishino premises, August 2025",
+          "url": "https://itabashi-times.com/archives/hokkai-honcho.html"
+        },
+        {
+          "id": "osm-local-road",
+          "title": "OpenStreetMap · named Itabashi road extract",
+          "url": "https://github.com/hwcharlton/geo-data/tree/v1.3.0/packs/itabashi/road"
+        }
+      ],
+      "observations": [
+        {
+          "date": "2025-08",
+          "description": "Itabashi Times photographed the road at the lane to Chōryū and the former Ajishino.",
+          "appearance": "The lane opens between a My Basket sign and the red-trimmed salon on the corner.",
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "hokkai"
+          ]
+        }
+      ],
+      "operatingPeriod": {
+        "description": "A historic route. Its local alignment is documented by Itabashi City.",
+        "confidence": "VERIFIED",
+        "sourceIds": [
+          "ward"
+        ]
+      },
+      "reconstructionConfidence": "APPROXIMATED",
+      "uncertainties": [
+        "Modern street sections and individual businesses have separate histories."
+      ],
+      "godotAssetId": null
+    },
+    {
+      "id": "itabashi-bridge",
+      "nameJa": "板橋",
+      "nameEn": "Itabashi Bridge",
+      "category": "River crossing",
+      "description": "Old Nakasendō crosses the Shakujii River here, between Honchō and Nakajuku. Itabashi City connects this crossing with the origin of the ward’s name.",
+      "location": {
+        "coordinates": [
+          139.708892,
+          35.757304
+        ],
+        "confidence": "VERIFIED",
+        "note": "A representative point on the bridge across the Shakujii River, between Honchō 28–29 and Nakajuku 49–50.",
+        "sourceIds": [
+          "bridge-point",
+          "ward"
+        ]
+      },
+      "sources": [
+        {
+          "id": "ward",
+          "title": "Itabashi City · the bridge on the old Nakasendō",
+          "url": "https://www.city.itabashi.tokyo.jp/bunka/kanko/jyukei/1006821.html"
+        },
+        {
+          "id": "bridge-point",
+          "title": "Tokyo Bridge Explorer · Itabashi crossing and coordinates",
+          "url": "https://www.djq.jp/bridge_liblary/river_syakujii/tokyo_bridge_syakujii162_itabashi.php"
+        }
+      ],
+      "observations": [
+        {
+          "date": "2022-09-05",
+          "description": "The ward’s updated guide identifies the bridge as the old highway’s crossing of the Shakujii River.",
+          "appearance": null,
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "ward"
+          ]
+        }
+      ],
+      "operatingPeriod": {
+        "description": "The ward documents the crossing. The lifespan of the structure pictured in its guide is unresolved here.",
+        "confidence": "UNKNOWN",
+        "sourceIds": [
+          "ward"
+        ]
+      },
+      "reconstructionConfidence": "APPROXIMATED",
+      "uncertainties": [
+        "The guide’s update date does not date its photograph."
+      ],
+      "godotAssetId": "BridgeDeck"
+    },
+    {
+      "id": "nakajuku-street",
+      "nameJa": "仲宿商店街",
+      "nameEn": "Nakajuku Shopping Street",
+      "category": "Shopping street",
+      "description": "Across the river, the walk enters Nakajuku’s shopping street. LIFE is one of its member businesses; the street continues beyond the supermarket.",
+      "location": {
+        "coordinates": [
+          139.70887,
+          35.7563
+        ],
+        "confidence": "APPROXIMATED",
+        "note": "Representative point on the shopping-street segment between the bridge and LIFE. The point identifies this stretch of the street.",
+        "sourceIds": [
+          "association",
+          "life-report",
+          "osm-local-road"
+        ]
+      },
+      "sources": [
+        {
+          "id": "association",
+          "title": "Nakajuku Shopping Street Association · LIFE membership listing",
+          "url": "https://www.nakajyuku.jp/tenpo/life.html"
+        },
+        {
+          "id": "life-report",
+          "title": "Itabashi Times · LIFE exterior and second-floor renovation, February 2024",
+          "url": "https://itabashi-times.com/archives/nakajuku-life202402.html"
+        },
+        {
+          "id": "street-2025",
+          "title": "Wikimedia Commons · old Nakasendō at the Nakajuku crossing, 3 May 2025",
+          "url": "https://commons.wikimedia.org/wiki/File:Kyu_nakasendo_nakajuku_crossing_2025-05-03.jpg"
+        },
+        {
+          "id": "osm-local-road",
+          "title": "OpenStreetMap · Itabashi street geometry",
+          "url": "https://github.com/hwcharlton/geo-data/tree/v1.3.0/packs/itabashi/road"
+        }
+      ],
+      "observations": [
+        {
+          "date": "2024-02-14",
+          "description": "Itabashi Times published street views looking both ways from LIFE, toward the station and toward the ward office.",
+          "appearance": null,
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "life-report"
+          ]
+        },
+        {
+          "date": "2025-05-03",
+          "description": "A photograph documents the street’s southern crossing, beyond the atlas walk’s endpoint.",
+          "appearance": null,
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "street-2025"
+          ]
+        }
+      ],
+      "operatingPeriod": {
+        "description": "A traders’ association documents the street and its member shops. The start of the shopping street as an organization is unresolved here.",
+        "confidence": "UNKNOWN",
+        "sourceIds": [
+          "association"
+        ]
+      },
+      "reconstructionConfidence": "APPROXIMATED",
+      "uncertainties": [
+        "Evidence from the southern crossing does not describe individual shops near the bridge."
+      ],
+      "godotAssetId": null
+    },
+    {
+      "id": "life-nakajuku",
+      "nameJa": "ライフ 仲宿店",
+      "nameEn": "LIFE Nakajuku",
+      "category": "Supermarket",
+      "description": "The neighborhood walk ends at the supermarket at Nakajuku 47-11. In February 2024 a reporter photographed its frontage while work was under way upstairs.",
+      "location": {
+        "coordinates": [
+          139.709322,
+          35.755433
+        ],
+        "confidence": "APPROXIMATED",
+        "note": "Nakajuku 47-11. The store listing supplies a representative building point. The precise entrance is unresolved.",
+        "sourceIds": [
+          "life-point",
+          "life-store",
+          "association"
+        ]
+      },
+      "sources": [
+        {
+          "id": "life-store",
+          "title": "LIFE Corporation · Nakajuku store",
+          "url": "https://store.lifecorp.jp/detail/east620/"
+        },
+        {
+          "id": "association",
+          "title": "Nakajuku Shopping Street Association · LIFE",
+          "url": "https://www.nakajyuku.jp/tenpo/life.html"
+        },
+        {
+          "id": "life-report",
+          "title": "Itabashi Times · LIFE exterior and second-floor renovation, February 2024",
+          "url": "https://itabashi-times.com/archives/nakajuku-life202402.html"
+        },
+        {
+          "id": "life-circular",
+          "title": "Tokubai · LIFE Nakajuku circular archive for 15 November 2026",
+          "url": "https://tokubai.co.jp/%E3%83%A9%E3%82%A4%E3%83%95/2546/archive/2026-11-15"
+        },
+        {
+          "id": "life-point",
+          "title": "Ekiten · Nakajuku branch address and access map",
+          "url": "https://www.ekiten.jp/shop_51970/access/"
+        }
+      ],
+      "observations": [
+        {
+          "date": "2024-02-14",
+          "description": "Itabashi Times published a frontage photograph and a notice of second-floor renovations.",
+          "appearance": "A green-and-orange fascia wraps the ground-floor corner, with red ライフ lettering and the green clover emblem above.",
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "life-report"
+          ]
+        },
+        {
+          "date": "2026-11-15",
+          "description": "A dated circular listing identifies the same supermarket at Nakajuku 47-11.",
+          "appearance": null,
+          "confidence": "VERIFIED",
+          "sourceIds": [
+            "life-circular"
+          ]
+        }
+      ],
+      "operatingPeriod": {
+        "description": "The February 2024 report documents the store before a scheduled renovation closure. A November 2026 circular lists the branch at the same address.",
+        "confidence": "UNKNOWN",
+        "sourceIds": [
+          "life-report",
+          "life-circular"
+        ]
+      },
+      "reconstructionConfidence": "APPROXIMATED",
+      "uncertainties": [
+        "The 2026 circular supplies no evidence about that year’s exterior."
+      ],
+      "godotAssetId": "South_bldg_4433cd95-8484-4f4b-af3d-c65a1166f456"
+    }
+  ]
+}

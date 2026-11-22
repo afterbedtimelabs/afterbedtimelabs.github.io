@@ -18,6 +18,7 @@ export interface Project {
   archived?: boolean;
   repositoryURL?: string;
   websiteURL?: string;
+  pagePath?: string;
 }
 
 // Add a project here to generate its entry and detail page. Only add verified links.
@@ -139,10 +140,23 @@ export const projects: Project[] = [
   },
 ];
 
+// This project opens directly into its interactive atlas.
+const kaerimichi: Project = {
+  slug: 'kaerimichi',
+  name: 'Kaerimichi 帰り道',
+  category: 'Historical neighborhood atlas',
+  summary: 'Follow the walk from Itabashihoncho Station to LIFE Nakajuku through mapped streets, dated photographs, and a register of neighborhood storefronts.',
+  description: [], areas: [],
+  tags: ['Itabashi', 'Cartography', 'Godot'],
+  artwork: 'chiba', featured: false,
+  pagePath: '/kaerimichi/',
+  image: { src: '/images/kaerimichi/route-preview.svg', alt: 'Walking route through Itabashi on an OpenStreetMap street plan.', caption: 'Map data © OpenStreetMap contributors.', width: 640, height: 360 },
+};
+
 // Preserve existing detail URLs, including /projects/riku/ for the companion.
-export const activeProjects = ['mission-control', 'midnight-chiba', 'dungeon-deckbuilder', 'nightstock', 'riku'].map((slug) => projects.find((project) => project.slug === slug)!);
+export const activeProjects = ['mission-control', 'midnight-chiba', 'dungeon-deckbuilder', 'nightstock', 'riku'].map((slug) => projects.find((project) => project.slug === slug)!).concat(kaerimichi);
 export const featuredProjects = activeProjects.filter((project) => project.featured);
 
-export function getProjectPath(project: Pick<Project, 'slug'>): string {
-  return `/projects/${project.slug}/`;
+export function getProjectPath(project: Pick<Project, 'slug' | 'pagePath'>): string {
+  return project.pagePath ?? `/projects/${project.slug}/`;
 }

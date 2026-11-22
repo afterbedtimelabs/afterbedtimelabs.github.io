@@ -1,0 +1,73 @@
+---
+import geography from '../../data/kaerimichi/geography.json';
+import { geometryPath, localProjection, type Geometry } from './projection';
+import './map.css';
+
+const project = localProjection(geography.bbox);
+const layers = new Map<string, string[]>();
+const order = ['park','building','water','water-line','path','street','arterial','rail','route','detour'];
+const namedLines = new Map<string, {x:number,y:number,angle:number,score:number}>();
+const routePoints: [number,number][] = [];
+for (const feature of geography.features) {
+  const properties = feature.properties as {kind:string,name?:string,segment?:string};
+  let kind = properties.kind;
+  if (kind === 'route' && feature.geometry.type === 'LineString') {
+    routePoints.push(...(feature.geometry.coordinates as number[][]).map(project));
+  }
+  if (kind === 'route' && properties.segment === 'detour') kind = 'detour';
+  if (kind === 'water' && feature.geometry.type.includes('Line')) kind = 'water-line';
+  if (!layers.has(kind)) layers.set(kind, []);
+  layers.get(kind)!.push(geometryPath(feature.geometry as Geometry, project));
+  const name = properties.name;
+  if (name && ['石神井川','環七通り','中山道'].includes(name) && feature.geometry.type === 'LineString') {
+    const coords = feature.geometry.coordinates as number[][];
+    for (let i=1;i<coords.length;i++) {
+      const a = project(coords[i-1]), b = project(coords[i]);
+      const x = (a[0]+b[0])/2, y = (a[1]+b[1])/2;
+      const score = Math.hypot(b[0]-a[0],b[1]-a[1]) - Math.hypot(x,y)*.2;
+      if (score > (namedLines.get(name)?.score ?? -Infinity)) {
+        const angle = ((Math.atan2(b[1]-a[1],b[0]-a[0])*180/Math.PI+270)%180)-90;
+        namedLines.set(name,{x,y,angle,score});
+      }
+    }
+  }
+}
+const kinds = [...layers.keys()].sort((a,b) => order.indexOf(a)-order.indexOf(b));
+const xs = routePoints.map(p => p[0]), ys = routePoints.map(p => p[1]);
+const routeExtent = [Math.min(...xs),Math.min(...ys),Math.max(...xs),Math.max(...ys)];
+---
+
+<kaerimichi-map class="walk-map" data-bbox={geography.bbox.join(',')} data-route-extent={routeExtent.join(',')}>
+  <div class="wm-canvas" tabindex="0" role="region" aria-label="Interactive map of the Itabashihoncho walk" aria-describedby="wm-how">
+    <p class="wm-sr" id="wm-how">Arrow keys pan. Plus and minus zoom. Home fits the walking route. Tab to a numbered stop and press Enter to select it.</p>
+    <svg class="wm-drawing" aria-hidden="true" width="100%" height="100%">
+      <g class="wm-world">
+        {kinds.map(kind => <path class={'wm-geometry wm-'+kind} fill-rule="evenodd" d={layers.get(kind)!.join('')}/>)}
+        {[...namedLines].map(([name,p]) => <text class="wm-place" transform={`translate(${p.x} ${p.y}) rotate(${p.angle})`} text-anchor="middle" dy="-6" lang="ja">{name}</text>)}
+      </g>
+    </svg>
+    <div class="wm-markers"></div>
+  </div>
+  <div class="wm-compass" aria-label="North is up">
+    <svg width="22" height="24" viewBox="0 0 22 24" aria-hidden="true"><path d="m11 1 6 19-6-4-6 4Z" fill="#dec18b"/><path d="M11 1v15l-6 4Z" fill="#827662"/></svg>
+    <span>N</span>
+  </div>
+  <div class="wm-tools" role="group" aria-label="Map controls">
+    <button type="button" data-tool="zoom-in" title="Zoom in" aria-label="Zoom in"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+    <button type="button" data-tool="zoom-out" title="Zoom out" aria-label="Zoom out"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+    <button type="button" data-tool="fit" title="Fit walking route" aria-label="Fit walking route"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5m6 0h5v5m0 6v5h-5m-6 0H4v-5"/><circle cx="12" cy="12" r="2"/></svg></button>
+  </div>
+  <div class="wm-chooser" hidden aria-label="Choose a nearby stop" role="group"></div>
+  <p class="wm-outside" hidden role="status">This stop is outside the mapped area.</p>
+  {layers.has('route') && <div class="wm-key"><span></span>Walking route{layers.has('detour') && <><i></i>Detour</>}</div>}
+  <div class="wm-foot">
+    <span class="wm-scale"><span>100 m</span><i></i></span>
+    <div class="wm-credit">
+      <a href={import.meta.env.BASE_URL.replace(/\/$/, '') + '/kaerimichi/geography.geojson'} download="kaerimichi-geography.geojson">Map data</a>
+      <a href="https://www.openstreetmap.org/copyright" rel="license">© OpenStreetMap contributors</a>
+    </div>
+  </div>
+</kaerimichi-map>
+<script>
+  import './map-controller';
+</script>
