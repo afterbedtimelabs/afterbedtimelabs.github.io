@@ -1,0 +1,127 @@
+{
+  "version": "2.1",
+  "frameSize": 64,
+  "anchor": [
+    32,
+    60
+  ],
+  "approval": {
+    "frontFace": "B approved by owner 2026-10-17",
+    "sha256": "a07781439461bc715463a6d830598e8eb93ef47ec508d346307d71915f534ba3",
+    "derivedAssets": "First production pass; review pending"
+  },
+  "palette": {
+    "outline": "#392B2A",
+    "furShadow": "#B64F30",
+    "fur": "#E47A3E",
+    "furLight": "#F5A45A",
+    "creamShadow": "#E7C69A",
+    "cream": "#FFF0CB",
+    "ear": "#A75B46",
+    "cheek": "#E99B77",
+    "hoodShadow": "#282D32",
+    "hood": "#3C4348",
+    "hoodLight": "#535D60",
+    "tealShadow": "#367A79",
+    "teal": "#79C5B6",
+    "amber": "#E5A044",
+    "eyeLight": "#FFD584",
+    "leather": "#815236",
+    "leatherLight": "#B67C48",
+    "gold": "#E9BA62",
+    "highlight": "#FFF9EB"
+  },
+  "expressions": [
+    "neutral",
+    "happy",
+    "blink",
+    "curious",
+    "sleepy"
+  ],
+  "animations": {
+    "idle": {
+      "frames": 2,
+      "durationsMs": [
+        1200,
+        1200
+      ],
+      "loopMs": 2400,
+      "atlas": "atlases/idle.png",
+      "offsetsY": [
+        0,
+        0
+      ],
+      "previews": {
+        "1": "previews/idle-1x.gif",
+        "4": "previews/idle-4x.gif",
+        "8": "previews/idle-8x.gif"
+      }
+    },
+    "blink": {
+      "frames": 4,
+      "durationsMs": [
+        2800,
+        80,
+        120,
+        80
+      ],
+      "loopMs": 3080,
+      "atlas": "atlases/blink.png",
+      "offsetsY": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "previews": {
+        "1": "previews/blink-1x.gif",
+        "4": "previews/blink-4x.gif",
+        "8": "previews/blink-8x.gif"
+      }
+    },
+    "happy": {
+      "frames": 4,
+      "durationsMs": [
+        500,
+        120,
+        160,
+        120
+      ],
+      "loopMs": 900,
+      "atlas": "atlases/happy.png",
+      "offsetsY": [
+        0,
+        -1,
+        -3,
+        -1
+      ],
+      "previews": {
+        "1": "previews/happy-1x.gif",
+        "4": "previews/happy-4x.gif",
+        "8": "previews/happy-8x.gif"
+      }
+    },
+    "tail": {
+      "frames": 4,
+      "durationsMs": [
+        280,
+        280,
+        280,
+        280
+      ],
+      "loopMs": 1120,
+      "atlas": "atlases/tail.png",
+      "offsetsY": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "previews": {
+        "1": "previews/tail-1x.gif",
+        "4": "previews/tail-4x.gif",
+        "8": "previews/tail-8x.gif"
+      }
+    }
+  }
+}
